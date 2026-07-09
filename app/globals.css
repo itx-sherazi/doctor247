@@ -1,8 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7fafb;
+  --foreground: #0f2a2e;
+
+  /* Doctor247 brand — healthcare trust palette */
+  --color-brand-50: #eefbfa;
+  --color-brand-100: #d3f3f0;
+  --color-brand-200: #a8e6e0;
+  --color-brand-300: #71d2ca;
+  --color-brand-400: #3fb5ac;
+  --color-brand-500: #21938c;
+  --color-brand-600: #167872;
+  --color-brand-700: #14605d;
+  --color-brand-800: #144d4c;
+  --color-brand-900: #0f3f3e;
+
+  --color-accent-50: #eef4ff;
+  --color-accent-100: #d9e6ff;
+  --color-accent-400: #5b8def;
+  --color-accent-500: #3868d4;
+  --color-accent-600: #2952b0;
+
+  --color-success-50: #ecfdf3;
+  --color-success-500: #12b76a;
+  --color-success-600: #039855;
+
+  --color-warning-50: #fffaeb;
+  --color-warning-500: #f79009;
+  --color-warning-600: #b54708;
+
+  --color-danger-50: #fef3f2;
+  --color-danger-500: #f04438;
+  --color-danger-600: #b42318;
+
+  --color-neutral-50: #f8fafa;
+  --color-neutral-100: #eef2f2;
+  --color-neutral-200: #dde5e4;
+  --color-neutral-300: #c2cecd;
+  --color-neutral-400: #92a5a3;
+  --color-neutral-500: #647a78;
+  --color-neutral-600: #4a5d5b;
+  --color-neutral-700: #384644;
+  --color-neutral-800: #263130;
+  --color-neutral-900: #161e1d;
 }
 
 @theme inline {
@@ -10,17 +51,61 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+
+  --color-success-50: var(--color-success-50);
+  --color-success-500: var(--color-success-500);
+  --color-success-600: var(--color-success-600);
+
+  --color-warning-50: var(--color-warning-50);
+  --color-warning-500: var(--color-warning-500);
+  --color-warning-600: var(--color-warning-600);
+
+  --color-danger-50: var(--color-danger-50);
+  --color-danger-500: var(--color-danger-500);
+  --color-danger-600: var(--color-danger-600);
+
+  --color-neutral-50: var(--color-neutral-50);
+  --color-neutral-100: var(--color-neutral-100);
+  --color-neutral-200: var(--color-neutral-200);
+  --color-neutral-300: var(--color-neutral-300);
+  --color-neutral-400: var(--color-neutral-400);
+  --color-neutral-500: var(--color-neutral-500);
+  --color-neutral-600: var(--color-neutral-600);
+  --color-neutral-700: var(--color-neutral-700);
+  --color-neutral-800: var(--color-neutral-800);
+  --color-neutral-900: var(--color-neutral-900);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b1716;
+    --foreground: #e7f2f1;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
 }
