@@ -29,8 +29,8 @@ export function Step9Documents({
               label={doc.label}
               required={doc.required}
               note={"note" in doc ? doc.note : undefined}
-              fileName={data.documents[doc.key]}
-              onFile={(name) => update({ documents: { ...data.documents, [doc.key]: name } })}
+              file={data.documents[doc.key]}
+              onFile={(file) => update({ documents: { ...data.documents, [doc.key]: file } })}
             />
           ))}
         </div>

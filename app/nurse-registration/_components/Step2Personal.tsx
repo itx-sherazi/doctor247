@@ -55,8 +55,8 @@ export function Step2Personal({
           />
           <FileDrop
             label="Profile Photo"
-            fileName={data.profilePhotoName}
-            onFile={(name) => update({ profilePhotoName: name })}
+            file={data.profilePhoto}
+            onFile={(file) => update({ profilePhoto: file })}
           />
           <TextInput
             label="Aadhaar Number"

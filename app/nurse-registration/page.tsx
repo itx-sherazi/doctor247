@@ -15,13 +15,14 @@ import { Step9Documents } from "./_components/Step9Documents";
 import { Step10Background } from "./_components/Step10Background";
 import { Step11Agreement } from "./_components/Step11Agreement";
 import { SubmissionSuccess } from "./_components/SubmissionSuccess";
-import { initialNurseRegistrationData, NurseRegistrationData, TOTAL_STEPS } from "./_lib/types";
+import { DOCUMENT_TYPES, initialNurseRegistrationData, NurseRegistrationData, TOTAL_STEPS } from "./_lib/types";
 
 export default function NurseRegistrationPage() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<NurseRegistrationData>(initialNurseRegistrationData);
   const [submitting, setSubmitting] = useState(false);
   const [applicationId, setApplicationId] = useState<string | null>(null);
+  const [submitError, setSubmitError] = useState("");
 
   function update(patch: Partial<NurseRegistrationData>) {
     setData((prev) => ({ ...prev, ...patch }));
@@ -37,12 +38,30 @@ export default function NurseRegistrationPage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  function submit() {
+  async function submit() {
     setSubmitting(true);
-    setTimeout(() => {
-      setApplicationId(`NUR-${Date.now().toString(36).toUpperCase()}`);
+    setSubmitError("");
+
+    const { profilePhoto, documents, ...rest } = data;
+
+    const formData = new FormData();
+    formData.append("payload", JSON.stringify(rest));
+    if (profilePhoto) formData.append("profilePhoto", profilePhoto);
+    for (const doc of DOCUMENT_TYPES) {
+      const file = documents[doc.key];
+      if (file) formData.append(`document_${doc.key}`, file);
+    }
+
+    try {
+      const res = await fetch("/api/nurse-applications", { method: "POST", body: formData });
+      if (!res.ok) throw new Error("Submission failed");
+      const result = await res.json();
+      setApplicationId(result.applicationId);
+    } catch {
+      setSubmitError("Something went wrong while submitting. Please check your connection and try again.");
+    } finally {
       setSubmitting(false);
-    }, 500);
+    }
   }
 
   return (
@@ -76,7 +95,14 @@ export default function NurseRegistrationPage() {
             {step === 8 && <Step9Documents data={data} update={update} onNext={next} onBack={back} />}
             {step === 9 && <Step10Background data={data} update={update} onNext={next} onBack={back} />}
             {step === 10 && (
-              <Step11Agreement data={data} update={update} onNext={submit} onBack={back} submitting={submitting} />
+              <Step11Agreement
+                data={data}
+                update={update}
+                onNext={submit}
+                onBack={back}
+                submitting={submitting}
+                error={submitError}
+              />
             )}
           </>
         )}

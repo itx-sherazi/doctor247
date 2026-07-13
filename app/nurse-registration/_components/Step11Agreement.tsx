@@ -1,6 +1,6 @@
 "use client";
 
-import { PenLine, ScrollText } from "lucide-react";
+import { AlertCircle, PenLine, ScrollText } from "lucide-react";
 import { NurseRegistrationData } from "../_lib/types";
 import { Checkbox, SectionCard, TextInput } from "./FormControls";
 import { StepNav } from "./StepNav";
@@ -11,12 +11,14 @@ export function Step11Agreement({
   onNext,
   onBack,
   submitting,
+  error,
 }: {
   data: NurseRegistrationData;
   update: (patch: Partial<NurseRegistrationData>) => void;
   onNext: () => void;
   onBack: () => void;
   submitting?: boolean;
+  error?: string;
 }) {
   const canContinue =
     data.agreeConfidentiality &&
@@ -66,6 +68,12 @@ export function Step11Agreement({
           className="font-serif text-lg italic"
         />
       </SectionCard>
+
+      {error && (
+        <div className="flex items-center gap-2 rounded-lg bg-danger-50 px-4 py-2.5 text-sm font-medium text-danger-600">
+          <AlertCircle size={16} /> {error}
+        </div>
+      )}
 
       <StepNav
         onBack={onBack}

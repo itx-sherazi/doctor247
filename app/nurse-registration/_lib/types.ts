@@ -93,12 +93,12 @@ export const WORKING_HOURS = ["Morning", "Afternoon", "Evening", "Night"] as con
 export const DOCUMENT_TYPES = [
   { key: "aadhaar", label: "Aadhaar", required: true },
   { key: "pan", label: "PAN", required: true },
-  { key: "nursingDegree", label: "Nursing Degree", required: true },
-  { key: "registrationCertificate", label: "Registration Certificate", required: true },
+  { key: "nursingDegree", label: "Nursing Degree", required: false },
+  { key: "registrationCertificate", label: "Registration Certificate", required: false },
   { key: "experienceCertificate", label: "Experience Certificate", required: false },
   { key: "policeVerification", label: "Police Verification", required: false, note: "Optional initially, required before activation" },
   { key: "vaccinationCertificate", label: "Vaccination Certificate", required: false, note: "If applicable" },
-  { key: "cancelledCheque", label: "Cancelled Cheque / Bank Passbook", required: true },
+  { key: "cancelledCheque", label: "Cancelled Cheque / Bank Passbook", required: false },
 ] as const;
 
 export type DocumentKey = (typeof DOCUMENT_TYPES)[number]["key"];
@@ -113,7 +113,7 @@ export interface NurseRegistrationData {
   fullName: string;
   gender: "" | "female" | "male" | "other";
   dob: string;
-  profilePhotoName: string;
+  profilePhoto: File | null;
   aadhaarNumber: string;
   panNumber: string;
   permanentAddress: string;
@@ -161,7 +161,7 @@ export interface NurseRegistrationData {
   upiId: string;
 
   // Step 9
-  documents: Partial<Record<DocumentKey, string>>;
+  documents: Partial<Record<DocumentKey, File>>;
 
   // Step 10
   everTerminated: "" | "yes" | "no";
@@ -187,7 +187,7 @@ export const initialNurseRegistrationData: NurseRegistrationData = {
   fullName: "",
   gender: "",
   dob: "",
-  profilePhotoName: "",
+  profilePhoto: null,
   aadhaarNumber: "",
   panNumber: "",
   permanentAddress: "",

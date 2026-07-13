@@ -81,8 +81,8 @@ export function Checkbox({
 }) {
   return (
     <label className="flex items-start gap-2.5 cursor-pointer group">
+      <input type="checkbox" checked={checked} onChange={(e) => onChange(e.target.checked)} className="sr-only peer" />
       <span
-        onClick={() => onChange(!checked)}
         className={
           "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition " +
           (checked ? "border-brand-600 bg-brand-600" : "border-neutral-300 bg-white group-hover:border-brand-300")
@@ -90,7 +90,6 @@ export function Checkbox({
       >
         {checked && <Check size={13} strokeWidth={3} className="text-white" />}
       </span>
-      <input type="checkbox" checked={checked} onChange={(e) => onChange(e.target.checked)} className="sr-only" />
       <span className="text-sm text-neutral-700 leading-snug">
         {label}
         {description && <span className="block text-xs text-neutral-400 mt-0.5">{description}</span>}
@@ -200,16 +199,17 @@ export function SectionCard({
 export function FileDrop({
   label,
   required,
-  fileName,
+  file,
   onFile,
   note,
 }: {
   label: string;
   required?: boolean;
-  fileName?: string;
-  onFile: (name: string) => void;
+  file?: File | null;
+  onFile: (file: File) => void;
   note?: string;
 }) {
+  const fileName = file?.name;
   return (
     <div>
       <FieldLabel required={required}>{label}</FieldLabel>
@@ -239,7 +239,7 @@ export function FileDrop({
           className="hidden"
           onChange={(e) => {
             const f = e.target.files?.[0];
-            if (f) onFile(f.name);
+            if (f) onFile(f);
           }}
         />
       </label>
