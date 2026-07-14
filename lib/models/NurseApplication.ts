@@ -57,7 +57,7 @@ const NurseApplicationSchema = new Schema(
     bankIfsc: String,
     upiId: String,
 
-    // Step 9 — uploaded documents (Cloudinary)
+    // Step 9  uploaded documents (Cloudinary)
     documents: {
       type: Map,
       of: ImageSubSchema,

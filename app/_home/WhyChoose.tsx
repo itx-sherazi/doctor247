@@ -1,32 +1,36 @@
-import { CalendarDays, CreditCard, Eye, HospitalIcon, IndianRupee, RefreshCcw, Stethoscope } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
 
-const REASONS = [
-  { icon: IndianRupee, title: "Affordable Pricing", desc: "Up to 40% lower than market" },
-  { icon: CreditCard, title: "Cashless Insurance", desc: "All major insurers accepted" },
-  { icon: Stethoscope, title: "Experienced Surgeons", desc: "10+ years avg. experience" },
-  { icon: Eye, title: "No Hidden Charges", desc: "100% transparent pricing" },
-  { icon: CalendarDays, title: "Same Day Admission", desc: "No waiting lists" },
-  { icon: RefreshCcw, title: "Free Follow-up", desc: "Post-surgery care included" },
-  { icon: HospitalIcon, title: "Hospital Network", desc: "25+ partner hospitals" },
+const STATS = [
+  { number: "500+", label: "Healthcare Professionals", color: "text-hblue" },
+  { number: "125+", label: "Service Locations", color: "text-hgreen" },
+  { number: "25+", label: "Hospital Partners", color: "text-amber-500" },
+  { number: "24×7", label: "Support", color: "text-hblue" },
+  { number: "Same Day", label: "Bookings", color: "text-hgreen" },
+  { number: "Verified", label: "Doctors & Nurses", color: "text-amber-500" },
 ];
 
 export function WhyChoose() {
   return (
-    <section className="py-18 pb-20 bg-white">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <SectionTitle>
+    <section className="py-12 sm:py-15 bg-white">
+      <div className="mx-auto max-w-[1200px] px-5">
+        <SectionTitle
+          subtitle={
+            <>
+              Trusted by Bangalore families for quality healthcare – <strong>best hospital in Bangalore</strong> for
+              affordable care
+            </>
+          }
+        >
           Why Choose <span className="text-hgreen">Doctor247</span>
         </SectionTitle>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:gap-6">
-          {REASONS.map((reason) => (
+        <div className="grid grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5">
+          {STATS.map((stat) => (
             <div
-              key={reason.title}
-              className="bg-hgrey rounded-[20px] p-5 sm:p-7 text-center transition-all hover:-translate-y-1 hover:[box-shadow:0_8px_40px_rgba(15,76,129,0.08)]"
+              key={stat.label}
+              className="bg-white rounded-2xl p-4 sm:p-6 text-center border border-hgrey-border [box-shadow:0_8px_24px_rgba(15,76,129,0.08)] transition-all hover:-translate-y-1 hover:[box-shadow:0_12px_40px_rgba(15,76,129,0.14)]"
             >
-              <reason.icon size={28} className="text-hgreen mx-auto mb-2.5" />
-              <h4 className="text-[1.05rem] font-semibold">{reason.title}</h4>
-              <p className="text-[0.9rem] text-htext-muted mt-1">{reason.desc}</p>
+              <div className={"text-[1.3rem] sm:text-[2.2rem] font-black leading-tight " + stat.color}>{stat.number}</div>
+              <div className="text-[0.7rem] sm:text-[0.8rem] text-htext-muted font-medium">{stat.label}</div>
             </div>
           ))}
         </div>

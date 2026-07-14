@@ -1,19 +1,38 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Heart, Phone } from "lucide-react";
-import { FacebookIcon, InstagramIcon, LinkedinIcon, YoutubeIcon } from "./SocialIcons";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
-const FOOTER_COLUMNS = [
+const FOOTER_COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Services",
-    links: ["Surgeries", "Home Doctor", "Home Nursing", "Physiotherapy", "Lab Tests"],
+    links: [
+      { label: "Surgeries", href: "#" },
+      { label: "Home Doctor", href: "#" },
+      { label: "Home Nursing", href: "/nurse-services" },
+      { label: "Physiotherapy", href: "#" },
+      { label: "Lab Tests", href: "#" },
+    ],
   },
   {
     title: "Specialities",
-    links: ["General Surgery", "Orthopaedics", "Urology", "ENT", "Gynaecology"],
+    links: [
+      { label: "General Surgery", href: "#" },
+      { label: "Orthopaedics", href: "#" },
+      { label: "Urology", href: "#" },
+      { label: "ENT", href: "#" },
+      { label: "Gynaecology", href: "#" },
+    ],
   },
   {
     title: "Company",
-    links: ["About Us", "Doctors", "Careers", "Blogs", "Contact"],
+    links: [
+      { label: "About Us", href: "#" },
+      { label: "Doctors", href: "#" },
+      { label: "Careers", href: "#" },
+      { label: "Blogs", href: "#" },
+      { label: "Contact", href: "#" },
+    ],
   },
 ];
 
@@ -31,16 +50,16 @@ export function MainFooter() {
           </p>
           <div className="flex gap-3 text-[1.2rem]">
             <a href="#" className="text-white/70 hover:text-white transition-colors">
-              <FacebookIcon size={20} />
+              <FaFacebookF size={18} />
             </a>
             <a href="#" className="text-white/70 hover:text-white transition-colors">
-              <InstagramIcon size={20} />
+              <FaInstagram size={20} />
             </a>
             <a href="#" className="text-white/70 hover:text-white transition-colors">
-              <YoutubeIcon size={20} />
+              <FaYoutube size={20} />
             </a>
             <a href="#" className="text-white/70 hover:text-white transition-colors">
-              <LinkedinIcon size={20} />
+              <FaLinkedinIn size={18} />
             </a>
           </div>
         </div>
@@ -49,9 +68,13 @@ export function MainFooter() {
           <div key={col.title}>
             <h4 className="text-white font-bold mb-3.5 text-base">{col.title}</h4>
             {col.links.map((link) => (
-              <a key={link} href="#" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
-                {link}
-              </a>
+              <Link
+                key={link.label}
+                href={link.href}
+                className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors"
+              >
+                {link.label}
+              </Link>
             ))}
           </div>
         ))}

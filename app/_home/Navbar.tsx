@@ -5,7 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { Building2, ChevronDown, Menu, UserPlus, UserRoundPlus, X } from "lucide-react";
 
-const NAV_LINKS = ["Home", "Surgeries", "Home Doctor", "Home Nursing", "Specialities", "Insurance"];
+const NAV_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "Surgeries", href: "#" },
+  { label: "Home Doctor", href: "#" },
+  { label: "Home Nursing", href: "/nurse-services" },
+  { label: "Specialities", href: "#" },
+  { label: "Insurance", href: "#" },
+];
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,17 +71,17 @@ export function Navbar() {
           }
         >
           {NAV_LINKS.map((link) => (
-            <a
-              key={link}
-              href="#"
+            <Link
+              key={link.label}
+              href={link.href}
               onClick={() => {
                 setMenuOpen(false);
                 setRegisterOpen(false);
               }}
               className="text-htext hover:text-hblue transition-colors"
             >
-              {link}
-            </a>
+              {link.label}
+            </Link>
           ))}
 
           <div className="relative inline-block" ref={registerRef}>

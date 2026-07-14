@@ -48,7 +48,7 @@ export function Step10Background({
       <SectionCard
         icon={<ShieldQuestion size={18} />}
         title="Background Verification"
-        subtitle="Please answer honestly — false declarations will lead to disqualification or termination"
+        subtitle="Please answer honestly  false declarations will lead to disqualification or termination"
       >
         <div className="space-y-5">
           <YesNo

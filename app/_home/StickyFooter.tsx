@@ -1,4 +1,5 @@
-import { CalendarCheck, MessageCircle, Phone } from "lucide-react";
+import { CalendarCheck, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function StickyFooter() {
   return (
@@ -8,7 +9,7 @@ export function StickyFooter() {
           <Phone size={22} className="text-hblue" /> <span>Call</span>
         </a>
         <a href="#" className="flex flex-col items-center text-[0.75rem] font-medium text-htext-muted gap-0.5 hover:text-hblue transition-colors">
-          <MessageCircle size={22} className="text-hblue" /> <span>WhatsApp</span>
+          <FaWhatsapp size={22} className="text-hblue" /> <span>WhatsApp</span>
         </a>
         <a href="#" className="flex items-center gap-1.5 bg-hgreen text-white px-7 py-2 rounded-full font-semibold text-[0.9rem] hover:bg-hgreen-dark transition-colors">
           <CalendarCheck size={15} /> Book Appointment

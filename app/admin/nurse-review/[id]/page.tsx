@@ -90,7 +90,7 @@ function InfoRow({ label, value }: { label: string; value?: string }) {
   return (
     <div>
       <p className="text-xs text-neutral-400">{label}</p>
-      <p className="text-sm font-medium text-neutral-800 break-words">{value || "—"}</p>
+      <p className="text-sm font-medium text-neutral-800 break-words">{value || ""}</p>
     </div>
   );
 }

@@ -19,16 +19,22 @@ const AREAS = [
 
 export function Areas() {
   return (
-    <section className="py-18 pb-20 bg-hgrey">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <SectionTitle subtitle="Bangalore & surrounding regions">
+    <section className="py-12 sm:py-15 bg-white">
+      <div className="mx-auto max-w-[1200px] px-5">
+        <SectionTitle
+          subtitle={
+            <>
+              Bangalore &amp; surrounding regions – <strong>home care services in Bangalore</strong> at your doorstep
+            </>
+          }
+        >
           Areas We <span className="text-hgreen">Serve</span>
         </SectionTitle>
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-x-5 sm:gap-y-3 max-w-[800px] mx-auto">
+        <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3.5">
           {AREAS.map((area) => (
             <span
               key={area}
-              className="bg-white px-6 py-2 rounded-full font-medium border border-hgrey-border transition-all hover:border-hblue hover:text-hblue hover:-translate-y-0.5 [box-shadow:0_8px_40px_rgba(15,76,129,0.08)]"
+              className="bg-white px-5 py-2 rounded-full font-medium text-[0.85rem] border border-hgrey-border transition-all hover:border-hblue hover:text-hblue hover:-translate-y-0.5 [box-shadow:0_8px_24px_rgba(15,76,129,0.08)]"
             >
               {area}
             </span>

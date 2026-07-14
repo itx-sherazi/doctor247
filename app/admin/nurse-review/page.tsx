@@ -106,14 +106,14 @@ export default function AdminNurseReviewPage() {
                 <div key={app.applicationId} className="w-full rounded-xl border border-neutral-100 bg-white p-4 shadow-sm">
                   <Link href={`/admin/nurse-review/${app.applicationId}`} className="block">
                     <div className="flex items-center justify-between gap-2">
-                      <p className="font-medium text-neutral-800 truncate">{app.fullName || "—"}</p>
+                      <p className="font-medium text-neutral-800 truncate">{app.fullName || ""}</p>
                       <span className={"shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium " + STATUS_STYLES[app.status]}>
                         {STATUS_LABELS[app.status]}
                       </span>
                     </div>
                     <p className="text-xs text-neutral-400 mt-0.5">{app.applicationId} · {app.mobileNumber}</p>
                     <p className="text-xs text-neutral-500 mt-1 capitalize">
-                      {app.qualification || "—"} · {app.stage.replace(/-/g, " ")}
+                      {app.qualification || ""} · {app.stage.replace(/-/g, " ")}
                     </p>
                   </Link>
                   <button
@@ -150,11 +150,11 @@ export default function AdminNurseReviewPage() {
                     {apps.map((app) => (
                       <tr key={app.applicationId} className="border-b border-neutral-50 last:border-0 hover:bg-neutral-50/60">
                         <td className="px-5 py-3">
-                          <p className="font-medium text-neutral-800">{app.fullName || "—"}</p>
+                          <p className="font-medium text-neutral-800">{app.fullName || ""}</p>
                           <p className="text-xs text-neutral-400">{app.applicationId}</p>
                         </td>
                         <td className="px-5 py-3 text-neutral-600">{app.mobileNumber}</td>
-                        <td className="px-5 py-3 text-neutral-600">{app.qualification || "—"}</td>
+                        <td className="px-5 py-3 text-neutral-600">{app.qualification || ""}</td>
                         <td className="px-5 py-3 text-neutral-600 capitalize">{app.stage.replace(/-/g, " ")}</td>
                         <td className="px-5 py-3">
                           <span className={"rounded-full px-2.5 py-1 text-xs font-medium " + STATUS_STYLES[app.status]}>

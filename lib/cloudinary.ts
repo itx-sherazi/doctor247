@@ -43,7 +43,7 @@ export async function deleteApplicationFolder(applicationId: string): Promise<vo
     try {
       await cloudinary.api.delete_folder(folder);
     } catch (error) {
-      // Folder may not exist or may still contain resources — safe to ignore.
+      // Folder may not exist or may still contain resources  safe to ignore.
       console.error(`Failed to delete Cloudinary folder ${folder}`, error);
     }
   }
