@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Stethoscope } from "lucide-react";
+import Image from "next/image";
 import { Stepper } from "./_components/Stepper";
 import { Step1Mobile } from "./_components/Step1Mobile";
 import { Step2Personal } from "./_components/Step2Personal";
@@ -67,13 +67,17 @@ export default function NurseRegistrationPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
       <header className="border-b border-neutral-100 bg-white">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 py-4 flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-white">
-            <Stethoscope size={18} />
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-neutral-800 leading-none">Doctor247</p>
-            <p className="text-xs text-neutral-400">Nurse Registration</p>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 py-3 flex items-center gap-2.5">
+          <Image
+            src="/logo-nav.png"
+            alt="Doctor247"
+            width={140}
+            height={40}
+            className="h-11 sm:h-12 w-auto object-contain"
+            priority
+          />
+          <div className="border-l border-neutral-200 pl-2.5">
+            <p className="text-xs font-medium text-neutral-500 leading-none">Nurse Registration</p>
           </div>
         </div>
       </header>
