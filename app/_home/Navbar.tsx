@@ -37,11 +37,11 @@ export function Navbar() {
       <div className="relative mx-auto max-w-[1200px] px-4 sm:px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center shrink-0" onClick={() => setMenuOpen(false)}>
           <Image
-            src="/logo.png"
+            src="/logo-nav.png"
             alt="Doctor247"
             width={140}
             height={40}
-            className="h-9 sm:h-11 lg:h-12 w-auto object-contain"
+            className="h-15 sm:h-15 lg:h-20 w-auto object-cover"
             priority
           />
         </Link>
