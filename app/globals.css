@@ -44,6 +44,18 @@
   --color-neutral-700: #384644;
   --color-neutral-800: #263130;
   --color-neutral-900: #161e1d;
+
+  /* Doctor247 marketing home page palette (from home.html) */
+  --color-hblue: #0f4c81;
+  --color-hblue-dark: #0a3a62;
+  --color-hblue-light: #e8f0fe;
+  --color-hgreen: #00a86b;
+  --color-hgreen-dark: #008f5a;
+  --color-hgreen-light: #e6f7f0;
+  --color-hgrey: #f8fafc;
+  --color-hgrey-border: #e9edf2;
+  --color-htext: #1e293b;
+  --color-htext-muted: #64748b;
 }
 
 @theme inline {
@@ -91,6 +103,17 @@
   --color-neutral-700: var(--color-neutral-700);
   --color-neutral-800: var(--color-neutral-800);
   --color-neutral-900: var(--color-neutral-900);
+
+  --color-hblue: var(--color-hblue);
+  --color-hblue-dark: var(--color-hblue-dark);
+  --color-hblue-light: var(--color-hblue-light);
+  --color-hgreen: var(--color-hgreen);
+  --color-hgreen-dark: var(--color-hgreen-dark);
+  --color-hgreen-light: var(--color-hgreen-light);
+  --color-hgrey: var(--color-hgrey);
+  --color-hgrey-border: var(--color-hgrey-border);
+  --color-htext: var(--color-htext);
+  --color-htext-muted: var(--color-htext-muted);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -108,4 +131,23 @@ body {
 
 * {
   scrollbar-width: thin;
+}
+
+.h-shadow {
+  box-shadow: 0 8px 40px rgba(15, 76, 129, 0.08);
+}
+
+.h-shadow-hover:hover {
+  box-shadow: 0 12px 56px rgba(15, 76, 129, 0.14);
+}
+
+.h-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.h-fade-up.h-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
