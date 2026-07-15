@@ -21,7 +21,7 @@ const SERVICES = [
   {
     icon: Hospital,
     color: "text-amber-500",
-    title: "Affordable Surgeries",
+    title: "Affordable MEDICAL AND SURGICAL SERVICES",
     priceTag: "Save upto 30%",
     priceTagClass: "bg-amber-100 text-amber-700",
     desc: "Transparent pricing, top surgeons, cashless insurance",

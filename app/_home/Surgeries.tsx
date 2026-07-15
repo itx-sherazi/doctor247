@@ -22,7 +22,7 @@ export function Surgeries() {
             </>
           }
         >
-          Affordable <span className="text-hgreen">Surgeries</span>
+          Affordable <span className="text-hgreen">MEDICAL AND SURGICAL SERVICES</span>
         </SectionTitle>
         <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-[800px] mx-auto">
           {SURGERIES.map((s) => (
