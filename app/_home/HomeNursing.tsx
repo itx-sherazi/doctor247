@@ -1,5 +1,6 @@
 import { ArrowRight, CircleCheck, Heart } from "lucide-react";
 import { SectionTitle } from "./SectionTitle";
+import Image from "next/image";
 
 const ITEMS = [
   "ICU Nurse",
@@ -18,10 +19,12 @@ export function HomeNursing() {
       <div className="mx-auto max-w-[1200px] px-5">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="aspect-[4/3] min-h-[220px] rounded-2xl overflow-hidden [box-shadow:0_12px_40px_rgba(15,76,129,0.14)] bg-hblue-light">
-            <img
-              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&h=450&fit=crop&crop=center"
+            <Image
+              src="/home-nursing.webp"
               alt="Home nursing services near me"
               loading="lazy"
+              width={600}
+              height={400}
               className="w-full h-full object-cover"
             />
           </div>
