@@ -10,8 +10,8 @@ const NAV_LINKS = [
   { label: "Surgeries", href: "#" },
   { label: "Home Doctor", href: "#" },
   { label: "Home Nursing", href: "/nurse-services" },
-  { label: "Specialities", href: "#" },
-  { label: "Insurance", href: "#" },
+  // { label: "Specialities", href: "#" },
+  // { label: "Insurance", href: "#" },
 ];
 
 export function Navbar() {
@@ -40,18 +40,23 @@ export function Navbar() {
   }, [menuOpen]);
 
   return (
-    <nav className="sticky top-0 z-[1000] bg-white border-b border-hgrey-border py-2.5 sm:py-3.5 shadow-[0_2px_12px_rgba(0,0,0,0.03)]">
+    <nav className="sticky top-0 z-[1000] bg-white border-b border-hgrey-border py-2.5 sm:py-3.5 shadow-[0_2px_12px_rgba(0,0,0,0.03)] overflow-visible">
       <div className="relative mx-auto max-w-[1200px] px-4 sm:px-6 flex justify-between items-center">
-        <Link href="/" className="flex items-center shrink-0" onClick={() => setMenuOpen(false)}>
+        <Link
+          href="/"
+          className="flex items-center shrink-0 lg:absolute lg:left-6 lg:top-full lg:-translate-y-[55px] lg:z-10 lg:bg-white lg:rounded-xl lg:shadow-[0_4px_16px_rgba(0,0,0,0.08)] lg:p-2"
+          onClick={() => setMenuOpen(false)}
+        >
           <Image
             src="/logo-nav.png"
             alt="Doctor247"
-            width={140}
-            height={40}
-            className="h-15 sm:h-15 lg:h-20 w-auto object-cover"
+            width={180}
+            height={52}
+            className="h-10 sm:h-11 lg:h-24 w-auto object-contain"
             priority
           />
         </Link>
+        <div className="hidden lg:block w-32 shrink-0" aria-hidden="true" />
 
         <button
           className="lg:hidden text-hblue shrink-0"
