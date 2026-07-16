@@ -196,6 +196,15 @@ export function SectionCard({
   );
 }
 
+interface ExistingFileLike {
+  url: string;
+  originalName: string;
+}
+
+function isExistingFile(value: unknown): value is ExistingFileLike {
+  return Boolean(value) && typeof value === "object" && "url" in (value as object);
+}
+
 export function FileDrop({
   label,
   required,
@@ -205,11 +214,12 @@ export function FileDrop({
 }: {
   label: string;
   required?: boolean;
-  file?: File | null;
+  file?: File | ExistingFileLike | null;
   onFile: (file: File) => void;
   note?: string;
 }) {
-  const fileName = file?.name;
+  const existing = isExistingFile(file) ? file : null;
+  const fileName = existing ? existing.originalName : (file as File | null | undefined)?.name;
   return (
     <div>
       <FieldLabel required={required}>{label}</FieldLabel>
@@ -227,7 +237,7 @@ export function FileDrop({
         </span>
         {fileName ? (
           <span className="hidden sm:inline-block shrink-0 rounded-full bg-success-50 px-2.5 py-0.5 text-xs font-medium text-success-600">
-            Uploaded
+            {existing ? "Uploaded previously" : "Uploaded"}
           </span>
         ) : (
           <span className="hidden sm:inline-block shrink-0 rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600">

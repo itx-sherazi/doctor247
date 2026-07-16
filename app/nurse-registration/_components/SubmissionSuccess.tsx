@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircle2, Home } from "lucide-react";
+import { CheckCircle2, User } from "lucide-react";
 
 const CREDENTIALING_STAGES = [
   { key: "submitted", label: "Registration Submitted", description: "Application received and queued for review." },
@@ -49,10 +49,10 @@ export function SubmissionSuccess({ applicationId }: { applicationId: string }) 
         </div>
 
         <Link
-          href="/"
+          href="/nurse-profile"
           className="mt-8 inline-flex items-center gap-2 rounded-lg bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
         >
-          <Home size={16} /> Back to Home
+          <User size={16} /> View My Profile
         </Link>
       </div>
     </div>

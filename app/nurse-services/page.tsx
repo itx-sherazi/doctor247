@@ -1,10 +1,5 @@
-import { TopBar } from "../_home/TopBar";
-import { Navbar } from "../_home/Navbar";
 import { StickyFooter } from "../_home/StickyFooter";
-import { MainFooter } from "../_home/MainFooter";
-import { StickyCta } from "./_components/StickyCta";
 import { WhatsAppFloat } from "./_components/WhatsAppFloat";
-import { AccessibilityToggle } from "./_components/AccessibilityToggle";
 import { EmergencyBanner } from "./_components/EmergencyBanner";
 import { NurseHero } from "./_components/NurseHero";
 import { NurseTrustBar } from "./_components/NurseTrustBar";
@@ -21,17 +16,11 @@ import { NurseComparison } from "./_components/NurseComparison";
 import { NurseBlog } from "./_components/NurseBlog";
 import { NurseSymptomChecker } from "./_components/NurseSymptomChecker";
 import { NurseCtaBanner } from "./_components/NurseCtaBanner";
-import { NurseNewsletter } from "./_components/NurseNewsletter";
 
 export default function NurseServicesPage() {
   return (
     <div className="bg-white text-htext">
-      <TopBar />
-      <Navbar />
-
-      <StickyCta />
       <WhatsAppFloat />
-      <AccessibilityToggle />
       <EmergencyBanner />
 
       <NurseHero />
@@ -49,10 +38,8 @@ export default function NurseServicesPage() {
       <NurseBlog />
       <NurseSymptomChecker />
       <NurseCtaBanner />
-      <NurseNewsletter />
 
       <StickyFooter />
-      <MainFooter />
     </div>
   );
 }

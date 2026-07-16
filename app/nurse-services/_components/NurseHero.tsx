@@ -56,7 +56,7 @@ export function NurseHero() {
             />
           </div>
           <div className="absolute -top-3 -right-3 sm:top-4 sm:-right-4 bg-white px-3.5 py-2 rounded-full text-[0.8rem] font-semibold shadow-[0_4px_16px_rgba(0,0,0,0.1)] flex items-center gap-1.5">
-            <Star size={14} className="text-amber-500" fill="currentColor" /> 4.9 ★ (200+ reviews)
+            <Star size={14} className="text-amber-500" fill="currentColor" /> 4.9 (200+ reviews)
           </div>
           <div className="absolute -bottom-3 -left-3 sm:bottom-4 sm:-left-4 bg-white px-3.5 py-2 rounded-full text-[0.8rem] font-semibold shadow-[0_4px_16px_rgba(0,0,0,0.1)] flex items-center gap-1.5">
             <Zap size={14} className="text-hgreen" /> Book in 2 min

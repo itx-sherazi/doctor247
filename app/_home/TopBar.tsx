@@ -2,7 +2,7 @@ import { Ambulance, Phone, UserRound } from "lucide-react";
 
 export function TopBar() {
   return (
-    <div className="bg-hblue text-white text-[0.85rem] py-2">
+    <div className="hidden sm:block bg-hblue text-white text-[0.85rem] py-2">
       <div className="mx-auto max-w-[1200px] px-6 flex justify-between items-center flex-wrap gap-2">
         <span className="flex items-center gap-1.5 flex-wrap">
           <Phone size={14} />

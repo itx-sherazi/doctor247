@@ -36,13 +36,6 @@ export function Step10Background({
   onNext: () => void;
   onBack: () => void;
 }) {
-  const canContinue =
-    data.everTerminated !== "" &&
-    data.criminalCases !== "" &&
-    data.disciplinaryProceedings !== "" &&
-    data.documentsGenuine !== "" &&
-    data.authorizeBackgroundCheck;
-
   return (
     <div className="space-y-5">
       <SectionCard
@@ -82,7 +75,7 @@ export function Step10Background({
         />
       </SectionCard>
 
-      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </div>
   );
 }

@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { ClipboardList, Loader2, ShieldCheck, Trash2 } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ClipboardList, Loader2, Search, ShieldCheck, Trash2 } from "lucide-react";
 import Link from "next/link";
+import { AdminTabs } from "../_components/AdminTabs";
 
 type ApplicationStatus = "pending" | "approved" | "rejected" | "needs-more-information";
 
@@ -11,6 +12,7 @@ interface ApplicationSummary {
   fullName?: string;
   mobileNumber?: string;
   qualification?: string;
+  pinCode?: string;
   stage: string;
   status: ApplicationStatus;
   createdAt: string;
@@ -35,10 +37,26 @@ export default function AdminNurseReviewPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
+  const [statusFilter, setStatusFilter] = useState<ApplicationStatus | "all">("all");
 
   useEffect(() => {
     loadApplications();
   }, []);
+
+  const filteredApps = useMemo(() => {
+    const query = search.trim().toLowerCase();
+    return apps.filter((app) => {
+      const matchesStatus = statusFilter === "all" || app.status === statusFilter;
+      const matchesQuery =
+        !query ||
+        app.fullName?.toLowerCase().includes(query) ||
+        app.mobileNumber?.toLowerCase().includes(query) ||
+        app.pinCode?.toLowerCase().includes(query) ||
+        app.applicationId.toLowerCase().includes(query);
+      return matchesStatus && matchesQuery;
+    });
+  }, [apps, search, statusFilter]);
 
   function loadApplications() {
     setLoading(true);
@@ -82,8 +100,35 @@ export default function AdminNurseReviewPage() {
       </header>
 
       <main className="mx-auto max-w-5xl px-4 sm:px-6 py-6 sm:py-8">
+        <AdminTabs active="nurses" />
         <h1 className="text-lg font-semibold text-neutral-800 mb-1">Nurse Applications</h1>
-        <p className="text-sm text-neutral-400 mb-6">{apps.length} application(s) submitted</p>
+        <p className="text-sm text-neutral-400 mb-4">
+          {filteredApps.length} of {apps.length} application(s)
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-2.5 mb-6">
+          <div className="relative flex-1">
+            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-300" />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search by name, mobile, pincode, or application ID"
+              className="w-full rounded-lg border border-neutral-200 bg-white pl-9 pr-3 py-2.5 text-sm text-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:border-brand-400"
+            />
+          </div>
+          <select
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value as ApplicationStatus | "all")}
+            className="rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-sm text-neutral-700 focus:outline-none focus:border-brand-400"
+          >
+            <option value="all">All Statuses</option>
+            <option value="pending">Pending</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+            <option value="needs-more-information">Needs More Info</option>
+          </select>
+        </div>
 
         {loading ? (
           <div className="flex items-center justify-center gap-2 rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-sm text-neutral-400">
@@ -98,11 +143,16 @@ export default function AdminNurseReviewPage() {
             <ClipboardList size={24} className="text-neutral-300" />
             No applications yet. Submit one via the nurse registration flow.
           </div>
+        ) : filteredApps.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-center text-sm text-neutral-400 flex flex-col items-center gap-2">
+            <Search size={24} className="text-neutral-300" />
+            No applications match your search/filter.
+          </div>
         ) : (
           <>
             {/* Mobile: card list */}
             <div className="space-y-3 sm:hidden">
-              {apps.map((app) => (
+              {filteredApps.map((app) => (
                 <div key={app.applicationId} className="w-full rounded-xl border border-neutral-100 bg-white p-4 shadow-sm">
                   <Link href={`/admin/nurse-review/${app.applicationId}`} className="block">
                     <div className="flex items-center justify-between gap-2">
@@ -114,6 +164,7 @@ export default function AdminNurseReviewPage() {
                     <p className="text-xs text-neutral-400 mt-0.5">{app.applicationId} · {app.mobileNumber}</p>
                     <p className="text-xs text-neutral-500 mt-1 capitalize">
                       {app.qualification || ""} · {app.stage.replace(/-/g, " ")}
+                      {app.pinCode ? ` · PIN ${app.pinCode}` : ""}
                     </p>
                   </Link>
                   <button
@@ -141,13 +192,14 @@ export default function AdminNurseReviewPage() {
                       <th className="px-5 py-3 font-medium">Applicant</th>
                       <th className="px-5 py-3 font-medium">Mobile</th>
                       <th className="px-5 py-3 font-medium">Qualification</th>
+                      <th className="px-5 py-3 font-medium">Pincode</th>
                       <th className="px-5 py-3 font-medium">Stage</th>
                       <th className="px-5 py-3 font-medium">Status</th>
                       <th className="px-5 py-3 font-medium" />
                     </tr>
                   </thead>
                   <tbody>
-                    {apps.map((app) => (
+                    {filteredApps.map((app) => (
                       <tr key={app.applicationId} className="border-b border-neutral-50 last:border-0 hover:bg-neutral-50/60">
                         <td className="px-5 py-3">
                           <p className="font-medium text-neutral-800">{app.fullName || ""}</p>
@@ -155,6 +207,7 @@ export default function AdminNurseReviewPage() {
                         </td>
                         <td className="px-5 py-3 text-neutral-600">{app.mobileNumber}</td>
                         <td className="px-5 py-3 text-neutral-600">{app.qualification || ""}</td>
+                        <td className="px-5 py-3 text-neutral-600">{app.pinCode || ""}</td>
                         <td className="px-5 py-3 text-neutral-600 capitalize">{app.stage.replace(/-/g, " ")}</td>
                         <td className="px-5 py-3">
                           <span className={"rounded-full px-2.5 py-1 text-xs font-medium " + STATUS_STYLES[app.status]}>

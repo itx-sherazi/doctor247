@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.legal-tab-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --background: #f7fafb;
   --foreground: #0f2a2e;

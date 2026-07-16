@@ -36,8 +36,6 @@ export function Step6ServiceAreas({
     }
   }
 
-  const canContinue = data.serviceAreas.length > 0;
-
   return (
     <div className="space-y-5">
       <SectionCard icon={<MapPinned size={18} />} title="Select Service Areas" subtitle="Choose the areas where you're available to take home visits">
@@ -73,7 +71,7 @@ export function Step6ServiceAreas({
           </button>
         </div>
       </SectionCard>
-      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </div>
   );
 }

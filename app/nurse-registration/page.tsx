@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import { Loader2 } from "lucide-react";
 import { Stepper } from "./_components/Stepper";
 import { Step1Mobile } from "./_components/Step1Mobile";
 import { Step2Personal } from "./_components/Step2Personal";
@@ -15,14 +16,42 @@ import { Step9Documents } from "./_components/Step9Documents";
 import { Step10Background } from "./_components/Step10Background";
 import { Step11Agreement } from "./_components/Step11Agreement";
 import { SubmissionSuccess } from "./_components/SubmissionSuccess";
-import { DOCUMENT_TYPES, initialNurseRegistrationData, NurseRegistrationData, TOTAL_STEPS } from "./_lib/types";
+import {
+  DOCUMENT_TYPES,
+  initialNurseRegistrationData,
+  NurseRegistrationData,
+  TOTAL_STEPS,
+} from "./_lib/types";
+
+function isNewFile(value: unknown): value is File {
+  return value instanceof File;
+}
 
 export default function NurseRegistrationPage() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<NurseRegistrationData>(initialNurseRegistrationData);
+  const [loadingProfile, setLoadingProfile] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [applicationId, setApplicationId] = useState<string | null>(null);
   const [submitError, setSubmitError] = useState("");
+
+  useEffect(() => {
+    fetch("/api/nurse-profile")
+      .then(async (res) => (res.ok ? res.json() : null))
+      .then((result) => {
+        const application = result?.application;
+        if (!application) return;
+
+        setData((prev) => ({
+          ...prev,
+          ...application,
+          otpVerified: Boolean(application.mobileNumber) || prev.otpVerified,
+          profilePhoto: application.profilePhoto ?? prev.profilePhoto,
+          documents: application.documents ?? prev.documents,
+        }));
+      })
+      .finally(() => setLoadingProfile(false));
+  }, []);
 
   function update(patch: Partial<NurseRegistrationData>) {
     setData((prev) => ({ ...prev, ...patch }));
@@ -46,17 +75,17 @@ export default function NurseRegistrationPage() {
 
     const formData = new FormData();
     formData.append("payload", JSON.stringify(rest));
-    if (profilePhoto) formData.append("profilePhoto", profilePhoto);
+    if (isNewFile(profilePhoto)) formData.append("profilePhoto", profilePhoto);
     for (const doc of DOCUMENT_TYPES) {
       const file = documents[doc.key];
-      if (file) formData.append(`document_${doc.key}`, file);
+      if (isNewFile(file)) formData.append(`document_${doc.key}`, file);
     }
 
     try {
-      const res = await fetch("/api/nurse-applications", { method: "POST", body: formData });
+      const res = await fetch("/api/nurse-profile", { method: "PATCH", body: formData });
       if (!res.ok) throw new Error("Submission failed");
       const result = await res.json();
-      setApplicationId(result.applicationId);
+      setApplicationId(result.application.applicationId);
     } catch {
       setSubmitError("Something went wrong while submitting. Please check your connection and try again.");
     } finally {
@@ -83,7 +112,11 @@ export default function NurseRegistrationPage() {
       </header>
 
       <main className="mx-auto max-w-3xl px-4 sm:px-6 py-6 sm:py-8 pb-24 sm:pb-8">
-        {applicationId ? (
+        {loadingProfile ? (
+          <div className="flex items-center justify-center gap-2 py-16 text-sm text-neutral-400">
+            <Loader2 size={18} className="animate-spin" /> Loading your details…
+          </div>
+        ) : applicationId ? (
           <SubmissionSuccess applicationId={applicationId} />
         ) : (
           <>

@@ -8,6 +8,7 @@ const ImageSubSchema = new Schema(
 const NurseApplicationSchema = new Schema(
   {
     applicationId: { type: String, required: true, unique: true },
+    userId: { type: Schema.Types.ObjectId, ref: "User", required: true, unique: true },
 
     // Step 1
     mobileNumber: String,

@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { CalendarDays, Phone } from "lucide-react";
 
 const PLANS = [
   { duration: "1 Hour", price: "₹299", desc: "Quick check-in", popular: false },
@@ -56,8 +56,8 @@ export function NursePricing() {
           ))}
           <div className="col-span-2 sm:col-span-3 lg:col-span-4 flex flex-col sm:flex-row items-center justify-between gap-4 bg-white rounded-2xl p-5 sm:p-6 border border-hgrey-border [box-shadow:0_8px_24px_rgba(15,76,129,0.08)]">
             <div className="text-center sm:text-left">
-              <h3 className="font-bold text-[1.05rem] text-htext">
-                📅 Weekly Care <span className="text-hgreen">Custom</span>
+              <h3 className="flex items-center justify-center sm:justify-start gap-1.5 font-bold text-[1.05rem] text-htext">
+                <CalendarDays size={17} className="text-hblue" /> Weekly Care <span className="text-hgreen">Custom</span>
               </h3>
               <p className="text-[0.85rem] text-htext-muted">Call us for personalized weekly packages.</p>
             </div>

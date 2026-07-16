@@ -20,14 +20,6 @@ export function Step11Agreement({
   submitting?: boolean;
   error?: string;
 }) {
-  const canContinue =
-    data.agreeConfidentiality &&
-    data.agreeSOPs &&
-    data.agreePaymentTerms &&
-    data.agreeWearId &&
-    data.agreeNoSoliciting &&
-    data.signatureName.trim().length > 1;
-
   return (
     <div className="space-y-5">
       <SectionCard icon={<ScrollText size={18} />} title="Code of Conduct Agreement">
@@ -78,7 +70,7 @@ export function Step11Agreement({
       <StepNav
         onBack={onBack}
         onNext={onNext}
-        nextDisabled={!canContinue || submitting}
+        nextDisabled={submitting}
         nextLabel={submitting ? "Submitting…" : "Submit Application"}
       />
     </div>

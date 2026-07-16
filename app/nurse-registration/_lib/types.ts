@@ -103,6 +103,12 @@ export const DOCUMENT_TYPES = [
 
 export type DocumentKey = (typeof DOCUMENT_TYPES)[number]["key"];
 
+export interface ExistingFile {
+  url: string;
+  publicId: string;
+  originalName: string;
+}
+
 export interface NurseRegistrationData {
   // Step 1
   mobileNumber: string;
@@ -113,7 +119,7 @@ export interface NurseRegistrationData {
   fullName: string;
   gender: "" | "female" | "male" | "other";
   dob: string;
-  profilePhoto: File | null;
+  profilePhoto: File | ExistingFile | null;
   aadhaarNumber: string;
   panNumber: string;
   permanentAddress: string;
@@ -161,7 +167,7 @@ export interface NurseRegistrationData {
   upiId: string;
 
   // Step 9
-  documents: Partial<Record<DocumentKey, File>>;
+  documents: Partial<Record<DocumentKey, File | ExistingFile>>;
 
   // Step 10
   everTerminated: "" | "yes" | "no";

@@ -35,8 +35,8 @@ export async function deleteFromCloudinary(publicIds: string[]): Promise<void> {
   );
 }
 
-export async function deleteApplicationFolder(applicationId: string): Promise<void> {
-  const rootFolder = `doctor247/applications/${applicationId}`;
+export async function deleteApplicationFolder(applicationId: string, baseFolder: string = "applications"): Promise<void> {
+  const rootFolder = `doctor247/${baseFolder}/${applicationId}`;
   const subfolders = [`${rootFolder}/profile`, `${rootFolder}/documents`];
 
   for (const folder of [...subfolders, rootFolder]) {

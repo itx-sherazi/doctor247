@@ -39,8 +39,6 @@ export function Step4Skills({
     });
   }
 
-  const canContinue = data.skills.length > 0;
-
   return (
     <div className="space-y-5">
       {Object.entries(SKILL_GROUPS).map(([group, skills]) => {
@@ -73,7 +71,7 @@ export function Step4Skills({
         );
       })}
       <p className="text-xs text-neutral-400">{data.skills.length} skill(s) selected</p>
-      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </div>
   );
 }

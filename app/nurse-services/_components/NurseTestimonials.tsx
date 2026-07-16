@@ -4,21 +4,18 @@ const TESTIMONIALS = [
   {
     quote:
       "“Doctor247 provided an exceptional home nurse for my mother. The caregiver was kind and always on time. Booking was super easy!”",
-    avatar: "https://i.pravatar.cc/150?img=11",
     name: "S. Kumar",
     role: "Bengaluru",
   },
   {
     quote:
       "“After my surgery, I booked a nurse for home visit. The nurse arrived within 2 hours and made my recovery so much easier.”",
-    avatar: "https://i.pravatar.cc/150?img=12",
     name: "P. Rao",
     role: "Whitefield, Bangalore",
   },
   {
     quote:
       "“We needed a home nurse for my grandfather with dementia. Doctor247 matched us with a compassionate caregiver who became part of our family.”",
-    avatar: "https://i.pravatar.cc/150?img=25",
     name: "A. Menon",
     role: "Indiranagar, Bangalore",
   },
@@ -55,7 +52,9 @@ export function NurseTestimonials() {
               </div>
               <blockquote className="text-[0.9rem] text-htext mb-3">{t.quote}</blockquote>
               <div className="flex items-center gap-3">
-                <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-hblue-light text-hblue font-bold text-[0.85rem] shrink-0">
+                  {t.name.charAt(0)}
+                </div>
                 <div>
                   <div className="font-semibold text-[0.85rem]">{t.name}</div>
                   <div className="text-[0.75rem] text-htext-muted">{t.role}</div>
@@ -63,18 +62,6 @@ export function NurseTestimonials() {
               </div>
             </div>
           ))}
-        </div>
-
-   
-
-        <div className="bg-white rounded-2xl p-6 text-center border border-hgrey-border [box-shadow:0_8px_24px_rgba(15,76,129,0.08)]">
-          <div className="flex justify-center gap-0.5 text-amber-500 mb-1.5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={17} fill="currentColor" />
-            ))}
-          </div>
-          <div className="font-bold text-[1.05rem] text-htext">4.9 out of 5  Based on 200+ reviews</div>
-          <p className="text-htext-muted text-[0.9rem] mt-1.5">&quot;Excellent service! Highly recommend.&quot;  Google Reviews</p>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Calculator } from "lucide-react";
 
 const PRICE_MAP: Record<number, number> = {
   1: 299,
@@ -36,7 +37,9 @@ export function NurseCalculator() {
   return (
     <section className="py-10 sm:py-14 bg-white">
       <div className="mx-auto max-w-[520px] px-5 text-center">
-        <h3 className="text-[1.3rem] sm:text-[1.5rem] font-extrabold text-htext mb-5">💰 Estimate Your Cost</h3>
+        <h3 className="flex items-center justify-center gap-2 text-[1.3rem] sm:text-[1.5rem] font-extrabold text-htext mb-5">
+          <Calculator size={22} className="text-hgreen" /> Estimate Your Cost
+        </h3>
         <div className="bg-hgrey rounded-2xl p-6 sm:p-8 border border-hgrey-border">
           <input
             type="range"

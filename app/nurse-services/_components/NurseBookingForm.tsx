@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Banknote, Clock, Lock, Send, UserCheck } from "lucide-react";
+import { Banknote, CheckCircle2, Clock, Lock, Send, UserCheck } from "lucide-react";
 
 const SERVICES = [
   "ICU / Critical Care Nursing",
@@ -80,8 +80,8 @@ export function NurseBookingForm() {
           </button>
 
           {submitted && (
-            <p className="text-center text-hgreen font-medium text-[0.9rem] mt-3">
-              ✅ Thank you! We&apos;ll call you within 30 minutes to confirm your booking.
+            <p className="flex items-center justify-center gap-1.5 text-center text-hgreen font-medium text-[0.9rem] mt-3">
+              <CheckCircle2 size={16} /> Thank you! We&apos;ll call you within 30 minutes to confirm your booking.
             </p>
           )}
 

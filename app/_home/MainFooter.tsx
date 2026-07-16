@@ -81,12 +81,12 @@ export function MainFooter() {
 
         <div>
           <h4 className="text-white font-bold mb-3.5 text-base">Support</h4>
-          <a href="#" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
+          <Link href="/legal" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
             Privacy Policy
-          </a>
-          <a href="#" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
+          </Link>
+          <Link href="/legal?tab=terms" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
             Terms &amp; Conditions
-          </a>
+          </Link>
           <a href="#" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
             Insurance
           </a>

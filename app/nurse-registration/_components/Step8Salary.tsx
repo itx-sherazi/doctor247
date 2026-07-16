@@ -42,12 +42,6 @@ export function Step8Salary({
   onNext: () => void;
   onBack: () => void;
 }) {
-  const hasRate =
-    data.rateHomeVisit || data.rate12Hours || data.rate24Hours || data.rateMonthly;
-  const canContinue =
-    Boolean(hasRate) &&
-    (data.upiId.trim().length > 3 || (data.bankAccountNumber.trim().length > 4 && data.bankIfsc.trim().length >= 11));
-
   return (
     <div className="space-y-5">
       <SectionCard icon={<Banknote size={18} />} title="Expected Rate" subtitle="Fill in the rates relevant to the shift types you're offering">
@@ -86,7 +80,7 @@ export function Step8Salary({
         </div>
       </SectionCard>
 
-      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </div>
   );
 }

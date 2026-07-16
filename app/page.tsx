@@ -1,5 +1,3 @@
-import { TopBar } from "./_home/TopBar";
-import { Navbar } from "./_home/Navbar";
 import { Hero } from "./_home/Hero";
 import { Services } from "./_home/Services";
 import { HowItWorks } from "./_home/HowItWorks";
@@ -16,13 +14,10 @@ import { Faq } from "./_home/Faq";
 import { FloatingWidget } from "./_home/FloatingWidget";
 import { SeoKeywords } from "./_home/SeoKeywords";
 import { StickyFooter } from "./_home/StickyFooter";
-import { MainFooter } from "./_home/MainFooter";
 
 export default function Home() {
   return (
     <div className="bg-white text-htext">
-      <TopBar />
-      <Navbar />
       <Hero />
       <Services />
       <HowItWorks />
@@ -39,7 +34,6 @@ export default function Home() {
       <FloatingWidget />
       <SeoKeywords />
       <StickyFooter />
-      <MainFooter />
     </div>
   );
 }

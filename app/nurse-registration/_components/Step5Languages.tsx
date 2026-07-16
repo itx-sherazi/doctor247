@@ -24,8 +24,6 @@ export function Step5Languages({
     });
   }
 
-  const canContinue = data.languages.length > 0 || data.otherLanguage.trim().length > 0;
-
   return (
     <div className="space-y-5">
       <SectionCard icon={<Languages size={18} />} title="Languages Spoken" subtitle="Select all languages you can communicate in with patients">
@@ -46,7 +44,7 @@ export function Step5Languages({
           onChange={(e) => update({ otherLanguage: e.target.value })}
         />
       </SectionCard>
-      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
+      <StepNav onBack={onBack} onNext={onNext} />
     </div>
   );
 }
