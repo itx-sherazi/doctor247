@@ -50,8 +50,8 @@ export function NurseHero() {
         <div className="relative">
           <div className="rounded-2xl overflow-hidden [box-shadow:0_16px_48px_rgba(15,76,129,0.16)] aspect-[4/3]">
             <img
-              src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&h=600&fit=crop&crop=faces"
-              alt="Indian nurse caring for a patient at home"
+              src="/nurse-hero.png"
+              alt="Nurse caring for an elderly patient at home"
               className="w-full h-full object-cover"
             />
           </div>
