@@ -67,9 +67,9 @@ export function Navbar() {
           <Image
             src="/logo-nav.png"
             alt="Doctor247"
-            width={180}
-            height={52}
-            className="h-10 sm:h-11 lg:h-14 w-auto object-contain"
+            width={212}
+            height={90}
+            className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
             priority
           />
         </Link>

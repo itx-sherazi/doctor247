@@ -18,14 +18,14 @@ export function HomeNursing() {
     <section className="py-12 sm:py-15 bg-white">
       <div className="mx-auto max-w-[1200px] px-5">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <div className="aspect-[4/3] min-h-[220px] rounded-2xl overflow-hidden [box-shadow:0_12px_40px_rgba(15,76,129,0.14)] bg-hblue-light">
+          <div className="aspect-[4/3] min-h-[220px] rounded-2xl overflow-hidden ">
             <Image
-              src="/home-nursing.webp"
+              src="/home-nurse.webp"
               alt="Home nursing services near me"
               loading="lazy"
               width={600}
               height={400}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
           <div>
