@@ -1,8 +1,9 @@
 import { Eye } from "lucide-react";
+import Link from "next/link";
 import { SectionTitle } from "./SectionTitle";
 
-const SURGERIES: { name: string; price: string; isConsultation?: boolean }[] = [
-  { name: "Hernia Surgery", price: "₹55,000" },
+const SURGERIES: { name: string; price: string; isConsultation?: boolean; href?: string }[] = [
+  { name: "Hernia Surgery", price: "₹55,000", href: "/surgery/hernia" },
   { name: "Piles Surgery", price: "₹45,000" },
   { name: "Gallbladder Surgery", price: "₹60,000" },
   { name: "Kidney Stone (PCNL)", price: "₹90,000" },
@@ -25,15 +26,25 @@ export function Surgeries() {
           Affordable <span className="text-hgreen">MEDICAL AND SURGICAL SERVICES</span>
         </SectionTitle>
         <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 max-w-[800px] mx-auto">
-          {SURGERIES.map((s) => (
-            <div
-              key={s.name}
-              className="flex justify-between items-center bg-white px-5 py-3.5 rounded-xl border border-hgrey-border [box-shadow:0_8px_24px_rgba(15,76,129,0.08)] transition-all hover:-translate-y-0.5 hover:[box-shadow:0_12px_40px_rgba(15,76,129,0.14)]"
-            >
-              <span className="font-medium text-[0.9rem]">{s.name}</span>
-              <span className={"font-bold text-[0.9rem] " + (s.isConsultation ? "text-hblue" : "text-hgreen")}>{s.price}</span>
-            </div>
-          ))}
+          {SURGERIES.map((s) => {
+            const cardClassName =
+              "flex justify-between items-center bg-white px-5 py-3.5 rounded-xl border border-hgrey-border [box-shadow:0_8px_24px_rgba(15,76,129,0.08)] transition-all hover:-translate-y-0.5 hover:[box-shadow:0_12px_40px_rgba(15,76,129,0.14)]";
+            const content = (
+              <>
+                <span className="font-medium text-[0.9rem]">{s.name}</span>
+                <span className={"font-bold text-[0.9rem] " + (s.isConsultation ? "text-hblue" : "text-hgreen")}>{s.price}</span>
+              </>
+            );
+            return s.href ? (
+              <Link key={s.name} href={s.href} className={cardClassName}>
+                {content}
+              </Link>
+            ) : (
+              <div key={s.name} className={cardClassName}>
+                {content}
+              </div>
+            );
+          })}
         </div>
         <div className="text-center mt-6">
           <a

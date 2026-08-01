@@ -42,7 +42,7 @@ export function MainFooter() {
       <div className="mx-auto max-w-[1200px] px-6 grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="inline-block mb-3">
-            <Image src="/logo-nav.png" alt="Doctor247" width={140} height={40} className="h-20 sm:h-30 lg:h-20 w-auto object-contain" />
+            <Image src="/logo-nav.png" alt="Doctor247" width={140} height={40} className="h-16 sm:h-20 w-auto object-contain" />
           </div>
           <p className="text-[0.9rem] mb-3 opacity-80">
             Healthcare at your doorstep. Affordable surgeries, home doctor visits, and professional nursing across
@@ -93,11 +93,11 @@ export function MainFooter() {
           <a href="#" className="block text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
             FAQs
           </a>
-          <a href="tel:7676266247" className="flex items-center gap-1.5 text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
-            <Phone size={13} /> Surgeries/Doctor: +91 7676266247
+          <a href="tel:7676266247" className="flex items-start gap-1.5 text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
+            <Phone size={13} className="shrink-0 mt-0.5" /> <span>Surgeries/Doctor: +91 7676266247</span>
           </a>
-          <a href="tel:7892300247" className="flex items-center gap-1.5 text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
-            <Phone size={13} /> Home Nursing: +91 7892300247
+          <a href="tel:7892300247" className="flex items-start gap-1.5 text-white/75 text-[0.9rem] mb-1.5 hover:text-white transition-colors">
+            <Phone size={13} className="shrink-0 mt-0.5" /> <span>Home Nursing: +91 7892300247</span>
           </a>
         </div>
 

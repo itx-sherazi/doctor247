@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Building2, Loader2, Lock, Mail, Stethoscope } from "lucide-react";
+import Image from "next/image";
+import { Building2, Eye, EyeOff, Heart, Loader2, Lock, Mail, ShieldCheck, Stethoscope } from "lucide-react";
 
 type Role = "nurse" | "hospital";
 
@@ -13,6 +14,8 @@ export default function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -53,99 +56,166 @@ export default function SignupPage() {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-50 flex items-center justify-center px-4 py-10">
-      <div className="w-full max-w-md rounded-2xl border border-neutral-100 bg-white p-6 sm:p-8 shadow-sm">
-        <h1 className="text-lg font-semibold text-neutral-800 mb-1">Create your Doctor247 account</h1>
-        <p className="text-sm text-neutral-400 mb-6">Register as a nurse or partner hospital.</p>
-
-        <div className="grid grid-cols-2 gap-3 mb-6">
-          <button
-            type="button"
-            onClick={() => setRole("nurse")}
-            className={
-              "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
-              (role === "nurse" ? "border-brand-500 bg-brand-50" : "border-neutral-200 hover:border-brand-200")
-            }
-          >
-            <Stethoscope size={26} className={role === "nurse" ? "text-brand-600" : "text-neutral-400"} />
-            <span className="text-sm font-semibold text-neutral-700">Nurse</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => setRole("hospital")}
-            className={
-              "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
-              (role === "hospital" ? "border-brand-500 bg-brand-50" : "border-neutral-200 hover:border-brand-200")
-            }
-          >
-            <Building2 size={26} className={role === "hospital" ? "text-brand-600" : "text-neutral-400"} />
-            <span className="text-sm font-semibold text-neutral-700">Hospital</span>
-          </button>
+    <div className="bg-white lg:bg-hgrey lg:grid lg:grid-cols-2 lg:min-h-[calc(100vh-72px)]">
+      {/* Left: image panel */}
+      <div className="hidden lg:block relative bg-gradient-to-br from-hblue to-hgreen overflow-hidden">
+        <Image
+          src="/nurse-hero.png"
+          alt="Doctor247 nurse caring for a patient at home"
+          fill
+          className="object-cover opacity-90 mix-blend-luminosity"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-hblue/90 via-hblue/40 to-transparent" />
+        <div className="relative z-10 flex h-full flex-col justify-end p-10 xl:p-14 text-white">
+          <span className="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur text-white font-semibold text-[0.75rem] uppercase tracking-wide px-4 py-1 rounded-full mb-4 border border-white/20 w-fit">
+            <Heart size={13} className="text-hgreen" /> Trusted Healthcare
+          </span>
+          <h2 className="text-[2rem] xl:text-[2.4rem] font-black leading-[1.1] mb-3 tracking-tight">
+            Join Bangalore's most trusted home healthcare network.
+          </h2>
+          <p className="text-white/85 text-[1rem] mb-6">
+            Register as a nurse or partner hospital and start growing with Doctor247.
+          </p>
+          <div className="flex gap-6">
+            <div className="flex items-center gap-2">
+              <ShieldCheck size={18} className="text-hgreen" />
+              <span className="text-[0.85rem] font-medium">Verified Professionals</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Heart size={18} className="text-hgreen" />
+              <span className="text-[0.85rem] font-medium">500+ Happy Families</span>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-neutral-700 mb-1.5">Email</label>
-            <div className="relative">
-              <Mail size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400" />
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-neutral-200 bg-white py-2.5 pl-10 pr-3.5 text-[16px] sm:text-sm text-neutral-900 placeholder:text-neutral-400 shadow-sm focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
-              />
-            </div>
+      {/* Right: form */}
+      <div className="px-5 py-10 sm:py-14 lg:flex lg:items-center lg:justify-center lg:px-4 lg:py-16">
+        <div className="w-full max-w-[420px] mx-auto">
+          <h1 className="text-[1.6rem] font-extrabold text-htext mb-1 tracking-tight">Join Doctor247</h1>
+          <p className="text-[0.9rem] text-htext-muted mb-6">Register as a nurse or partner hospital.</p>
+
+          <div className="grid grid-cols-2 gap-3 mb-7">
+            <button
+              type="button"
+              onClick={() => setRole("nurse")}
+              className={
+                "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
+                (role === "nurse"
+                  ? "border-hblue bg-hblue-light"
+                  : "border-hgrey-border bg-white hover:border-hblue/40")
+              }
+            >
+              <Stethoscope size={26} className={role === "nurse" ? "text-hblue" : "text-htext-muted"} />
+              <span className={"text-[0.9rem] font-semibold " + (role === "nurse" ? "text-hblue" : "text-htext")}>
+                Nurse
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setRole("hospital")}
+              className={
+                "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
+                (role === "hospital"
+                  ? "border-hblue bg-hblue-light"
+                  : "border-hgrey-border bg-white hover:border-hblue/40")
+              }
+            >
+              <Building2 size={26} className={role === "hospital" ? "text-hblue" : "text-htext-muted"} />
+              <span className={"text-[0.9rem] font-semibold " + (role === "hospital" ? "text-hblue" : "text-htext")}>
+                Hospital
+              </span>
+            </button>
           </div>
 
-          <div>
-            <label className="block text-sm font-medium text-neutral-700 mb-1.5">Password</label>
-            <div className="relative">
-              <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400" />
-              <input
-                type="password"
-                required
-                minLength={8}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-lg border border-neutral-200 bg-white py-2.5 pl-10 pr-3.5 text-[16px] sm:text-sm text-neutral-900 placeholder:text-neutral-400 shadow-sm focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
-              />
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Email</label>
+              <div className="relative">
+                <Mail size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+                <input
+                  type="email"
+                  required
+                  placeholder="you@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full rounded-xl border-[1.5px] border-hgrey-border bg-hgrey py-3 pl-10 pr-3.5 text-[0.95rem] text-htext placeholder:text-htext-muted focus:outline-none focus:border-hblue focus:bg-white transition-colors"
+                />
+              </div>
             </div>
-          </div>
 
-          <div>
-            <label className="block text-sm font-medium text-neutral-700 mb-1.5">Confirm Password</label>
-            <div className="relative">
-              <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400" />
-              <input
-                type="password"
-                required
-                minLength={8}
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full rounded-lg border border-neutral-200 bg-white py-2.5 pl-10 pr-3.5 text-[16px] sm:text-sm text-neutral-900 placeholder:text-neutral-400 shadow-sm focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
-              />
+            <div>
+              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Password</label>
+              <div className="relative">
+                <Lock size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+                <input
+                  type={showPassword ? "text" : "password"}
+                  required
+                  minLength={8}
+                  placeholder="At least 8 characters"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full rounded-xl border-[1.5px] border-hgrey-border bg-hgrey py-3 pl-10 pr-11 text-[0.95rem] text-htext placeholder:text-htext-muted focus:outline-none focus:border-hblue focus:bg-white transition-colors"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((v) => !v)}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-htext-muted hover:text-hblue transition-colors"
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                >
+                  {showPassword ? <EyeOff size={17} /> : <Eye size={17} />}
+                </button>
+              </div>
             </div>
-          </div>
 
-          {error && <p className="text-sm font-medium text-danger-600">{error}</p>}
+            <div>
+              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Confirm Password</label>
+              <div className="relative">
+                <Lock size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+                <input
+                  type={showConfirmPassword ? "text" : "password"}
+                  required
+                  minLength={8}
+                  placeholder="Re-enter your password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  className="w-full rounded-xl border-[1.5px] border-hgrey-border bg-hgrey py-3 pl-10 pr-11 text-[0.95rem] text-htext placeholder:text-htext-muted focus:outline-none focus:border-hblue focus:bg-white transition-colors"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowConfirmPassword((v) => !v)}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-htext-muted hover:text-hblue transition-colors"
+                  aria-label={showConfirmPassword ? "Hide password" : "Show password"}
+                >
+                  {showConfirmPassword ? <EyeOff size={17} /> : <Eye size={17} />}
+                </button>
+              </div>
+            </div>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 disabled:opacity-60"
-          >
-            {loading && <Loader2 size={16} className="animate-spin" />}
-            {loading ? "Creating account…" : "Create Account"}
-          </button>
-        </form>
+            {error && (
+              <div className="rounded-lg bg-red-50 border border-red-100 px-3.5 py-2.5 text-[0.85rem] font-medium text-red-600">
+                {error}
+              </div>
+            )}
 
-        <p className="mt-5 text-center text-sm text-neutral-500">
-          Already have an account?{" "}
-          <Link href="/login" className="font-semibold text-brand-600 hover:text-brand-700">
-            Log in
-          </Link>
-        </p>
+            <button
+              type="submit"
+              disabled={loading}
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-hblue px-4 py-3.5 text-[0.95rem] font-semibold text-white shadow-[0_4px_16px_rgba(15,76,129,0.25)] transition-all hover:bg-hblue-dark hover:-translate-y-0.5 disabled:opacity-60 disabled:translate-y-0"
+            >
+              {loading && <Loader2 size={17} className="animate-spin" />}
+              {loading ? "Creating account…" : "Create Account"}
+            </button>
+          </form>
+
+          <p className="mt-6 text-center text-[0.9rem] text-htext-muted">
+            Already have an account?{" "}
+            <Link href="/login" className="font-semibold text-hblue hover:text-hblue-dark">
+              Log in
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

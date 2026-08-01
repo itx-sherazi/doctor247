@@ -5,7 +5,7 @@ import { TopBar } from "./TopBar";
 import { Navbar } from "./Navbar";
 import { MainFooter } from "./MainFooter";
 
-const PUBLIC_ROUTES = ["/", "/nurse-services", "/legal"];
+const PUBLIC_ROUTES = ["/", "/nurse-services", "/legal", "/surgery/hernia", "/login", "/signup"];
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { ClipboardList, Loader2, Search, ShieldCheck, Trash2 } from "lucide-react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight, ClipboardList, Loader2, Search, Trash2 } from "lucide-react";
 import { AdminTabs } from "../_components/AdminTabs";
 
 type ApplicationStatus = "pending" | "approved" | "rejected" | "needs-more-information";
@@ -34,35 +35,44 @@ const STATUS_LABELS: Record<ApplicationStatus, string> = {
 
 export default function AdminNurseReviewPage() {
   const [apps, setApps] = useState<ApplicationSummary[]>([]);
+  const [total, setTotal] = useState(0);
+  const [pageSize, setPageSize] = useState(20);
+  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<ApplicationStatus | "all">("all");
 
   useEffect(() => {
-    loadApplications();
-  }, []);
+    const t = setTimeout(() => setDebouncedSearch(search.trim()), 350);
+    return () => clearTimeout(t);
+  }, [search]);
 
-  const filteredApps = useMemo(() => {
-    const query = search.trim().toLowerCase();
-    return apps.filter((app) => {
-      const matchesStatus = statusFilter === "all" || app.status === statusFilter;
-      const matchesQuery =
-        !query ||
-        app.fullName?.toLowerCase().includes(query) ||
-        app.mobileNumber?.toLowerCase().includes(query) ||
-        app.pinCode?.toLowerCase().includes(query) ||
-        app.applicationId.toLowerCase().includes(query);
-      return matchesStatus && matchesQuery;
-    });
-  }, [apps, search, statusFilter]);
+  useEffect(() => {
+    setPage(1);
+  }, [debouncedSearch, statusFilter]);
+
+  useEffect(() => {
+    loadApplications();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page, debouncedSearch, statusFilter]);
 
   function loadApplications() {
     setLoading(true);
-    fetch("/api/nurse-applications")
+    setError("");
+    const params = new URLSearchParams({ page: String(page) });
+    if (debouncedSearch) params.set("search", debouncedSearch);
+    if (statusFilter !== "all") params.set("status", statusFilter);
+
+    fetch(`/api/nurse-applications?${params.toString()}`)
       .then((res) => res.json())
-      .then((data) => setApps(data.applications ?? []))
+      .then((data) => {
+        setApps(data.applications ?? []);
+        setTotal(data.total ?? 0);
+        setPageSize(data.pageSize ?? 20);
+      })
       .catch(() => setError("Failed to load applications"))
       .finally(() => setLoading(false));
   }
@@ -78,6 +88,7 @@ export default function AdminNurseReviewPage() {
       const res = await fetch(`/api/nurse-applications/${applicationId}`, { method: "DELETE" });
       if (!res.ok) throw new Error("Failed to delete");
       setApps((prev) => prev.filter((a) => a.applicationId !== applicationId));
+      setTotal((prev) => Math.max(0, prev - 1));
     } catch {
       setError("Failed to delete application. Please try again.");
     } finally {
@@ -85,16 +96,18 @@ export default function AdminNurseReviewPage() {
     }
   }
 
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const rangeStart = total === 0 ? 0 : (page - 1) * pageSize + 1;
+  const rangeEnd = Math.min(page * pageSize, total);
+
   return (
     <div className="min-h-screen bg-neutral-50">
       <header className="border-b border-neutral-100 bg-white">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-4 flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-neutral-800 text-white">
-            <ShieldCheck size={18} />
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-neutral-800 leading-none">Doctor247 Admin</p>
-            <p className="text-xs text-neutral-400">Nurse Credentialing Review (Internal)</p>
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-3.5 flex items-center gap-3">
+          <Image src="/logo-nav.png" alt="Doctor247" width={140} height={40} className="h-9 w-auto object-contain" priority />
+          <div className="border-l border-neutral-200 pl-3">
+            <p className="text-sm font-semibold text-neutral-800 leading-none">Admin</p>
+            <p className="text-xs text-neutral-400 mt-0.5">Nurse Credentialing Review</p>
           </div>
         </div>
       </header>
@@ -103,7 +116,7 @@ export default function AdminNurseReviewPage() {
         <AdminTabs active="nurses" />
         <h1 className="text-lg font-semibold text-neutral-800 mb-1">Nurse Applications</h1>
         <p className="text-sm text-neutral-400 mb-4">
-          {filteredApps.length} of {apps.length} application(s)
+          {total === 0 ? "0 applications" : `Showing ${rangeStart}-${rangeEnd} of ${total} application(s)`}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-2.5 mb-6">
@@ -141,18 +154,15 @@ export default function AdminNurseReviewPage() {
         ) : apps.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-center text-sm text-neutral-400 flex flex-col items-center gap-2">
             <ClipboardList size={24} className="text-neutral-300" />
-            No applications yet. Submit one via the nurse registration flow.
-          </div>
-        ) : filteredApps.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-center text-sm text-neutral-400 flex flex-col items-center gap-2">
-            <Search size={24} className="text-neutral-300" />
-            No applications match your search/filter.
+            {total === 0 && !debouncedSearch && statusFilter === "all"
+              ? "No applications yet. Submit one via the nurse registration flow."
+              : "No applications match your search/filter."}
           </div>
         ) : (
           <>
             {/* Mobile: card list */}
             <div className="space-y-3 sm:hidden">
-              {filteredApps.map((app) => (
+              {apps.map((app) => (
                 <div key={app.applicationId} className="w-full rounded-xl border border-neutral-100 bg-white p-4 shadow-sm">
                   <Link href={`/admin/nurse-review/${app.applicationId}`} className="block">
                     <div className="flex items-center justify-between gap-2">
@@ -199,7 +209,7 @@ export default function AdminNurseReviewPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {filteredApps.map((app) => (
+                    {apps.map((app) => (
                       <tr key={app.applicationId} className="border-b border-neutral-50 last:border-0 hover:bg-neutral-50/60">
                         <td className="px-5 py-3">
                           <p className="font-medium text-neutral-800">{app.fullName || ""}</p>
@@ -242,6 +252,29 @@ export default function AdminNurseReviewPage() {
                 </table>
               </div>
             </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-between mt-5">
+                <button
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={page <= 1}
+                  className="flex items-center gap-1 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-50 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  <ChevronLeft size={15} /> Prev
+                </button>
+                <p className="text-sm text-neutral-500">
+                  Page {page} of {totalPages}
+                </p>
+                <button
+                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={page >= totalPages}
+                  className="flex items-center gap-1 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-50 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Next <ChevronRight size={15} />
+                </button>
+              </div>
+            )}
           </>
         )}
       </main>

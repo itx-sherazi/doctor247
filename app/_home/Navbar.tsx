@@ -10,7 +10,7 @@ type AuthUser = { role: "nurse" | "hospital" } | null;
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Surgeries", href: "#" },
+  { label: "Surgeries", href: "/surgery/hernia" },
   { label: "Home Doctor", href: "#" },
   { label: "Home Nursing", href: "/nurse-services" },
   // { label: "Specialities", href: "#" },

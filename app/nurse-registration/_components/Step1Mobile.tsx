@@ -18,21 +18,48 @@ export function Step1Mobile({
   const [otpSent, setOtpSent] = useState(false);
   const [otpInput, setOtpInput] = useState("");
   const [otpError, setOtpError] = useState("");
+  const [sending, setSending] = useState(false);
+  const [verifying, setVerifying] = useState(false);
 
   const mobileValid = /^[6-9]\d{9}$/.test(data.mobileNumber);
 
-  function sendOtp() {
-    if (!mobileValid) return;
-    setOtpSent(true);
+  async function sendOtp() {
+    if (!mobileValid || sending) return;
+    setSending(true);
     setOtpError("");
+    try {
+      const res = await fetch("/api/otp/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mobileNumber: data.mobileNumber }),
+      });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error || "Failed to send OTP");
+      setOtpSent(true);
+    } catch (error) {
+      setOtpError(error instanceof Error ? error.message : "Failed to send OTP. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
-  function verifyOtp() {
-    if (otpInput.trim().length === 4 || otpInput.trim().length === 6) {
+  async function verifyOtp() {
+    if (verifying) return;
+    setVerifying(true);
+    setOtpError("");
+    try {
+      const res = await fetch("/api/otp/verify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mobileNumber: data.mobileNumber, otp: otpInput.trim() }),
+      });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error || "Incorrect OTP");
       update({ otpVerified: true });
-      setOtpError("");
-    } else {
-      setOtpError("Enter the OTP sent to your mobile number.");
+    } catch (error) {
+      setOtpError(error instanceof Error ? error.message : "Incorrect OTP. Please try again.");
+    } finally {
+      setVerifying(false);
     }
   }
 
@@ -48,24 +75,33 @@ export function Step1Mobile({
         <div className="space-y-4">
           <div className="flex flex-col sm:flex-row gap-3 sm:items-end">
             <div className="flex-1">
-              <TextInput
-                label="Mobile Number"
-                required
-                inputMode="numeric"
-                maxLength={10}
-                placeholder="98765 43210"
-                value={data.mobileNumber}
-                disabled={data.otpVerified}
-                onChange={(e) => update({ mobileNumber: e.target.value.replace(/\D/g, "").slice(0, 10) })}
-              />
+              <label className="block text-sm font-medium text-neutral-700 mb-1.5">
+                Mobile Number<span className="text-danger-500 ml-0.5">*</span>
+              </label>
+              <div className="flex items-stretch rounded-lg border border-neutral-200 bg-white shadow-sm focus-within:border-brand-400 focus-within:ring-2 focus-within:ring-brand-100 overflow-hidden">
+                <span className="flex items-center px-3.5 bg-neutral-50 border-r border-neutral-200 text-[16px] sm:text-sm font-medium text-neutral-600">
+                  +91
+                </span>
+                <input
+                  type="text"
+                  required
+                  inputMode="numeric"
+                  maxLength={10}
+                  placeholder="98765 43210"
+                  value={data.mobileNumber}
+                  disabled={data.otpVerified}
+                  onChange={(e) => update({ mobileNumber: e.target.value.replace(/\D/g, "").slice(0, 10) })}
+                  className="w-full px-3.5 py-2.5 text-[16px] sm:text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none disabled:bg-neutral-50"
+                />
+              </div>
             </div>
             <button
               type="button"
-              disabled={!mobileValid || data.otpVerified}
+              disabled={!mobileValid || data.otpVerified || sending}
               onClick={sendOtp}
               className="mb-0 h-[42px] shrink-0 rounded-lg bg-brand-50 px-4 text-sm font-semibold text-brand-700 transition hover:bg-brand-100 disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-400"
             >
-              {otpSent ? "Resend OTP" : "Send OTP"}
+              {sending ? "Sending…" : otpSent ? "Resend OTP" : "Send OTP"}
             </button>
           </div>
 
@@ -85,14 +121,15 @@ export function Step1Mobile({
                 </div>
                 <button
                   type="button"
+                  disabled={verifying || otpInput.trim().length < 4}
                   onClick={verifyOtp}
-                  className="mb-0 h-[42px] shrink-0 rounded-lg bg-brand-600 px-4 text-sm font-semibold text-white transition hover:bg-brand-700"
+                  className="mb-0 h-[42px] shrink-0 rounded-lg bg-brand-600 px-4 text-sm font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-neutral-200 disabled:text-neutral-400"
                 >
-                  Verify
+                  {verifying ? "Verifying…" : "Verify"}
                 </button>
               </div>
               {otpError && <p className="text-xs text-danger-600 mt-2">{otpError}</p>}
-              <p className="text-xs text-neutral-400 mt-2">Demo mode: enter any 4–6 digit code to verify.</p>
+              <p className="text-xs text-neutral-400 mt-2">We&apos;ve sent a 6-digit code to your WhatsApp number.</p>
             </div>
           )}
 

@@ -46,7 +46,7 @@ export function HeroPricingCard() {
         <p className="flex items-start gap-2 text-htext font-medium text-[0.85rem] sm:text-[0.95rem] mb-2">
           <Stethoscope size={18} className="text-hgreen shrink-0 mt-0.5" />
           <span>
-            <strong>115+ surgeries</strong> — Hernia, Piles, Knee Replacement, Cataract, Gallbladder, Kidney Stone,
+            <strong>115+ surgeries</strong>  Hernia, Piles, Knee Replacement, Cataract, Gallbladder, Kidney Stone,
             Hysterectomy &amp; more
           </span>
         </p>
