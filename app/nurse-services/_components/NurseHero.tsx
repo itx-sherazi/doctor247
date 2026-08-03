@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CalendarCheck, Check, Phone, Star, Zap } from "lucide-react";
 
 export function NurseHero() {
@@ -48,11 +49,14 @@ export function NurseHero() {
         </div>
 
         <div className="relative">
-          <div className="rounded-2xl overflow-hidden [box-shadow:0_16px_48px_rgba(15,76,129,0.16)] aspect-[4/3]">
-            <img
+          <div className="relative rounded-2xl overflow-hidden [box-shadow:0_16px_48px_rgba(15,76,129,0.16)] aspect-[4/3]">
+            <Image
               src="/nurse-hero.png"
               alt="Nurse caring for an elderly patient at home"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              priority
             />
           </div>
           <div className="absolute -top-3 -right-3 sm:top-4 sm:-right-4 bg-white px-3.5 py-2 rounded-full text-[0.8rem] font-semibold shadow-[0_4px_16px_rgba(0,0,0,0.1)] flex items-center gap-1.5">

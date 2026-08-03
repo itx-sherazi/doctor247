@@ -138,14 +138,6 @@ export function Step1Mobile({
               <CheckCircle2 size={16} /> Mobile number verified
             </div>
           )}
-
-          <TextInput
-            label="Email Address (Optional but recommended)"
-            type="email"
-            placeholder="you@example.com"
-            value={data.email}
-            onChange={(e) => update({ email: e.target.value })}
-          />
         </div>
       </SectionCard>
 

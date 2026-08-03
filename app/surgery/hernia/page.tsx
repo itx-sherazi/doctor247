@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Activity,
   Banknote,
@@ -326,11 +327,13 @@ export default function HerniaSurgeryPage() {
               treatment.
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden [box-shadow:0_12px_40px_rgba(15,76,129,0.14)] aspect-[4/3]">
-            <img
+          <div className="relative rounded-2xl overflow-hidden [box-shadow:0_12px_40px_rgba(15,76,129,0.14)] aspect-[4/3]">
+            <Image
               src="/surgery-harnia.png"
               alt="Doctor consulting a patient about hernia treatment"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
             />
           </div>
         </div>

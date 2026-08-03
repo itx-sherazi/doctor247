@@ -4,6 +4,11 @@
   display: none;
 }
 
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
 :root {
   --background: #f7fafb;
   --foreground: #0f2a2e;

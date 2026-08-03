@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Building2, ChevronDown, LogOut, Menu, User, UserPlus, UserRoundPlus, X } from "lucide-react";
+import { BookNowModal } from "./BookNowModal";
 
 type AuthUser = { role: "nurse" | "hospital" } | null;
 
@@ -23,6 +24,7 @@ export function Navbar() {
   const [registerOpen, setRegisterOpen] = useState(false);
   const [authUser, setAuthUser] = useState<AuthUser>(null);
   const [authChecked, setAuthChecked] = useState(false);
+  const [bookNowOpen, setBookNowOpen] = useState(false);
   const registerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -189,15 +191,20 @@ export function Navbar() {
             </div>
           )}
 
-          <a
-            href="#"
-            onClick={() => setMenuOpen(false)}
+          <button
+            type="button"
+            onClick={() => {
+              setMenuOpen(false);
+              setBookNowOpen(true);
+            }}
             className="bg-hgreen text-white px-5 sm:px-6 py-2.5 rounded-full font-semibold transition-all hover:bg-hgreen-dark hover:-translate-y-0.5 text-center"
           >
             Book Now
-          </a>
+          </button>
         </div>
       </div>
+
+      <BookNowModal open={bookNowOpen} onClose={() => setBookNowOpen(false)} />
     </nav>
   );
 }
