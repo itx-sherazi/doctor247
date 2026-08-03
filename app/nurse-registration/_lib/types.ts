@@ -23,7 +23,7 @@ export const QUALIFICATIONS = [
 ] as const;
 
 export const SKILL_GROUPS = {
-  "Critical Care": ["ICU Nurse", "Ventilator Care", "Tracheostomy Care", "Oxygen Therapy"],
+  "Critical Care": ["ICU", "NICU", "Emergency", "OT", "Labour Ward"],
   "General Nursing": [
     "IV Cannulation",
     "IV Infusion",

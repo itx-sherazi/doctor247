@@ -50,21 +50,6 @@ export function Step2Personal({
             file={data.profilePhoto}
             onFile={(file) => update({ profilePhoto: file })}
           />
-          <TextInput
-            label="Aadhaar Number"
-            inputMode="numeric"
-            maxLength={12}
-            placeholder="XXXX XXXX XXXX"
-            value={data.aadhaarNumber}
-            onChange={(e) => update({ aadhaarNumber: e.target.value.replace(/\D/g, "").slice(0, 12) })}
-          />
-          <TextInput
-            label="PAN Number"
-            maxLength={10}
-            placeholder="ABCDE1234F"
-            value={data.panNumber}
-            onChange={(e) => update({ panNumber: e.target.value.toUpperCase().slice(0, 10) })}
-          />
         </div>
       </SectionCard>
 
