@@ -31,6 +31,8 @@ export function Step3Professional({
   onNext: () => void;
   onBack: () => void;
 }) {
+  const canContinue = data.registrationNumber.trim() !== "" && data.stateNursingCouncil.trim() !== "";
+
   return (
     <div className="space-y-5">
       <SectionCard icon={<GraduationCap size={18} />} title="Qualification">
@@ -109,7 +111,7 @@ export function Step3Professional({
         </div>
       </SectionCard>
 
-      <StepNav onBack={onBack} onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
     </div>
   );
 }

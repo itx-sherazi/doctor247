@@ -39,6 +39,12 @@ export function Step7Availability({
     });
   }
 
+  const canContinue =
+    data.workingDays.length > 0 &&
+    data.workingHours.length > 0 &&
+    data.shiftPreference !== "" &&
+    data.emergencyCalls !== "";
+
   return (
     <div className="space-y-5">
       <SectionCard icon={<CalendarDays size={18} />} title="Working Days">
@@ -78,7 +84,7 @@ export function Step7Availability({
         </div>
       </SectionCard>
 
-      <StepNav onBack={onBack} onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
     </div>
   );
 }

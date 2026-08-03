@@ -16,6 +16,14 @@ export function Step2Personal({
   onNext: () => void;
   onBack: () => void;
 }) {
+  const canContinue =
+    data.fullName.trim() !== "" &&
+    data.gender !== "" &&
+    data.dob !== "" &&
+    data.permanentAddress.trim() !== "" &&
+    data.city.trim() !== "" &&
+    data.pinCode.length === 6;
+
   return (
     <div className="space-y-5">
       <SectionCard icon={<User size={18} />} title="Basic Information">
@@ -111,7 +119,7 @@ export function Step2Personal({
         </div>
       </SectionCard>
 
-      <StepNav onBack={onBack} onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
     </div>
   );
 }

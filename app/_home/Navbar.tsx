@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Building2, ChevronDown, LogOut, Menu, User, UserPlus, UserRoundPlus, X } from "lucide-react";
+import { ChevronDown, LogOut, Menu, User, UserPlus, X } from "lucide-react";
 import { BookNowModal } from "./BookNowModal";
 
 type AuthUser = { role: "nurse" | "hospital" } | null;
@@ -142,56 +142,25 @@ export function Navbar() {
               )}
             </div>
           ) : (
-            <div className="relative inline-block" ref={registerRef}>
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setRegisterOpen((v) => !v);
-                }}
+            <div className="flex items-center gap-2.5">
+              <Link
+                href="/login"
+                onClick={() => setMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full lg:w-auto bg-white text-htext border-2 border-hblue px-4 sm:px-5.5 py-2 rounded-full font-semibold text-[0.9rem] xl:text-[0.95rem] transition-all hover:bg-hblue hover:text-white hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(15,76,129,0.25)]"
               >
-                <UserPlus size={15} /> Register <ChevronDown size={12} />
-              </button>
-
-              {registerOpen && (
-                <div className="lg:absolute lg:top-[calc(100%+12px)] lg:right-0 lg:min-w-[220px] lg:rounded-xl lg:shadow-[var(--tw-shadow)] lg:border lg:border-hgrey-border lg:bg-white lg:py-2 lg:z-[100] mt-1 lg:mt-0 [box-shadow:0_12px_56px_rgba(15,76,129,0.14)]">
-                  <Link
-                    href="/signup"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setRegisterOpen(false);
-                    }}
-                    className="flex items-center gap-3 px-5.5 py-3 text-htext font-medium text-[0.95rem] hover:bg-hblue-light hover:text-hblue transition-colors justify-center lg:justify-start"
-                  >
-                    <Building2 size={17} className="text-hblue w-[22px] text-center" /> Register as Hospital
-                  </Link>
-                  <Link
-                    href="/signup"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setRegisterOpen(false);
-                    }}
-                    className="flex items-center gap-3 px-5.5 py-3 text-htext font-medium text-[0.95rem] hover:bg-hblue-light hover:text-hblue transition-colors justify-center lg:justify-start"
-                  >
-                    <UserRoundPlus size={17} className="text-hblue w-[22px] text-center" /> Register as Nurse
-                  </Link>
-                  <Link
-                    href="/login"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setRegisterOpen(false);
-                    }}
-                    className="flex items-center gap-3 px-5.5 py-3 text-htext font-medium text-[0.95rem] hover:bg-hblue-light hover:text-hblue transition-colors justify-center lg:justify-start"
-                  >
-                    <User size={17} className="text-hblue w-[22px] text-center" /> Log In
-                  </Link>
-                </div>
-              )}
+                <User size={15} /> Login
+              </Link>
+              <Link
+                href="/signup"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-center gap-2 w-full lg:w-auto bg-hblue text-white px-4 sm:px-5.5 py-2 rounded-full font-semibold text-[0.9rem] xl:text-[0.95rem] transition-all hover:bg-hblue-dark hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(15,76,129,0.25)]"
+              >
+                <UserPlus size={15} /> Register
+              </Link>
             </div>
           )}
 
-          <button
+          {/* <button
             type="button"
             onClick={() => {
               setMenuOpen(false);
@@ -200,11 +169,11 @@ export function Navbar() {
             className="bg-hgreen text-white px-5 sm:px-6 py-2.5 rounded-full font-semibold transition-all hover:bg-hgreen-dark hover:-translate-y-0.5 text-center"
           >
             Book Now
-          </button>
+          </button> */}
         </div>
       </div>
 
-      <BookNowModal open={bookNowOpen} onClose={() => setBookNowOpen(false)} />
+      {/* <BookNowModal open={bookNowOpen} onClose={() => setBookNowOpen(false)} /> */}
     </nav>
   );
 }

@@ -19,6 +19,7 @@ export function Step6ServiceAreas({
 }) {
   const [customArea, setCustomArea] = useState("");
   const customAreas = data.serviceAreas.filter((a) => !(SERVICE_AREAS as readonly string[]).includes(a));
+  const canContinue = data.serviceAreas.length > 0;
 
   function toggleArea(area: string) {
     update({
@@ -71,7 +72,7 @@ export function Step6ServiceAreas({
           </button>
         </div>
       </SectionCard>
-      <StepNav onBack={onBack} onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
     </div>
   );
 }

@@ -126,9 +126,9 @@ export default function HospitalProfilePage() {
           />
           <button
             onClick={handleLogout}
-            className="flex items-center gap-1.5 text-sm font-medium text-neutral-500 hover:text-neutral-700"
+            className="flex items-center gap-1.5 rounded-lg bg-danger-50 px-3 sm:px-3.5 py-2 text-sm font-semibold text-danger-600 transition hover:bg-danger-100"
           >
-            <LogOut size={16} /> <span className="hidden sm:inline">Log out</span>
+            <LogOut size={16} /> <span>Log out</span>
           </button>
         </div>
       </header>

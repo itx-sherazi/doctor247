@@ -29,6 +29,7 @@ function isNewFile(value: unknown): value is File {
 
 export default function NurseRegistrationPage() {
   const [step, setStep] = useState(0);
+  const [maxStepReached, setMaxStepReached] = useState(0);
   const [data, setData] = useState<NurseRegistrationData>(initialNurseRegistrationData);
   const [loadingProfile, setLoadingProfile] = useState(true);
   const [submitting, setSubmitting] = useState(false);
@@ -58,12 +59,22 @@ export default function NurseRegistrationPage() {
   }
 
   function next() {
-    setStep((s) => Math.min(s + 1, TOTAL_STEPS - 1));
+    setStep((s) => {
+      const nextStep = Math.min(s + 1, TOTAL_STEPS - 1);
+      setMaxStepReached((m) => Math.max(m, nextStep));
+      return nextStep;
+    });
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function back() {
     setStep((s) => Math.max(s - 1, 0));
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function goToStep(target: number) {
+    if (target > maxStepReached) return;
+    setStep(target);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -120,7 +131,7 @@ export default function NurseRegistrationPage() {
           <SubmissionSuccess applicationId={applicationId} />
         ) : (
           <>
-            <Stepper current={step} />
+            <Stepper current={step} maxStepReached={maxStepReached} onStepClick={goToStep} />
             {step === 0 && <Step1Mobile data={data} update={update} onNext={next} />}
             {step === 1 && <Step2Personal data={data} update={update} onNext={next} onBack={back} />}
             {step === 2 && <Step3Professional data={data} update={update} onNext={next} onBack={back} />}

@@ -3,7 +3,15 @@
 import { Check } from "lucide-react";
 import { STEP_TITLES } from "../_lib/types";
 
-export function Stepper({ current }: { current: number }) {
+export function Stepper({
+  current,
+  maxStepReached,
+  onStepClick,
+}: {
+  current: number;
+  maxStepReached: number;
+  onStepClick: (step: number) => void;
+}) {
   return (
     <div className="mb-6">
       <div className="flex items-center justify-between mb-2">
@@ -22,11 +30,16 @@ export function Stepper({ current }: { current: number }) {
       {/* Mobile: compact dots */}
       <div className="flex md:hidden justify-center gap-1.5 mt-3">
         {STEP_TITLES.map((title, i) => (
-          <span
+          <button
             key={title}
+            type="button"
+            disabled={i > maxStepReached}
+            onClick={() => onStepClick(i)}
+            aria-label={`Go to step ${i + 1}: ${title}`}
             className={
               "h-1.5 rounded-full transition-all " +
-              (i === current ? "w-5 bg-brand-600" : i < current ? "w-1.5 bg-brand-300" : "w-1.5 bg-neutral-200")
+              (i === current ? "w-5 bg-brand-600" : i < current ? "w-1.5 bg-brand-300" : "w-1.5 bg-neutral-200") +
+              (i <= maxStepReached ? " cursor-pointer" : " cursor-not-allowed")
             }
           />
         ))}
@@ -36,18 +49,25 @@ export function Stepper({ current }: { current: number }) {
       <div className="hidden md:flex justify-between mt-3">
         {STEP_TITLES.map((title, i) => (
           <div key={title} className="flex flex-col items-center flex-1">
-            <div
+            <button
+              type="button"
+              disabled={i > maxStepReached}
+              onClick={() => onStepClick(i)}
+              aria-label={`Go to step ${i + 1}: ${title}`}
+              title={title}
               className={
-                "flex h-6 w-6 items-center justify-center rounded-full text-[11px] font-semibold " +
+                "flex h-6 w-6 items-center justify-center rounded-full text-[11px] font-semibold transition disabled:cursor-not-allowed " +
                 (i < current
-                  ? "bg-brand-500 text-white"
+                  ? "bg-brand-500 text-white hover:bg-brand-600"
                   : i === current
                   ? "bg-brand-600 text-white ring-4 ring-brand-100"
+                  : i <= maxStepReached
+                  ? "bg-neutral-200 text-neutral-600 hover:bg-brand-100 hover:text-brand-700"
                   : "bg-neutral-100 text-neutral-400")
               }
             >
               {i < current ? <Check size={13} strokeWidth={3} /> : i + 1}
-            </div>
+            </button>
           </div>
         ))}
       </div>

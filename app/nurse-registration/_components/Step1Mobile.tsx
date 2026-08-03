@@ -56,6 +56,13 @@ export function Step1Mobile({
       const result = await res.json();
       if (!res.ok) throw new Error(result.error || "Incorrect OTP");
       update({ otpVerified: true });
+
+      // Persist immediately so a returning user isn't asked to re-verify.
+      const formData = new FormData();
+      formData.append("payload", JSON.stringify({ mobileNumber: data.mobileNumber }));
+      fetch("/api/nurse-profile", { method: "PATCH", body: formData }).catch(() => {});
+
+      onNext();
     } catch (error) {
       setOtpError(error instanceof Error ? error.message : "Incorrect OTP. Please try again.");
     } finally {
@@ -99,7 +106,7 @@ export function Step1Mobile({
               type="button"
               disabled={!mobileValid || data.otpVerified || sending}
               onClick={sendOtp}
-              className="mb-0 h-[42px] shrink-0 rounded-lg bg-brand-50 px-4 text-sm font-semibold text-brand-700 transition hover:bg-brand-100 disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-400"
+              className="mb-0 h-[42px] shrink-0 rounded-lg bg-red-600 px-4 text-sm font-semibold text-white transition hover:bg-red-700 disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-400"
             >
               {sending ? "Sending…" : otpSent ? "Resend OTP" : "Send OTP"}
             </button>

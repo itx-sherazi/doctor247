@@ -16,6 +16,8 @@ export function Step9Documents({
   onNext: () => void;
   onBack: () => void;
 }) {
+  const canContinue = DOCUMENT_TYPES.every((doc) => !doc.required || Boolean(data.documents[doc.key]));
+
   return (
     <div className="space-y-5">
       <SectionCard icon={<FileText size={18} />} title="Upload Documents" subtitle="Clear photos or scans are accepted (JPG, PNG, PDF)">
@@ -32,7 +34,7 @@ export function Step9Documents({
           ))}
         </div>
       </SectionCard>
-      <StepNav onBack={onBack} onNext={onNext} />
+      <StepNav onBack={onBack} onNext={onNext} nextDisabled={!canContinue} />
     </div>
   );
 }

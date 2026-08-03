@@ -103,12 +103,12 @@ export default function SignupPage() {
               className={
                 "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
                 (role === "nurse"
-                  ? "border-hblue bg-hblue-light"
-                  : "border-hgrey-border bg-white hover:border-hblue/40")
+                  ? "border-red-600 bg-red-50"
+                  : "border-hgrey-border bg-white hover:border-red-300")
               }
             >
-              <Stethoscope size={26} className={role === "nurse" ? "text-hblue" : "text-htext-muted"} />
-              <span className={"text-[0.9rem] font-semibold " + (role === "nurse" ? "text-hblue" : "text-htext")}>
+              <Stethoscope size={26} className={role === "nurse" ? "text-red-600" : "text-htext-muted"} />
+              <span className={"text-[0.9rem] font-semibold " + (role === "nurse" ? "text-red-600" : "text-htext")}>
                 Nurse
               </span>
             </button>
@@ -118,12 +118,12 @@ export default function SignupPage() {
               className={
                 "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
                 (role === "hospital"
-                  ? "border-hblue bg-hblue-light"
-                  : "border-hgrey-border bg-white hover:border-hblue/40")
+                  ? "border-red-600 bg-red-50"
+                  : "border-hgrey-border bg-white hover:border-red-300")
               }
             >
-              <Building2 size={26} className={role === "hospital" ? "text-hblue" : "text-htext-muted"} />
-              <span className={"text-[0.9rem] font-semibold " + (role === "hospital" ? "text-hblue" : "text-htext")}>
+              <Building2 size={26} className={role === "hospital" ? "text-red-600" : "text-htext-muted"} />
+              <span className={"text-[0.9rem] font-semibold " + (role === "hospital" ? "text-red-600" : "text-htext")}>
                 Hospital
               </span>
             </button>
