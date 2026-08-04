@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
 }
 
 const PAGE_SIZE = 20;
-const LIST_FIELDS = "applicationId fullName mobileNumber qualification pinCode stage status createdAt";
+const LIST_FIELDS = "applicationId fullName mobileNumber qualification pinCode area stage status createdAt";
 
 export async function GET(request: NextRequest) {
   try {
@@ -60,7 +60,13 @@ export async function GET(request: NextRequest) {
     }
     if (search) {
       const regex = new RegExp(search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i");
-      query.$or = [{ fullName: regex }, { mobileNumber: regex }, { pinCode: regex }, { applicationId: regex }];
+      query.$or = [
+        { fullName: regex },
+        { mobileNumber: regex },
+        { pinCode: regex },
+        { area: regex },
+        { applicationId: regex },
+      ];
     }
 
     const [applications, total] = await Promise.all([

@@ -25,6 +25,7 @@ const NurseApplicationSchema = new Schema(
     currentAddress: String,
     city: String,
     pinCode: String,
+    area: String,
     emergencyContactName: String,
     emergencyContactNumber: String,
 

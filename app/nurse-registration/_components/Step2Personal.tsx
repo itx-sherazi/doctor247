@@ -1,8 +1,8 @@
 "use client";
 
 import { MapPin, Phone, User } from "lucide-react";
-import { NurseRegistrationData } from "../_lib/types";
-import { Checkbox, FileDrop, SectionCard, Select, TextArea, TextInput } from "./FormControls";
+import { BANGALORE_PINCODES, NurseRegistrationData } from "../_lib/types";
+import { Checkbox, FileDrop, PincodeCombobox, SectionCard, Select, TextArea, TextInput } from "./FormControls";
 import { StepNav } from "./StepNav";
 
 export function Step2Personal({
@@ -22,7 +22,8 @@ export function Step2Personal({
     data.dob !== "" &&
     data.permanentAddress.trim() !== "" &&
     data.city.trim() !== "" &&
-    data.pinCode.length === 6;
+    data.pinCode.length === 6 &&
+    data.area.trim() !== "";
 
   return (
     <div className="space-y-5">
@@ -90,13 +91,19 @@ export function Step2Personal({
           )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <TextInput label="City" required value={data.city} onChange={(e) => update({ city: e.target.value })} />
-            <TextInput
+            <PincodeCombobox
               label="PIN Code"
               required
-              inputMode="numeric"
-              maxLength={6}
-              value={data.pinCode}
-              onChange={(e) => update({ pinCode: e.target.value.replace(/\D/g, "").slice(0, 6) })}
+              options={BANGALORE_PINCODES}
+              pinCode={data.pinCode}
+              area={data.area}
+              onSelect={(item) =>
+                update({
+                  pinCode: item.pinCode,
+                  area: item.area,
+                  city: data.city.trim() === "" ? "Bangalore" : data.city,
+                })
+              }
             />
           </div>
         </div>

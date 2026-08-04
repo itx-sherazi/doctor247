@@ -44,6 +44,7 @@ interface Application {
   dob?: string;
   city?: string;
   pinCode?: string;
+  area?: string;
   aadhaarNumber?: string;
   panNumber?: string;
   permanentAddress?: string;
@@ -217,6 +218,7 @@ export default function ApplicationDetailPage({ params }: { params: Promise<{ id
               <InfoRow label="Date of Birth" value={application.dob} />
               <InfoRow label="City" value={application.city} />
               <InfoRow label="PIN Code" value={application.pinCode} />
+              <InfoRow label="Area" value={application.area} />
               <InfoRow label="Permanent Address" value={application.permanentAddress} />
               <InfoRow label="Current Address" value={application.currentAddress} />
             </div>

@@ -14,6 +14,7 @@ interface ApplicationSummary {
   mobileNumber?: string;
   qualification?: string;
   pinCode?: string;
+  area?: string;
   stage: string;
   status: ApplicationStatus;
   createdAt: string;
@@ -126,7 +127,7 @@ export default function AdminNurseReviewPage() {
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search by name, mobile, pincode, or application ID"
+              placeholder="Search by name, mobile, pincode, area, or application ID"
               className="w-full rounded-lg border border-neutral-200 bg-white pl-9 pr-3 py-2.5 text-sm text-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:border-brand-400"
             />
           </div>
@@ -175,6 +176,7 @@ export default function AdminNurseReviewPage() {
                     <p className="text-xs text-neutral-500 mt-1 capitalize">
                       {app.qualification || ""} · {app.stage.replace(/-/g, " ")}
                       {app.pinCode ? ` · PIN ${app.pinCode}` : ""}
+                      {app.area ? ` (${app.area})` : ""}
                     </p>
                   </Link>
                   <button
@@ -203,6 +205,7 @@ export default function AdminNurseReviewPage() {
                       <th className="px-5 py-3 font-medium">Mobile</th>
                       <th className="px-5 py-3 font-medium">Qualification</th>
                       <th className="px-5 py-3 font-medium">Pincode</th>
+                      <th className="px-5 py-3 font-medium">Area</th>
                       <th className="px-5 py-3 font-medium">Stage</th>
                       <th className="px-5 py-3 font-medium">Status</th>
                       <th className="px-5 py-3 font-medium" />
@@ -218,6 +221,7 @@ export default function AdminNurseReviewPage() {
                         <td className="px-5 py-3 text-neutral-600">{app.mobileNumber}</td>
                         <td className="px-5 py-3 text-neutral-600">{app.qualification || ""}</td>
                         <td className="px-5 py-3 text-neutral-600">{app.pinCode || ""}</td>
+                        <td className="px-5 py-3 text-neutral-600">{app.area || ""}</td>
                         <td className="px-5 py-3 text-neutral-600 capitalize">{app.stage.replace(/-/g, " ")}</td>
                         <td className="px-5 py-3">
                           <span className={"rounded-full px-2.5 py-1 text-xs font-medium " + STATUS_STYLES[app.status]}>

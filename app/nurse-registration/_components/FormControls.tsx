@@ -1,7 +1,7 @@
 "use client";
 
-import { ReactNode } from "react";
-import { Check, CheckCircle2, Upload } from "lucide-react";
+import { ReactNode, useEffect, useRef, useState } from "react";
+import { Check, CheckCircle2, MapPin, Search, Upload } from "lucide-react";
 
 export function FieldLabel({ children, required }: { children: ReactNode; required?: boolean }) {
   return (
@@ -253,6 +253,98 @@ export function FileDrop({
           }}
         />
       </label>
+    </div>
+  );
+}
+
+export function PincodeCombobox({
+  label,
+  required,
+  options,
+  pinCode,
+  area,
+  onSelect,
+}: {
+  label: string;
+  required?: boolean;
+  options: { pinCode: string; area: string }[];
+  pinCode: string;
+  area: string;
+  onSelect: (item: { pinCode: string; area: string }) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function handleClickOutside(e: MouseEvent) {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
+
+  const filtered =
+    query.trim() === ""
+      ? options
+      : options.filter(
+          (o) =>
+            o.pinCode.includes(query.trim()) || o.area.toLowerCase().includes(query.trim().toLowerCase())
+        );
+
+  const displayValue = pinCode && area ? `${pinCode} - ${area}` : pinCode;
+
+  return (
+    <div ref={wrapperRef} className="relative">
+      <FieldLabel required={required}>{label}</FieldLabel>
+      <div
+        className="flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-3.5 py-2.5 shadow-sm transition focus-within:border-brand-400 focus-within:ring-2 focus-within:ring-brand-100 cursor-text"
+        onClick={() => {
+          setOpen(true);
+          setQuery("");
+        }}
+      >
+        <Search size={15} className="shrink-0 text-neutral-400" />
+        <input
+          type="text"
+          value={open ? query : displayValue}
+          placeholder="Search PIN code or area"
+          onFocus={() => {
+            setOpen(true);
+            setQuery("");
+          }}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full text-[16px] sm:text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none"
+        />
+      </div>
+
+      {open && (
+        <div className="absolute z-20 mt-1 max-h-64 w-full overflow-y-auto rounded-lg border border-neutral-200 bg-white shadow-lg">
+          {filtered.length === 0 ? (
+            <p className="px-3.5 py-3 text-sm text-neutral-400">No matching PIN code or area found.</p>
+          ) : (
+            filtered.map((item) => (
+              <button
+                key={item.pinCode}
+                type="button"
+                onClick={() => {
+                  onSelect(item);
+                  setOpen(false);
+                  setQuery("");
+                }}
+                className="flex w-full items-center gap-2.5 px-3.5 py-2.5 text-left text-sm hover:bg-brand-50 transition"
+              >
+                <MapPin size={14} className="shrink-0 text-brand-500" />
+                <span className="font-medium text-neutral-800">{item.pinCode}</span>
+                <span className="text-neutral-400 truncate">{item.area}</span>
+              </button>
+            ))
+          )}
+        </div>
+      )}
     </div>
   );
 }
