@@ -1,0 +1,994 @@
+export interface SurgeryContent {
+  slug: string;
+  name: string;
+  shortName: string;
+  price: string;
+  heroDescription: string;
+  heroImage: string;
+  stats: { value: string; label: string }[];
+  aboutTitle: string;
+  aboutParagraphs: string[];
+  overviewTabs: { label: string; items: string[] }[];
+  whyChooseNumbered: { number: string; title: string; description: string; bg: string }[];
+  diagnosticTests: string[];
+  procedureSteps: string[];
+  postOpDo: string[];
+  postOpDont: string[];
+  testimonials: { quote: string; name: string; role: string }[];
+  faqs: { q: string; a: string }[];
+  metaTitle: string;
+  metaDescription: string;
+  metaKeywords: string;
+}
+
+const BG_CYCLE = ["bg-hblue-light", "bg-amber-50", "bg-hgreen-light", "bg-[#eef2ff]"];
+
+export const SURGERIES: Record<string, SurgeryContent> = {
+  hernia: {
+    slug: "hernia",
+    name: "Hernia Surgery",
+    shortName: "Hernia",
+    price: "₹55,000",
+    heroDescription:
+      "Safe, minimally invasive hernia repair with cashless insurance, no-cost EMI, and free follow-ups. Contact us for expert hernia treatment by verified surgeons in Bangalore with a high success rate and affordable prices.",
+    heroImage: "/surgery-harnia.png",
+    stats: [
+      { value: "4.8", label: "Patient Rating" },
+      { value: "10,000+", label: "Hernia Surgeries Done" },
+      { value: "25+", label: "Partner Hospitals" },
+      { value: "15+", label: "Insurance Partners" },
+    ],
+    aboutTitle: "What is a Hernia?",
+    aboutParagraphs: [
+      "A hernia occurs when an internal organ or tissue pushes through a weak spot in the surrounding muscle wall, most commonly in the abdomen or groin. It often appears as a visible bulge that may grow larger over time and cause discomfort, especially when lifting, coughing, or standing for long periods.",
+      "Hernias do not heal on their own and generally require surgical repair to prevent complications. Doctor247 connects you with verified general surgeons across Bangalore for safe, affordable hernia treatment.",
+    ],
+    overviewTabs: [
+      {
+        label: "When to choose Hernia surgery?",
+        items: [
+          "A visible bulge that grows larger over time",
+          "Pain or discomfort while lifting, coughing, or standing",
+          "Bulge that cannot be pushed back in (may need urgent care)",
+          "Nausea or vomiting along with the bulge (emergency sign)",
+        ],
+      },
+      {
+        label: "Preventing Hernia",
+        items: [
+          "Avoid heavy lifting, or use proper lifting technique",
+          "Maintain a healthy body weight",
+          "Treat chronic cough and constipation early",
+          "Strengthen core and abdominal muscles regularly",
+        ],
+      },
+      {
+        label: "Complications of Hernia",
+        items: [
+          "Incarceration — hernia gets stuck outside the abdomen",
+          "Strangulation — blood supply to tissue is cut off (emergency)",
+          "Increasing pain and swelling if left untreated",
+          "Higher surgical risk the longer surgery is delayed",
+        ],
+      },
+      {
+        label: "Why Doctor247?",
+        items: [
+          "Cashless Insurance — we handle paperwork with 15+ insurance partners so you don't pay out of pocket",
+          "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+          "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+          "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience",
+        ],
+      },
+    ],
+    whyChooseNumbered: [
+      {
+        number: "01",
+        title: "Advanced Laparoscopic Technique",
+        description:
+          "We use minimally invasive keyhole surgery for hernia repair, resulting in less pain, smaller scars, and a quicker return to daily activities.",
+        bg: BG_CYCLE[0],
+      },
+      {
+        number: "02",
+        title: "Experienced General Surgeons",
+        description:
+          "Every Doctor247 surgeon has a minimum of 8 years of experience performing hernia repairs with consistently high success rates.",
+        bg: BG_CYCLE[1],
+      },
+      {
+        number: "03",
+        title: "Over 95% Success Rate",
+        description:
+          "Our mesh-repair technique and post-operative care protocol keep hernia recurrence rates well under the national average.",
+        bg: BG_CYCLE[2],
+      },
+      {
+        number: "04",
+        title: "Cashless Insurance & Free Follow-ups",
+        description:
+          "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+        bg: BG_CYCLE[3],
+      },
+    ],
+    diagnosticTests: [
+      "Physical examination of the bulge",
+      "Ultrasound of the abdomen/groin",
+      "CT scan (for complex or recurrent hernias)",
+      "Blood tests to assess fitness for surgery",
+    ],
+    procedureSteps: [
+      "Anaesthesia (local, spinal, or general depending on your case)",
+      "Laparoscopic (keyhole) or open repair of the weakened muscle wall",
+      "Placement of a surgical mesh to reinforce the area, if required",
+      "Closure of incisions — typically 30-60 minutes total",
+    ],
+    postOpDo: [
+      "Take prescribed pain relief and antibiotics on schedule",
+      "Walk short distances from day 1 to aid circulation",
+      "Eat light, fibre-rich meals to avoid constipation",
+      "Attend your follow-up visit within 7-10 days",
+    ],
+    postOpDont: [
+      "Don't lift anything heavier than 5 kg for 4-6 weeks",
+      "Don't drive until your surgeon clears you",
+      "Don't skip your prescribed medication schedule",
+      "Don't ignore fever, redness, or unusual swelling — call us",
+    ],
+    testimonials: [
+      {
+        quote:
+          "“I was scared of surgery but the laparoscopic procedure was quick and I was back home the same evening. Recovery was much easier than I expected.”",
+        name: "R. Sharma",
+        role: "Koramangala, Bangalore",
+      },
+      {
+        quote:
+          "“The team explained every step clearly and handled my insurance claim end-to-end. No hidden costs, exactly as quoted.”",
+        name: "M. Iqbal",
+        role: "HSR Layout, Bangalore",
+      },
+      {
+        quote:
+          "“Free follow-ups for 3 months gave me real peace of mind. My surgeon checked on my recovery personally every time.”",
+        name: "A. Fernandes",
+        role: "Whitefield, Bangalore",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is hernia surgery painful?",
+        a: "Most patients experience mild discomfort for a few days, well managed with prescribed pain medication. Laparoscopic surgery generally causes less post-operative pain than open surgery.",
+      },
+      {
+        q: "How long does recovery take?",
+        a: "Most patients return to light daily activities within a week and to normal activity, including exercise, within 4-6 weeks. Recovery time depends on the type of hernia and surgical technique used.",
+      },
+      {
+        q: "Is hernia surgery covered by insurance?",
+        a: "Yes, hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+      },
+      {
+        q: "Can a hernia come back after surgery?",
+        a: "Recurrence rates are low (under 5%) when mesh repair is used by an experienced surgeon. Following post-operative guidelines significantly reduces the risk of recurrence.",
+      },
+      {
+        q: "What is the difference between open and laparoscopic repair?",
+        a: "Laparoscopic (keyhole) repair uses small incisions and typically means less pain and a faster return to activity, while open repair may be recommended for larger or complex hernias. Your surgeon will recommend the best option for your case.",
+      },
+    ],
+    metaTitle: "Hernia Surgery in Bangalore | Laparoscopic Hernia Repair — Doctor247",
+    metaDescription:
+      "Best hernia surgery in Bangalore starting at ₹55,000. Laparoscopic & open hernia repair by verified surgeons, cashless insurance, no-cost EMI, free follow-ups.",
+    metaKeywords:
+      "hernia surgery in bangalore, hernia treatment bangalore, laparoscopic hernia surgery, best hernia surgeon bangalore, inguinal hernia repair cost, hernia operation cost bangalore",
+  },
+
+  piles: {
+    slug: "piles",
+    name: "Piles Surgery",
+    shortName: "Piles",
+    price: "₹45,000",
+    heroDescription:
+      "Painless, laser and stapler piles treatment with same-day discharge, cashless insurance, and free follow-ups. Get relief from piles, fissures, and fistula with expert proctologists in Bangalore.",
+    heroImage: "/surgery-harnia.png",
+    stats: [
+      { value: "4.7", label: "Patient Rating" },
+      { value: "8,000+", label: "Piles Surgeries Done" },
+      { value: "25+", label: "Partner Hospitals" },
+      { value: "15+", label: "Insurance Partners" },
+    ],
+    aboutTitle: "What are Piles (Hemorrhoids)?",
+    aboutParagraphs: [
+      "Piles, medically known as hemorrhoids, are swollen veins in the lowest part of the rectum and anus. They can develop inside the rectum (internal piles) or under the skin around the anus (external piles), often causing pain, itching, and bleeding during bowel movements.",
+      "Mild piles can sometimes be managed with diet and medication, but moderate to severe piles usually need a minor procedure or surgery. Doctor247 offers painless laser and stapler treatments with minimal downtime.",
+    ],
+    overviewTabs: [
+      {
+        label: "When to choose Piles surgery?",
+        items: [
+          "Persistent bleeding during or after bowel movements",
+          "A lump or swelling near the anus that doesn't reduce",
+          "Pain, itching, or discomfort that doesn't improve with medication",
+          "Piles that prolapse (come out) with each bowel movement",
+        ],
+      },
+      {
+        label: "Preventing Piles",
+        items: [
+          "Eat a high-fibre diet with fruits, vegetables, and whole grains",
+          "Drink plenty of water to keep stools soft",
+          "Avoid straining during bowel movements",
+          "Stay physically active and avoid prolonged sitting",
+        ],
+      },
+      {
+        label: "Complications of Piles",
+        items: [
+          "Chronic anemia from ongoing blood loss",
+          "Strangulated hemorrhoids (blood supply cut off)",
+          "Thrombosis — painful blood clot in an external pile",
+          "Skin tags and recurrent infections if left untreated",
+        ],
+      },
+      {
+        label: "Why Doctor247?",
+        items: [
+          "Laser & Stapler Techniques — minimal pain, faster healing, same-day discharge",
+          "Free Follow-ups — post-surgery consultations included for 90 days",
+          "No-Cost EMI — split your treatment cost into easy monthly instalments",
+          "Verified Proctologists — every surgeon is credential-checked and experienced",
+        ],
+      },
+    ],
+    whyChooseNumbered: [
+      {
+        number: "01",
+        title: "Laser & Stapler Piles Treatment",
+        description:
+          "Minimally invasive laser and stapler hemorrhoidopexy techniques mean less pain, minimal bleeding, and a quicker return to normal life.",
+        bg: BG_CYCLE[0],
+      },
+      {
+        number: "02",
+        title: "Experienced Proctologists",
+        description:
+          "Our proctology specialists have years of experience treating piles, fissures, and fistulas with consistently high success rates.",
+        bg: BG_CYCLE[1],
+      },
+      {
+        number: "03",
+        title: "Same-Day Discharge",
+        description:
+          "Most piles procedures at Doctor247 are day-care surgeries — you can go home the same day and resume light activity within 2-3 days.",
+        bg: BG_CYCLE[2],
+      },
+      {
+        number: "04",
+        title: "Cashless Insurance & Free Follow-ups",
+        description:
+          "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+        bg: BG_CYCLE[3],
+      },
+    ],
+    diagnosticTests: [
+      "Digital rectal examination",
+      "Proctoscopy / anoscopy to view internal piles",
+      "Colonoscopy (if bleeding cause is unclear)",
+      "Blood tests to assess fitness for the procedure",
+    ],
+    procedureSteps: [
+      "Local, spinal, or general anaesthesia depending on the technique used",
+      "Laser ablation or stapler hemorrhoidopexy to remove/shrink pile mass",
+      "Minimal cutting with laser techniques, reducing post-op pain",
+      "Procedure typically completed within 20-40 minutes",
+    ],
+    postOpDo: [
+      "Take a warm sitz bath 2-3 times a day as advised",
+      "Eat a high-fibre diet and stay well hydrated",
+      "Take prescribed stool softeners to avoid straining",
+      "Attend your follow-up visit within 7 days",
+    ],
+    postOpDont: [
+      "Don't strain or sit on the toilet for long periods",
+      "Don't lift heavy weights for at least 2 weeks",
+      "Don't ignore continued bleeding — call us immediately",
+      "Don't skip your prescribed medication schedule",
+    ],
+    testimonials: [
+      {
+        quote:
+          "“I suffered from piles for years and kept delaying treatment out of fear. The laser procedure was quick and almost painless — I wish I had done it sooner.”",
+        name: "S. Reddy",
+        role: "Jayanagar, Bangalore",
+      },
+      {
+        quote:
+          "“Same-day discharge and clear instructions made recovery stress-free. The team followed up regularly to check on me.”",
+        name: "V. Kumar",
+        role: "Marathahalli, Bangalore",
+      },
+      {
+        quote:
+          "“Very professional staff and transparent pricing. No hidden charges, and my insurance claim was handled smoothly.”",
+        name: "P. Nair",
+        role: "Indiranagar, Bangalore",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is laser piles surgery painful?",
+        a: "Laser piles treatment causes significantly less pain than traditional surgery since it avoids large incisions. Most patients report mild discomfort managed easily with medication.",
+      },
+      {
+        q: "How long does piles surgery recovery take?",
+        a: "Most patients return to light activities within 2-3 days and normal activity within 1-2 weeks. Laser and stapler techniques generally offer faster recovery than conventional surgery.",
+      },
+      {
+        q: "Is piles surgery covered by insurance?",
+        a: "Yes, piles/hemorrhoid surgery is covered by most health insurance plans in India. We assist with cashless claims across 15+ insurance partners.",
+      },
+      {
+        q: "Will piles come back after surgery?",
+        a: "Recurrence is uncommon after laser or stapler treatment when combined with dietary changes and good bowel habits, though it is not impossible with poor lifestyle habits.",
+      },
+      {
+        q: "What is the difference between laser and stapler piles treatment?",
+        a: "Laser treatment uses focused light energy to shrink pile tissue with minimal cutting, while stapler surgery repositions and staples prolapsed tissue. Your surgeon will recommend the best option based on the grade and location of your piles.",
+      },
+    ],
+    metaTitle: "Piles Surgery in Bangalore | Laser Piles Treatment — Doctor247",
+    metaDescription:
+      "Best piles (hemorrhoids) treatment in Bangalore starting at ₹45,000. Painless laser & stapler surgery, same-day discharge, cashless insurance, expert proctologists.",
+    metaKeywords:
+      "piles surgery in bangalore, piles treatment bangalore, laser piles treatment, best hospital for piles treatment in bangalore, hemorrhoid surgery cost, fissure fistula treatment bangalore",
+  },
+
+  gallbladder: {
+    slug: "gallbladder",
+    name: "Gallbladder Surgery",
+    shortName: "Gallbladder Stones",
+    price: "₹60,000",
+    heroDescription:
+      "Advanced laparoscopic gallbladder removal (cholecystectomy) with tiny incisions, quick recovery, cashless insurance, and free follow-ups. Trusted by patients for safe, affordable gallstone treatment in Bangalore.",
+    heroImage: "/surgery-harnia.png",
+    stats: [
+      { value: "4.8", label: "Patient Rating" },
+      { value: "6,500+", label: "Gallbladder Surgeries Done" },
+      { value: "25+", label: "Partner Hospitals" },
+      { value: "15+", label: "Insurance Partners" },
+    ],
+    aboutTitle: "What are Gallbladder Stones?",
+    aboutParagraphs: [
+      "Gallstones are hardened deposits of digestive fluid that form inside the gallbladder, a small organ beneath the liver. They can range from tiny grain-like particles to golf-ball sized stones, and often cause pain, especially after fatty meals.",
+      "When gallstones cause repeated pain or complications like infection or blockage, the standard treatment is laparoscopic removal of the gallbladder. Doctor247 connects you with experienced surgeons for safe, minimally invasive gallbladder surgery in Bangalore.",
+    ],
+    overviewTabs: [
+      {
+        label: "When to choose Gallbladder surgery?",
+        items: [
+          "Recurrent, sharp pain in the upper right abdomen (biliary colic)",
+          "Pain after eating fatty or oily food",
+          "Nausea, vomiting, or bloating linked to gallstone attacks",
+          "Jaundice or fever suggesting infection or blocked bile duct",
+        ],
+      },
+      {
+        label: "Preventing Gallstones",
+        items: [
+          "Maintain a healthy body weight and avoid rapid weight loss",
+          "Eat a balanced diet with healthy fats and fibre",
+          "Stay physically active with regular exercise",
+          "Avoid prolonged fasting or crash diets",
+        ],
+      },
+      {
+        label: "Complications of Gallstones",
+        items: [
+          "Acute cholecystitis — inflammation and infection of the gallbladder",
+          "Blocked bile duct leading to jaundice",
+          "Acute pancreatitis if a stone blocks the pancreatic duct",
+          "Gallbladder perforation in severe, untreated cases",
+        ],
+      },
+      {
+        label: "Why Doctor247?",
+        items: [
+          "Advanced Laparoscopic Technique — tiny incisions, faster healing, minimal scarring",
+          "Free Follow-ups — post-surgery consultations included for 90 days",
+          "No-Cost EMI — split your surgery cost into easy monthly instalments",
+          "Verified Surgeons — experienced in advanced laparoscopic cholecystectomy",
+        ],
+      },
+    ],
+    whyChooseNumbered: [
+      {
+        number: "01",
+        title: "Advanced Laparoscopic Cholecystectomy",
+        description:
+          "We use keyhole surgery with 3-4 tiny incisions to remove the gallbladder, resulting in less pain and a much faster recovery than open surgery.",
+        bg: BG_CYCLE[0],
+      },
+      {
+        number: "02",
+        title: "Experienced Laparoscopic Surgeons",
+        description:
+          "Our surgeons have performed thousands of gallbladder removal procedures with consistently high success rates and low complication rates.",
+        bg: BG_CYCLE[1],
+      },
+      {
+        number: "03",
+        title: "1-2 Day Hospital Stay",
+        description:
+          "Most patients are discharged within 24-48 hours of surgery and return to normal light activity within a week.",
+        bg: BG_CYCLE[2],
+      },
+      {
+        number: "04",
+        title: "Cashless Insurance & Free Follow-ups",
+        description:
+          "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+        bg: BG_CYCLE[3],
+      },
+    ],
+    diagnosticTests: [
+      "Abdominal ultrasound to detect gallstones",
+      "Blood tests to check liver function and infection markers",
+      "CT scan or MRCP for complex cases",
+      "ECG and fitness assessment before surgery",
+    ],
+    procedureSteps: [
+      "General anaesthesia for a pain-free procedure",
+      "3-4 small keyhole incisions in the abdomen",
+      "Laparoscopic removal of the gallbladder using a camera and specialised instruments",
+      "Procedure typically completed within 45-60 minutes",
+    ],
+    postOpDo: [
+      "Walk short distances from day 1 to aid recovery",
+      "Follow a light, low-fat diet for the first few weeks",
+      "Take prescribed pain relief and antibiotics on schedule",
+      "Attend your follow-up visit within 7-10 days",
+    ],
+    postOpDont: [
+      "Don't eat heavy, oily, or fried food immediately after surgery",
+      "Don't lift heavy weights for 2-4 weeks",
+      "Don't drive until your surgeon clears you",
+      "Don't ignore fever, yellowing of eyes/skin, or severe pain — call us",
+    ],
+    testimonials: [
+      {
+        quote:
+          "“I had gallstone attacks for months before finally getting surgery. The laparoscopic procedure was quick and I was up and about within two days.”",
+        name: "K. Rao",
+        role: "Basavanagudi, Bangalore",
+      },
+      {
+        quote:
+          "“Very smooth process from consultation to surgery. The surgeon explained everything clearly and the team followed up regularly.”",
+        name: "N. D'Souza",
+        role: "Bellandur, Bangalore",
+      },
+      {
+        quote:
+          "“Affordable pricing and cashless insurance made the whole experience stress-free. Highly recommend Doctor247.”",
+        name: "T. Gowda",
+        role: "Rajajinagar, Bangalore",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is gallbladder removal surgery safe?",
+        a: "Yes, laparoscopic cholecystectomy is one of the most commonly performed and safest surgical procedures, with a very low complication rate when performed by an experienced surgeon.",
+      },
+      {
+        q: "Can I live a normal life without a gallbladder?",
+        a: "Yes, the liver continues to produce bile even after the gallbladder is removed. Most people digest food normally, though some may need to moderate fatty food intake initially.",
+      },
+      {
+        q: "Is gallbladder surgery covered by insurance?",
+        a: "Yes, gallbladder removal is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+      },
+      {
+        q: "How long is the hospital stay for gallbladder surgery?",
+        a: "Most patients are discharged within 1-2 days after laparoscopic gallbladder removal, compared to 5-7 days for open surgery.",
+      },
+      {
+        q: "What is the difference between laparoscopic and open gallbladder surgery?",
+        a: "Laparoscopic surgery uses small keyhole incisions and offers faster recovery with less scarring, while open surgery may be needed for complex or emergency cases. Your surgeon will recommend the safest option for you.",
+      },
+    ],
+    metaTitle: "Gallbladder Surgery in Bangalore | Laparoscopic Cholecystectomy — Doctor247",
+    metaDescription:
+      "Best gallbladder stone surgery in Bangalore starting at ₹60,000. Laparoscopic cholecystectomy by expert surgeons, cashless insurance, no-cost EMI, quick recovery.",
+    metaKeywords:
+      "gallbladder surgery in bangalore, gallstone surgery cost bangalore, laparoscopic cholecystectomy, best hospital for gallbladder surgery, gallbladder stone removal bangalore",
+  },
+
+  "kidney-stone": {
+    slug: "kidney-stone",
+    name: "Kidney Stone Surgery (PCNL)",
+    shortName: "Kidney Stones",
+    price: "₹90,000",
+    heroDescription:
+      "Advanced PCNL and laser kidney stone removal with minimal scarring, quick recovery, cashless insurance, and free follow-ups. Get relief from kidney stone pain with expert urologists in Bangalore.",
+    heroImage: "/surgery-harnia.png",
+    stats: [
+      { value: "4.7", label: "Patient Rating" },
+      { value: "5,000+", label: "Kidney Stone Surgeries Done" },
+      { value: "25+", label: "Partner Hospitals" },
+      { value: "15+", label: "Insurance Partners" },
+    ],
+    aboutTitle: "What is a Kidney Stone?",
+    aboutParagraphs: [
+      "Kidney stones are hard deposits made of minerals and salts that form inside the kidneys. They can be as small as a grain of sand or as large as a golf ball, and often cause severe pain when they move within the kidney or into the ureter.",
+      "Small stones may pass on their own, but larger or stuck stones usually need a procedure such as PCNL (percutaneous nephrolithotomy), URS (ureteroscopy), or laser lithotripsy. Doctor247 connects you with experienced urologists for safe, effective kidney stone treatment in Bangalore.",
+    ],
+    overviewTabs: [
+      {
+        label: "When to choose Kidney Stone surgery?",
+        items: [
+          "Severe, colicky pain in the back or side that doesn't subside",
+          "Blood in urine along with pain",
+          "Stone larger than 6-7mm that is unlikely to pass naturally",
+          "Recurrent urinary tract infections linked to a stone",
+        ],
+      },
+      {
+        label: "Preventing Kidney Stones",
+        items: [
+          "Drink plenty of water throughout the day",
+          "Reduce salt and animal protein intake",
+          "Limit oxalate-rich foods if advised by your doctor",
+          "Get stones tested to identify the cause and prevent recurrence",
+        ],
+      },
+      {
+        label: "Complications of Kidney Stones",
+        items: [
+          "Hydronephrosis — kidney swelling due to blocked urine flow",
+          "Recurrent urinary tract infections",
+          "Kidney damage from prolonged obstruction",
+          "Sepsis in severe, untreated infected obstructions (emergency)",
+        ],
+      },
+      {
+        label: "Why Doctor247?",
+        items: [
+          "Advanced PCNL & Laser Techniques — high stone clearance rates with minimal scarring",
+          "Free Follow-ups — post-surgery consultations included for 90 days",
+          "No-Cost EMI — split your surgery cost into easy monthly instalments",
+          "Verified Urologists — experienced in complex and recurrent stone cases",
+        ],
+      },
+    ],
+    whyChooseNumbered: [
+      {
+        number: "01",
+        title: "Advanced PCNL & Laser Lithotripsy",
+        description:
+          "We use percutaneous nephrolithotomy (PCNL) and laser techniques for high stone-clearance rates with minimally invasive access.",
+        bg: BG_CYCLE[0],
+      },
+      {
+        number: "02",
+        title: "Experienced Urologists",
+        description:
+          "Our urology specialists handle simple to complex and recurrent kidney stone cases with consistently high success rates.",
+        bg: BG_CYCLE[1],
+      },
+      {
+        number: "03",
+        title: "Short Hospital Stay",
+        description:
+          "Most kidney stone procedures require just 1-3 days of hospital stay, with a quick return to normal activity.",
+        bg: BG_CYCLE[2],
+      },
+      {
+        number: "04",
+        title: "Cashless Insurance & Free Follow-ups",
+        description:
+          "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+        bg: BG_CYCLE[3],
+      },
+    ],
+    diagnosticTests: [
+      "Ultrasound (KUB) to detect stones",
+      "CT scan (KUB) for precise stone size and location",
+      "Urine and blood tests to assess kidney function",
+      "Stone composition analysis (if stone is passed or removed)",
+    ],
+    procedureSteps: [
+      "General or spinal anaesthesia depending on the procedure",
+      "Small puncture access to the kidney (PCNL) or scope via the natural urinary tract (URS)",
+      "Laser or mechanical fragmentation of the stone",
+      "Placement of a temporary stent if required for healing",
+    ],
+    postOpDo: [
+      "Drink plenty of water to flush the urinary tract",
+      "Take prescribed pain relief and antibiotics on schedule",
+      "Attend your follow-up visit for stent removal, if placed",
+      "Get stone composition tested to prevent recurrence",
+    ],
+    postOpDont: [
+      "Don't lift heavy weights for 2-3 weeks",
+      "Don't ignore fever or worsening pain — call us immediately",
+      "Don't skip your prescribed medication schedule",
+      "Don't delay your stent removal appointment, if applicable",
+    ],
+    testimonials: [
+      {
+        quote:
+          "“The kidney stone pain was unbearable but the PCNL procedure gave me complete relief. Recovery was faster than I expected.”",
+        name: "A. Verma",
+        role: "Yelahanka, Bangalore",
+      },
+      {
+        quote:
+          "“Excellent care from diagnosis to surgery. The urologist explained the procedure clearly and the team was very supportive.”",
+        name: "R. Iyer",
+        role: "Electronic City, Bangalore",
+      },
+      {
+        quote:
+          "“Cashless insurance and transparent pricing made this a stress-free experience during a painful time.”",
+        name: "D. Shetty",
+        role: "Malleswaram, Bangalore",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is PCNL surgery painful?",
+        a: "PCNL is performed under general or spinal anaesthesia, so you won't feel pain during the procedure. Mild discomfort after surgery is normal and managed with medication.",
+      },
+      {
+        q: "How long does recovery take after kidney stone surgery?",
+        a: "Most patients are discharged within 1-3 days and return to normal activities within 1-2 weeks, depending on the procedure and stone complexity.",
+      },
+      {
+        q: "Is kidney stone surgery covered by insurance?",
+        a: "Yes, kidney stone procedures like PCNL and URS are covered by most health insurance plans in India. We assist with cashless claims across 15+ insurance partners.",
+      },
+      {
+        q: "Will kidney stones come back after treatment?",
+        a: "Kidney stones can recur, especially without dietary changes and adequate hydration. Stone composition testing helps your doctor recommend targeted prevention steps.",
+      },
+      {
+        q: "What is the difference between PCNL and URS?",
+        a: "PCNL involves a small puncture through the back to access larger kidney stones directly, while URS uses a scope passed through the natural urinary tract for smaller stones, typically in the ureter. Your urologist will recommend the best option based on stone size and location.",
+      },
+    ],
+    metaTitle: "Kidney Stone Surgery in Bangalore | PCNL & Laser Treatment — Doctor247",
+    metaDescription:
+      "Best kidney stone treatment in Bangalore starting at ₹90,000. Advanced PCNL & laser lithotripsy by expert urologists, cashless insurance, quick recovery.",
+    metaKeywords:
+      "kidney stone surgery in bangalore, PCNL surgery cost bangalore, laser kidney stone treatment, best urologist bangalore, kidney stone removal cost",
+  },
+
+  "knee-replacement": {
+    slug: "knee-replacement",
+    name: "Knee Replacement Surgery",
+    shortName: "Knee Arthritis",
+    price: "₹1,80,000",
+    heroDescription:
+      "Advanced total and partial knee replacement surgery for lasting pain relief and mobility. Expert orthopedic surgeons, cashless insurance, no-cost EMI, and structured physiotherapy support in Bangalore.",
+    heroImage: "/surgery-harnia.png",
+    stats: [
+      { value: "4.8", label: "Patient Rating" },
+      { value: "4,000+", label: "Knee Replacements Done" },
+      { value: "25+", label: "Partner Hospitals" },
+      { value: "15+", label: "Insurance Partners" },
+    ],
+    aboutTitle: "What is Knee Arthritis?",
+    aboutParagraphs: [
+      "Knee arthritis is the wearing down of cartilage in the knee joint, causing pain, stiffness, and swelling that gradually worsens over time. It is most common in people over 50 but can also affect younger patients due to injury or genetics.",
+      "When medication, physiotherapy, and lifestyle changes no longer control the pain, knee replacement surgery can restore mobility and quality of life. Doctor247 connects you with experienced orthopedic surgeons for safe, effective knee replacement in Bangalore.",
+    ],
+    overviewTabs: [
+      {
+        label: "When to choose Knee Replacement?",
+        items: [
+          "Persistent knee pain that limits walking, climbing stairs, or daily activities",
+          "Pain that doesn't improve with medication, injections, or physiotherapy",
+          "Visible knee deformity or stiffness affecting movement",
+          "Pain that disturbs sleep or worsens in cold or damp weather",
+        ],
+      },
+      {
+        label: "Preventing Knee Arthritis",
+        items: [
+          "Maintain a healthy body weight to reduce joint stress",
+          "Stay active with low-impact exercises like swimming or cycling",
+          "Strengthen the muscles around the knee joint",
+          "Avoid repetitive high-impact activities that strain the knee",
+        ],
+      },
+      {
+        label: "Complications if Untreated",
+        items: [
+          "Progressive loss of mobility and independence",
+          "Muscle weakness from reduced activity",
+          "Compensatory pain in the hips, back, or other knee",
+          "Increased risk of falls due to instability",
+        ],
+      },
+      {
+        label: "Why Doctor247?",
+        items: [
+          "Advanced Implants & Techniques — long-lasting implants for better mobility",
+          "Free Follow-ups & Physiotherapy Support — included for 90 days",
+          "No-Cost EMI — split your surgery cost into easy monthly instalments",
+          "Verified Orthopedic Surgeons — experienced in total and partial knee replacement",
+        ],
+      },
+    ],
+    whyChooseNumbered: [
+      {
+        number: "01",
+        title: "Advanced Knee Implants",
+        description:
+          "We use high-quality, long-lasting knee implants suited to your activity level, helping restore natural movement and reduce pain.",
+        bg: BG_CYCLE[0],
+      },
+      {
+        number: "02",
+        title: "Experienced Orthopedic Surgeons",
+        description:
+          "Our orthopedic surgeons have performed thousands of total and partial knee replacements with consistently high success rates.",
+        bg: BG_CYCLE[1],
+      },
+      {
+        number: "03",
+        title: "Structured Physiotherapy Support",
+        description:
+          "A guided physiotherapy plan after surgery helps you regain strength and mobility faster, with home visits available.",
+        bg: BG_CYCLE[2],
+      },
+      {
+        number: "04",
+        title: "Cashless Insurance & Free Follow-ups",
+        description:
+          "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+        bg: BG_CYCLE[3],
+      },
+    ],
+    diagnosticTests: [
+      "X-ray of the knee joint to assess cartilage and bone damage",
+      "MRI scan for detailed soft-tissue evaluation, if needed",
+      "Blood tests and cardiac fitness assessment before surgery",
+      "Physical mobility and gait assessment",
+    ],
+    procedureSteps: [
+      "Spinal or general anaesthesia depending on your case",
+      "Removal of damaged cartilage and bone from the knee joint",
+      "Placement of a metal and plastic implant to replace the joint surface",
+      "Procedure typically completed within 1-2 hours",
+    ],
+    postOpDo: [
+      "Start guided physiotherapy as advised, usually within 24-48 hours",
+      "Take prescribed pain relief and blood thinners on schedule",
+      "Use walking aids as recommended until you regain strength",
+      "Attend all follow-up visits to track healing progress",
+    ],
+    postOpDont: [
+      "Don't skip your physiotherapy sessions",
+      "Don't kneel or twist the knee forcefully in early recovery",
+      "Don't ignore swelling, redness, or fever — call us immediately",
+      "Don't resume high-impact activities without your surgeon's clearance",
+    ],
+    testimonials: [
+      {
+        quote:
+          "“Years of knee pain made simple things difficult. After the surgery and physiotherapy, I can walk without pain for the first time in a decade.”",
+        name: "G. Menon",
+        role: "Jayanagar, Bangalore",
+      },
+      {
+        quote:
+          "“The surgeon and physiotherapy team worked together closely. My recovery plan was clear from day one.”",
+        name: "L. Pillai",
+        role: "Whitefield, Bangalore",
+      },
+      {
+        quote:
+          "“No-cost EMI made this affordable for my parents. The whole process was well organised and transparent.”",
+        name: "S. Achar",
+        role: "RT Nagar, Bangalore",
+      },
+    ],
+    faqs: [
+      {
+        q: "How painful is knee replacement surgery?",
+        a: "The surgery itself is pain-free under anaesthesia. Post-operative pain is managed with medication and typically decreases significantly within a few weeks as physiotherapy progresses.",
+      },
+      {
+        q: "How long does recovery take after knee replacement?",
+        a: "Most patients start walking with support within 1-2 days and return to most daily activities within 6-8 weeks, with full recovery over 3-6 months alongside physiotherapy.",
+      },
+      {
+        q: "Is knee replacement surgery covered by insurance?",
+        a: "Yes, knee replacement is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+      },
+      {
+        q: "How long do knee implants last?",
+        a: "Modern knee implants typically last 15-20 years or more, depending on activity level, weight, and adherence to post-surgery care guidelines.",
+      },
+      {
+        q: "What is the difference between total and partial knee replacement?",
+        a: "Total knee replacement replaces the entire joint surface, while partial replacement only replaces the damaged portion, preserving healthy bone. Your surgeon will recommend the best option based on the extent of your arthritis.",
+      },
+    ],
+    metaTitle: "Knee Replacement Surgery in Bangalore | Total & Partial TKR — Doctor247",
+    metaDescription:
+      "Best knee replacement surgery in Bangalore starting at ₹1,80,000. Expert orthopedic surgeons, advanced implants, cashless insurance, physiotherapy support.",
+    metaKeywords:
+      "knee replacement surgery in bangalore, total knee replacement cost bangalore, best orthopedic surgeon bangalore, knee arthritis treatment, TKR surgery cost",
+  },
+
+  cataract: {
+    slug: "cataract",
+    name: "Cataract Surgery",
+    shortName: "Cataract",
+    price: "Book Consultation",
+    heroDescription:
+      "Advanced phacoemulsification cataract surgery with premium IOL options for clear, spectacle-free vision. Expert ophthalmologists, cashless insurance, and same-day discharge in Bangalore.",
+    heroImage: "/surgery-harnia.png",
+    stats: [
+      { value: "4.9", label: "Patient Rating" },
+      { value: "12,000+", label: "Cataract Surgeries Done" },
+      { value: "25+", label: "Partner Hospitals" },
+      { value: "15+", label: "Insurance Partners" },
+    ],
+    aboutTitle: "What is a Cataract?",
+    aboutParagraphs: [
+      "A cataract is a clouding of the natural lens inside the eye, causing blurry vision, glare, and difficulty seeing at night. It usually develops slowly with age but can also occur due to injury, diabetes, or prolonged steroid use.",
+      "Cataracts cannot be treated with glasses or medication once they significantly affect vision — surgery is the only effective treatment. Doctor247 connects you with experienced ophthalmologists offering advanced, minimally invasive cataract surgery in Bangalore.",
+    ],
+    overviewTabs: [
+      {
+        label: "When to choose Cataract surgery?",
+        items: [
+          "Blurry, cloudy, or dim vision that affects daily activities",
+          "Increased sensitivity to glare, especially while driving at night",
+          "Frequent changes in eyeglass or contact lens prescription",
+          "Colors appearing faded or yellowed",
+        ],
+      },
+      {
+        label: "Preventing Cataracts",
+        items: [
+          "Wear UV-protective sunglasses when outdoors",
+          "Manage diabetes and blood sugar levels well",
+          "Avoid smoking and limit alcohol consumption",
+          "Get regular eye check-ups after age 40",
+        ],
+      },
+      {
+        label: "Complications if Untreated",
+        items: [
+          "Progressive vision loss affecting independence",
+          "Increased risk of falls and accidents",
+          "Difficulty driving safely, especially at night",
+          "In advanced cases, increased eye pressure (glaucoma risk)",
+        ],
+      },
+      {
+        label: "Why Doctor247?",
+        items: [
+          "Advanced Phacoemulsification — bladeless, stitchless cataract removal",
+          "Premium IOL Options — for spectacle-free vision after surgery",
+          "No-Cost EMI — split your surgery cost into easy monthly instalments",
+          "Verified Ophthalmologists — experienced in advanced cataract procedures",
+        ],
+      },
+    ],
+    whyChooseNumbered: [
+      {
+        number: "01",
+        title: "Bladeless Phacoemulsification",
+        description:
+          "We use advanced, stitchless phacoemulsification technology to remove the cloudy lens through a tiny incision, minimizing recovery time.",
+        bg: BG_CYCLE[0],
+      },
+      {
+        number: "02",
+        title: "Experienced Ophthalmologists",
+        description:
+          "Our eye surgeons have performed thousands of cataract procedures with consistently excellent visual outcomes.",
+        bg: BG_CYCLE[1],
+      },
+      {
+        number: "03",
+        title: "Premium IOL Options",
+        description:
+          "Choose from monofocal, multifocal, or toric intraocular lenses (IOLs) for the best possible vision suited to your lifestyle.",
+        bg: BG_CYCLE[2],
+      },
+      {
+        number: "04",
+        title: "Same-Day Discharge",
+        description:
+          "Cataract surgery at Doctor247 is a quick day-care procedure — you can go home the same day with a follow-up the next morning.",
+        bg: BG_CYCLE[3],
+      },
+    ],
+    diagnosticTests: [
+      "Visual acuity test to assess vision clarity",
+      "Slit-lamp examination of the lens and eye structures",
+      "Biometry to determine the correct IOL power",
+      "Retina evaluation to rule out other eye conditions",
+    ],
+    procedureSteps: [
+      "Local anaesthesia (eye drops) — no injections in most cases",
+      "A tiny incision is made and the cloudy lens is broken up using ultrasound (phacoemulsification)",
+      "The cloudy lens is removed and replaced with a clear artificial IOL",
+      "Procedure typically completed within 15-20 minutes per eye",
+    ],
+    postOpDo: [
+      "Use prescribed eye drops exactly as directed",
+      "Wear the protective eye shield while sleeping for the first week",
+      "Attend your follow-up visit the day after surgery",
+      "Wear sunglasses outdoors to protect your eyes from glare",
+    ],
+    postOpDont: [
+      "Don't rub or press on the operated eye",
+      "Don't get water or soap directly into the eye while bathing",
+      "Don't drive until your surgeon confirms your vision has stabilised",
+      "Don't skip your prescribed eye drop schedule",
+    ],
+    testimonials: [
+      {
+        quote:
+          "“I could barely read the newspaper before surgery. The very next day, my vision was remarkably clear. Truly a life-changing procedure.”",
+        name: "M. Bhat",
+        role: "Malleswaram, Bangalore",
+      },
+      {
+        quote:
+          "“Quick, painless, and same-day discharge as promised. The premium lens option means I barely need glasses now.”",
+        name: "J. Fernandes",
+        role: "Frazer Town, Bangalore",
+      },
+      {
+        quote:
+          "“Excellent care for my elderly mother's cataract surgery. The team was patient and explained every step to our family.”",
+        name: "R. Krishnan",
+        role: "Basavanagudi, Bangalore",
+      },
+    ],
+    faqs: [
+      {
+        q: "Is cataract surgery painful?",
+        a: "No, cataract surgery is performed under local anaesthesia (eye drops) and is virtually painless. Most patients feel only mild pressure during the procedure.",
+      },
+      {
+        q: "How long does recovery take after cataract surgery?",
+        a: "Vision typically improves within 24-48 hours, with full stabilisation over 2-4 weeks. Most patients resume normal activities within a few days.",
+      },
+      {
+        q: "Is cataract surgery covered by insurance?",
+        a: "Yes, cataract surgery is covered by most health insurance plans in India, including basic IOLs. We assist with cashless claims across 15+ insurance partners.",
+      },
+      {
+        q: "Will I still need glasses after cataract surgery?",
+        a: "This depends on the IOL you choose. Premium multifocal or toric lenses can significantly reduce dependence on glasses, while standard monofocal lenses may still require reading glasses.",
+      },
+      {
+        q: "Can both eyes be operated on the same day?",
+        a: "Most surgeons prefer operating on one eye at a time, with the second eye done after 1-2 weeks, to monitor healing and reduce infection risk.",
+      },
+    ],
+    metaTitle: "Cataract Surgery in Bangalore | Phacoemulsification & Premium IOL — Doctor247",
+    metaDescription:
+      "Best cataract surgery in Bangalore with advanced phacoemulsification and premium IOL options. Expert ophthalmologists, cashless insurance, same-day discharge.",
+    metaKeywords:
+      "cataract surgery in bangalore, cataract operation cost bangalore, best eye doctor in bangalore, phacoemulsification surgery, premium IOL lens cost",
+  },
+};
+
+export const SURGERY_SLUGS = Object.keys(SURGERIES);
+
+export const SURGERY_LIST = Object.values(SURGERIES).map((s) => ({
+  slug: s.slug,
+  name: s.name,
+  price: s.price,
+}));

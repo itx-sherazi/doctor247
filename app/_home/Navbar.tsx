@@ -6,12 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, LogOut, Menu, User, UserPlus, X } from "lucide-react";
 import { BookNowModal } from "./BookNowModal";
+import { SURGERY_LIST } from "../surgery/_data/surgeries";
 
 type AuthUser = { role: "nurse" | "hospital" } | null;
 
-const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Surgeries", href: "/surgery/hernia" },
+const NAV_LINKS_BEFORE = [{ label: "Home", href: "/" }];
+const NAV_LINKS_AFTER = [
   { label: "Home Doctor", href: "#" },
   { label: "Home Nursing", href: "/nurse-services" },
   // { label: "Specialities", href: "#" },
@@ -25,7 +25,9 @@ export function Navbar() {
   const [authUser, setAuthUser] = useState<AuthUser>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const [bookNowOpen, setBookNowOpen] = useState(false);
+  const [surgeriesOpen, setSurgeriesOpen] = useState(false);
   const registerRef = useRef<HTMLDivElement>(null);
+  const surgeriesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch("/api/auth/me")
@@ -46,6 +48,19 @@ export function Navbar() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [registerOpen]);
+
+  useEffect(() => {
+    if (!surgeriesOpen) return;
+
+    function handleClickOutside(e: MouseEvent) {
+      if (surgeriesRef.current && !surgeriesRef.current.contains(e.target as Node)) {
+        setSurgeriesOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [surgeriesOpen]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -93,7 +108,58 @@ export function Navbar() {
               : "hidden")
           }
         >
-          {NAV_LINKS.map((link) => (
+          {NAV_LINKS_BEFORE.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              onClick={() => {
+                setMenuOpen(false);
+                setRegisterOpen(false);
+              }}
+              className="text-htext hover:text-hblue transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          <div
+            ref={surgeriesRef}
+            className="relative inline-block"
+            onMouseEnter={() => setSurgeriesOpen(true)}
+            onMouseLeave={() => setSurgeriesOpen(false)}
+          >
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setSurgeriesOpen((v) => !v);
+              }}
+              className="flex items-center justify-center gap-1 w-full lg:w-auto text-htext hover:text-hblue transition-colors"
+            >
+              Surgeries <ChevronDown size={13} className={"transition-transform " + (surgeriesOpen ? "rotate-180" : "")} />
+            </button>
+
+            {surgeriesOpen && (
+              <div className="lg:absolute lg:top-[calc(100%+4px)] lg:left-1/2 lg:-translate-x-1/2 lg:min-w-[220px] lg:rounded-xl lg:border lg:border-hgrey-border lg:bg-white lg:py-1.5 lg:z-[100] mt-1 lg:mt-0 [box-shadow:0_12px_56px_rgba(15,76,129,0.14)]">
+                {SURGERY_LIST.map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/surgery/${s.slug}`}
+                    onClick={() => {
+                      setMenuOpen(false);
+                      setSurgeriesOpen(false);
+                    }}
+                    className="block px-5 py-2 text-htext font-medium text-[0.9rem] hover:bg-hblue-light hover:text-hblue transition-colors"
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {NAV_LINKS_AFTER.map((link) => (
             <Link
               key={link.label}
               href={link.href}

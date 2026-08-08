@@ -4,11 +4,11 @@ import { SectionTitle } from "./SectionTitle";
 
 const SURGERIES: { name: string; price: string; isConsultation?: boolean; href?: string }[] = [
   { name: "Hernia Surgery", price: "₹55,000", href: "/surgery/hernia" },
-  { name: "Piles Surgery", price: "₹45,000" },
-  { name: "Gallbladder Surgery", price: "₹60,000" },
-  { name: "Kidney Stone (PCNL)", price: "₹90,000" },
-  { name: "Knee Replacement", price: "₹1,80,000" },
-  { name: "Cataract Surgery", price: "Book Consultation", isConsultation: true },
+  { name: "Piles Surgery", price: "₹45,000", href: "/surgery/piles" },
+  { name: "Gallbladder Surgery", price: "₹60,000", href: "/surgery/gallbladder" },
+  { name: "Kidney Stone (PCNL)", price: "₹90,000", href: "/surgery/kidney-stone" },
+  { name: "Knee Replacement", price: "₹1,80,000", href: "/surgery/knee-replacement" },
+  { name: "Cataract Surgery", price: "Book Consultation", isConsultation: true, href: "/surgery/cataract" },
 ];
 
 export function Surgeries() {
