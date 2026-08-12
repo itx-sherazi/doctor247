@@ -1,8 +1,8 @@
 "use client";
 
-import { AlertCircle, PenLine, ScrollText } from "lucide-react";
+import { AlertCircle, ScrollText } from "lucide-react";
 import { NurseRegistrationData } from "../_lib/types";
-import { Checkbox, SectionCard, TextInput } from "./FormControls";
+import { Checkbox, SectionCard } from "./FormControls";
 import { StepNav } from "./StepNav";
 
 export function Step11Agreement({
@@ -25,8 +25,7 @@ export function Step11Agreement({
     data.agreeSOPs &&
     data.agreePaymentTerms &&
     data.agreeWearId &&
-    data.agreeNoSoliciting &&
-    data.signatureName.trim() !== "";
+    data.agreeNoSoliciting;
 
   return (
     <div className="space-y-5">
@@ -58,15 +57,6 @@ export function Step11Agreement({
             onChange={(v) => update({ agreeNoSoliciting: v })}
           />
         </div>
-      </SectionCard>
-
-      <SectionCard icon={<PenLine size={18} />} title="Digital Signature" subtitle="Type your full name to sign this agreement">
-        <TextInput
-          placeholder="Type your full name"
-          value={data.signatureName}
-          onChange={(e) => update({ signatureName: e.target.value })}
-          className="font-serif text-lg italic"
-        />
       </SectionCard>
 
       {error && (
