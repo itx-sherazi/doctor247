@@ -983,6 +983,646 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     metaKeywords:
       "cataract surgery in bangalore, cataract operation cost bangalore, best eye doctor in bangalore, phacoemulsification surgery, premium IOL lens cost",
   },
+
+  "appendix-surgery": {
+  slug: "appendix-surgery",
+  name: "Appendix Surgery (Appendicectomy)",
+  shortName: "Appendix",
+  price: "₹50,000",
+  heroDescription:
+    "Safe, minimally invasive laparoscopic appendicectomy for adults and children with same-day discharge, cashless insurance, and free follow-ups. Get expert appendix treatment by verified surgeons in Bangalore with a high success rate and affordable pricing.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "7,500+", label: "Appendix Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Appendicitis?",
+  aboutParagraphs: [
+    "Appendicitis is the inflammation of the appendix, a small finger-shaped pouch attached to the large intestine. It typically occurs when the appendix becomes blocked by stool, a foreign body, or infection, leading to swelling, pain, and potentially life-threatening complications if left untreated.",
+    "The standard treatment for appendicitis is surgical removal of the appendix, known as an appendicectomy. Doctor247 connects you with experienced general surgeons across Bangalore for safe, affordable appendix surgery with minimally invasive laparoscopic techniques.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Appendix surgery?",
+      items: [
+        "Sudden pain that begins around the navel and shifts to the lower right abdomen",
+        "Pain that worsens with coughing, walking, or sudden movements",
+        "Nausea, vomiting, and loss of appetite following abdominal pain",
+        "Fever that rises as the pain intensifies (emergency sign)",
+      ],
+    },
+    {
+      label: "Preventing Appendicitis",
+      items: [
+        "Maintain a high-fibre diet with plenty of fruits and vegetables",
+        "Stay well-hydrated to keep the digestive system functioning properly",
+        "Avoid processed foods that can lead to constipation",
+        "Pay attention to early symptoms and seek prompt medical care",
+      ],
+    },
+    {
+      label: "Complications of Appendicitis",
+      items: [
+        "Perforation — appendix bursts, spreading infection into the abdomen",
+        "Peritonitis — severe inflammation of the abdominal lining (emergency)",
+        "Abscess formation — a pocket of pus around the appendix",
+        "Sepsis — life-threatening infection spreading through the body",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — smaller incisions, less pain, faster recovery, minimal scarring",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in laparoscopic procedures",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Appendicectomy",
+      description:
+        "We use minimally invasive keyhole surgery with 2-3 tiny incisions to remove the appendix, resulting in less post-operative pain, shorter hospital stay, and quicker return to daily activities.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced General Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing appendix surgeries with consistently high success rates and low complication rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Safe for Adults & Children",
+      description:
+        "Our surgical team is skilled in both adult and pediatric appendicectomy, ensuring age-appropriate care and anaesthesia protocols for every patient.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to ensure complete recovery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination and medical history assessment",
+    "Abdominal ultrasound to visualize the appendix",
+    "CT scan for accurate diagnosis in complex or atypical cases",
+    "Blood tests to check for elevated white blood cell count (infection marker)",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "2-3 small keyhole incisions in the abdomen",
+    "Laparoscopic removal of the inflamed appendix using a camera and specialized instruments",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Start with light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 2-3 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, increasing pain, or wound redness — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“My 9-year-old son needed emergency appendix surgery and Doctor247 made the whole experience stress-free. The surgeons were excellent with children and recovery was smooth.”",
+      name: "P. Krishnan",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I had severe abdominal pain and was diagnosed with appendicitis. The laparoscopic surgery was quick, and I was back to light work within a week. Great care and transparent pricing.”",
+      name: "R. Menon",
+      role: "HSR Layout, Bangalore",
+    },
+    {
+      quote:
+        "“The team handled my insurance claim seamlessly. No hidden costs, exactly as quoted, and the 90-day free follow-ups gave me complete peace of mind.”",
+      name: "S. Nair",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is appendix surgery painful?",
+      a: "The surgery itself is completely painless under anaesthesia. Most patients experience mild discomfort for a few days, well managed with prescribed pain medication. Laparoscopic surgery generally causes significantly less post-operative pain than open surgery.",
+    },
+    {
+      q: "How long does appendix removal recovery take?",
+      a: "Most patients are discharged within 1-2 days after surgery and return to light daily activities within a week. Full recovery, including return to exercise and heavy work, typically takes 2-3 weeks.",
+    },
+    {
+      q: "Is appendix surgery covered by insurance?",
+      a: "Yes, appendicectomy is covered by most health insurance plans in India, including emergency and planned procedures. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can you live a normal life without an appendix?",
+      a: "Yes, the appendix is not essential for survival. Most people live completely normal, healthy lives after its removal with no long-term digestive issues or lifestyle changes needed.",
+    },
+    {
+      q: "What is the difference between laparoscopic and open appendix surgery?",
+      a: "Laparoscopic (keyhole) surgery uses small incisions and typically offers less pain, faster recovery, and minimal scarring. Open surgery involves a larger single incision and may be recommended for complicated or perforated appendix cases. Your surgeon will recommend the safest option based on your condition.",
+    },
+  ],
+  metaTitle: "Appendix Surgery in Bangalore | Laparoscopic Appendicectomy — Doctor247",
+  metaDescription:
+    "Best appendix surgery (appendicectomy) in Bangalore starting at ₹50,000. Laparoscopic appendix removal for adults & children, cashless insurance, no-cost EMI, quick recovery.",
+  metaKeywords:
+    "appendix surgery in bangalore, appendicectomy cost bangalore, laparoscopic appendicectomy, best general surgeon bangalore, appendix removal surgery cost, appendix operation price",
+},
+"laparoscopic-appendix-surgery": {
+  slug: "laparoscopic-appendix-surgery",
+  name: "Laparoscopic Appendicectomy (Pediatric/Adult)",
+  shortName: "Appendix",
+  price: "₹65,000",
+  heroDescription:
+    "Safe, advanced laparoscopic appendicectomy for adults and children with tiny incisions, same-day discharge, cashless insurance, and free follow-ups. Get expert appendix treatment by verified surgeons in Bangalore with a high success rate and affordable pricing.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "7,500+", label: "Appendix Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Appendicitis?",
+  aboutParagraphs: [
+    "Appendicitis is the inflammation of the appendix, a small finger-shaped pouch attached to the large intestine. It typically occurs when the appendix becomes blocked by stool, a foreign body, or infection, leading to swelling, pain, and potentially life-threatening complications if left untreated.",
+    "The standard treatment for appendicitis is surgical removal of the appendix, known as an appendicectomy. Doctor247 connects you with experienced general surgeons across Bangalore for safe, affordable appendix surgery with minimally invasive laparoscopic techniques.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Appendix surgery?",
+      items: [
+        "Sudden pain that begins around the navel and shifts to the lower right abdomen",
+        "Pain that worsens with coughing, walking, or sudden movements",
+        "Nausea, vomiting, and loss of appetite following abdominal pain",
+        "Fever that rises as the pain intensifies (emergency sign)",
+      ],
+    },
+    {
+      label: "Preventing Appendicitis",
+      items: [
+        "Maintain a high-fibre diet with plenty of fruits and vegetables",
+        "Stay well-hydrated to keep the digestive system functioning properly",
+        "Avoid processed foods that can lead to constipation",
+        "Pay attention to early symptoms and seek prompt medical care",
+      ],
+    },
+    {
+      label: "Complications of Appendicitis",
+      items: [
+        "Perforation — appendix bursts, spreading infection into the abdomen",
+        "Peritonitis — severe inflammation of the abdominal lining (emergency)",
+        "Abscess formation — a pocket of pus around the appendix",
+        "Sepsis — life-threatening infection spreading through the body",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — 2-3 tiny incisions, less pain, faster recovery, minimal scarring",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Appendicectomy",
+      description:
+        "We use minimally invasive keyhole surgery with 2-3 tiny incisions to remove the appendix, resulting in less post-operative pain, shorter hospital stay, and quicker return to daily activities.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced General Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing appendix surgeries with consistently high success rates and low complication rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Safe for Adults & Children",
+      description:
+        "Our surgical team is skilled in both adult and pediatric appendicectomy, ensuring age-appropriate care and anaesthesia protocols for every patient.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to ensure complete recovery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination and medical history assessment",
+    "Abdominal ultrasound to visualize the appendix",
+    "CT scan for accurate diagnosis in complex or atypical cases",
+    "Blood tests to check for elevated white blood cell count (infection marker)",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "2-3 small keyhole incisions in the abdomen",
+    "Laparoscopic removal of the inflamed appendix using a camera and specialized instruments",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Start with light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 2-3 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, increasing pain, or wound redness — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“My 9-year-old son needed emergency appendix surgery and Doctor247 made the whole experience stress-free. The laparoscopic procedure meant he was home in 2 days with minimal discomfort.”",
+      name: "P. Krishnan",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I had severe abdominal pain and was diagnosed with appendicitis. The laparoscopic surgery was quick, and I was back to light work within a week. Great care and transparent pricing.”",
+      name: "R. Menon",
+      role: "HSR Layout, Bangalore",
+    },
+    {
+      quote:
+        "“The team handled my insurance claim seamlessly. No hidden costs, exactly as quoted, and the 90-day free follow-ups gave me complete peace of mind.”",
+      name: "S. Nair",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic appendix surgery painful?",
+      a: "The surgery itself is completely painless under anaesthesia. Laparoscopic appendicectomy causes significantly less post-operative pain than open surgery, with most patients experiencing only mild discomfort managed easily with prescribed medication.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic appendicectomy?",
+      a: "Most patients are discharged within 1-2 days and return to light daily activities within a week. Full recovery, including return to exercise and heavy work, typically takes 2-3 weeks.",
+    },
+    {
+      q: "Is appendix surgery covered by insurance?",
+      a: "Yes, appendicectomy is covered by most health insurance plans in India, including emergency and planned procedures. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can you live a normal life without an appendix?",
+      a: "Yes, the appendix is not essential for survival. Most people live completely normal, healthy lives after its removal with no long-term digestive issues or lifestyle changes needed.",
+    },
+    {
+      q: "Is laparoscopic appendicectomy safe for children?",
+      a: "Yes, laparoscopic appendicectomy is considered the gold standard for both adults and children. It offers the same benefits — less pain, faster recovery, and minimal scarring — for pediatric patients, with age-appropriate anaesthesia and care protocols.",
+    },
+  ],
+  metaTitle: "Laparoscopic Appendicectomy in Bangalore | Appendix Surgery — Doctor247",
+  metaDescription:
+    "Best laparoscopic appendicectomy in Bangalore starting at ₹65,000. Advanced appendix removal for adults & children, cashless insurance, no-cost EMI, quick recovery.",
+  metaKeywords:
+    "laparoscopic appendicectomy in bangalore, appendix surgery cost bangalore, appendix removal surgery, pediatric appendicectomy, best general surgeon bangalore, appendicectomy price",
+},
+
+"open-cholecystectomy": {
+  slug: "open-cholecystectomy",
+  name: "Open Cholecystectomy (Pediatric/Adult)",
+  shortName: "Open Gallbladder",
+  price: "₹60,000",
+  heroDescription:
+    "Safe, effective open gallbladder removal surgery for adults and children with expert surgical care, cashless insurance, and free follow-ups. Get relief from gallstones with experienced surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "4,500+", label: "Open Cholecystectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Gallbladder Stones?",
+  aboutParagraphs: [
+    "Gallstones are hardened deposits of digestive fluid that form inside the gallbladder, a small organ beneath the liver. They can range from tiny grain-like particles to golf-ball sized stones, and often cause pain, especially after fatty meals.",
+    "Open cholecystectomy is the traditional surgical removal of the gallbladder through a single larger incision. It is recommended for complex cases, severely inflamed gallbladders, or when laparoscopic surgery is not feasible. Doctor247 connects you with experienced surgeons for safe open gallbladder surgery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Open Gallbladder surgery?",
+      items: [
+        "Recurrent, sharp pain in the upper right abdomen (biliary colic)",
+        "Severely inflamed or infected gallbladder (acute cholecystitis)",
+        "Large or multiple gallstones that cannot be removed laparoscopically",
+        "Previous abdominal surgeries that make laparoscopic approach risky",
+      ],
+    },
+    {
+      label: "Preventing Gallstones",
+      items: [
+        "Maintain a healthy body weight and avoid rapid weight loss",
+        "Eat a balanced diet with healthy fats and fibre",
+        "Stay physically active with regular exercise",
+        "Avoid prolonged fasting or crash diets",
+    ],
+    },
+    {
+      label: "Complications of Gallstones",
+      items: [
+        "Acute cholecystitis — inflammation and infection of the gallbladder",
+        "Blocked bile duct leading to jaundice",
+        "Acute pancreatitis if a stone blocks the pancreatic duct",
+        "Gallbladder perforation in severe, untreated cases",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Open Surgical Technique — safe, reliable approach for complex gallbladder cases",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in open biliary surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Safe Open Surgical Technique",
+      description:
+        "Our surgeons use meticulous open surgical techniques for gallbladder removal, ensuring complete clearance of stones and safe management of complex or inflamed cases.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced General Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing open cholecystectomies with consistently high success rates and low complication rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Safe for Adults & Children",
+      description:
+        "Our surgical team is skilled in both adult and pediatric open cholecystectomy, ensuring age-appropriate care and anaesthesia protocols for every patient.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to ensure complete recovery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Abdominal ultrasound to detect gallstones",
+    "Blood tests to check liver function and infection markers",
+    "CT scan or MRCP for complex cases",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "A single 4-6 inch incision in the upper right abdomen",
+    "Careful removal of the gallbladder and stones under direct vision",
+    "Closure of the incision — procedure typically completed within 60-90 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Follow a light, low-fat diet for the first few weeks",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't eat heavy, oily, or fried food immediately after surgery",
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't ignore fever, yellowing of eyes/skin, or severe pain — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“My gallbladder was severely inflamed and laparoscopic surgery wasn't possible. The open surgery was done expertly and I'm now completely pain-free. The recovery was well managed.”",
+      name: "L. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My elderly mother needed open gallbladder removal due to complex stones. The surgeon was experienced and explained everything clearly. Great post-op care.”",
+      name: "V. Reddy",
+      role: "Basavanagudi, Bangalore",
+    },
+    {
+      quote:
+        "“Affordable pricing and cashless insurance made the whole experience stress-free. The team followed up regularly to check on my recovery. Highly recommend Doctor247.”",
+      name: "M. Krishnan",
+      role: "Rajajinagar, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is open gallbladder surgery painful?",
+      a: "The surgery itself is pain-free under anaesthesia. Post-operative pain is managed with medication and typically decreases significantly within a few weeks. While open surgery involves a larger incision than laparoscopic, the pain is well controlled with modern pain management protocols.",
+    },
+    {
+      q: "How long does recovery take after open cholecystectomy?",
+      a: "Most patients stay in the hospital for 2-3 days and return to light daily activities within 2-3 weeks. Full recovery, including return to heavy work and exercise, typically takes 4-6 weeks.",
+    },
+    {
+      q: "Is gallbladder removal covered by insurance?",
+      a: "Yes, open cholecystectomy is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can I live a normal life without a gallbladder?",
+      a: "Yes, the liver continues to produce bile even after the gallbladder is removed. Most people digest food normally, though some may need to moderate fatty food intake initially.",
+    },
+    {
+      q: "When is open surgery preferred over laparoscopic?",
+      a: "Open cholecystectomy is recommended for patients with severe inflammation, large or complex stones, previous abdominal surgeries, or conditions that make laparoscopic access risky. Your surgeon will recommend the safest option based on your specific case.",
+    },
+  ],
+  metaTitle: "Open Cholecystectomy in Bangalore | Gallbladder Surgery — Doctor247",
+  metaDescription:
+    "Best open gallbladder removal surgery in Bangalore starting at ₹60,000. Expert open cholecystectomy for adults & children, cashless insurance, no-cost EMI, safe recovery.",
+  metaKeywords:
+    "open cholecystectomy in bangalore, gallbladder surgery cost bangalore, open gallbladder removal, best surgeon for gallbladder surgery, cholecystectomy price, gallstone operation cost",
+},
+
+"laparoscopic-cholecystectomy": {
+  slug: "laparoscopic-cholecystectomy",
+  name: "Laparoscopic Cholecystectomy (Pediatric/Adult)",
+  shortName: "Lap Gallbladder",
+  price: "₹70,000",
+  heroDescription:
+    "Advanced laparoscopic gallbladder removal surgery for adults and children with tiny incisions, faster recovery, cashless insurance, and free follow-ups. Get expert gallstone treatment by verified surgeons in Bangalore with a high success rate and affordable pricing.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "6,500+", label: "Lap Cholecystectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Gallbladder Stones?",
+  aboutParagraphs: [
+    "Gallstones are hardened deposits of digestive fluid that form inside the gallbladder, a small organ beneath the liver. They can range from tiny grain-like particles to golf-ball sized stones, and often cause pain, especially after fatty meals.",
+    "Laparoscopic cholecystectomy is the gold standard for gallbladder removal, using minimally invasive keyhole surgery with 3-4 tiny incisions. It offers less pain, faster recovery, and minimal scarring. Doctor247 connects you with experienced surgeons for safe, advanced laparoscopic gallbladder surgery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Gallbladder surgery?",
+      items: [
+        "Recurrent, sharp pain in the upper right abdomen (biliary colic)",
+        "Pain after eating fatty or oily food",
+        "Nausea, vomiting, or bloating linked to gallstone attacks",
+        "Jaundice or fever suggesting infection or blocked bile duct",
+      ],
+    },
+    {
+      label: "Preventing Gallstones",
+      items: [
+        "Maintain a healthy body weight and avoid rapid weight loss",
+        "Eat a balanced diet with healthy fats and fibre",
+        "Stay physically active with regular exercise",
+        "Avoid prolonged fasting or crash diets",
+      ],
+    },
+    {
+      label: "Complications of Gallstones",
+      items: [
+        "Acute cholecystitis — inflammation and infection of the gallbladder",
+        "Blocked bile duct leading to jaundice",
+        "Acute pancreatitis if a stone blocks the pancreatic duct",
+        "Gallbladder perforation in severe, untreated cases",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — 3-4 tiny incisions, less pain, faster healing, minimal scarring",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in advanced laparoscopy",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Cholecystectomy",
+      description:
+        "We use keyhole surgery with 3-4 tiny incisions to remove the gallbladder, resulting in less post-operative pain, shorter hospital stay, and much faster recovery than open surgery.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Laparoscopic Surgeons",
+      description:
+        "Our surgeons have performed thousands of laparoscopic gallbladder removal procedures with consistently high success rates and low complication rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Safe for Adults & Children",
+      description:
+        "Our surgical team is skilled in both adult and pediatric laparoscopic cholecystectomy, ensuring age-appropriate care and anaesthesia protocols for every patient.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to ensure complete recovery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Abdominal ultrasound to detect gallstones",
+    "Blood tests to check liver function and infection markers",
+    "CT scan or MRCP for complex cases",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3-4 small keyhole incisions in the abdomen",
+    "Laparoscopic removal of the gallbladder using a camera and specialised instruments",
+    "Procedure typically completed within 45-60 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid recovery and prevent blood clots",
+    "Follow a light, low-fat diet for the first few weeks",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't eat heavy, oily, or fried food immediately after surgery",
+    "Don't lift heavy weights for 2-4 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't ignore fever, yellowing of eyes/skin, or severe pain — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had gallstone attacks for months before finally getting laparoscopic surgery. The procedure was quick, recovery was smooth, and I was back to work within a week.”",
+      name: "K. Rao",
+      role: "Basavanagudi, Bangalore",
+    },
+    {
+      quote:
+        "“My 12-year-old daughter needed gallbladder surgery and the laparoscopic approach meant she recovered quickly with minimal scarring. Excellent pediatric care.”",
+      name: "N. D'Souza",
+      role: "Bellandur, Bangalore",
+    },
+    {
+      quote:
+        "“Affordable pricing and cashless insurance made the whole experience stress-free. The 90-day free follow-ups gave us complete peace of mind.”",
+      name: "T. Gowda",
+      role: "Rajajinagar, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic gallbladder surgery painful?",
+      a: "The surgery itself is pain-free under anaesthesia. Laparoscopic cholecystectomy causes significantly less post-operative pain than open surgery due to smaller incisions. Most patients experience only mild discomfort managed easily with prescribed medication.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic cholecystectomy?",
+      a: "Most patients are discharged within 1-2 days and return to light daily activities within a week. Full recovery, including return to exercise and heavy work, typically takes 2-4 weeks.",
+    },
+    {
+      q: "Is gallbladder surgery covered by insurance?",
+      a: "Yes, laparoscopic cholecystectomy is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can I live a normal life without a gallbladder?",
+      a: "Yes, the liver continues to produce bile even after the gallbladder is removed. Most people digest food normally, though some may need to moderate fatty food intake initially.",
+    },
+    {
+      q: "Is laparoscopic cholecystectomy safe for children?",
+      a: "Yes, laparoscopic cholecystectomy is considered the gold standard for both adults and children when gallbladder removal is needed. It offers the same benefits — less pain, faster recovery, and minimal scarring — for pediatric patients with age-appropriate care protocols.",
+    },
+  ],
+  metaTitle: "Laparoscopic Cholecystectomy in Bangalore | Gallbladder Surgery — Doctor247",
+  metaDescription:
+    "Best laparoscopic gallbladder removal surgery in Bangalore starting at ₹70,000. Advanced laparoscopic cholecystectomy for adults & children, cashless insurance, no-cost EMI, quick recovery.",
+  metaKeywords:
+    "laparoscopic cholecystectomy in bangalore, gallbladder surgery cost bangalore, laparoscopic gallbladder removal, best surgeon for gallbladder, cholecystectomy price, gallstone operation cost",
+},
+
 };
 
 export const SURGERY_SLUGS = Object.keys(SURGERIES);
