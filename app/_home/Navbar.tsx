@@ -142,7 +142,7 @@ export function Navbar() {
 
             {surgeriesOpen && (
               <div className="lg:absolute lg:top-[calc(100%+4px)] lg:left-1/2 lg:-translate-x-1/2 lg:min-w-[220px] lg:rounded-xl lg:border lg:border-hgrey-border lg:bg-white lg:py-1.5 lg:z-[100] mt-1 lg:mt-0 [box-shadow:0_12px_56px_rgba(15,76,129,0.14)]">
-                {SURGERY_LIST.map((s) => (
+                {SURGERY_LIST.slice(0, 5).map((s) => (
                   <Link
                     key={s.slug}
                     href={`/surgery/${s.slug}`}
@@ -155,6 +155,17 @@ export function Navbar() {
                     {s.name}
                   </Link>
                 ))}
+                <div className="my-1.5 border-t border-hgrey-border" />
+                <Link
+                  href="/surgery"
+                  onClick={() => {
+                    setMenuOpen(false);
+                    setSurgeriesOpen(false);
+                  }}
+                  className="block px-5 py-2 text-hblue font-semibold text-[0.9rem] hover:bg-hblue-light transition-colors"
+                >
+                  View All Surgeries →
+                </Link>
               </div>
             )}
           </div>
