@@ -3063,6 +3063,2923 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     "bilateral hernia surgery in bangalore, bilateral inguinal hernia repair, hernioplasty cost bangalore, double hernia surgery, best hernia surgeon bangalore, bilateral hernia operation cost",
 },
 
+"hernioplasty-umbilical-paraumbilical": {
+  slug: "hernioplasty-umbilical-paraumbilical",
+  name: "Hernioplasty - Umbilical / Paraumbilical - Excluding Mesh Cost",
+  shortName: "Umbilical Hernia",
+  price: "₹80,000",
+  heroDescription:
+    "Advanced mesh hernioplasty for umbilical and paraumbilical hernias with lasting results, cashless insurance, no-cost EMI, and free follow-ups. Get expert hernia treatment by verified surgeons in Bangalore with a high success rate and affordable pricing.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,500+", label: "Umbilical Hernia Repairs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Umbilical and Paraumbilical Hernias?",
+  aboutParagraphs: [
+    "An umbilical hernia occurs when tissue protrudes through a weak spot in the abdominal wall near the belly button (navel). Paraumbilical hernias occur adjacent to the umbilicus. Both types appear as bulges around the navel area that may cause pain and discomfort.",
+    "Hernioplasty is a surgical procedure that repairs the hernia and reinforces the weakened area with mesh, providing a stronger, more durable repair. Doctor247 connects you with experienced surgeons for safe, effective umbilical and paraumbilical hernia repair in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Umbilical/Paraumbilical Hernia Surgery?",
+      items: [
+        "A visible bulge near or around the belly button that enlarges with standing or straining",
+        "Pain or discomfort in the navel area while lifting, coughing, or bending",
+        "A bulge that cannot be pushed back in (may need urgent care)",
+        "Nausea or vomiting along with the bulge (emergency sign)",
+      ],
+    },
+    {
+      label: "Preventing Umbilical/Paraumbilical Hernias",
+      items: [
+        "Avoid heavy lifting or use proper lifting techniques",
+        "Maintain a healthy body weight",
+        "Treat chronic cough and constipation early",
+        "Strengthen core and abdominal muscles regularly",
+      ],
+    },
+    {
+      label: "Complications of Umbilical/Paraumbilical Hernias",
+      items: [
+        "Incarceration — hernia gets stuck outside the abdomen",
+        "Strangulation — blood supply to tissue is cut off (emergency)",
+        "Increasing pain and swelling if left untreated",
+        "Higher surgical risk the longer surgery is delayed",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Mesh Hernioplasty — mesh-reinforced repair for stronger, more durable results",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in hernia repair",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Mesh Hernioplasty",
+      description:
+        "We use high-quality surgical mesh to reinforce the weakened abdominal wall near the navel, providing a stronger repair with significantly lower recurrence rates than traditional sutured repair.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced General Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing umbilical and paraumbilical hernia repairs with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Repair for Both Hernia Types",
+      description:
+        "Our surgeons are skilled in repairing both umbilical hernias (at the navel) and paraumbilical hernias (adjacent to the navel), providing expert care for both conditions.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the navel bulge",
+    "Ultrasound of the abdominal wall to confirm the hernia",
+    "CT scan (for complex or recurrent hernias)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "Local, spinal, or general anaesthesia depending on your case",
+    "Incision made near the navel to access the hernia",
+    "Protruding tissue is pushed back into place, and the weak spot is reinforced with mesh",
+    "Closure of incisions — procedure typically completed within 45-60 minutes",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation",
+    "Eat light, fibre-rich meals to avoid constipation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 4-6 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, redness, or unusual swelling around the navel — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had an umbilical hernia that was causing pain and discomfort. The mesh hernioplasty gave me complete relief and the scar is barely visible. Excellent care.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The paraumbilical hernia was affecting my daily activities. The surgery was smooth and the mesh repair is solid. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great team and great care.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is umbilical hernia surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Most patients experience mild to moderate discomfort for a few days, well managed with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after umbilical hernioplasty?",
+      a: "Most patients return to light daily activities within a week and to normal activity, including exercise, within 4-6 weeks. The mesh reinforcement provides strong support for long-term recovery.",
+    },
+    {
+      q: "Is umbilical hernia surgery covered by insurance?",
+      a: "Yes, umbilical and paraumbilical hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between umbilical and paraumbilical hernias?",
+      a: "Umbilical hernias occur directly at the belly button through the natural weakness of the umbilical ring. Paraumbilical hernias occur adjacent to the navel, through the abdominal wall near the umbilicus. Both are treated similarly with mesh hernioplasty.",
+    },
+    {
+      q: "What mesh is used for umbilical hernioplasty?",
+      a: "We use high-quality surgical mesh that is safe, biocompatible, and designed for long-term durability. The mesh reinforces the weakened abdominal wall and reduces recurrence risk. Mesh cost is additional at approximately ₹7,000.",
+    },
+  ],
+  metaTitle: "Umbilical & Paraumbilical Hernia Surgery in Bangalore | Mesh Hernioplasty — Doctor247",
+  metaDescription:
+    "Best umbilical and paraumbilical hernia repair in Bangalore starting at ₹80,000. Advanced mesh hernioplasty, cashless insurance, no-cost EMI, expert surgeons.",
+  metaKeywords:
+    "umbilical hernia surgery in bangalore, paraumbilical hernia repair, hernioplasty cost bangalore, mesh hernia repair, best hernia surgeon bangalore, navel hernia operation cost",
+},
+
+"hernioplasty-incisional-ventral": {
+  slug: "hernioplasty-incisional-ventral",
+  name: "Hernioplasty - Incisional / Ventral - Excluding Mesh Cost",
+  shortName: "Incisional/Ventral Hernia",
+  price: "₹80,000",
+  heroDescription:
+    "Advanced mesh hernioplasty for incisional and ventral hernias with lasting results, cashless insurance, no-cost EMI, and free follow-ups. Get expert hernia treatment by verified surgeons in Bangalore with a high success rate and affordable pricing.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "3,000+", label: "Incisional/Ventral Hernia Repairs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Incisional and Ventral Hernias?",
+  aboutParagraphs: [
+    "Incisional hernias occur when tissue protrudes through a weak spot in the abdominal wall at the site of a previous surgical incision. Ventral hernias are similar but can occur anywhere in the abdominal wall, not necessarily at a previous surgical site.",
+    "Hernioplasty is a surgical procedure that repairs the hernia and reinforces the weakened area with mesh, providing a stronger, more durable repair. These hernias can be more complex due to previous surgery and require experienced surgical expertise. Doctor247 connects you with experienced surgeons for safe, effective incisional and ventral hernia repair in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Incisional/Ventral Hernia Surgery?",
+      items: [
+        "A visible bulge at or near a previous surgical scar or in the abdominal wall",
+        "Pain or discomfort in the abdominal area while lifting, coughing, or bending",
+        "A bulge that cannot be pushed back in (may need urgent care)",
+        "Nausea or vomiting along with the bulge (emergency sign)",
+      ],
+    },
+    {
+      label: "Preventing Incisional/Ventral Hernias",
+      items: [
+        "Avoid heavy lifting or use proper lifting techniques after surgery",
+        "Maintain a healthy body weight",
+        "Treat chronic cough and constipation early",
+        "Strengthen core and abdominal muscles regularly",
+      ],
+    },
+    {
+      label: "Complications of Incisional/Ventral Hernias",
+      items: [
+        "Incarceration — hernia gets stuck outside the abdomen",
+        "Strangulation — blood supply to tissue is cut off (emergency)",
+        "Increasing pain and swelling if left untreated",
+        "Higher surgical risk the longer surgery is delayed",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Mesh Hernioplasty — mesh-reinforced repair for complex incisional and ventral hernias",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in complex hernia repair",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Mesh Hernioplasty",
+      description:
+        "We use high-quality surgical mesh to reinforce the weakened abdominal wall, providing a stronger repair with significantly lower recurrence rates than traditional sutured repair.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Expert in Complex Hernia Repair",
+      description:
+        "Our surgeons are specially experienced in managing complex incisional and ventral hernias, including those from previous surgeries and recurrent cases.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Repair for Both Hernia Types",
+      description:
+        "Our surgeons are skilled in repairing both incisional hernias (at previous surgical sites) and ventral hernias (anywhere in the abdominal wall), providing expert care for both conditions.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the abdominal bulge",
+    "Ultrasound or CT scan to confirm the hernia and assess size",
+    "CT scan (for complex or recurrent hernias)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for the procedure",
+    "Incision made over the hernia site or along the previous scar",
+    "Protruding tissue is pushed back into place, and the weak spot is reinforced with mesh",
+    "Closure of incisions — procedure typically completed within 60-90 minutes",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation",
+    "Eat light, fibre-rich meals to avoid constipation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 4-6 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, redness, or unusual swelling — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I developed an incisional hernia after my previous surgery. The team at Doctor247 repaired it expertly with mesh reinforcement. Recovery was smooth and I'm completely healed.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My ventral hernia was causing significant discomfort. The mesh hernioplasty gave me lasting relief. The surgeon was experienced and the care was excellent.”",
+      name: "S. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Reddy",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is incisional/ventral hernia surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Most patients experience mild to moderate discomfort for a few days, well managed with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after incisional/ventral hernioplasty?",
+      a: "Most patients return to light daily activities within 1-2 weeks and to normal activity, including exercise, within 4-6 weeks. Recovery may be slightly longer due to the complexity of these hernias.",
+    },
+    {
+      q: "Is incisional/ventral hernia surgery covered by insurance?",
+      a: "Yes, incisional and ventral hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between incisional and ventral hernias?",
+      a: "Incisional hernias occur specifically at the site of a previous surgical incision, through the scar tissue. Ventral hernias can occur anywhere in the abdominal wall and may not be related to previous surgery. Both are treated similarly with mesh hernioplasty.",
+    },
+    {
+      q: "What mesh is used for incisional/ventral hernioplasty?",
+      a: "We use high-quality surgical mesh that is safe, biocompatible, and designed for long-term durability, often using larger mesh for these complex hernias. The mesh reinforces the weakened abdominal wall and reduces recurrence risk. Mesh cost is additional at approximately ₹7,000.",
+    },
+  ],
+  metaTitle: "Incisional & Ventral Hernia Surgery in Bangalore | Mesh Hernioplasty — Doctor247",
+  metaDescription:
+    "Best incisional and ventral hernia repair in Bangalore starting at ₹80,000. Advanced mesh hernioplasty, cashless insurance, no-cost EMI, expert surgeons.",
+  metaKeywords:
+    "incisional hernia surgery in bangalore, ventral hernia repair, hernioplasty cost bangalore, mesh hernia repair, complex hernia surgery, abdominal hernia operation cost",
+},
+"laparoscopic-hernioplasty-inguinal-uni": {
+  slug: "laparoscopic-hernioplasty-inguinal-uni",
+  name: "Laparoscopic Hernioplasty - Inguinal (Unilateral) - Excluding Mesh & Tackers",
+  shortName: "Laparoscopic Inguinal Hernia",
+  price: "₹60,000",
+  heroDescription:
+    "Advanced laparoscopic inguinal hernia repair (TEP/TAPP) with tiny incisions, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get expert laparoscopic hernia treatment by verified surgeons in Bangalore with a high success rate.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "5,500+", label: "Laparoscopic Hernia Repairs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is an Inguinal Hernia?",
+  aboutParagraphs: [
+    "An inguinal hernia occurs when tissue, such as part of the intestine, protrudes through a weak spot in the abdominal muscles in the groin area. It is the most common type of hernia and appears as a bulge in the groin that may be painful, especially when lifting, coughing, or straining.",
+    "Laparoscopic hernioplasty is a minimally invasive surgical procedure that repairs the hernia using small incisions, a camera, and specialized instruments. The weakened area is reinforced with mesh for a stronger, more durable repair. Doctor247 connects you with experienced laparoscopic surgeons for safe, effective inguinal hernia repair in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Inguinal Hernia Surgery?",
+      items: [
+        "A visible bulge in the groin that enlarges with standing or straining",
+        "Pain or discomfort in the groin while lifting, coughing, or bending",
+        "Recurrent hernia after previous open repair",
+        "Bilateral hernias (can be repaired in the same procedure)",
+      ],
+    },
+    {
+      label: "Preventing Inguinal Hernias",
+      items: [
+        "Avoid heavy lifting or use proper lifting techniques",
+        "Maintain a healthy body weight",
+        "Treat chronic cough and constipation early",
+        "Strengthen core and abdominal muscles regularly",
+      ],
+    },
+    {
+      label: "Complications of Inguinal Hernias",
+      items: [
+        "Incarceration — hernia gets stuck outside the abdomen",
+        "Strangulation — blood supply to tissue is cut off (emergency)",
+        "Increasing pain and swelling if left untreated",
+        "Higher surgical risk the longer surgery is delayed",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — TEP/TAPP approaches with tiny incisions, less pain, faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in laparoscopic hernia repair",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Hernioplasty",
+      description:
+        "We use minimally invasive keyhole surgery with 3 tiny incisions to repair the hernia, resulting in less post-operative pain, shorter hospital stay, faster recovery, and minimal scarring.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Expert Laparoscopic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing laparoscopic hernia repairs with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Return to Work",
+      description:
+        "Most patients return to light daily activities within 3-5 days and to normal activity within 2-3 weeks — significantly faster than open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the groin bulge",
+    "Ultrasound of the groin to confirm the hernia",
+    "CT scan (for complex or recurrent hernias)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3 small keyhole incisions in the lower abdomen",
+    "Laparoscopic repair using TEP (Totally Extraperitoneal) or TAPP (Transabdominal Preperitoneal) approach",
+    "Mesh placement to reinforce the weakened area",
+    "Procedure typically completed within 45-60 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Eat light, fibre-rich meals to avoid constipation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 2-3 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, redness, or unusual swelling — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I chose laparoscopic hernia repair and I'm so glad I did. Tiny scars, minimal pain, and I was back to work in 5 days. Excellent care from Doctor247.”",
+      name: "R. Sharma",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant faster recovery than I expected. The surgeon was highly skilled and the team handled everything professionally.”",
+      name: "M. Iqbal",
+      role: "HSR Layout, Bangalore",
+    },
+    {
+      quote:
+        "“Free follow-ups for 3 months gave me real peace of mind. My surgeon checked on my recovery personally every time. Highly recommend.”",
+      name: "A. Fernandes",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic hernia surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic hernia repair causes significantly less post-operative pain than open surgery due to smaller incisions, with most patients experiencing only mild discomfort.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic hernioplasty?",
+      a: "Most patients return to light daily activities within 3-5 days and to normal activity, including exercise, within 2-3 weeks — significantly faster than the 4-6 weeks required for open surgery.",
+    },
+    {
+      q: "Is laparoscopic hernia surgery covered by insurance?",
+      a: "Yes, laparoscopic inguinal hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What are the advantages of laparoscopic over open hernia repair?",
+      a: "Laparoscopic repair offers several advantages: smaller incisions, less post-operative pain, faster recovery, earlier return to work, minimal scarring, and the ability to repair both sides in the same procedure.",
+    },
+    {
+      q: "What is excluded from the cost?",
+      a: "The cost of mesh and tackers (single-use surgical devices) is excluded from the ₹60,000 price. These may add approximately ₹10,000-₹15,000 to the total cost. Your surgeon will inform you of the exact charges during consultation.",
+    },
+  ],
+  metaTitle: "Laparoscopic Inguinal Hernia Surgery in Bangalore | TEP/TAPP Hernioplasty — Doctor247",
+  metaDescription:
+    "Best laparoscopic inguinal hernia repair in Bangalore starting at ₹60,000. Advanced TEP/TAPP hernioplasty, tiny incisions, faster recovery, cashless insurance.",
+  metaKeywords:
+    "laparoscopic hernia surgery in bangalore, inguinal hernia repair cost, TEP hernia repair, TAPP hernia repair, best laparoscopic surgeon bangalore, hernia operation cost",
+},
+
+
+"laparoscopic-hernioplasty-inguinal-bi": {
+  slug: "laparoscopic-hernioplasty-inguinal-bi",
+  name: "Laparoscopic Hernioplasty - Inguinal (Bilateral) - Excluding Mesh & Tackers",
+  shortName: "Laparoscopic Bilateral Hernia",
+  price: "₹57,500",
+  heroDescription:
+    "Advanced laparoscopic bilateral inguinal hernia repair (TEP/TAPP) with tiny incisions, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get expert laparoscopic hernia treatment by verified surgeons in Bangalore with a high success rate.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "4,000+", label: "Laparoscopic Bilateral Repairs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Bilateral Inguinal Hernias?",
+  aboutParagraphs: [
+    "Bilateral inguinal hernias occur when there are hernias on both sides of the groin. This condition requires surgical repair on both sides to prevent complications and restore normal function.",
+    "Laparoscopic hernioplasty is a minimally invasive surgical procedure that repairs both hernias simultaneously using small incisions, a camera, and specialized instruments. The weakened areas are reinforced with mesh for stronger, more durable results. Doctor247 connects you with experienced laparoscopic surgeons for safe, effective bilateral inguinal hernia repair in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Bilateral Hernia Surgery?",
+      items: [
+        "Visible bulges on both sides of the groin that enlarge with standing or straining",
+        "Pain or discomfort on both sides while lifting, coughing, or bending",
+        "Bilateral hernias diagnosed through physical examination or imaging",
+        "Recurrent hernias after previous open repairs",
+      ],
+    },
+    {
+      label: "Preventing Inguinal Hernias",
+      items: [
+        "Avoid heavy lifting or use proper lifting techniques",
+        "Maintain a healthy body weight",
+        "Treat chronic cough and constipation early",
+        "Strengthen core and abdominal muscles regularly",
+      ],
+    },
+    {
+      label: "Complications of Bilateral Inguinal Hernias",
+      items: [
+        "Incarceration — hernia gets stuck outside the abdomen on either side",
+        "Strangulation — blood supply to tissue is cut off (emergency)",
+        "Increasing pain and swelling if left untreated",
+        "Higher surgical risk the longer surgery is delayed",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — TEP/TAPP approaches, both sides repaired in one procedure",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in laparoscopic hernia repair",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Single Procedure for Both Sides",
+      description:
+        "We repair both inguinal hernias in a single laparoscopic procedure, saving you the time, cost, and recovery of two separate surgeries. One anaesthesia, one hospital stay.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Advanced Laparoscopic Technique",
+      description:
+        "We use minimally invasive keyhole surgery with 3 tiny incisions to repair both hernias, resulting in less pain, faster recovery, and minimal scarring.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Return to Work",
+      description:
+        "Most patients return to light daily activities within 3-5 days and to normal activity within 2-3 weeks — significantly faster than open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of both groin areas",
+    "Ultrasound of both groins to confirm bilateral hernias",
+    "CT scan (for complex or recurrent hernias)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3 small keyhole incisions in the lower abdomen",
+    "Laparoscopic repair using TEP (Totally Extraperitoneal) or TAPP (Transabdominal Preperitoneal) approach on both sides",
+    "Mesh placement to reinforce both weakened areas",
+    "Procedure typically completed within 60-90 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Eat light, fibre-rich meals to avoid constipation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 2-3 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, redness, or unusual swelling on either side — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had hernias on both sides and was dreading two surgeries. Laparoscopic repair fixed both in one procedure. Recovery was faster than I expected. Highly recommend Doctor247.”",
+      name: "V. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant less pain and faster recovery. One surgery, one recovery period. Excellent care from the team.”",
+      name: "R. Menon",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great experience.”",
+      name: "S. Reddy",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic bilateral hernia surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic repair causes significantly less post-operative pain than open surgery, with most patients experiencing only mild discomfort on both sides.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic bilateral hernioplasty?",
+      a: "Most patients return to light daily activities within 3-5 days and to normal activity, including exercise, within 2-3 weeks — significantly faster than open surgery.",
+    },
+    {
+      q: "Is laparoscopic bilateral hernia surgery covered by insurance?",
+      a: "Yes, bilateral inguinal hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the advantage of laparoscopic over open for bilateral hernias?",
+      a: "Laparoscopic repair offers several advantages for bilateral hernias: both sides repaired in one procedure, smaller incisions, less post-operative pain, faster recovery, earlier return to work, and minimal scarring.",
+    },
+    {
+      q: "What is excluded from the cost?",
+      a: "The cost of mesh and tackers (single-use surgical devices) is excluded from the ₹57,500 price. These may add approximately ₹15,000-₹20,000 for bilateral repair. Your surgeon will inform you of the exact charges during consultation.",
+    },
+  ],
+  metaTitle: "Laparoscopic Bilateral Inguinal Hernia Surgery in Bangalore | TEP/TAPP — Doctor247",
+  metaDescription:
+    "Best laparoscopic bilateral inguinal hernia repair in Bangalore starting at ₹57,500. Advanced TEP/TAPP hernioplasty for both sides, faster recovery, cashless insurance.",
+  metaKeywords:
+    "laparoscopic bilateral hernia surgery in bangalore, bilateral inguinal hernia repair cost, TEP hernia repair, TAPP hernia repair, best laparoscopic surgeon bangalore, double hernia operation cost",
+},
+
+"laparoscopic-hernioplasty-umbilical-paraumbilical": {
+  slug: "laparoscopic-hernioplasty-umbilical-paraumbilical",
+  name: "Laparoscopic Hernioplasty - Umbilical / Paraumbilical - Excluding Mesh & Tackers",
+  shortName: "Laparoscopic Umbilical Hernia",
+  price: "₹45,000",
+  heroDescription:
+    "Advanced laparoscopic umbilical and paraumbilical hernia repair with tiny incisions, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get expert laparoscopic hernia treatment by verified surgeons in Bangalore with a high success rate.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,000+", label: "Laparoscopic Umbilical Repairs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Umbilical and Paraumbilical Hernias?",
+  aboutParagraphs: [
+    "An umbilical hernia occurs when tissue protrudes through a weak spot in the abdominal wall near the belly button (navel). Paraumbilical hernias occur adjacent to the umbilicus. Both types appear as bulges around the navel area that may cause pain and discomfort.",
+    "Laparoscopic hernioplasty is a minimally invasive surgical procedure that repairs the hernia using small incisions, a camera, and specialized instruments. The weakened area is reinforced with mesh for a stronger, more durable repair. Doctor247 connects you with experienced laparoscopic surgeons for safe, effective umbilical and paraumbilical hernia repair in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Umbilical/Paraumbilical Hernia Surgery?",
+      items: [
+        "A visible bulge near or around the belly button that enlarges with standing or straining",
+        "Pain or discomfort in the navel area while lifting, coughing, or bending",
+        "Recurrent hernia after previous open repair",
+        "A bulge that cannot be pushed back in (may need urgent care)",
+      ],
+    },
+    {
+      label: "Preventing Umbilical/Paraumbilical Hernias",
+      items: [
+        "Avoid heavy lifting or use proper lifting techniques",
+        "Maintain a healthy body weight",
+        "Treat chronic cough and constipation early",
+        "Strengthen core and abdominal muscles regularly",
+      ],
+    },
+    {
+      label: "Complications of Umbilical/Paraumbilical Hernias",
+      items: [
+        "Incarceration — hernia gets stuck outside the abdomen",
+        "Strangulation — blood supply to tissue is cut off (emergency)",
+        "Increasing pain and swelling if left untreated",
+        "Higher surgical risk the longer surgery is delayed",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — tiny incisions, less pain, faster recovery, minimal scarring",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in laparoscopic hernia repair",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Hernioplasty",
+      description:
+        "We use minimally invasive keyhole surgery with 3 tiny incisions to repair the hernia, resulting in less post-operative pain, shorter hospital stay, faster recovery, and minimal scarring.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Expert Laparoscopic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing laparoscopic hernia repairs with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Return to Work",
+      description:
+        "Most patients return to light daily activities within 3-5 days and to normal activity within 2-3 weeks — significantly faster than open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the navel bulge",
+    "Ultrasound of the abdominal wall to confirm the hernia",
+    "CT scan (for complex or recurrent hernias)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3 small keyhole incisions in the abdomen",
+    "Laparoscopic repair of the umbilical/paraumbilical hernia",
+    "Mesh placement to reinforce the weakened area",
+    "Procedure typically completed within 40-60 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Eat light, fibre-rich meals to avoid constipation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 2-3 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, redness, or unusual swelling around the navel — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had an umbilical hernia that was causing discomfort. The laparoscopic repair was quick, recovery was smooth, and the scars are barely visible. Excellent care.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant less pain and faster recovery than I expected. The surgeon was highly skilled and the team was very supportive.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic umbilical hernia surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic repair causes significantly less post-operative pain than open surgery due to smaller incisions, with most patients experiencing only mild discomfort.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic umbilical hernioplasty?",
+      a: "Most patients return to light daily activities within 3-5 days and to normal activity, including exercise, within 2-3 weeks — significantly faster than the 4-6 weeks required for open surgery.",
+    },
+    {
+      q: "Is laparoscopic umbilical hernia surgery covered by insurance?",
+      a: "Yes, laparoscopic umbilical and paraumbilical hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between laparoscopic and open umbilical hernia repair?",
+      a: "Laparoscopic repair uses 3 tiny incisions and offers less pain, faster recovery, and minimal scarring. Open repair uses a single larger incision directly over the hernia and may be preferred for very small hernias.",
+    },
+    {
+      q: "What is excluded from the cost?",
+      a: "The cost of mesh and tackers (single-use surgical devices) is excluded from the ₹45,000 price. These may add approximately ₹10,000-₹15,000 to the total cost. Your surgeon will inform you of the exact charges during consultation.",
+    },
+  ],
+  metaTitle: "Laparoscopic Umbilical & Paraumbilical Hernia Surgery in Bangalore — Doctor247",
+  metaDescription:
+    "Best laparoscopic umbilical and paraumbilical hernia repair in Bangalore starting at ₹45,000. Advanced laparoscopic hernioplasty, faster recovery, cashless insurance.",
+  metaKeywords:
+    "laparoscopic umbilical hernia surgery in bangalore, paraumbilical hernia repair cost, laparoscopic hernioplasty, best laparoscopic surgeon bangalore, navel hernia operation cost",
+},
+
+"laparoscopic-hernioplasty-incisional-ventral": {
+  slug: "laparoscopic-hernioplasty-incisional-ventral",
+  name: "Laparoscopic Hernioplasty - Incisional / Ventral - Excluding Mesh & Tackers",
+  shortName: "Laparoscopic Incisional/Ventral Hernia",
+  price: "₹62,500",
+  heroDescription:
+    "Advanced laparoscopic incisional and ventral hernia repair with tiny incisions, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get expert laparoscopic hernia treatment by verified surgeons in Bangalore with a high success rate.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "2,500+", label: "Laparoscopic Incisional/Ventral Repairs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Incisional and Ventral Hernias?",
+  aboutParagraphs: [
+    "Incisional hernias occur when tissue protrudes through a weak spot in the abdominal wall at the site of a previous surgical incision. Ventral hernias are similar but can occur anywhere in the abdominal wall, not necessarily at a previous surgical site. These hernias can be more complex due to previous surgery and require experienced surgical expertise.",
+    "Laparoscopic hernioplasty is a minimally invasive surgical procedure that repairs the hernia using small incisions, a camera, and specialized instruments. The weakened area is reinforced with mesh for a stronger, more durable repair. Doctor247 connects you with experienced laparoscopic surgeons for safe, effective incisional and ventral hernia repair in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Incisional/Ventral Hernia Surgery?",
+      items: [
+        "A visible bulge at or near a previous surgical scar or in the abdominal wall",
+        "Pain or discomfort in the abdominal area while lifting, coughing, or bending",
+        "Recurrent hernia after previous open repair",
+        "A bulge that cannot be pushed back in (may need urgent care)",
+      ],
+    },
+    {
+      label: "Preventing Incisional/Ventral Hernias",
+      items: [
+        "Avoid heavy lifting or use proper lifting techniques after surgery",
+        "Maintain a healthy body weight",
+        "Treat chronic cough and constipation early",
+        "Strengthen core and abdominal muscles regularly",
+      ],
+    },
+    {
+      label: "Complications of Incisional/Ventral Hernias",
+      items: [
+        "Incarceration — hernia gets stuck outside the abdomen",
+        "Strangulation — blood supply to tissue is cut off (emergency)",
+        "Increasing pain and swelling if left untreated",
+        "Higher surgical risk the longer surgery is delayed",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — complex hernia repair with tiny incisions, less pain, faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in complex laparoscopic hernia repair",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Hernioplasty for Complex Hernias",
+      description:
+        "We use minimally invasive keyhole surgery with 3-4 tiny incisions to repair complex incisional and ventral hernias, resulting in less post-operative pain, shorter hospital stay, faster recovery, and minimal scarring.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Expert in Complex Hernia Repair",
+      description:
+        "Our surgeons are specially experienced in managing complex incisional and ventral hernias laparoscopically, including those from previous surgeries and recurrent cases.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Return to Work",
+      description:
+        "Most patients return to light daily activities within 5-7 days and to normal activity within 3-4 weeks — significantly faster than open surgery for these complex hernias.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the abdominal bulge",
+    "Ultrasound or CT scan to confirm the hernia and assess size",
+    "CT scan (for complex or recurrent hernias)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3-4 small keyhole incisions in the abdomen",
+    "Laparoscopic repair of the incisional/ventral hernia",
+    "Mesh placement to reinforce the weakened area",
+    "Procedure typically completed within 60-90 minutes",
+  ],
+  postOpDo: [
+    "Walk short distances from day 1 to aid circulation",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Eat light, fibre-rich meals to avoid constipation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than 5 kg for 3-4 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't skip your prescribed medication schedule",
+    "Don't ignore fever, redness, or unusual swelling — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a complex incisional hernia from a previous surgery. The laparoscopic repair was expertly done and recovery was much faster than I expected. Highly recommend Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My ventral hernia was causing significant discomfort. The laparoscopic approach meant less pain and faster recovery. Excellent care from the team.”",
+      name: "S. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great experience.”",
+      name: "P. Reddy",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic incisional/ventral hernia surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic repair causes significantly less post-operative pain than open surgery due to smaller incisions, with most patients experiencing only mild to moderate discomfort.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic incisional/ventral hernioplasty?",
+      a: "Most patients return to light daily activities within 5-7 days and to normal activity, including exercise, within 3-4 weeks — significantly faster than the 4-6 weeks required for open surgery.",
+    },
+    {
+      q: "Is laparoscopic incisional/ventral hernia surgery covered by insurance?",
+      a: "Yes, laparoscopic incisional and ventral hernia repair is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the advantage of laparoscopic over open for incisional/ventral hernias?",
+      a: "Laparoscopic repair offers several advantages: smaller incisions, less post-operative pain, faster recovery, earlier return to work, minimal scarring, and lower recurrence rates for complex hernias.",
+    },
+    {
+      q: "What is excluded from the cost?",
+      a: "The cost of mesh and tackers (single-use surgical devices) is excluded from the ₹62,500 price. These may add approximately ₹15,000-₹25,000 to the total cost, depending on the size of the hernia. Your surgeon will inform you of the exact charges during consultation.",
+    },
+  ],
+  metaTitle: "Laparoscopic Incisional & Ventral Hernia Surgery in Bangalore — Doctor247",
+  metaDescription:
+    "Best laparoscopic incisional and ventral hernia repair in Bangalore starting at ₹62,500. Advanced laparoscopic hernioplasty, complex hernia expertise, cashless insurance.",
+  metaKeywords:
+    "laparoscopic incisional hernia surgery in bangalore, ventral hernia repair cost, laparoscopic hernioplasty, complex hernia surgery, best laparoscopic surgeon bangalore, abdominal hernia operation cost",
+},
+
+"lymph-node-biopsy": {
+  slug: "lymph-node-biopsy",
+  name: "Lymph Node Biopsy (Cervical / Axillary / Inguinal) - Under GA",
+  shortName: "Lymph Node Biopsy",
+  price: "₹33,500",
+  heroDescription:
+    "Safe, accurate lymph node biopsy for cervical, axillary, and inguinal nodes under general anaesthesia with expert pathological analysis, cashless insurance, and free follow-ups. Get reliable diagnostic evaluation by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,000+", label: "Lymph Node Biopsies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Lymph Node Biopsy?",
+  aboutParagraphs: [
+    "A lymph node biopsy is a diagnostic procedure in which a lymph node is removed and examined under a microscope to check for diseases such as infections, autoimmune disorders, or cancer. Lymph nodes are small, bean-shaped glands that are part of the immune system and can be found in the neck (cervical), armpit (axillary), and groin (inguinal) areas.",
+    "Under general anaesthesia, the surgeon removes part or all of the lymph node (excisional biopsy) for comprehensive pathological evaluation. This provides the most accurate diagnosis and helps guide treatment decisions. Doctor247 connects you with experienced surgeons for safe, accurate lymph node biopsy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Lymph Node Biopsy?",
+      items: [
+        "Persistent, unexplained lymph node swelling lasting more than 2-4 weeks",
+        "Lymph nodes that are hard, fixed, or growing rapidly",
+        "Unexplained fever, night sweats, or weight loss with lymph node enlargement",
+        "Suspicious findings on ultrasound, CT, or PET scan",
+      ],
+    },
+    {
+      label: "Common Lymph Node Locations",
+      items: [
+        "Cervical — lymph nodes in the neck region",
+        "Axillary — lymph nodes in the armpit area",
+        "Inguinal — lymph nodes in the groin region",
+      ],
+    },
+    {
+      label: "Complications of Delayed Diagnosis",
+      items: [
+        "Delayed treatment of underlying infection or malignancy",
+        "Progression of disease with potential spread to other organs",
+        "Missed opportunity for early-stage cancer diagnosis",
+        "Increased morbidity and mortality with delayed treatment",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Surgical Biopsy — precise removal with minimal discomfort and excellent cosmetic results",
+        "Free Follow-ups — post-biopsy consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in surgical biopsy procedures",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Accurate & Comprehensive Biopsy",
+      description:
+        "We perform excisional biopsy to obtain sufficient tissue for complete pathological analysis, ensuring the most accurate diagnosis with special staining and molecular testing available.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing lymph node biopsies with consistently high diagnostic accuracy and low complication rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Minimally Invasive with Good Cosmetic Results",
+      description:
+        "Our surgeons use carefully placed incisions that follow natural skin folds, resulting in well-healed, cosmetically acceptable scars with minimal tissue trauma.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your biopsy to ensure proper wound healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the affected lymph node area",
+    "Ultrasound of the lymph node to assess size and characteristics",
+    "CT scan or PET scan for staging if malignancy is suspected",
+    "Blood tests including complete blood count (CBC) and inflammatory markers",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "A small incision is made over the affected lymph node area",
+    "Part or all of the lymph node (excisional biopsy) is carefully removed",
+    "The incision is closed with dissolvable sutures or skin glue",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Keep the biopsy site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs as advised to reduce swelling",
+    "Attend your follow-up visit within 7-10 days for wound check and histopathology results",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 1-2 weeks",
+    "Don't soak the wound in water until fully healed",
+    "Don't skip your histopathology review appointment",
+    "Don't ignore fever, redness, or unusual swelling — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had an enlarged lymph node in my neck that needed biopsy. The procedure was quick, painless under anaesthesia, and the results came back on time. Excellent care.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The team explained everything clearly and handled my insurance claim seamlessly. The scar is minimal and healing was smooth. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I was anxious about the biopsy but the surgeon and team made me feel comfortable. The 90-day follow-ups gave me peace of mind.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is lymph node biopsy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during the biopsy. Post-operative discomfort is minimal and easily managed with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after lymph node biopsy?",
+      a: "Most patients return to normal activities within 3-5 days. Complete healing of the biopsy site takes about 1-2 weeks. You can resume light work within a few days.",
+    },
+    {
+      q: "Is lymph node biopsy covered by insurance?",
+      a: "Yes, lymph node biopsy is covered by most health insurance plans in India for diagnostic purposes. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "How long does it take to get biopsy results?",
+      a: "Histopathology results typically take 5-10 working days. In some cases, special staining or molecular testing may take additional time. Your surgeon will inform you of the expected timeline.",
+    },
+    {
+      q: "What is the difference between cervical, axillary, and inguinal lymph node biopsy?",
+      a: "Cervical biopsy involves lymph nodes in the neck, axillary biopsy involves nodes in the armpit, and inguinal biopsy involves nodes in the groin. The procedure is similar in all locations, with the incision placed appropriately based on the node's location.",
+    },
+  ],
+  metaTitle: "Lymph Node Biopsy in Bangalore | Cervical / Axillary / Inguinal — Doctor247",
+  metaDescription:
+    "Best lymph node biopsy in Bangalore starting at ₹33,500. Cervical, axillary, and inguinal biopsy under general anaesthesia, cashless insurance, expert pathological analysis.",
+  metaKeywords:
+    "lymph node biopsy in bangalore, cervical lymph node biopsy, axillary lymph node biopsy, inguinal lymph node biopsy, biopsy cost bangalore, surgical biopsy",
+},
+
+"lipoma-excision": {
+  slug: "lipoma-excision",
+  name: "Lipoma Excision - Under GA",
+  shortName: "Lipoma Removal",
+  price: "₹45,000",
+  heroDescription:
+    "Safe, precise lipoma removal surgery under general anaesthesia with expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get effective treatment for lipomas by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "4,500+", label: "Lipoma Excisions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Lipoma?",
+  aboutParagraphs: [
+    "A lipoma is a benign (non-cancerous) tumor made of fatty tissue that grows slowly under the skin. They are usually soft, mobile, painless lumps that can occur anywhere on the body, most commonly on the trunk, shoulders, neck, and arms. While lipomas are generally harmless, they can cause discomfort, cosmetic concerns, or interfere with movement depending on their size and location.",
+    "Surgical excision (removal) of a lipoma is the most effective and definitive treatment. The procedure is performed under general anaesthesia to ensure patient comfort. Doctor247 connects you with experienced surgeons for safe, precise lipoma removal in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Lipoma Excision?",
+      items: [
+        "Rapidly growing or enlarging lipoma",
+        "Painful lipoma or discomfort in the affected area",
+        "Cosmetic concerns about the visible lump",
+        "Lipoma in a location that interferes with movement or function",
+      ],
+    },
+    {
+      label: "Lipoma Removal Indications",
+      items: [
+        "Lipoma larger than 5 cm in diameter",
+        "Lipoma that causes functional impairment",
+        "Suspicious appearance requiring histopathological examination",
+        "Patient preference for definitive removal",
+      ],
+    },
+    {
+      label: "Complications of Untreated Lipomas",
+      items: [
+        "Progressive enlargement causing discomfort",
+        "Potential for cosmetic disfigurement",
+        "Rare possibility of malignant transformation (liposarcoma)",
+        "Pressure on surrounding nerves or structures",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Surgical Excision — complete removal with minimal recurrence and excellent cosmetic results",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in soft tissue surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Complete Surgical Excision",
+      description:
+        "We perform meticulous surgical removal of the lipoma including its capsule, ensuring complete excision and minimal recurrence rates with excellent cosmetic outcomes.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing lipoma excisions with consistently high success rates and excellent cosmetic results.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Painless Procedure Under GA",
+      description:
+        "General anaesthesia ensures a completely pain-free experience during the procedure. You'll be asleep and comfortable throughout the surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to ensure proper healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the lump",
+    "Ultrasound to confirm fatty tissue nature",
+    "MRI for deep or large lipomas (if needed)",
+    "Blood tests to assess fitness for general anaesthesia",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "An incision is made over the lipoma following natural skin creases for optimal cosmetic results",
+    "The lipoma is carefully dissected from surrounding tissues and completely removed",
+    "The incision is closed with dissolvable sutures or skin glue",
+    "Procedure typically completed within 30-60 minutes depending on size and location",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs as advised to reduce swelling",
+    "Attend your follow-up visit within 7-10 days for wound check and histopathology report",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 1-2 weeks",
+    "Don't soak the wound in water until fully healed",
+    "Don't skip your histopathology review appointment",
+    "Don't ignore fever, redness, or unusual swelling — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a large lipoma on my shoulder that was causing discomfort. The surgery was quick, recovery was smooth, and the scar is barely visible. Highly recommend Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I was anxious about the procedure but the team made me feel comfortable. The general anaesthesia meant no pain during surgery. Great care and transparent pricing.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was highly experienced and removed the lipoma completely. The 90-day follow-ups gave me peace of mind. Excellent experience.”",
+      name: "S. Reddy",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is lipoma removal painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative discomfort is minimal and easily managed with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after lipoma excision?",
+      a: "Most patients return to normal activities within 3-5 days. Complete healing of the surgical site takes about 1-2 weeks. You can resume light work within a few days.",
+    },
+    {
+      q: "Is lipoma excision covered by insurance?",
+      a: "Yes, lipoma excision is covered by most health insurance plans in India, especially when clinically indicated for pain, rapid growth, or functional impairment. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Will the lipoma come back after excision?",
+      a: "Recurrence rates are very low (less than 5%) with complete surgical excision including the capsule. If recurrence occurs, it is usually in the form of another lipoma in the same area.",
+    },
+    {
+      q: "What is the difference between local and general anaesthesia for lipoma removal?",
+      a: "General anaesthesia ensures you're completely asleep and pain-free during the procedure, which is recommended for larger lipomas, deeper lipomas, or patient preference. Local anaesthesia numbs only the area of surgery. Your surgeon will recommend the best option based on your case.",
+    },
+  ],
+  metaTitle: "Lipoma Excision Surgery in Bangalore | Lipoma Removal — Doctor247",
+  metaDescription:
+    "Best lipoma removal surgery in Bangalore starting at ₹45,000. Expert lipoma excision under general anaesthesia, cashless insurance, no-cost EMI, experienced surgeons.",
+  metaKeywords:
+    "lipoma removal surgery in bangalore, lipoma excision cost, lipoma treatment bangalore, fatty lump removal, best surgeon for lipoma, lipoma operation price",
+},
+
+"perianal-abscess-incision-drainage": {
+  slug: "perianal-abscess-incision-drainage",
+  name: "Perianal Abscess - Incision & Drainage (I&D)",
+  shortName: "Perianal Abscess",
+  price: "₹35,000",
+  heroDescription:
+    "Safe, effective incision and drainage (I&D) for perianal abscess with expert surgical care, same-day discharge, cashless insurance, no-cost EMI, and free follow-ups. Get immediate relief from perianal infections by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "3,500+", label: "Perianal Abscess Procedures Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Perianal Abscess?",
+  aboutParagraphs: [
+    "A perianal abscess is a painful collection of pus that forms in the tissues around the anus or rectum, usually due to an infection of the anal glands. It typically presents as a swollen, red, tender lump near the anus that may be accompanied by fever, pain, and discomfort during sitting or bowel movements.",
+    "Incision and drainage (I&D) is the standard surgical treatment for perianal abscesses. The procedure involves making a small incision to drain the pus and relieve pressure, providing immediate relief from pain and preventing the spread of infection. Doctor247 connects you with experienced surgeons for safe, effective perianal abscess treatment in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Perianal Abscess Surgery?",
+      items: [
+        "A painful, swollen lump near the anus that is red and warm to touch",
+        "Increasing pain that worsens with sitting or bowel movements",
+        "Fever, chills, or feeling unwell with anal swelling",
+        "Pus or discharge from the lump (spontaneous rupture)",
+      ],
+    },
+    {
+      label: "Preventing Perianal Abscesses",
+      items: [
+        "Maintain good anal hygiene",
+        "Eat a high-fibre diet to prevent constipation and straining",
+        "Treat anal fissures and infections promptly",
+        "Stay well-hydrated and maintain regular bowel habits",
+      ],
+    },
+    {
+      label: "Complications of Untreated Perianal Abscess",
+      items: [
+        "Spontaneous rupture with incomplete drainage",
+        "Spread of infection to deeper tissues",
+        "Development of an anal fistula (abnormal tunnel)",
+        "Sepsis in severe, untreated cases (emergency)",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Incision & Drainage — precise procedure for immediate relief and complete drainage",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in anorectal procedures",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Effective Incision & Drainage",
+      description:
+        "We perform precise incision and drainage of the abscess cavity, ensuring complete evacuation of pus and debris with immediate pain relief.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Proctologists",
+      description:
+        "Our surgeons have extensive experience in treating perianal abscesses with consistently high success rates and low recurrence.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Same-Day Discharge",
+      description:
+        "Perianal abscess I&D at Doctor247 is a day-care procedure — you can go home the same day and resume light activity within 2-3 days.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure to ensure complete healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the perianal area",
+    "Ultrasound (if needed) to assess the extent of the abscess",
+    "MRI (for complex or recurrent abscesses)",
+    "Blood tests to check for infection markers and fitness for procedure",
+  ],
+  procedureSteps: [
+    "Local or general anaesthesia depending on the case",
+    "A small incision is made over the abscess to allow drainage",
+    "The abscess cavity is thoroughly explored and all pus is evacuated",
+    "The cavity is gently packed with dressing to allow drainage",
+    "Procedure typically completed within 15-20 minutes",
+  ],
+  postOpDo: [
+    "Take a warm sitz bath 2-3 times a day for comfort and hygiene",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Eat a high-fibre diet and stay well hydrated",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't strain during bowel movements",
+    "Don't lift heavy weights for at least 1-2 weeks",
+    "Don't ignore continued discharge, fever, or increased pain — call us immediately",
+    "Don't skip your prescribed medication schedule",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I was in terrible pain from a perianal abscess. The I&D procedure gave me immediate relief. The team was professional and the care was excellent.”",
+      name: "R. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“Quick procedure, same-day discharge, and clear aftercare instructions. The 90-day follow-ups ensured I healed properly. Highly recommend Doctor247.”",
+      name: "S. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgeon was very skilled and I felt comfortable throughout. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is perianal abscess drainage painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during the drainage. Post-operative discomfort is manageable with prescribed pain medication and warm sitz baths.",
+    },
+    {
+      q: "How long does recovery take after perianal abscess drainage?",
+      a: "Most patients return to normal activities within 2-3 days and the wound completely heals within 2-4 weeks. The packing is typically removed in 24-48 hours.",
+    },
+    {
+      q: "Is perianal abscess I&D covered by insurance?",
+      a: "Yes, incision and drainage of perianal abscess is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What happens if a perianal abscess is not treated?",
+      a: "Untreated perianal abscesses can worsen, leading to spontaneous rupture (often incomplete), spread of infection to deeper tissues, and potential development of an anal fistula requiring more complex surgery.",
+    },
+    {
+      q: "What is the difference between perianal abscess and fistula?",
+      a: "A perianal abscess is an acute collection of pus causing immediate pain and swelling. A fistula is an abnormal tunnel or tract that can develop after an abscess, which may require additional surgical treatment if it doesn't heal properly.",
+    },
+  ],
+  metaTitle: "Perianal Abscess I&D Surgery in Bangalore | Incision & Drainage — Doctor247",
+  metaDescription:
+    "Best perianal abscess treatment in Bangalore starting at ₹35,000. Expert incision and drainage (I&D), same-day discharge, cashless insurance, experienced surgeons.",
+  metaKeywords:
+    "perianal abscess surgery in bangalore, perianal abscess I&D cost, abscess drainage bangalore, anorectal abscess treatment, best proctologist bangalore, perianal infection treatment",
+},
+
+"pilonidal-sinus": {
+  slug: "pilonidal-sinus",
+  name: "Pilonidal Sinus Excision - With or Without Flap Cover",
+  shortName: "Pilonidal Sinus",
+  price: "₹31,000",
+  heroDescription:
+    "Safe, effective pilonidal sinus excision with or without flap cover, expert surgical care, same-day or short-stay discharge, cashless insurance, no-cost EMI, and free follow-ups. Get lasting relief from pilonidal disease by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "3,000+", label: "Pilonidal Sinus Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Pilonidal Sinus Disease?",
+  aboutParagraphs: [
+    "A pilonidal sinus is a small tunnel or tract that develops in the skin at the top of the buttocks (sacrococcygeal area). It typically contains hair, debris, and sometimes infection, causing pain, swelling, and discharge. The condition is more common in young adults and those with a sedentary lifestyle, excess body hair, or prolonged sitting.",
+    "Surgical excision is the most effective treatment for pilonidal sinus disease. The procedure involves removing the entire sinus tract and surrounding diseased tissue. In some cases, a flap cover is used to close the wound and promote faster healing. Doctor247 connects you with experienced surgeons for safe, effective pilonidal sinus treatment in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Pilonidal Sinus Surgery?",
+      items: [
+        "Recurrent pilonidal sinus with repeated infections",
+        "Painful swelling or abscess in the tailbone area",
+        "Persistent discharge of pus or blood from the sinus opening",
+        "Chronic sinus that doesn't heal with conservative treatment",
+      ],
+    },
+    {
+      label: "Preventing Pilonidal Sinus",
+      items: [
+        "Maintain good personal hygiene, especially in the buttock area",
+        "Keep the area clean and dry",
+        "Avoid prolonged sitting without breaks",
+        "Remove excess hair from the area regularly",
+      ],
+    },
+    {
+      label: "Complications of Untreated Pilonidal Sinus",
+      items: [
+        "Recurrent infections and abscess formation",
+        "Chronic pain and discomfort",
+        "Development of multiple sinus tracts",
+        "Potential for cellulitis or more severe skin infections",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Excision — complete removal with or without flap closure for optimal healing",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with a minimum of 8 years' experience in pilonidal sinus surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Complete Excision with Flap Option",
+      description:
+        "We perform meticulous excision of the entire sinus tract and diseased tissue. Flap cover (if indicated) provides a tension-free closure with minimal scarring and faster healing.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing pilonidal sinus surgeries with consistently high success rates and low recurrence.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Customized Surgical Approach",
+      description:
+        "We tailor the surgical approach to your specific condition — from simple excision and primary closure to advanced flap procedures for complex or recurrent cases.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to ensure complete healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the sacrococcygeal area",
+    "Ultrasound (if needed) to assess the extent of the sinus",
+    "MRI (for complex or recurrent cases)",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "Spinal or general anaesthesia depending on the case",
+    "The entire sinus tract and surrounding diseased tissue are excised",
+    "The wound is closed with primary closure or flap cover (depending on the case)",
+    "A drain may be placed if needed",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Avoid sitting for prolonged periods — use a cushion if needed",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't sit for prolonged periods without breaks",
+    "Don't lift heavy weights for at least 2-3 weeks",
+    "Don't ignore fever, increased pain, or discharge — call us immediately",
+    "Don't skip your prescribed medication schedule",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a pilonidal sinus that kept recurring. The excision with flap cover healed beautifully with minimal scarring. The surgeon was excellent.”",
+      name: "R. Kumar",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I was worried about the surgery but the team made me comfortable. The recovery was smooth and the 90-day follow-ups gave me complete peace of mind.”",
+      name: "S. Reddy",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgeon's expertise was evident and I'm completely healed now. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is pilonidal sinus surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative discomfort is managed with prescribed pain medication and typically decreases significantly within a few days.",
+    },
+    {
+      q: "How long does recovery take after pilonidal sinus excision?",
+      a: "Most patients return to light activities within 1-2 weeks and full recovery takes 3-4 weeks. With primary closure, recovery is faster. With flap procedures, the healing time may be slightly longer but offers better outcomes.",
+    },
+    {
+      q: "Is pilonidal sinus surgery covered by insurance?",
+      a: "Yes, pilonidal sinus excision is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Will the pilonidal sinus come back after surgery?",
+      a: "Recurrence rates are low with complete excision and proper technique (approximately 1-5%). Maintaining good hygiene and following post-operative care instructions further reduces the risk.",
+    },
+    {
+      q: "What is the difference between simple excision and excision with flap cover?",
+      a: "Simple excision involves removing the sinus tract and closing the wound directly (primary closure). Flap cover involves using nearby healthy skin and tissue to cover the wound, which is recommended for larger wounds, deep sinuses, or recurrent cases to ensure better healing.",
+    },
+  ],
+  metaTitle: "Pilonidal Sinus Surgery in Bangalore | Excision With/Without Flap — Doctor247",
+  metaDescription:
+    "Best pilonidal sinus surgery in Bangalore starting at ₹31,000. Expert excision with or without flap cover, cashless insurance, no-cost EMI, experienced surgeons.",
+  metaKeywords:
+    "pilonidal sinus surgery in bangalore, pilonidal sinus excision cost, pilonidal sinus treatment, pilonidal sinus with flap cover, best surgeon for pilonidal sinus, tailbone cyst surgery",
+},
+
+"modified-radical-mastectomy": {
+  slug: "modified-radical-mastectomy",
+  name: "Modified Radical Mastectomy (MRM)",
+  shortName: "Modified Radical Mastectomy",
+  price: "₹90,000",
+  heroDescription:
+    "Safe, comprehensive modified radical mastectomy for breast cancer treatment with expert surgical care, axillary lymph node clearance, cashless insurance, no-cost EMI, and free follow-ups. Get advanced breast cancer surgery by verified surgical oncologists in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,500+", label: "Mastectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Modified Radical Mastectomy?",
+  aboutParagraphs: [
+    "A modified radical mastectomy (MRM) is a surgical procedure for breast cancer that involves removal of the entire breast tissue, the nipple-areola complex, and the axillary (armpit) lymph nodes. Unlike a radical mastectomy, the chest wall muscles are preserved, resulting in better functional outcomes and reduced complications.",
+    "This procedure is typically performed for invasive breast cancer and provides comprehensive local control while staging the cancer through lymph node evaluation. Doctor247 connects you with experienced surgical oncologists for safe, effective modified radical mastectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Modified Radical Mastectomy?",
+      items: [
+        "Invasive breast cancer not suitable for breast-conserving surgery",
+        "Large tumor size relative to breast size",
+        "Multiple tumors in different quadrants of the breast",
+        "Patient preference for mastectomy over lumpectomy",
+      ],
+    },
+    {
+      label: "Breast Cancer Risk Factors",
+      items: [
+        "Regular breast self-examination and mammography screening",
+        "Maintain a healthy body weight",
+        "Limit alcohol consumption",
+        "Know your family history of breast cancer",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive tumor growth with local invasion",
+        "Metastasis to lymph nodes and distant organs",
+        "Reduced survival rates",
+        "Limited treatment options at advanced stages",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Surgical Oncology — comprehensive MRM with precision and safety",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgical Oncologists — every surgeon is credential-checked with extensive experience in breast cancer surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Cancer Surgery",
+      description:
+        "We perform meticulous MRM with complete removal of breast tissue and axillary lymph node clearance, ensuring optimal local control and accurate staging.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgical Oncologists",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing breast cancer surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Preservation of Chest Wall Muscles",
+      description:
+        "Unlike radical mastectomy, the pectoralis muscles are preserved in MRM, resulting in better shoulder function, reduced deformity, and improved quality of life.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Mammogram and breast ultrasound",
+    "Core needle biopsy or FNAC for tissue diagnosis",
+    "MRI breast (if needed for surgical planning)",
+    "Chest X-ray, ultrasound abdomen, and bone scan for staging",
+    "Blood tests including tumor markers (CA 15-3)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "An elliptical incision is made around the breast tissue",
+    "The entire breast tissue, nipple-areola complex, and axillary lymph nodes are removed",
+    "Chest wall muscles are preserved",
+    "The wound is closed with sutures and drains are placed",
+    "Procedure typically completed within 2-3 hours",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Perform gentle shoulder exercises as advised after drain removal",
+    "Attend all follow-up visits for wound check and adjuvant treatment planning",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights or perform strenuous activities for 4-6 weeks",
+    "Don't raise the arm on the operated side above shoulder level until cleared",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your adjuvant therapy (chemotherapy/radiotherapy) appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I was diagnosed with breast cancer and the MRM surgery was performed with great expertise. The team supported me through the entire journey. I'm recovering well.”",
+      name: "L. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was highly experienced and explained everything clearly. The preservation of chest muscles means I still have good arm function. Grateful to Doctor247.”",
+      name: "S. Nair",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Excellent care from diagnosis to recovery. The 90-day follow-ups and multi-disciplinary approach gave me complete confidence. Highly recommend.”",
+      name: "P. Sharma",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is modified radical mastectomy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after MRM?",
+      a: "Most patients are discharged within 2-3 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 4-6 weeks. Shoulder exercises should be started after drain removal as advised.",
+    },
+    {
+      q: "Is modified radical mastectomy covered by insurance?",
+      a: "Yes, modified radical mastectomy is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between MRM and radical mastectomy?",
+      a: "MRM removes the breast tissue and axillary lymph nodes while preserving the chest wall muscles (pectoralis major and minor). Radical mastectomy removes the muscles as well, leading to more deformity and functional limitations. MRM is the current standard of care.",
+    },
+    {
+      q: "Will I need additional treatment after MRM?",
+      a: "Most patients require additional treatment after MRM, including chemotherapy, radiotherapy, hormonal therapy, or targeted therapy depending on the tumor characteristics and stage. Your surgical oncologist will coordinate with a multidisciplinary team for comprehensive cancer care.",
+    },
+  ],
+  metaTitle: "Modified Radical Mastectomy in Bangalore | Breast Cancer Surgery — Doctor247",
+  metaDescription:
+    "Best modified radical mastectomy (MRM) in Bangalore starting at ₹90,000. Expert breast cancer surgery with axillary clearance, cashless insurance, experienced surgical oncologists.",
+  metaKeywords:
+    "modified radical mastectomy in bangalore, MRM surgery cost, breast cancer surgery bangalore, mastectomy procedure, breast cancer treatment, surgical oncologist bangalore",
+},
+
+"simple-mastectomy": {
+  slug: "simple-mastectomy",
+  name: "Simple Mastectomy",
+  shortName: "Simple Mastectomy",
+  price: "₹45,000",
+  heroDescription:
+    "Safe, effective simple mastectomy for breast cancer and high-risk conditions with expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced breast surgery by verified surgical oncologists in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,000+", label: "Simple Mastectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Simple Mastectomy?",
+  aboutParagraphs: [
+    "A simple mastectomy (also known as total mastectomy) is a surgical procedure that involves removal of the entire breast tissue, including the nipple-areola complex, but without removal of the axillary (armpit) lymph nodes or chest wall muscles. It is typically performed for ductal carcinoma in situ (DCIS), early-stage breast cancer, or as a risk-reducing procedure for high-risk patients.",
+    "This procedure provides effective local control while offering a quicker recovery and fewer complications compared to more extensive mastectomies. Doctor247 connects you with experienced surgical oncologists for safe, effective simple mastectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Simple Mastectomy?",
+      items: [
+        "Ductal carcinoma in situ (DCIS) where breast-conserving surgery is not suitable",
+        "Early-stage invasive breast cancer without clinical lymph node involvement",
+        "Prophylactic (risk-reducing) mastectomy for high-risk patients",
+        "Multicentric disease (tumors in different quadrants of the breast)",
+      ],
+    },
+    {
+      label: "Breast Cancer Prevention & Screening",
+      items: [
+        "Regular breast self-examination and mammography screening",
+        "Maintain a healthy body weight and active lifestyle",
+        "Limit alcohol consumption and avoid smoking",
+        "Know your family history and consider genetic testing if indicated",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive tumor growth with local invasion",
+        "Potential spread to lymph nodes and distant organs",
+        "Reduced survival rates with delayed treatment",
+        "Limited treatment options at advanced stages",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Surgical Oncology — precise simple mastectomy with excellent outcomes",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgical Oncologists — every surgeon is credential-checked with extensive experience in breast surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Effective Local Control",
+      description:
+        "We perform complete removal of breast tissue with meticulous surgical technique, ensuring optimal local control with minimal complications.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgical Oncologists",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing breast surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Fewer Complications",
+      description:
+        "Unlike modified radical mastectomy, simple mastectomy preserves lymph nodes and muscles, resulting in quicker recovery, less pain, and better arm function.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Mammogram and breast ultrasound",
+    "Core needle biopsy or FNAC for tissue diagnosis",
+    "MRI breast (if needed for surgical planning)",
+    "Chest X-ray and ultrasound abdomen for staging",
+    "Blood tests including tumor markers (CA 15-3)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "An elliptical incision is made around the breast tissue",
+    "The entire breast tissue and nipple-areola complex are removed",
+    "Chest wall muscles and axillary lymph nodes are preserved",
+    "The wound is closed with sutures and drains are placed",
+    "Procedure typically completed within 1.5-2 hours",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Start gentle shoulder exercises after drain removal as advised",
+    "Attend all follow-up visits for wound check and treatment planning",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights or perform strenuous activities for 4-6 weeks",
+    "Don't raise the arm on the operated side above shoulder level until cleared",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your adjuvant therapy (chemotherapy/radiotherapy) appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I was diagnosed with DCIS and needed a simple mastectomy. The surgery was smooth, recovery was quicker than I expected, and the team was very supportive.”",
+      name: "M. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I chose simple mastectomy as a risk-reducing measure due to my family history. The surgeon explained everything clearly and the care was excellent.”",
+      name: "S. Nair",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups gave me complete peace of mind. Highly recommend Doctor247.”",
+      name: "P. Sharma",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is simple mastectomy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after simple mastectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 3-4 weeks.",
+    },
+    {
+      q: "Is simple mastectomy covered by insurance?",
+      a: "Yes, simple mastectomy is covered by most health insurance plans in India for breast cancer treatment and risk-reducing procedures. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between simple mastectomy and modified radical mastectomy?",
+      a: "Simple mastectomy removes only the breast tissue while preserving axillary lymph nodes and chest wall muscles. Modified radical mastectomy removes both the breast tissue and axillary lymph nodes. Simple mastectomy is typically used for DCIS or early-stage cancer without lymph node involvement.",
+    },
+    {
+      q: "Will I need additional treatment after simple mastectomy?",
+      a: "Depending on the pathology results, you may need additional treatment such as chemotherapy, radiotherapy, hormonal therapy, or targeted therapy. Your surgical oncologist will coordinate with a multidisciplinary team for comprehensive cancer care.",
+    },
+  ],
+  metaTitle: "Simple Mastectomy in Bangalore | Breast Cancer Surgery — Doctor247",
+  metaDescription:
+    "Best simple mastectomy in Bangalore starting at ₹45,000. Expert breast surgery for DCIS and early-stage cancer, cashless insurance, experienced surgical oncologists.",
+  metaKeywords:
+    "simple mastectomy in bangalore, mastectomy cost bangalore, breast cancer surgery bangalore, total mastectomy procedure, risk-reducing mastectomy, surgical oncologist bangalore",
+},
+
+"breast-lumpectomy": {
+  slug: "breast-lumpectomy",
+  name: "Breast Lumpectomy",
+  shortName: "Breast Lumpectomy",
+  price: "₹45,000",
+  heroDescription:
+    "Safe, precise breast lumpectomy (breast-conserving surgery) for early-stage breast cancer with expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced breast cancer treatment by verified surgical oncologists in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,500+", label: "Breast Lumpectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Breast Lumpectomy?",
+  aboutParagraphs: [
+    "A breast lumpectomy (also known as breast-conserving surgery or partial mastectomy) is a surgical procedure that removes a cancerous tumor from the breast along with a margin of healthy tissue, while preserving the rest of the breast. This procedure is typically performed for early-stage breast cancer and offers the advantage of breast preservation.",
+    "Lumpectomy is followed by radiation therapy in most cases to ensure complete local control. It provides equivalent survival outcomes to mastectomy for early-stage breast cancer while maintaining natural breast appearance. Doctor247 connects you with experienced surgical oncologists for safe, precise breast lumpectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Breast Lumpectomy?",
+      items: [
+        "Single, localized tumor less than 4-5 cm in size",
+        "Favorable tumor-to-breast size ratio for good cosmetic outcome",
+        "Early-stage breast cancer (Stage I or II)",
+        "Patient preference for breast preservation",
+      ],
+    },
+    {
+      label: "Breast Cancer Prevention & Screening",
+      items: [
+        "Regular breast self-examination and mammography screening",
+        "Maintain a healthy body weight and active lifestyle",
+        "Limit alcohol consumption and avoid smoking",
+        "Know your family history and consider genetic testing if indicated",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive tumor growth with local invasion",
+        "Potential spread to lymph nodes and distant organs",
+        "Reduced survival rates with delayed treatment",
+        "Limited treatment options at advanced stages",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Breast Conservation Surgery — precise lumpectomy with excellent oncological and cosmetic outcomes",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgical Oncologists — every surgeon is credential-checked with extensive experience in breast conservation surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Precise Breast Conservation",
+      description:
+        "We perform meticulous lumpectomy with adequate margins for optimal cancer control while preserving maximum healthy breast tissue for the best cosmetic outcome.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgical Oncologists",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing breast conservation surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Breast Preservation & Better Cosmesis",
+      description:
+        "Unlike mastectomy, lumpectomy preserves the natural breast shape, resulting in better body image and improved quality of life for patients.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Mammogram and breast ultrasound for localization",
+    "Core needle biopsy with wire localization (if needed)",
+    "MRI breast (if needed for surgical planning)",
+    "Chest X-ray and ultrasound abdomen for staging",
+    "Blood tests including tumor markers (CA 15-3)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "Wire localization or intraoperative ultrasound may be used for tumor localization",
+    "An incision is made over the tumor site, following natural skin creases",
+    "The tumor along with a margin of healthy tissue is removed",
+    "The specimen is sent for intraoperative or postoperative margin assessment",
+    "The wound is closed with sutures and a drain may be placed if needed",
+    "Procedure typically completed within 45-60 minutes",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Start gentle arm exercises as advised",
+    "Attend all follow-up visits for wound check and radiation therapy planning",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights or perform strenuous activities for 2-3 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your radiation therapy appointments",
+    "Don't delay your follow-up mammograms as advised",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I was relieved to learn I could preserve my breast with lumpectomy. The surgery was precise and the scar is barely visible. Excellent care from Doctor247.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon did an amazing job removing the tumor with clear margins. Recovery was smooth and I'm grateful for the breast preservation.”",
+      name: "R. Nair",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups and radiation planning support gave me complete confidence. Highly recommend.”",
+      name: "P. Sharma",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is breast lumpectomy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first few days.",
+    },
+    {
+      q: "How long does recovery take after breast lumpectomy?",
+      a: "Most patients return to light activities within 1-2 weeks and full recovery takes 3-4 weeks. Radiation therapy usually begins 2-4 weeks after surgery.",
+    },
+    {
+      q: "Is breast lumpectomy covered by insurance?",
+      a: "Yes, breast lumpectomy is covered by most health insurance plans in India for breast cancer treatment. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between lumpectomy and mastectomy?",
+      a: "Lumpectomy removes only the tumor with a margin of healthy tissue while preserving the rest of the breast. Mastectomy removes the entire breast tissue. Lumpectomy is typically followed by radiation therapy.",
+    },
+    {
+      q: "Will I need additional treatment after lumpectomy?",
+      a: "Yes, almost all patients require radiation therapy after lumpectomy to reduce the risk of local recurrence. Depending on the pathology, you may also need chemotherapy, hormonal therapy, or targeted therapy.",
+    },
+  ],
+  metaTitle: "Breast Lumpectomy in Bangalore | Breast Conservation Surgery — Doctor247",
+  metaDescription:
+    "Best breast lumpectomy in Bangalore starting at ₹45,000. Expert breast-conserving surgery for early-stage cancer, cashless insurance, experienced surgical oncologists.",
+  metaKeywords:
+    "breast lumpectomy in bangalore, breast conservation surgery cost, lumpectomy surgery bangalore, breast tumor removal, early-stage breast cancer treatment, surgical oncologist bangalore",
+},
+
+"thyroidectomy": {
+  slug: "thyroidectomy",
+  name: "Thyroidectomy (Total / Partial / Subtotal)",
+  shortName: "Thyroidectomy",
+  price: "₹70,000",
+  heroDescription:
+    "Safe, precise thyroidectomy for thyroid disorders including total, partial, and subtotal removal with expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced thyroid surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,500+", label: "Thyroidectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Thyroidectomy?",
+  aboutParagraphs: [
+    "A thyroidectomy is a surgical procedure that involves partial or complete removal of the thyroid gland, a butterfly-shaped organ located in the front of the neck that produces hormones regulating metabolism. This surgery is performed for various thyroid conditions including thyroid nodules, goiter, hyperthyroidism, and thyroid cancer.",
+    "Depending on the condition, the surgeon may perform a total thyroidectomy (removal of the entire gland), partial thyroidectomy (removal of one lobe), or subtotal thyroidectomy (removal of most of the gland). Doctor247 connects you with experienced surgeons for safe, effective thyroid surgery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Thyroidectomy?",
+      items: [
+        "Suspicious thyroid nodules or confirmed thyroid cancer",
+        "Large goiter causing compression symptoms (difficulty breathing/swallowing)",
+        "Hyperthyroidism not controlled with medication or radioactive iodine",
+        "Recurrent thyroid nodules despite previous surgery",
+      ],
+    },
+    {
+      label: "Thyroid Health & Prevention",
+      items: [
+        "Monitor iodine intake (not too high, not too low)",
+        "Get regular thyroid function tests if you have risk factors",
+        "Avoid radiation exposure to the neck area when possible",
+        "Know your family history of thyroid conditions",
+      ],
+    },
+    {
+      label: "Complications of Untreated Thyroid Conditions",
+      items: [
+        "Progressive growth of thyroid nodules or cancer spread",
+        "Airway compression from large goiter causing breathing difficulty",
+        "Esophageal compression causing swallowing problems",
+        "Hyperthyroidism complications including cardiac arrhythmias",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Thyroid Surgery — precise total, partial, or subtotal thyroidectomy",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in thyroid surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Precise Thyroid Surgery",
+      description:
+        "We perform meticulous thyroidectomy with careful identification and preservation of vital structures including the recurrent laryngeal nerves (voice) and parathyroid glands (calcium regulation).",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Thyroid Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing thyroid surgeries with consistently high success rates and low complication rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Customized Approach for Every Patient",
+      description:
+        "We tailor the surgical approach to your specific condition — total, partial, or subtotal thyroidectomy based on your diagnosis, ensuring the best possible outcome.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery to monitor thyroid function.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Ultrasound of the thyroid gland with nodule assessment",
+    "Thyroid function tests (T3, T4, TSH)",
+    "Fine needle aspiration cytology (FNAC) for suspicious nodules",
+    "CT or MRI (if needed for large goiters)",
+    "Laryngoscopy for vocal cord assessment",
+    "Blood tests to assess calcium levels and fitness for surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "A small incision is made in the lower neck, following natural skin creases",
+    "The thyroid gland is carefully exposed and mobilized",
+    "The recurrent laryngeal nerves and parathyroid glands are identified and preserved",
+    "Total, partial, or subtotal thyroidectomy is performed based on the condition",
+    "The wound is closed with sutures and a drain may be placed if needed",
+    "Procedure typically completed within 1.5-3 hours depending on the type",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry",
+    "Take prescribed pain relief, antibiotics, and calcium supplements (if needed) on schedule",
+    "Monitor for symptoms of hypocalcemia (tingling, muscle cramps)",
+    "Attend all follow-up visits for wound check and thyroid function monitoring",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights or perform strenuous activities for 2-3 weeks",
+    "Don't ignore tingling, muscle cramps, or voice changes — call us immediately",
+    "Don't skip your thyroid hormone replacement (if prescribed)",
+    "Don't delay your follow-up appointments for thyroid function monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a large goiter causing breathing difficulty. The thyroidectomy was performed with great precision. My voice is intact and I'm breathing much better now.”",
+      name: "R. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I was anxious about thyroid surgery but the surgeon explained everything clearly. The recovery was smooth and the scar is minimal. Highly recommend Doctor247.”",
+      name: "S. Nair",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Excellent care from diagnosis to recovery. The 90-day follow-ups and regular thyroid function monitoring gave me complete confidence. Thank you Doctor247.”",
+      name: "P. Sharma",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is thyroidectomy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first few days.",
+    },
+    {
+      q: "How long does recovery take after thyroidectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 3-4 weeks.",
+    },
+    {
+      q: "Is thyroidectomy covered by insurance?",
+      a: "Yes, thyroidectomy is covered by most health insurance plans in India for thyroid disorders including cancer and hyperthyroidism. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between total, partial, and subtotal thyroidectomy?",
+      a: "Total thyroidectomy removes the entire gland. Partial thyroidectomy removes only one lobe (lobectomy) or part of one lobe. Subtotal thyroidectomy removes most of the gland leaving a small portion. The choice depends on your diagnosis and condition.",
+    },
+    {
+      q: "Will I need thyroid hormone replacement after surgery?",
+      a: "If you have a total thyroidectomy or most of the gland is removed, you will need lifelong thyroid hormone replacement. If only one lobe is removed, the remaining lobe may produce enough hormone and you may not need replacement. Your surgeon will monitor your thyroid function and prescribe accordingly.",
+    },
+  ],
+  metaTitle: "Thyroidectomy in Bangalore | Total / Partial / Subtotal — Doctor247",
+  metaDescription:
+    "Best thyroidectomy in Bangalore starting at ₹70,000. Expert total, partial, and subtotal thyroid removal, cashless insurance, no-cost EMI, experienced surgeons.",
+  metaKeywords:
+    "thyroidectomy in bangalore, thyroid surgery cost, total thyroidectomy, partial thyroidectomy, thyroid removal surgery, best surgeon for thyroid bangalore",
+},
+
+"varicose-veins-unilateral": {
+  slug: "varicose-veins-unilateral",
+  name: "Varicose Veins Surgery - Saphenofemoral Ligation & Stripping / Sclerotherapy (Unilateral)",
+  shortName: "Varicose Veins",
+  price: "₹41,500",
+  heroDescription:
+    "Safe, effective varicose veins treatment with saphenofemoral ligation, stripping, or sclerotherapy for unilateral leg involvement. Expert vascular care, cashless insurance, no-cost EMI, and free follow-ups. Get relief from painful varicose veins by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "3,500+", label: "Varicose Vein Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Varicose Veins?",
+  aboutParagraphs: [
+    "Varicose veins are swollen, twisted, and enlarged veins that most commonly occur in the legs. They develop when the valves inside the veins malfunction, causing blood to pool and the veins to stretch and bulge. This condition can cause pain, aching, heaviness, swelling, and cosmetic concerns.",
+    "Treatment options include saphenofemoral ligation (tying off the vein at its junction), stripping (removal of the diseased vein), and sclerotherapy (injection of a solution to close the vein). Doctor247 connects you with experienced vascular surgeons for safe, effective varicose vein treatment in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Varicose Vein Surgery?",
+      items: [
+        "Persistent pain, aching, or heaviness in the legs",
+        "Visible swollen, twisted veins that cause cosmetic concern",
+        "Swelling in the legs and ankles",
+        "Skin changes including discoloration, thickening, or ulcers near the ankles",
+      ],
+    },
+    {
+      label: "Preventing Varicose Veins",
+      items: [
+        "Maintain a healthy body weight",
+        "Regular exercise including walking and calf muscle exercises",
+        "Avoid prolonged standing or sitting without breaks",
+        "Elevate your legs when resting",
+      ],
+    },
+    {
+      label: "Complications of Untreated Varicose Veins",
+      items: [
+        "Chronic venous insufficiency causing skin changes",
+        "Venous ulcers (open sores near the ankles)",
+        "Superficial thrombophlebitis (blood clot in a superficial vein)",
+        "Bleeding from ruptured varicose veins",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Varicose Vein Treatment — saphenofemoral ligation, stripping, and sclerotherapy options",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in vascular surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Varicose Vein Treatment",
+      description:
+        "We offer multiple treatment options including saphenofemoral ligation, vein stripping, and sclerotherapy, tailored to your specific condition for the best outcomes.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Vascular Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing varicose vein procedures with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Effective & Lasting Results",
+      description:
+        "Our surgical techniques provide long-lasting relief from varicose veins with improved leg appearance and reduced symptoms.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the legs",
+    "Doppler ultrasound to assess venous reflux and valve function",
+    "Duplex ultrasound for detailed mapping of veins",
+    "Blood tests to assess fitness for surgery",
+  ],
+  procedureSteps: [
+    "Local, spinal, or general anaesthesia depending on the case",
+    "A small incision is made in the groin for saphenofemoral ligation",
+    "The great saphenous vein is tied off at its junction (ligation)",
+    "The diseased vein may be stripped (removed) or treated with sclerotherapy",
+    "The wound is closed with sutures and compression bandages are applied",
+    "Procedure typically completed within 60-90 minutes",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry",
+    "Wear compression stockings as advised by your surgeon",
+    "Walk short distances from day 1 to aid circulation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights or perform strenuous activities for 2-3 weeks",
+    "Don't stand or sit for prolonged periods without breaks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your compression stocking schedule",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had painful varicose veins in my leg for years. The saphenofemoral ligation and stripping gave me complete relief. The surgeon was excellent and the recovery was smooth.”",
+      name: "R. Kumar",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The sclerotherapy treatment was quick and effective. My leg looks so much better now and the pain is completely gone. Highly recommend Doctor247.”",
+      name: "S. Reddy",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups gave me complete peace of mind. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is varicose vein surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative discomfort is manageable with prescribed pain medication and typically decreases significantly within the first few days.",
+    },
+    {
+      q: "How long does recovery take after varicose vein surgery?",
+      a: "Most patients return to light activities within 1-2 weeks and full recovery takes 3-4 weeks. Wearing compression stockings and walking regularly aids faster recovery.",
+    },
+    {
+      q: "Is varicose vein surgery covered by insurance?",
+      a: "Yes, varicose vein surgery is covered by most health insurance plans in India when clinically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between ligation, stripping, and sclerotherapy?",
+      a: "Ligation involves tying off the vein at its junction. Stripping involves removing the diseased vein entirely. Sclerotherapy involves injecting a solution into the vein to close it. Your surgeon will recommend the best option based on your condition.",
+    },
+    {
+      q: "Will varicose veins come back after surgery?",
+      a: "Recurrence is possible but uncommon with proper surgical technique. Maintaining a healthy lifestyle, wearing compression stockings, and following post-operative guidelines reduces the risk of recurrence.",
+    },
+  ],
+  metaTitle: "Varicose Veins Surgery in Bangalore | Ligation, Stripping & Sclerotherapy — Doctor247",
+  metaDescription:
+    "Best varicose veins treatment in Bangalore starting at ₹41,500. Expert saphenofemoral ligation, stripping & sclerotherapy, cashless insurance, experienced surgeons.",
+  metaKeywords:
+    "varicose veins surgery in bangalore, varicose veins treatment cost, saphenofemoral ligation, vein stripping, sclerotherapy treatment, vascular surgeon bangalore",
+},
+
+"varicose-veins-laser-rfa": {
+  slug: "varicose-veins-laser-rfa",
+  name: "Varicose Veins - Radiofrequency Ablation / Endovenous Laser Treatment",
+  shortName: "Laser/RFA Varicose Veins",
+  price: "₹33,000",
+  heroDescription:
+    "Advanced radiofrequency ablation (RFA) and endovenous laser treatment (EVLT) for varicose veins with minimal pain, faster recovery, no scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art varicose vein treatment by verified vascular surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "4,000+", label: "Laser/RFA Procedures Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Varicose Veins?",
+  aboutParagraphs: [
+    "Varicose veins are swollen, twisted, and enlarged veins that most commonly occur in the legs. They develop when the valves inside the veins malfunction, causing blood to pool and the veins to stretch and bulge. This condition can cause pain, aching, heaviness, swelling, and cosmetic concerns.",
+    "Radiofrequency ablation (RFA) and endovenous laser treatment (EVLT) are modern, minimally invasive treatments for varicose veins. These procedures use heat energy (radiofrequency or laser) to close the diseased vein from inside, rerouting blood to healthier veins. Doctor247 connects you with experienced vascular surgeons for advanced, scar-free varicose vein treatment in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laser/RFA Varicose Vein Treatment?",
+      items: [
+        "Persistent pain, aching, or heaviness in the legs",
+        "Visible swollen, twisted veins causing cosmetic concern",
+        "Swelling in the legs and ankles",
+        "Skin changes including discoloration, thickening, or ulcers near the ankles",
+      ],
+    },
+    {
+      label: "Preventing Varicose Veins",
+      items: [
+        "Maintain a healthy body weight",
+        "Regular exercise including walking and calf muscle exercises",
+        "Avoid prolonged standing or sitting without breaks",
+        "Elevate your legs when resting",
+      ],
+    },
+    {
+      label: "Complications of Untreated Varicose Veins",
+      items: [
+        "Chronic venous insufficiency causing skin changes",
+        "Venous ulcers (open sores near the ankles)",
+        "Superficial thrombophlebitis (blood clot)",
+        "Bleeding from ruptured varicose veins",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced RFA & EVLT — state-of-the-art minimally invasive treatment with no scars",
+        "Free Follow-ups — post-procedure consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your treatment cost into easy monthly instalments with zero interest",
+        "Verified Vascular Surgeons — every surgeon is credential-checked with extensive experience in laser/RFA vein treatment",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced RFA & EVLT Technology",
+      description:
+        "We use state-of-the-art radiofrequency ablation and endovenous laser technology to close diseased veins from inside, providing excellent results with minimal discomfort and no scarring.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Minimally Invasive with No Scarring",
+      description:
+        "Unlike traditional vein stripping, RFA and EVLT require only a tiny puncture, leaving no visible scars. The procedure is performed under local anaesthesia with immediate return to normal activities.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Immediate Relief",
+      description:
+        "Most patients resume normal activities within 24-48 hours. The procedure provides immediate relief from pain, heaviness, and swelling with excellent cosmetic results.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure to ensure complete healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the legs",
+    "Doppler ultrasound to assess venous reflux and valve function",
+    "Duplex ultrasound for detailed mapping of veins",
+    "Blood tests to assess fitness for the procedure",
+  ],
+  procedureSteps: [
+    "Local anaesthesia is administered (no general anaesthesia needed)",
+    "A tiny puncture is made, and a catheter is inserted into the diseased vein",
+    "Radiofrequency or laser energy is delivered through the catheter to close the vein",
+    "The vein collapses and is sealed, rerouting blood to healthier veins",
+    "A small bandage is applied — no stitches required",
+    "Procedure typically completed within 45-60 minutes",
+  ],
+  postOpDo: [
+    "Wear compression stockings as advised by your surgeon",
+    "Walk short distances from day 1 to aid circulation",
+    "Keep the treated area clean and dry",
+    "Attend your follow-up visit within 7-10 days for evaluation",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights or perform strenuous activities for 1-2 weeks",
+    "Don't stand or sit for prolonged periods without breaks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your compression stocking schedule",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had painful varicose veins and was nervous about surgery. The laser treatment was quick, painless, and left no scars. I'm so happy with the results!”",
+      name: "S. Kumar",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The RFA procedure was amazing. I walked in and walked out the same day. My legs feel so much better now. Highly recommend Doctor247.”",
+      name: "R. Reddy",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“No scars, no pain, and no downtime. The team was very professional and the 90-day follow-ups ensured complete healing. Excellent experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laser/RFA varicose vein treatment painful?",
+      a: "The procedure is performed under local anaesthesia so you won't feel pain during treatment. Most patients experience only mild discomfort during recovery, which is easily managed.",
+    },
+    {
+      q: "How long does recovery take after laser/RFA treatment?",
+      a: "Most patients resume normal activities within 24-48 hours. You can return to work the next day. Full recovery typically takes 1-2 weeks.",
+    },
+    {
+      q: "Is laser/RFA varicose vein treatment covered by insurance?",
+      a: "Yes, RFA and EVLT are covered by most health insurance plans in India when clinically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between RFA and EVLT?",
+      a: "Both are minimally invasive treatments that use heat to close diseased veins. RFA uses radiofrequency energy, while EVLT uses laser energy. Both are highly effective with excellent outcomes. Your surgeon will recommend the best option based on your condition.",
+    },
+    {
+      q: "Will varicose veins come back after laser/RFA treatment?",
+      a: "Recurrence is possible but uncommon. The treated vein will not return as it is permanently closed. New varicose veins can develop, but with proper lifestyle changes and follow-up, the risk is minimal.",
+    },
+  ],
+  metaTitle: "Laser & RFA Varicose Veins Treatment in Bangalore | EVLT — Doctor247",
+  metaDescription:
+    "Best laser and RFA varicose veins treatment in Bangalore starting at ₹33,000. Advanced endovenous laser & radiofrequency ablation, no scars, cashless insurance.",
+  metaKeywords:
+    "laser varicose veins treatment bangalore, RFA varicose veins, EVLT treatment, endovenous laser treatment, varicose veins laser cost, vascular surgeon bangalore",
+},
+
+"wound-debridement-minor": {
+  slug: "wound-debridement-minor",
+  name: "Wound Debridement - Minor",
+  shortName: "Minor Wound Debridement",
+  price: "₹15,000",
+  heroDescription:
+    "Safe, effective minor wound debridement for infected, non-healing, or chronic wounds with expert wound care, cashless insurance, no-cost EMI, and free follow-ups. Get professional wound management by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "5,000+", label: "Wound Debridement Procedures Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Wound Debridement?",
+  aboutParagraphs: [
+    "Wound debridement is a medical procedure that involves the removal of dead, damaged, or infected tissue from a wound to promote healing. This is essential for wounds that are not healing properly, as dead tissue can harbor bacteria and prevent new healthy tissue from growing.",
+    "Minor wound debridement is performed for smaller wounds, superficial infections, or as part of ongoing wound care management. The procedure cleans the wound bed, removes non-viable tissue, and creates an optimal environment for healing. Doctor247 connects you with experienced surgeons for safe, effective wound debridement in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Wound Debridement?",
+      items: [
+        "Non-healing wounds that show no improvement after 2-3 weeks",
+        "Wounds with visible dead tissue, slough, or eschar (black tissue)",
+        "Infected wounds with purulent discharge or surrounding redness",
+        "Chronic wounds including diabetic foot ulcers, pressure ulcers, and venous ulcers",
+      ],
+    },
+    {
+      label: "Preventing Wound Complications",
+      items: [
+        "Keep wounds clean and covered with appropriate dressings",
+        "Control blood sugar levels in diabetic patients",
+        "Maintain good nutrition for optimal wound healing",
+        "Avoid smoking as it delays wound healing",
+      ],
+    },
+    {
+      label: "Complications of Untreated Wounds",
+      items: [
+        "Progressive infection spreading to deeper tissues",
+        "Development of abscesses or cellulitis",
+        "Chronic non-healing ulcers with potential for amputation",
+        "Sepsis in severe, untreated infections",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Wound Care — thorough debridement with minimal discomfort",
+        "Free Follow-ups — post-debridement consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in wound management",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Thorough Debridement",
+      description:
+        "We perform meticulous removal of all non-viable, necrotic, or infected tissue, creating a clean wound bed that promotes faster and healthier healing.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Wound Care Specialists",
+      description:
+        "Our surgeons have extensive experience in managing all types of wounds including diabetic ulcers, pressure ulcers, traumatic wounds, and post-surgical wounds.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Minimal Discomfort",
+      description:
+        "We use appropriate anaesthesia and gentle techniques to ensure minimal pain and discomfort during the procedure.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations to monitor wound healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the wound",
+    "Wound swab for culture and sensitivity (if infection is suspected)",
+    "Blood tests to assess infection markers and general health",
+    "Doppler studies (if vascular compromise is suspected)",
+  ],
+  procedureSteps: [
+    "Local anaesthesia is administered for a pain-free procedure",
+    "The wound is cleaned with sterile solution",
+    "Dead, damaged, or infected tissue is carefully removed using surgical instruments",
+    "The wound bed is irrigated to remove debris",
+    "An appropriate dressing is applied",
+    "Procedure typically completed within 15-30 minutes",
+  ],
+  postOpDo: [
+    "Keep the wound clean and dry as advised",
+    "Change dressings as per the schedule provided",
+    "Take prescribed antibiotics and pain relief on schedule",
+    "Attend follow-up visits for wound assessment and dressing changes",
+  ],
+  postOpDont: [
+    "Don't expose the wound to dirty or contaminated water",
+    "Don't ignore increased redness, pain, or discharge — call us immediately",
+    "Don't remove dressings prematurely",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a diabetic foot ulcer that wasn't healing. The debridement procedure was quick and painless. With proper care, my wound is healing beautifully now.”",
+      name: "R. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My post-surgical wound wasn't healing well. The debridement cleared the dead tissue and my wound started healing within days. Excellent care.”",
+      name: "S. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“The team was very professional and explained everything clearly. The 90-day follow-ups ensured my wound healed completely. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is wound debridement painful?",
+      a: "The procedure is performed under local anaesthesia so you won't feel significant pain during debridement. Some mild discomfort may be experienced, which is easily managed.",
+    },
+    {
+      q: "How long does recovery take after wound debridement?",
+      a: "The wound itself may take 1-4 weeks to heal depending on its size and your overall health. Most patients resume normal activities immediately after the procedure.",
+    },
+    {
+      q: "Is wound debridement covered by insurance?",
+      a: "Yes, wound debridement is covered by most health insurance plans in India when clinically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "How many sessions of debridement will I need?",
+      a: "This depends on the wound's condition. Some wounds may require a single session, while others with extensive dead tissue may need multiple sessions for complete healing.",
+    },
+    {
+      q: "What happens if a wound is not debrided?",
+      a: "Without debridement, dead tissue can harbor bacteria, delay healing, increase the risk of infection, and prevent new healthy tissue from forming. This can lead to chronic wounds and potentially serious complications.",
+    },
+  ],
+  metaTitle: "Wound Debridement in Bangalore | Minor Wound Care — Doctor247",
+  metaDescription:
+    "Best minor wound debridement in Bangalore starting at ₹15,000. Expert wound care for non-healing wounds, cashless insurance, experienced surgeons.",
+  metaKeywords:
+    "wound debridement in bangalore, minor wound debridement cost, wound care treatment, diabetic foot ulcer treatment, wound debridement surgery, wound management bangalore",
+},
+
+"wound-debridement-major": {
+  slug: "wound-debridement-major",
+  name: "Wound Debridement - Major",
+  shortName: "Major Wound Debridement",
+  price: "₹25,000",
+  heroDescription:
+    "Safe, comprehensive major wound debridement for extensive, infected, or non-healing wounds with expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced wound management by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "3,500+", label: "Major Wound Debridements Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Major Wound Debridement?",
+  aboutParagraphs: [
+    "Major wound debridement is an extensive surgical procedure that involves the removal of large amounts of dead, damaged, or infected tissue from a wound to promote healing and prevent life-threatening complications. This is essential for complex wounds, extensive burns, necrotizing infections, or wounds that involve deeper tissues including muscle, fascia, or bone.",
+    "Major debridement is performed in a sterile operating room under anaesthesia, often requiring hospital admission. The procedure converts a necrotic, infected wound into a clean, viable wound that can heal or be closed with grafts. Doctor247 connects you with experienced surgeons for safe, effective major wound debridement in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Major Wound Debridement?",
+      items: [
+        "Extensive wounds with large areas of dead or infected tissue",
+        "Deep wounds involving muscle, fascia, or bone",
+        "Necrotizing fasciitis or gas gangrene (emergency)",
+        "Non-healing wounds that have failed minor debridement",
+      ],
+    },
+    {
+      label: "Preventing Wound Complications",
+      items: [
+        "Keep wounds clean and covered with appropriate dressings",
+        "Control blood sugar levels in diabetic patients",
+        "Maintain good nutrition for optimal wound healing",
+        "Avoid smoking as it delays wound healing",
+      ],
+    },
+    {
+      label: "Complications of Untreated Wounds",
+      items: [
+        "Progressive infection spreading to deeper tissues",
+        "Development of abscesses or cellulitis",
+        "Chronic non-healing ulcers with potential for amputation",
+        "Sepsis in severe, untreated infections",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Major Wound Care — comprehensive debridement with multidisciplinary approach",
+        "Free Follow-ups — post-debridement consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in complex wound management",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Major Debridement",
+      description:
+        "We perform extensive removal of all non-viable, necrotic, or infected tissue including deep structures, creating a clean wound bed for optimal healing.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Wound Care Specialists",
+      description:
+        "Our surgeons have extensive experience in managing complex wounds including necrotizing infections, burns, diabetic foot ulcers, and pressure ulcers.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Multidisciplinary Approach",
+      description:
+        "We work with a team of specialists including infectious disease experts, plastic surgeons, and wound care nurses for comprehensive management.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations to monitor wound healing.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the wound with assessment of depth and extent",
+    "Wound swab for culture and sensitivity (if infection is suspected)",
+    "Blood tests including CBC, CRP, and blood culture",
+    "Imaging studies (MRI or CT) to assess deep tissue involvement",
+    "Doppler studies for vascular assessment",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia depending on the case",
+    "The wound is cleaned and prepared in sterile conditions",
+    "All dead, damaged, or infected tissue is carefully excised down to healthy tissue",
+    "Bone debridement may be performed if involved",
+    "The wound is thoroughly irrigated with antibiotic solution",
+    "Negative pressure wound therapy (NPWT) may be applied",
+    "Procedure typically completed within 60-120 minutes depending on extent",
+  ],
+  postOpDo: [
+    "Keep the wound clean and dry as advised",
+    "Change dressings as per the schedule provided",
+    "Take prescribed antibiotics, pain relief, and other medications on schedule",
+    "Attend all follow-up visits for wound assessment and dressing changes",
+    "Follow nutritional recommendations for optimal healing",
+  ],
+  postOpDont: [
+    "Don't expose the wound to dirty or contaminated water",
+    "Don't ignore increased redness, pain, or discharge — call us immediately",
+    "Don't remove dressings or negative pressure therapy devices prematurely",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a severe diabetic foot infection requiring major debridement. The surgery saved my foot from amputation. The team was excellent and the care was outstanding.”",
+      name: "R. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My pressure ulcer was deep and infected. The major debridement was done with great expertise. My wound is now healing beautifully with the follow-up care.”",
+      name: "S. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“The multidisciplinary team at Doctor247 saved my life from a severe infection. The 90-day follow-ups and wound care support were exceptional. Highly recommend.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is major wound debridement painful?",
+      a: "The procedure is performed under general or spinal anaesthesia so you won't feel pain during debridement. Post-operative pain is managed with prescribed medication.",
+    },
+    {
+      q: "How long does recovery take after major wound debridement?",
+      a: "Hospital stay may range from 3-7 days depending on the wound. Complete wound healing may take several weeks to months depending on the extent and your overall health.",
+    },
+    {
+      q: "Is major wound debridement covered by insurance?",
+      a: "Yes, major wound debridement is covered by most health insurance plans in India when clinically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between minor and major debridement?",
+      a: "Minor debridement is performed on smaller, more superficial wounds with limited tissue removal, often under local anaesthesia. Major debridement involves extensive tissue removal, deeper structures, and is performed in an operating room under general/spinal anaesthesia with hospital admission.",
+    },
+    {
+      q: "What happens after major debridement?",
+      a: "After major debridement, the wound may be closed primarily, left to heal by secondary intention, or covered with skin grafts/flaps. Negative pressure wound therapy is often used to promote healing. You will have regular follow-up visits for wound care.",
+    },
+  ],
+  metaTitle: "Major Wound Debridement in Bangalore | Complex Wound Care — Doctor247",
+  metaDescription:
+    "Best major wound debridement in Bangalore starting at ₹25,000. Expert complex wound care, cashless insurance, multidisciplinary approach, experienced surgeons.",
+  metaKeywords:
+    "major wound debridement in bangalore, complex wound care, surgical debridement cost, diabetic foot ulcer surgery, wound debridement treatment, wound management bangalore",
+},
+
+
 };
 
 export const SURGERY_SLUGS = Object.keys(SURGERIES);
