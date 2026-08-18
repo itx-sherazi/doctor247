@@ -75,7 +75,6 @@ function LoginForm() {
         </div>
       </div>
 
-      {/* Right: form */}
       <div className="px-5 py-10 sm:py-14 lg:flex lg:items-center lg:justify-center lg:px-4 lg:py-16">
         <form onSubmit={handleSubmit} className="w-full max-w-[400px] mx-auto">
           
