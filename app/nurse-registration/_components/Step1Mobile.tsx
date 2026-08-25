@@ -57,7 +57,6 @@ export function Step1Mobile({
       if (!res.ok) throw new Error(result.error || "Incorrect OTP");
       update({ otpVerified: true });
 
-      // Persist immediately so a returning user isn't asked to re-verify.
       const formData = new FormData();
       formData.append("payload", JSON.stringify({ mobileNumber: data.mobileNumber }));
       fetch("/api/nurse-profile", { method: "PATCH", body: formData }).catch(() => {});
