@@ -5979,6 +5979,5093 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     "major wound debridement in bangalore, complex wound care, surgical debridement cost, diabetic foot ulcer surgery, wound debridement treatment, wound management bangalore",
 },
 
+"hysterectomy-abdominal": {
+  slug: "hysterectomy-abdominal",
+  name: "Hysterectomy - Abdominal (With or Without BSO & Adhesiolysis)",
+  shortName: "Abdominal Hysterectomy",
+  price: "₹58,500",
+  heroDescription:
+    "Safe, comprehensive abdominal hysterectomy with or without bilateral salpingo-oophorectomy (BSO) and adhesiolysis for gynaecological conditions. Expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,500+", label: "Hysterectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is an Abdominal Hysterectomy?",
+  aboutParagraphs: [
+    "An abdominal hysterectomy is a surgical procedure that involves the removal of the uterus through an incision in the lower abdomen. It may be performed with or without bilateral salpingo-oophorectomy (BSO) — removal of the fallopian tubes and ovaries. Adhesiolysis (removal of scar tissue) may also be performed if adhesions are present from previous surgeries or conditions.",
+    "This procedure is commonly performed for conditions such as uterine fibroids, endometriosis, abnormal uterine bleeding, uterine prolapse, and gynaecological cancers. Doctor247 connects you with experienced gynaecological surgeons for safe, effective abdominal hysterectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Abdominal Hysterectomy?",
+      items: [
+        "Large uterine fibroids causing pain, pressure, or heavy bleeding",
+        "Endometriosis not responding to medical management",
+        "Uterine prolapse causing discomfort or urinary issues",
+        "Gynaecological cancers (uterine, cervical, ovarian)",
+      ],
+    },
+    {
+      label: "Gynaecological Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and Pap smears",
+        "Maintain a healthy body weight",
+        "Monitor and manage abnormal uterine bleeding promptly",
+        "Know your family history of gynaecological conditions",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive symptoms of fibroids including heavy bleeding",
+        "Chronic pain from endometriosis",
+        "Fertility issues and pregnancy complications",
+        "Progression of gynaecological cancers",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Gynaecological Surgery — comprehensive hysterectomy with precision",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Surgical Care",
+      description:
+        "We perform meticulous abdominal hysterectomy with or without BSO and adhesiolysis as needed, ensuring complete treatment of your gynaecological condition.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing hysterectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Customized Surgical Approach",
+      description:
+        "We tailor the surgical procedure to your specific condition — whether you need a simple hysterectomy or require BSO and adhesiolysis.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination and assessment",
+    "Ultrasound (pelvic) for uterine assessment",
+    "MRI (if needed for complex cases)",
+    "Endometrial biopsy (if indicated)",
+    "Pap smear and HPV testing",
+    "Blood tests including CA-125 (if indicated)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The uterus is carefully separated from surrounding structures",
+    "BSO (removal of fallopian tubes and ovaries) may be performed if indicated",
+    "Adhesiolysis (removal of scar tissue) is performed if adhesions are present",
+    "The incision is closed with sutures or staples",
+    "Procedure typically completed within 1.5-3 hours",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief, antibiotics, and other medications on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow hormonal replacement therapy if BSO was performed",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had large fibroids causing heavy bleeding and pain. The abdominal hysterectomy gave me complete relief. The surgeon was excellent and the recovery was well managed.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I needed a hysterectomy with BSO due to endometriosis. The team was very supportive and explained everything clearly. The 90-day follow-ups gave me peace of mind.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgical care was excellent and I'm recovering well. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is abdominal hysterectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after abdominal hysterectomy?",
+      a: "Most patients are discharged within 2-4 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 4-6 weeks.",
+    },
+    {
+      q: "Is abdominal hysterectomy covered by insurance?",
+      a: "Yes, abdominal hysterectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between hysterectomy with and without BSO?",
+      a: "A hysterectomy without BSO removes only the uterus. A hysterectomy with BSO removes the uterus along with the fallopian tubes and ovaries. BSO is performed for conditions like endometriosis, cancer, or as a prophylactic measure.",
+    },
+    {
+      q: "What is adhesiolysis and why is it needed?",
+      a: "Adhesiolysis is the surgical removal of adhesions (scar tissue) that can form from previous surgeries, infections, or conditions like endometriosis. Adhesions can cause pain, bowel obstruction, or infertility, and their removal may be necessary during hysterectomy.",
+    },
+  ],
+  metaTitle: "Abdominal Hysterectomy in Bangalore | With/Without BSO & Adhesiolysis — Doctor247",
+  metaDescription:
+    "Best abdominal hysterectomy in Bangalore starting at ₹58,500. Expert gynaecological surgery with or without BSO and adhesiolysis, cashless insurance, experienced surgeons.",
+  metaKeywords:
+    "abdominal hysterectomy in bangalore, hysterectomy cost bangalore, hysterectomy with BSO, adhesiolysis surgery, gynaecological surgery, best gynaecologist bangalore",
+},
+
+"hysterectomy-laparoscopic": {
+  slug: "hysterectomy-laparoscopic",
+  name: "Laparoscopic Hysterectomy (With or Without BSO & Adhesiolysis)",
+  shortName: "Laparoscopic Hysterectomy",
+  price: "₹83,500",
+  heroDescription:
+    "Advanced laparoscopic hysterectomy with or without bilateral salpingo-oophorectomy (BSO) and adhesiolysis for gynaecological conditions. Minimally invasive, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "3,000+", label: "Laparoscopic Hysterectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Laparoscopic Hysterectomy?",
+  aboutParagraphs: [
+    "A laparoscopic hysterectomy is a minimally invasive surgical procedure that involves the removal of the uterus through small incisions in the abdomen using a camera and specialized instruments. It may be performed with or without bilateral salpingo-oophorectomy (BSO) — removal of the fallopian tubes and ovaries. Adhesiolysis (removal of scar tissue) may also be performed if adhesions are present from previous surgeries or conditions.",
+    "This advanced technique offers numerous benefits over traditional open surgery including smaller incisions, less pain, faster recovery, and minimal scarring. Doctor247 connects you with experienced gynaecological surgeons for safe, effective laparoscopic hysterectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Hysterectomy?",
+      items: [
+        "Uterine fibroids causing pain, pressure, or heavy bleeding",
+        "Endometriosis not responding to medical management",
+        "Uterine prolapse causing discomfort or urinary issues",
+        "Gynaecological cancers (uterine, cervical, ovarian)",
+        "Abnormal uterine bleeding not controlled with other treatments",
+      ],
+    },
+    {
+      label: "Gynaecological Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and Pap smears",
+        "Maintain a healthy body weight",
+        "Monitor and manage abnormal uterine bleeding promptly",
+        "Know your family history of gynaecological conditions",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive symptoms of fibroids including heavy bleeding",
+        "Chronic pain from endometriosis",
+        "Fertility issues and pregnancy complications",
+        "Progression of gynaecological cancers",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — minimally invasive with faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in advanced laparoscopic gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Technique",
+      description:
+        "We use state-of-the-art laparoscopic technology with 3-4 small incisions, providing excellent visualization and precise surgical removal with minimal tissue trauma.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Gynaecological Laparoscopic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing laparoscopic hysterectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Minimal Scarring",
+      description:
+        "Unlike open surgery, laparoscopic hysterectomy offers significantly faster recovery — most patients return to normal activities within 2-3 weeks with barely visible scars.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination and assessment",
+    "Ultrasound (pelvic) for uterine assessment",
+    "MRI (if needed for complex cases)",
+    "Endometrial biopsy (if indicated)",
+    "Pap smear and HPV testing",
+    "Blood tests including CA-125 (if indicated)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3-4 small keyhole incisions are made in the abdomen",
+    "Carbon dioxide gas is used to inflate the abdomen for better visualization",
+    "A laparoscope (camera) and specialized instruments are inserted",
+    "The uterus is carefully separated from surrounding structures",
+    "BSO (removal of fallopian tubes and ovaries) may be performed if indicated",
+    "Adhesiolysis (removal of scar tissue) is performed if adhesions are present",
+    "The uterus is removed through the vagina or morcellated and removed through the incisions",
+    "The incisions are closed with dissolvable sutures",
+    "Procedure typically completed within 2-4 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief, antibiotics, and other medications on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow hormonal replacement therapy if BSO was performed",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 3-4 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I chose laparoscopic hysterectomy and I'm so glad I did. The recovery was so much faster than I expected and the scars are barely visible. Excellent care from Doctor247.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant less pain and quicker return to normal life. The surgeon was highly skilled and the team was very supportive throughout.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups gave me complete peace of mind. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic hysterectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic hysterectomy causes significantly less post-operative pain than open surgery due to smaller incisions, with most patients experiencing only mild discomfort.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic hysterectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 2-3 weeks — significantly faster than the 4-6 weeks required for open hysterectomy.",
+    },
+    {
+      q: "Is laparoscopic hysterectomy covered by insurance?",
+      a: "Yes, laparoscopic hysterectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the advantage of laparoscopic over abdominal hysterectomy?",
+      a: "Laparoscopic hysterectomy offers several advantages: smaller incisions, less post-operative pain, faster recovery, shorter hospital stay, minimal scarring, and earlier return to normal activities.",
+    },
+    {
+      q: "What is the difference between hysterectomy with and without BSO?",
+      a: "A hysterectomy without BSO removes only the uterus. A hysterectomy with BSO removes the uterus along with the fallopian tubes and ovaries. BSO is performed for conditions like endometriosis, cancer, or as a prophylactic measure.",
+    },
+  ],
+  metaTitle: "Laparoscopic Hysterectomy in Bangalore | Minimally Invasive Gynaecological Surgery — Doctor247",
+  metaDescription:
+    "Best laparoscopic hysterectomy in Bangalore starting at ₹83,500. Advanced minimally invasive surgery with or without BSO & adhesiolysis, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "laparoscopic hysterectomy in bangalore, laparoscopic hysterectomy cost, minimally invasive hysterectomy, gynaecological surgery, best gynaecologist bangalore, hysterectomy with BSO",
+},
+
+"hysterectomy-vaginal": {
+  slug: "hysterectomy-vaginal",
+  name: "Hysterectomy - Vaginal (With or Without Pelvic Floor Repair & Adhesiolysis)",
+  shortName: "Vaginal Hysterectomy",
+  price: "₹80,000",
+  heroDescription:
+    "Safe, scarless vaginal hysterectomy with or without pelvic floor repair and adhesiolysis for gynaecological conditions. No abdominal incisions, faster recovery, cashless insurance, no-cost EMI, and free follow-ups. Get advanced gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,500+", label: "Vaginal Hysterectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Vaginal Hysterectomy?",
+  aboutParagraphs: [
+    "A vaginal hysterectomy is a surgical procedure that involves the removal of the uterus through the vagina without any abdominal incisions. It may be performed with or without pelvic floor repair (to correct prolapse or incontinence) and adhesiolysis (removal of scar tissue). This approach offers the advantage of no visible scarring and faster recovery.",
+    "This procedure is commonly performed for conditions such as uterine prolapse, heavy bleeding, fibroids, and endometriosis. Doctor247 connects you with experienced gynaecological surgeons for safe, effective vaginal hysterectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Vaginal Hysterectomy?",
+      items: [
+        "Uterine prolapse requiring surgical correction",
+        "Heavy menstrual bleeding not controlled with other treatments",
+        "Small to moderate sized uterine fibroids",
+        "Pelvic floor dysfunction with incontinence or prolapse",
+        "Endometriosis not responding to medical management",
+      ],
+    },
+    {
+      label: "Gynaecological Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and Pap smears",
+        "Perform pelvic floor exercises (Kegel exercises)",
+        "Maintain a healthy body weight",
+        "Monitor and manage abnormal uterine bleeding promptly",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive uterine prolapse causing discomfort and incontinence",
+        "Chronic pain and heavy bleeding from fibroids or endometriosis",
+        "Fertility issues and pregnancy complications",
+        "Progression of gynaecological conditions",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Vaginal Surgery — scarless hysterectomy with or without pelvic floor repair",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in vaginal gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Scarless Surgery",
+      description:
+        "Vaginal hysterectomy is performed entirely through the vagina with no abdominal incisions, resulting in no visible scarring and a more comfortable recovery.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Comprehensive Pelvic Floor Repair",
+      description:
+        "We perform pelvic floor repair when indicated to correct prolapse, incontinence, and other pelvic floor dysfunctions, restoring pelvic health.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing vaginal hysterectomies with consistently high success rates.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination and assessment of pelvic floor",
+    "Ultrasound (pelvic) for uterine assessment",
+    "Urodynamic studies (if incontinence is suspected)",
+    "Endometrial biopsy (if indicated)",
+    "Pap smear and HPV testing",
+    "Blood tests to assess fitness for surgery",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia for a pain-free procedure",
+    "An incision is made at the top of the vagina",
+    "The uterus is carefully separated from surrounding structures and delivered through the vagina",
+    "Pelvic floor repair (if indicated) to correct prolapse or incontinence",
+    "Adhesiolysis (removal of scar tissue) is performed if adhesions are present",
+    "The vaginal incision is closed with dissolvable sutures",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief, antibiotics, and other medications on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Avoid straining during bowel movements — use stool softeners if needed",
+    "Attend your follow-up visit within 7-10 days for assessment",
+    "Perform gentle pelvic floor exercises as advised",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't engage in sexual intercourse for at least 6 weeks",
+    "Don't use tampons or douche until cleared by your surgeon",
+    "Don't ignore fever, increased pain, heavy bleeding, or unusual discharge — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a prolapsed uterus and needed a vaginal hysterectomy. The scarless approach meant no visible scars and faster recovery. The pelvic floor repair was excellent too.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“No abdominal incisions meant I was back on my feet quickly. The surgeon was very skilled and explained everything clearly. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“The vaginal hysterectomy with pelvic floor repair solved my prolapse and incontinence issues. The 90-day follow-ups ensured complete healing. Excellent care.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is vaginal hysterectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative discomfort is generally less than abdominal hysterectomy, with most patients experiencing only mild to moderate discomfort.",
+    },
+    {
+      q: "How long does recovery take after vaginal hysterectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 3-4 weeks.",
+    },
+    {
+      q: "Is vaginal hysterectomy covered by insurance?",
+      a: "Yes, vaginal hysterectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What are the advantages of vaginal hysterectomy?",
+      a: "Vaginal hysterectomy offers several advantages: no abdominal incisions, no visible scarring, less post-operative pain, shorter hospital stay, faster recovery, and lower risk of wound complications.",
+    },
+    {
+      q: "What is pelvic floor repair and why is it needed?",
+      a: "Pelvic floor repair is a procedure that corrects weakness or damage to the pelvic floor muscles and tissues, often done to treat uterine prolapse, cystocele, rectocele, or stress incontinence. It may be performed along with vaginal hysterectomy for complete pelvic health restoration.",
+    },
+  ],
+  metaTitle: "Vaginal Hysterectomy in Bangalore | Scarless Gynaecological Surgery — Doctor247",
+  metaDescription:
+    "Best vaginal hysterectomy in Bangalore starting at ₹80,000. Scarless surgery with or without pelvic floor repair & adhesiolysis, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "vaginal hysterectomy in bangalore, vaginal hysterectomy cost, scarless hysterectomy, pelvic floor repair, gynaecological surgery, best gynaecologist bangalore",
+},
+
+"hysterectomy-lavh": {
+  slug: "hysterectomy-lavh",
+  name: "Hysterectomy - LAVH (With or Without Pelvic Floor Repair & Adhesiolysis)",
+  shortName: "LAVH Hysterectomy",
+  price: "₹65,500",
+  heroDescription:
+    "Advanced laparoscopic-assisted vaginal hysterectomy (LAVH) with or without pelvic floor repair and adhesiolysis for gynaecological conditions. Combines laparoscopic precision with vaginal delivery, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,800+", label: "LAVH Procedures Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is LAVH?",
+  aboutParagraphs: [
+    "LAVH (Laparoscopic-Assisted Vaginal Hysterectomy) is a minimally invasive surgical procedure that combines laparoscopic and vaginal techniques for the removal of the uterus. The laparoscopic portion provides visualization and mobilization of the uterus and surrounding structures, while the vaginal portion allows for the extraction of the uterus. It may be performed with or without pelvic floor repair (to correct prolapse or incontinence) and adhesiolysis (removal of scar tissue).",
+    "This approach offers the benefits of both laparoscopic and vaginal hysterectomy — less pain, faster recovery, and minimal scarring — while allowing for the removal of larger uteri than vaginal hysterectomy alone. Doctor247 connects you with experienced gynaecological surgeons for safe, effective LAVH in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose LAVH?",
+      items: [
+        "Uterine fibroids causing pain, pressure, or heavy bleeding",
+        "Endometriosis not responding to medical management",
+        "Uterine prolapse with or without pelvic floor dysfunction",
+        "Abnormal uterine bleeding not controlled with other treatments",
+        "Larger uterus that may not be suitable for vaginal hysterectomy alone",
+      ],
+    },
+    {
+      label: "Gynaecological Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and Pap smears",
+        "Perform pelvic floor exercises (Kegel exercises)",
+        "Maintain a healthy body weight",
+        "Monitor and manage abnormal uterine bleeding promptly",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive symptoms of fibroids including heavy bleeding",
+        "Chronic pain from endometriosis",
+        "Progressive uterine prolapse causing discomfort and incontinence",
+        "Progression of gynaecological conditions",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced LAVH Technique — combined laparoscopic and vaginal approach for optimal outcomes",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in advanced gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Combined Laparoscopic & Vaginal Approach",
+      description:
+        "LAVH combines the precision of laparoscopic visualization with the vaginal extraction of the uterus, offering the best of both techniques for optimal surgical outcomes.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Comprehensive Pelvic Floor Repair",
+      description:
+        "We perform pelvic floor repair when indicated to correct prolapse, incontinence, and other pelvic floor dysfunctions, restoring pelvic health.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing LAVH procedures with consistently high success rates.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination and assessment of pelvic floor",
+    "Ultrasound (pelvic) for uterine assessment",
+    "MRI (if needed for complex cases)",
+    "Urodynamic studies (if incontinence is suspected)",
+    "Endometrial biopsy (if indicated)",
+    "Pap smear and HPV testing",
+    "Blood tests to assess fitness for surgery",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "2-4 small keyhole incisions are made in the abdomen",
+    "A laparoscope (camera) and specialized instruments are inserted",
+    "The uterus is mobilized and prepared for removal laparoscopically",
+    "The vaginal component is performed to extract the uterus",
+    "Pelvic floor repair (if indicated) to correct prolapse or incontinence",
+    "Adhesiolysis (removal of scar tissue) is performed if adhesions are present",
+    "The incisions are closed with dissolvable sutures",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief, antibiotics, and other medications on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Avoid straining during bowel movements — use stool softeners if needed",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Perform gentle pelvic floor exercises as advised",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 3-4 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't drive or operate machinery until your surgeon clears you",
+    "Don't use tampons or douche until cleared by your surgeon",
+    "Don't ignore fever, increased pain, heavy bleeding, or unusual discharge — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a large fibroid and needed a hysterectomy. LAVH gave me the best of both worlds — laparoscopic precision and vaginal delivery. Recovery was much faster than I expected.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The LAVH procedure was explained clearly. The combination of techniques meant less pain and minimal scarring. The pelvic floor repair was an added bonus. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups gave me complete confidence. Excellent care from the team.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is LAVH painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. LAVH causes significantly less post-operative pain than abdominal hysterectomy due to smaller incisions.",
+    },
+    {
+      q: "How long does recovery take after LAVH?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 2-3 weeks.",
+    },
+    {
+      q: "Is LAVH covered by insurance?",
+      a: "Yes, LAVH is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between LAVH and other hysterectomy types?",
+      a: "LAVH combines laparoscopic visualization with vaginal extraction. It offers advantages over vaginal hysterectomy for larger uteri and advantages over laparoscopic hysterectomy by avoiding morcellation. It's a hybrid approach offering flexibility.",
+    },
+    {
+      q: "What is pelvic floor repair and why is it needed?",
+      a: "Pelvic floor repair is a procedure that corrects weakness or damage to the pelvic floor muscles and tissues, often done to treat uterine prolapse, cystocele, rectocele, or stress incontinence. It may be performed along with LAVH for complete pelvic health restoration.",
+    },
+  ],
+  metaTitle: "LAVH Hysterectomy in Bangalore | Laparoscopic-Assisted Vaginal Hysterectomy — Doctor247",
+  metaDescription:
+    "Best LAVH in Bangalore starting at ₹65,500. Laparoscopic-assisted vaginal hysterectomy with pelvic floor repair & adhesiolysis, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "LAVH in bangalore, LAVH hysterectomy cost, laparoscopic assisted vaginal hysterectomy, pelvic floor repair, gynaecological surgery, best gynaecologist bangalore",
+},
+
+"dandc-hysteroscopy": {
+  slug: "dandc-hysteroscopy",
+  name: "D & C with Hysteroscopy (Day Care)",
+  shortName: "D&C with Hysteroscopy",
+  price: "₹37,500",
+  heroDescription:
+    "Safe, effective Dilation & Curettage (D&C) with hysteroscopy for diagnostic and therapeutic gynaecological procedures. Day care procedure with expert care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced gynaecological care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "6,000+", label: "D&C with Hysteroscopy Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is D & C with Hysteroscopy?",
+  aboutParagraphs: [
+    "D&C (Dilation and Curettage) with hysteroscopy is a gynaecological procedure that involves dilating the cervix and scraping or suctioning the lining of the uterus (endometrium) while visualizing the uterine cavity with a hysteroscope (a thin, lighted camera). This procedure is performed for both diagnostic and therapeutic purposes.",
+    "Hysteroscopy provides direct visualization of the uterine cavity, allowing the surgeon to identify and treat abnormalities such as polyps, fibroids, and adhesions. D&C allows for sampling of the endometrial tissue for pathological examination. Doctor247 connects you with experienced gynaecological surgeons for safe, effective D&C with hysteroscopy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose D & C with Hysteroscopy?",
+      items: [
+        "Abnormal uterine bleeding requiring investigation",
+        "Post-menopausal bleeding",
+        "Suspected endometrial polyps or fibroids",
+        "Infertility evaluation",
+        "Retained products of conception after miscarriage",
+        "Endometrial biopsy for cancer screening",
+      ],
+    },
+    {
+      label: "Gynaecological Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and Pap smears",
+        "Monitor and report abnormal bleeding promptly",
+        "Maintain a healthy body weight",
+        "Know your family history of gynaecological conditions",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Undiagnosed endometrial pathology including cancer",
+        "Progressive symptoms of polyps or fibroids",
+        "Chronic abnormal bleeding leading to anaemia",
+        "Fertility issues from undiagnosed uterine abnormalities",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert D&C with Hysteroscopy — precise diagnostic and therapeutic procedure",
+        "Free Follow-ups — post-procedure consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in gynaecological procedures",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Precise Diagnostic & Therapeutic Procedure",
+      description:
+        "We perform meticulous D&C with hysteroscopy, providing direct visualization of the uterine cavity for accurate diagnosis and targeted treatment of abnormalities.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing D&C with hysteroscopy with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Day Care Procedure",
+      description:
+        "D&C with hysteroscopy is a day care procedure — you can go home the same day and resume normal activities within 1-2 days.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination",
+    "Ultrasound (pelvic) for uterine assessment",
+    "Pregnancy test (if indicated)",
+    "Blood tests including complete blood count (CBC)",
+    "Coagulation profile (if indicated)",
+    "ECG and fitness assessment (if needed)",
+  ],
+  procedureSteps: [
+    "General or local anaesthesia depending on the case",
+    "The cervix is gently dilated to allow access to the uterus",
+    "A hysteroscope (camera) is inserted to visualize the uterine cavity",
+    "Polyps, fibroids, or adhesions are identified and may be removed",
+    "A curette is used to scrape or suction the endometrial lining",
+    "Tissue samples are sent for pathological examination",
+    "Procedure typically completed within 15-30 minutes",
+  ],
+  postOpDo: [
+    "Rest for the remainder of the day after the procedure",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Use sanitary pads for vaginal bleeding (do not use tampons)",
+    "Attend your follow-up visit for histopathology results and assessment",
+  ],
+  postOpDont: [
+    "Don't engage in sexual intercourse for at least 2 weeks",
+    "Don't use tampons or douche for 2 weeks",
+    "Don't lift heavy weights for 1 week",
+    "Don't ignore fever, heavy bleeding, or severe pain — call us immediately",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had abnormal bleeding and the D&C with hysteroscopy provided a clear diagnosis. The procedure was quick, I went home the same day, and the results gave me peace of mind.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The hysteroscopy allowed the doctor to see exactly what was wrong and remove a polyp during the same procedure. Excellent care and very professional.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I was nervous but the team made me feel comfortable. The procedure was painless under anaesthesia and recovery was quick. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is D&C with hysteroscopy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during the procedure. Post-operative cramping is common but manageable with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after D&C with hysteroscopy?",
+      a: "Most patients return to normal activities within 1-2 days. You may experience mild cramping and bleeding for a few days, which is normal.",
+    },
+    {
+      q: "Is D&C with hysteroscopy covered by insurance?",
+      a: "Yes, D&C with hysteroscopy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between D&C alone and D&C with hysteroscopy?",
+      a: "D&C alone is a 'blind' procedure where the surgeon scrapes the uterine lining without visualization. D&C with hysteroscopy allows direct visualization of the uterine cavity, enabling the surgeon to see and treat specific abnormalities like polyps or fibroids.",
+    },
+    {
+      q: "How long does it take to get pathology results?",
+      a: "Histopathology results typically take 5-10 working days. Your surgeon will inform you of the results during your follow-up visit.",
+    },
+  ],
+  metaTitle: "D&C with Hysteroscopy in Bangalore | Day Care Gynaecological Procedure — Doctor247",
+  metaDescription:
+    "Best D&C with hysteroscopy in Bangalore starting at ₹37,500. Expert diagnostic and therapeutic procedure, day care, cashless insurance, experienced gynaecological surgeons.",
+  metaKeywords:
+    "D and C with hysteroscopy in bangalore, hysteroscopy cost, endometrial biopsy, abnormal uterine bleeding treatment, gynaecological procedure, best gynaecologist bangalore",
+},
+
+"open-ruptured-ectopic-pregnancy": {
+  slug: "open-ruptured-ectopic-pregnancy",
+  name: "Open - Ruptured Ectopic Pregnancy",
+  shortName: "Ruptured Ectopic Surgery",
+  price: "₹70,500",
+  heroDescription:
+    "Emergency open surgery for ruptured ectopic pregnancy with expert surgical care, blood transfusion support, cashless insurance, and free follow-ups. Get life-saving gynaecological emergency care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "1,500+", label: "Ectopic Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Ruptured Ectopic Pregnancy?",
+  aboutParagraphs: [
+    "An ectopic pregnancy occurs when a fertilized egg implants outside the uterus, most commonly in the fallopian tube. When the pregnancy grows and ruptures the tube, it causes life-threatening internal bleeding. This is a surgical emergency requiring immediate intervention to save the patient's life.",
+    "Open surgery for ruptured ectopic pregnancy involves making an abdominal incision to access the site of rupture, control bleeding, and remove the ectopic pregnancy. Doctor247 provides emergency surgical care by experienced gynaecological surgeons for ruptured ectopic pregnancies in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Emergency Ectopic Surgery?",
+      items: [
+        "Sudden, severe abdominal pain in early pregnancy",
+        "Vaginal bleeding with signs of haemorrhage",
+        "Fainting or dizziness suggesting significant blood loss",
+        "Positive pregnancy test with ultrasound showing free fluid in the abdomen",
+      ],
+    },
+    {
+      label: "Recognizing Ectopic Pregnancy Symptoms",
+      items: [
+        "Missed period with unusual spotting or bleeding",
+        "Sharp, stabbing abdominal pain, often on one side",
+        "Pain that worsens with movement or exertion",
+        "Signs of shock: dizziness, fainting, rapid heartbeat",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Life-threatening haemorrhage from ruptured tube",
+        "Hypovolemic shock and organ failure",
+        "Loss of fertility on the affected side",
+        "Maternal mortality in severe untreated cases",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Emergency Surgical Care — 24/7 availability for life-saving procedures",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in emergency gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Emergency Life-Saving Care",
+      description:
+        "We provide immediate emergency surgical intervention for ruptured ectopic pregnancies with rapid diagnosis, blood transfusion support, and expert surgical care.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Emergency Surgeons",
+      description:
+        "Every Doctor247 surgeon has extensive experience managing gynaecological emergencies, including ruptured ectopic pregnancies with high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Blood Transfusion & Critical Care Support",
+      description:
+        "We provide comprehensive blood transfusion support, fluid resuscitation, and critical care management for patients presenting with significant blood loss.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Urine pregnancy test (positive)",
+    "Serum beta-hCG levels (abnormal rise)",
+    "Transvaginal ultrasound (empty uterus, adnexal mass)",
+    "Culdocentesis (blood in the pouch of Douglas)",
+    "Complete blood count (CBC) to assess blood loss",
+    "Blood grouping and cross-matching for transfusion",
+    "Coagulation profile",
+  ],
+  procedureSteps: [
+    "Emergency assessment and preparation for surgery",
+    "General anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The abdomen is explored to identify the site of rupture",
+    "The ruptured tube is identified and bleeding is controlled",
+    "The ectopic pregnancy is removed (salpingectomy or salpingotomy)",
+    "The peritoneal cavity is washed and inspected for continued bleeding",
+    "The incision is closed with sutures or staples",
+    "Procedure typically completed within 1-2 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Follow blood transfusion and iron supplementation as advised",
+    "Walk short distances from day 1 to aid circulation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up beta-hCG monitoring appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a ruptured ectopic pregnancy and was rushed to emergency. The Doctor247 team saved my life with immediate surgery. I'm forever grateful for their quick action and expert care.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The emergency care was exceptional. The surgeon was highly skilled and the blood transfusion support was critical. The 90-day follow-ups gave me peace of mind.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I was terrified when I was diagnosed with a ruptured ectopic pregnancy. The team acted quickly, explained everything, and provided excellent post-operative care.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is surgery for ruptured ectopic pregnancy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication.",
+    },
+    {
+      q: "How long does recovery take after open ectopic surgery?",
+      a: "Most patients are discharged within 2-4 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 4-6 weeks.",
+    },
+    {
+      q: "Is surgery for ruptured ectopic pregnancy covered by insurance?",
+      a: "Yes, emergency surgery for ruptured ectopic pregnancy is covered by most health insurance plans in India as a medical emergency. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Will I be able to conceive after a ruptured ectopic pregnancy?",
+      a: "Yes, most women can conceive after recovering from surgery. However, if the affected tube was removed, fertility may be reduced. The remaining tube functions normally and pregnancy is still possible.",
+    },
+    {
+      q: "What is the difference between salpingectomy and salpingotomy?",
+      a: "Salpingectomy is the removal of the entire fallopian tube containing the ectopic pregnancy. Salpingotomy is the removal of the ectopic pregnancy while preserving the tube. The choice depends on the condition of the tube, extent of rupture, and patient preference for future fertility.",
+    },
+  ],
+  metaTitle: "Ruptured Ectopic Pregnancy Surgery in Bangalore | Emergency Gynaecological Care — Doctor247",
+  metaDescription:
+    "Best emergency surgery for ruptured ectopic pregnancy in Bangalore starting at ₹70,500. Expert life-saving care, blood transfusion support, cashless insurance.",
+  metaKeywords:
+    "ruptured ectopic pregnancy surgery bangalore, ectopic pregnancy emergency treatment, open ectopic surgery, gynaecological emergency, best gynaecologist bangalore, ectopic pregnancy surgery cost",
+},
+
+"open-ruptured-ectopic-pregnancy": {
+  slug: "open-ruptured-ectopic-pregnancy",
+  name: "Open - Ruptured Ectopic Pregnancy",
+  shortName: "Ruptured Ectopic Surgery",
+  price: "₹70,500",
+  heroDescription:
+    "Emergency open surgery for ruptured ectopic pregnancy with expert surgical care, blood transfusion support, cashless insurance, no-cost EMI, and free follow-ups. Get life-saving gynaecological emergency care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "1,500+", label: "Ectopic Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Ruptured Ectopic Pregnancy?",
+  aboutParagraphs: [
+    "An ectopic pregnancy occurs when a fertilized egg implants outside the uterus, most commonly in the fallopian tube. When the pregnancy grows and ruptures the tube, it causes life-threatening internal bleeding. This is a surgical emergency requiring immediate intervention to save the patient's life.",
+    "Open surgery for ruptured ectopic pregnancy involves making an abdominal incision to access the site of rupture, control bleeding, and remove the ectopic pregnancy. Doctor247 provides emergency surgical care by experienced gynaecological surgeons for ruptured ectopic pregnancies in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Emergency Ectopic Surgery?",
+      items: [
+        "Sudden, severe abdominal pain in early pregnancy",
+        "Vaginal bleeding with signs of haemorrhage",
+        "Fainting or dizziness suggesting significant blood loss",
+        "Positive pregnancy test with ultrasound showing free fluid in the abdomen",
+      ],
+    },
+    {
+      label: "Recognizing Ectopic Pregnancy Symptoms",
+      items: [
+        "Missed period with unusual spotting or bleeding",
+        "Sharp, stabbing abdominal pain, often on one side",
+        "Pain that worsens with movement or exertion",
+        "Signs of shock: dizziness, fainting, rapid heartbeat",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Life-threatening haemorrhage from ruptured tube",
+        "Hypovolemic shock and organ failure",
+        "Loss of fertility on the affected side",
+        "Maternal mortality in severe untreated cases",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Emergency Surgical Care — 24/7 availability for life-saving procedures",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in emergency gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Emergency Life-Saving Care",
+      description:
+        "We provide immediate emergency surgical intervention for ruptured ectopic pregnancies with rapid diagnosis, blood transfusion support, and expert surgical care.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Emergency Surgeons",
+      description:
+        "Every Doctor247 surgeon has extensive experience managing gynaecological emergencies, including ruptured ectopic pregnancies with high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Blood Transfusion & Critical Care Support",
+      description:
+        "We provide comprehensive blood transfusion support, fluid resuscitation, and critical care management for patients presenting with significant blood loss.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Urine pregnancy test (positive)",
+    "Serum beta-hCG levels (abnormal rise)",
+    "Transvaginal ultrasound (empty uterus, adnexal mass)",
+    "Culdocentesis (blood in the pouch of Douglas)",
+    "Complete blood count (CBC) to assess blood loss",
+    "Blood grouping and cross-matching for transfusion",
+    "Coagulation profile",
+  ],
+  procedureSteps: [
+    "Emergency assessment and preparation for surgery",
+    "General anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The abdomen is explored to identify the site of rupture",
+    "The ruptured tube is identified and bleeding is controlled",
+    "The ectopic pregnancy is removed (salpingectomy or salpingotomy)",
+    "The peritoneal cavity is washed and inspected for continued bleeding",
+    "The incision is closed with sutures or staples",
+    "Procedure typically completed within 1-2 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Follow blood transfusion and iron supplementation as advised",
+    "Walk short distances from day 1 to aid circulation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up beta-hCG monitoring appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a ruptured ectopic pregnancy and was rushed to emergency. The Doctor247 team saved my life with immediate surgery. I'm forever grateful for their quick action and expert care.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The emergency care was exceptional. The surgeon was highly skilled and the blood transfusion support was critical. The 90-day follow-ups gave me peace of mind.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I was terrified when I was diagnosed with a ruptured ectopic pregnancy. The team acted quickly, explained everything, and provided excellent post-operative care.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is surgery for ruptured ectopic pregnancy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication.",
+    },
+    {
+      q: "How long does recovery take after open ectopic surgery?",
+      a: "Most patients are discharged within 2-4 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 4-6 weeks.",
+    },
+    {
+      q: "Is surgery for ruptured ectopic pregnancy covered by insurance?",
+      a: "Yes, emergency surgery for ruptured ectopic pregnancy is covered by most health insurance plans in India as a medical emergency. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Will I be able to conceive after a ruptured ectopic pregnancy?",
+      a: "Yes, most women can conceive after recovering from surgery. However, if the affected tube was removed, fertility may be reduced. The remaining tube functions normally and pregnancy is still possible.",
+    },
+    {
+      q: "What is the difference between salpingectomy and salpingotomy?",
+      a: "Salpingectomy is the removal of the entire fallopian tube containing the ectopic pregnancy. Salpingotomy is the removal of the ectopic pregnancy while preserving the tube. The choice depends on the condition of the tube, extent of rupture, and patient preference for future fertility.",
+    },
+  ],
+  metaTitle: "Ruptured Ectopic Pregnancy Surgery in Bangalore | Emergency Gynaecological Care — Doctor247",
+  metaDescription:
+    "Best emergency surgery for ruptured ectopic pregnancy in Bangalore starting at ₹70,500. Expert life-saving care, blood transfusion support, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "ruptured ectopic pregnancy surgery bangalore, ectopic pregnancy emergency treatment, open ectopic surgery, gynaecological emergency, best gynaecologist bangalore, ectopic pregnancy surgery cost",
+},
+
+"laparoscopic-ruptured-ectopic-pregnancy": {
+  slug: "laparoscopic-ruptured-ectopic-pregnancy",
+  name: "Laparoscopic - Ruptured Ectopic Pregnancy",
+  shortName: "Laparoscopic Ectopic Surgery",
+  price: "₹62,500",
+  heroDescription:
+    "Advanced laparoscopic surgery for ruptured ectopic pregnancy with tiny incisions, faster recovery, minimal scarring, blood transfusion support, cashless insurance, no-cost EMI, and free follow-ups. Get life-saving gynaecological emergency care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "2,000+", label: "Laparoscopic Ectopic Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Ruptured Ectopic Pregnancy?",
+  aboutParagraphs: [
+    "An ectopic pregnancy occurs when a fertilized egg implants outside the uterus, most commonly in the fallopian tube. When the pregnancy grows and ruptures the tube, it causes life-threatening internal bleeding. This is a surgical emergency requiring immediate intervention to save the patient's life.",
+    "Laparoscopic surgery for ruptured ectopic pregnancy is a minimally invasive approach using small incisions, a camera, and specialized instruments to access the site of rupture, control bleeding, and remove the ectopic pregnancy. This technique offers faster recovery, less pain, and minimal scarring compared to open surgery. Doctor247 provides emergency laparoscopic surgical care by experienced gynaecological surgeons for ruptured ectopic pregnancies in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Ectopic Surgery?",
+      items: [
+        "Sudden, severe abdominal pain in early pregnancy",
+        "Vaginal bleeding with signs of haemorrhage",
+        "Fainting or dizziness suggesting significant blood loss",
+        "Positive pregnancy test with ultrasound showing free fluid in the abdomen",
+        "Haemodynamically stable patient suitable for laparoscopic approach",
+      ],
+    },
+    {
+      label: "Recognizing Ectopic Pregnancy Symptoms",
+      items: [
+        "Missed period with unusual spotting or bleeding",
+        "Sharp, stabbing abdominal pain, often on one side",
+        "Pain that worsens with movement or exertion",
+        "Signs of shock: dizziness, fainting, rapid heartbeat",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Life-threatening haemorrhage from ruptured tube",
+        "Hypovolemic shock and organ failure",
+        "Loss of fertility on the affected side",
+        "Maternal mortality in severe untreated cases",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Emergency Care — minimally invasive life-saving surgery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in emergency laparoscopic gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Minimally Invasive Life-Saving Care",
+      description:
+        "We perform emergency laparoscopic surgery for ruptured ectopic pregnancies with small incisions, providing life-saving intervention while minimizing trauma and promoting faster recovery.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Laparoscopic Surgeons",
+      description:
+        "Every Doctor247 surgeon has extensive experience performing emergency laparoscopic procedures for ectopic pregnancies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Minimal Scarring",
+      description:
+        "Laparoscopic approach offers significantly faster recovery, less post-operative pain, shorter hospital stay, and minimal scarring compared to open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Urine pregnancy test (positive)",
+    "Serum beta-hCG levels (abnormal rise)",
+    "Transvaginal ultrasound (empty uterus, adnexal mass)",
+    "Culdocentesis (blood in the pouch of Douglas)",
+    "Complete blood count (CBC) to assess blood loss",
+    "Blood grouping and cross-matching for transfusion",
+    "Coagulation profile",
+  ],
+  procedureSteps: [
+    "Emergency assessment and preparation for surgery",
+    "General anaesthesia for a pain-free procedure",
+    "3-4 small keyhole incisions are made in the abdomen",
+    "Carbon dioxide gas is used to inflate the abdomen for better visualization",
+    "A laparoscope (camera) and specialized instruments are inserted",
+    "The abdomen is explored to identify the site of rupture",
+    "The ruptured tube is identified and bleeding is controlled",
+    "The ectopic pregnancy is removed (salpingectomy or salpingotomy)",
+    "The peritoneal cavity is washed and inspected for continued bleeding",
+    "The incisions are closed with dissolvable sutures",
+    "Procedure typically completed within 45-90 minutes depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Follow blood transfusion and iron supplementation as advised",
+    "Walk short distances from day 1 to aid circulation",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 2-3 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up beta-hCG monitoring appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a ruptured ectopic pregnancy and the laparoscopic surgery saved my life. The recovery was so much faster than I expected and the scars are barely visible. Grateful to the Doctor247 team.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant less pain and quicker recovery. The surgeon was highly skilled and the emergency care was exceptional. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“I was terrified but the team acted quickly and explained everything. The minimal scarring was a bonus. Excellent care and 90-day follow-ups.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic surgery for ruptured ectopic pregnancy safe?",
+      a: "Yes, laparoscopic surgery is safe and effective for ruptured ectopic pregnancies in haemodynamically stable patients. It offers the benefits of minimally invasive surgery with excellent outcomes.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic ectopic surgery?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1 week, and full recovery typically takes 2-3 weeks.",
+    },
+    {
+      q: "Is laparoscopic ectopic surgery covered by insurance?",
+      a: "Yes, emergency laparoscopic surgery for ruptured ectopic pregnancy is covered by most health insurance plans in India as a medical emergency. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What are the advantages of laparoscopic over open surgery for ectopic pregnancy?",
+      a: "Laparoscopic surgery offers several advantages: smaller incisions, less post-operative pain, faster recovery, shorter hospital stay, minimal scarring, and earlier return to normal activities.",
+    },
+    {
+      q: "Who is not suitable for laparoscopic ectopic surgery?",
+      a: "Laparoscopic approach may not be suitable for patients who are haemodynamically unstable with massive haemorrhage, have severe adhesions, or have very advanced ectopic pregnancies. Your surgeon will determine the safest approach based on your condition.",
+    },
+  ],
+  metaTitle: "Laparoscopic Ruptured Ectopic Pregnancy Surgery in Bangalore | Emergency Gynaecological Care — Doctor247",
+  metaDescription:
+    "Best laparoscopic ruptured ectopic pregnancy surgery in Bangalore starting at ₹62,500. Advanced minimally invasive emergency care, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "laparoscopic ectopic pregnancy surgery bangalore, ruptured ectopic treatment, emergency gynaecological surgery, minimally invasive ectopic surgery, best gynaecologist bangalore",
+},
+
+"open-wertheims-node-dissection": {
+  slug: "open-wertheims-node-dissection",
+  name: "Open - Wertheim's Hysterectomy with Node Dissection",
+  shortName: "Wertheim's Surgery",
+  price: "₹52,000",
+  heroDescription:
+    "Comprehensive open Wertheim's hysterectomy with pelvic and para-aortic lymph node dissection for gynaecological cancers. Expert surgical oncology care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced cancer surgery by verified surgical oncologists in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "1,200+", label: "Wertheim's Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Wertheim's Hysterectomy?",
+  aboutParagraphs: [
+    "Wertheim's hysterectomy (also known as radical hysterectomy or Type III hysterectomy) is a comprehensive surgical procedure for the treatment of early-stage cervical cancer and other gynaecological cancers. It involves the removal of the uterus, cervix, parametrial tissues, upper vagina, and pelvic lymph nodes.",
+    "This extensive surgery provides complete cancer clearance while preserving the ovaries in younger patients when oncologically safe. Doctor247 connects you with experienced surgical oncologists for safe, effective Wertheim's surgery with node dissection in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Wertheim's Surgery?",
+      items: [
+        "Early-stage cervical cancer (Stage IA2, IB, and selected IIA)",
+        "Endometrial cancer with high-risk features",
+        "Selected cases of ovarian cancer",
+        "Patients suitable for radical surgical resection",
+      ],
+    },
+    {
+      label: "Gynaecological Cancer Prevention & Screening",
+      items: [
+        "Regular Pap smears and HPV testing for cervical cancer screening",
+        "HPV vaccination for prevention",
+        "Report abnormal bleeding or post-coital bleeding promptly",
+        "Know your family history of gynaecological cancers",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive cancer growth with local invasion",
+        "Lymph node metastasis and distant spread",
+        "Reduced survival rates",
+        "Limited treatment options at advanced stages",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Surgical Oncology — comprehensive Wertheim's surgery with complete lymph node dissection",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgical Oncologists — every surgeon is credential-checked with extensive experience in radical gynaecological cancer surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Cancer Surgery",
+      description:
+        "We perform meticulous Wertheim's hysterectomy with systematic pelvic and para-aortic lymph node dissection, ensuring complete cancer clearance and accurate staging.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Surgical Oncologists",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing radical gynaecological cancer surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Ovarian Preservation When Possible",
+      description:
+        "In younger patients, we preserve the ovaries when oncologically safe, helping maintain hormonal function and quality of life after surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pap smear and HPV testing",
+    "Colposcopy with biopsy for cervical lesions",
+    "Endometrial biopsy (if indicated)",
+    "MRI pelvis for local staging",
+    "CT scan or PET-CT for distant staging",
+    "Chest X-ray and liver function tests",
+    "Blood tests including tumour markers (SCC, CA-125)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The abdomen is explored for any signs of spread",
+    "The uterus, cervix, parametrial tissues, and upper vagina are carefully dissected and removed",
+    "Pelvic and para-aortic lymph nodes are systematically dissected",
+    "The ovaries may be preserved in younger patients or removed in others",
+    "The vaginal cuff is closed and the incision is closed with sutures/staples",
+    "Procedure typically completed within 3-5 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow adjuvant treatment (chemotherapy/radiotherapy) as advised",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 6-8 weeks",
+    "Don't engage in sexual intercourse for at least 6-8 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+    "Don't skip your adjuvant therapy appointments or follow-up surveillance",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I was diagnosed with cervical cancer and underwent Wertheim's surgery. The surgeon was highly skilled and the node dissection gave us clear staging information. I'm now cancer-free and recovering well.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The comprehensive cancer care at Doctor247 was exceptional. The Wertheim's surgery was performed with great precision and the 90-day follow-ups were thorough.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgical oncology team was excellent and the recovery care was well managed. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is Wertheim's surgery painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after Wertheim's surgery?",
+      a: "Most patients are discharged within 3-5 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 6-8 weeks.",
+    },
+    {
+      q: "Is Wertheim's surgery covered by insurance?",
+      a: "Yes, Wertheim's surgery is covered by most health insurance plans in India for cervical and gynaecological cancers. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the purpose of lymph node dissection in Wertheim's surgery?",
+      a: "Lymph node dissection (pelvic and para-aortic) provides accurate cancer staging, helps determine the need for adjuvant treatment, and removes microscopic cancer spread, improving survival outcomes.",
+    },
+    {
+      q: "Will I be able to have children after Wertheim's surgery?",
+      a: "Wertheim's surgery removes the uterus and cervix, making future pregnancy impossible. Fertility preservation options like egg freezing may be discussed before surgery in early-stage, selected cases.",
+    },
+  ],
+  metaTitle: "Wertheim's Hysterectomy with Node Dissection in Bangalore | Gynaecological Cancer Surgery — Doctor247",
+  metaDescription:
+    "Best Wertheim's surgery in Bangalore starting at ₹52,000. Expert radical hysterectomy with pelvic & para-aortic node dissection, cashless insurance, experienced surgical oncologists.",
+  metaKeywords:
+    "wertheims surgery in bangalore, wertheims hysterectomy cost, radical hysterectomy with node dissection, cervical cancer surgery, gynaecological oncology, best surgical oncologist bangalore",
+},
+
+"laparoscopic-wertheims-node-dissection": {
+  slug: "laparoscopic-wertheims-node-dissection",
+  name: "Laparoscopic - Wertheim's Hysterectomy with Node Dissection",
+  shortName: "Laparoscopic Wertheim's Surgery",
+  price: "₹64,500",
+  heroDescription:
+    "Advanced laparoscopic Wertheim's hysterectomy with pelvic and para-aortic lymph node dissection for gynaecological cancers. Minimally invasive, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art cancer surgery by verified surgical oncologists in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "1,000+", label: "Laparoscopic Wertheim's Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Laparoscopic Wertheim's Hysterectomy?",
+  aboutParagraphs: [
+    "Laparoscopic Wertheim's hysterectomy (also known as laparoscopic radical hysterectomy or Type III hysterectomy) is a minimally invasive surgical procedure for the treatment of early-stage cervical cancer and other gynaecological cancers. It involves the removal of the uterus, cervix, parametrial tissues, upper vagina, and pelvic and para-aortic lymph nodes using laparoscopic techniques.",
+    "This advanced approach offers the same comprehensive cancer clearance as open surgery with the added benefits of smaller incisions, less pain, faster recovery, and minimal scarring. Doctor247 connects you with experienced surgical oncologists for safe, effective laparoscopic Wertheim's surgery with node dissection in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Wertheim's Surgery?",
+      items: [
+        "Early-stage cervical cancer (Stage IA2, IB, and selected IIA)",
+        "Endometrial cancer with high-risk features",
+        "Selected cases of ovarian cancer",
+        "Patients suitable for minimally invasive radical surgery",
+      ],
+    },
+    {
+      label: "Gynaecological Cancer Prevention & Screening",
+      items: [
+        "Regular Pap smears and HPV testing for cervical cancer screening",
+        "HPV vaccination for prevention",
+        "Report abnormal bleeding or post-coital bleeding promptly",
+        "Know your family history of gynaecological cancers",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Progressive cancer growth with local invasion",
+        "Lymph node metastasis and distant spread",
+        "Reduced survival rates",
+        "Limited treatment options at advanced stages",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — minimally invasive cancer surgery with precision",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgical Oncologists — every surgeon is credential-checked with extensive experience in advanced laparoscopic cancer surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Cancer Surgery",
+      description:
+        "We perform meticulous laparoscopic Wertheim's hysterectomy with systematic pelvic and para-aortic lymph node dissection, ensuring complete cancer clearance with minimally invasive precision.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Laparoscopic Surgical Oncologists",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing advanced laparoscopic gynaecological cancer surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Minimal Scarring",
+      description:
+        "Laparoscopic approach offers significantly faster recovery, less post-operative pain, shorter hospital stay, and minimal scarring compared to open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pap smear and HPV testing",
+    "Colposcopy with biopsy for cervical lesions",
+    "Endometrial biopsy (if indicated)",
+    "MRI pelvis for local staging",
+    "CT scan or PET-CT for distant staging",
+    "Chest X-ray and liver function tests",
+    "Blood tests including tumour markers (SCC, CA-125)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "4-5 small keyhole incisions are made in the abdomen",
+    "Carbon dioxide gas is used to inflate the abdomen for better visualization",
+    "A laparoscope (camera) and specialized instruments are inserted",
+    "The uterus, cervix, parametrial tissues, and upper vagina are carefully dissected and removed laparoscopically",
+    "Pelvic and para-aortic lymph nodes are systematically dissected",
+    "The ovaries may be preserved in younger patients or removed in others",
+    "The vaginal cuff is closed laparoscopically",
+    "The incisions are closed with dissolvable sutures",
+    "Procedure typically completed within 3-5 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow adjuvant treatment (chemotherapy/radiotherapy) as advised",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't engage in sexual intercourse for at least 6-8 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+    "Don't skip your adjuvant therapy appointments or follow-up surveillance",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I was diagnosed with cervical cancer and the laparoscopic Wertheim's surgery was a game-changer. Minimal pain, faster recovery, and I'm now cancer-free. The surgeon was exceptional.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant I was back on my feet much faster than expected. The node dissection was thorough and the staging was precise. Excellent cancer care.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgical oncology team was highly skilled and the 90-day follow-ups were thorough. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic Wertheim's surgery safe?",
+      a: "Yes, laparoscopic Wertheim's surgery is safe and effective when performed by experienced surgical oncologists. It offers comparable cancer outcomes to open surgery with the benefits of minimally invasive techniques.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic Wertheim's surgery?",
+      a: "Most patients are discharged within 2-3 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 4-6 weeks.",
+    },
+    {
+      q: "Is laparoscopic Wertheim's surgery covered by insurance?",
+      a: "Yes, laparoscopic Wertheim's surgery is covered by most health insurance plans in India for cervical and gynaecological cancers. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What are the advantages of laparoscopic over open Wertheim's surgery?",
+      a: "Laparoscopic approach offers several advantages: smaller incisions, less post-operative pain, faster recovery, shorter hospital stay, minimal scarring, and earlier return to normal activities.",
+    },
+    {
+      q: "Who is not suitable for laparoscopic Wertheim's surgery?",
+      a: "Laparoscopic approach may not be suitable for patients with very large tumors, extensive adhesions, or those who are haemodynamically unstable. Your surgeon will determine the safest approach based on your condition.",
+    },
+  ],
+  metaTitle: "Laparoscopic Wertheim's Hysterectomy in Bangalore | Advanced Gynaecological Cancer Surgery — Doctor247",
+  metaDescription:
+    "Best laparoscopic Wertheim's surgery in Bangalore starting at ₹64,500. Advanced minimally invasive cancer surgery with node dissection, cashless insurance, expert surgical oncologists.",
+  metaKeywords:
+    "laparoscopic wertheims surgery bangalore, radical hysterectomy laparoscopic, cervical cancer surgery, gynaecological oncology, best surgical oncologist bangalore, wertheims hysterectomy cost",
+},
+
+"open-myomectomy": {
+  slug: "open-myomectomy",
+  name: "Open - Myomectomy",
+  shortName: "Myomectomy",
+  price: "₹60,000",
+  heroDescription:
+    "Safe, effective open myomectomy for uterine fibroid removal with fertility preservation, expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,500+", label: "Myomectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Myomectomy?",
+  aboutParagraphs: [
+    "A myomectomy is a surgical procedure that removes uterine fibroids (leiomyomas) while preserving the uterus, making it the preferred treatment option for women who wish to retain their fertility. Fibroids are non-cancerous growths that can cause heavy bleeding, pain, pressure symptoms, and fertility issues.",
+    "Open myomectomy (also known as abdominal myomectomy) involves making an incision in the lower abdomen to access and remove fibroids from the uterine wall. This approach is particularly suitable for women with large, multiple, or deep fibroids. Doctor247 connects you with experienced gynaecological surgeons for safe, effective open myomectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Open Myomectomy?",
+      items: [
+        "Large uterine fibroids causing heavy menstrual bleeding",
+        "Fibroids causing pelvic pain, pressure, or urinary symptoms",
+        "Fibroids affecting fertility or causing recurrent miscarriages",
+        "Multiple or deep fibroids not suitable for laparoscopic approach",
+      ],
+    },
+    {
+      label: "Uterine Fibroid Prevention & Management",
+      items: [
+        "Maintain a healthy body weight",
+        "Regular gynaecological check-ups for early detection",
+        "Monitor symptoms like heavy bleeding or pelvic pain",
+        "Consider hormonal management options when appropriate",
+      ],
+    },
+    {
+      label: "Complications of Untreated Fibroids",
+      items: [
+        "Progressive symptoms including heavy bleeding and anaemia",
+        "Chronic pelvic pain and pressure symptoms",
+        "Fertility issues and pregnancy complications",
+        "Degeneration or torsion of fibroids causing acute pain",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Myomectomy — precise fibroid removal with uterine preservation",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in fertility-preserving gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Fertility-Preserving Surgery",
+      description:
+        "Our meticulous myomectomy technique removes fibroids while carefully preserving the uterine lining and structure, maximizing future fertility potential.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing myomectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Fibroid Removal",
+      description:
+        "Open approach allows access to large, multiple, or deep-seated fibroids that may not be suitable for minimally invasive techniques.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination",
+    "Ultrasound (pelvic) for fibroid assessment",
+    "MRI pelvis (for complex fibroid mapping)",
+    "Complete blood count (CBC) to check for anaemia",
+    "Hysteroscopy (if indicated for intracavitary fibroids)",
+    "Endometrial biopsy (if indicated)",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The uterus is visualized and fibroids are identified",
+    "A careful incision is made in the uterine muscle over each fibroid",
+    "Fibroids are dissected and removed, preserving healthy uterine tissue",
+    "The uterine incisions are meticulously repaired in layers to ensure strength",
+    "The abdominal incision is closed with sutures or staples",
+    "Procedure typically completed within 1.5-3 hours depending on fibroid size and number",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Discuss pregnancy timing with your surgeon for future fertility",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 6-8 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+    "Don't plan pregnancy before discussing optimal timing with your surgeon",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had multiple large fibroids causing heavy bleeding. The open myomectomy removed all of them and preserved my uterus for future fertility. The surgeon was excellent.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My fibroids were too large for laparoscopic surgery. The open myomectomy was performed with great precision and I'm grateful for the fertility-preserving approach.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured proper healing. Highly recommend Doctor247 for myomectomy.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is myomectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after open myomectomy?",
+      a: "Most patients are discharged within 2-4 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 6-8 weeks.",
+    },
+    {
+      q: "Is myomectomy covered by insurance?",
+      a: "Yes, myomectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can I conceive after myomectomy?",
+      a: "Yes, fertility is significantly improved after myomectomy for suitable candidates. Most surgeons recommend waiting 3-6 months after surgery before attempting pregnancy to allow the uterus to heal completely.",
+    },
+    {
+      q: "What is the difference between myomectomy and hysterectomy?",
+      a: "Myomectomy removes only the fibroids while preserving the uterus and fertility. Hysterectomy removes the entire uterus, resulting in permanent loss of fertility. Myomectomy is preferred for women who wish to retain their fertility.",
+    },
+  ],
+  metaTitle: "Open Myomectomy in Bangalore | Uterine Fibroid Removal with Fertility Preservation — Doctor247",
+  metaDescription:
+    "Best open myomectomy in Bangalore starting at ₹60,000. Expert uterine fibroid removal with fertility preservation, cashless insurance, experienced gynaecological surgeons.",
+  metaKeywords:
+    "open myomectomy in bangalore, myomectomy cost bangalore, uterine fibroid removal, fertility-preserving fibroid surgery, best gynaecologist bangalore, myomectomy surgery",
+},
+
+"laparoscopic-myomectomy": {
+  slug: "laparoscopic-myomectomy",
+  name: "Laparoscopic - Myomectomy",
+  shortName: "Laparoscopic Myomectomy",
+  price: "₹67,000",
+  heroDescription:
+    "Advanced laparoscopic myomectomy for uterine fibroid removal with fertility preservation, tiny incisions, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "2,000+", label: "Laparoscopic Myomectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Laparoscopic Myomectomy?",
+  aboutParagraphs: [
+    "A laparoscopic myomectomy is a minimally invasive surgical procedure that removes uterine fibroids (leiomyomas) while preserving the uterus, making it the preferred treatment option for women who wish to retain their fertility. Fibroids are non-cancerous growths that can cause heavy bleeding, pain, pressure symptoms, and fertility issues.",
+    "This advanced technique uses small incisions, a camera, and specialized instruments to remove fibroids with precision, offering faster recovery, less pain, and minimal scarring compared to open surgery. Doctor247 connects you with experienced gynaecological surgeons for safe, effective laparoscopic myomectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Myomectomy?",
+      items: [
+        "Small to moderate-sized uterine fibroids causing heavy bleeding",
+        "Fibroids causing pelvic pain, pressure, or urinary symptoms",
+        "Fibroids affecting fertility or causing recurrent miscarriages",
+        "Preference for minimally invasive approach with faster recovery",
+      ],
+    },
+    {
+      label: "Uterine Fibroid Prevention & Management",
+      items: [
+        "Maintain a healthy body weight",
+        "Regular gynaecological check-ups for early detection",
+        "Monitor symptoms like heavy bleeding or pelvic pain",
+        "Consider hormonal management options when appropriate",
+      ],
+    },
+    {
+      label: "Complications of Untreated Fibroids",
+      items: [
+        "Progressive symptoms including heavy bleeding and anaemia",
+        "Chronic pelvic pain and pressure symptoms",
+        "Fertility issues and pregnancy complications",
+        "Degeneration or torsion of fibroids causing acute pain",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — precise fibroid removal with faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in advanced laparoscopic gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Laparoscopic Fibroid Removal",
+      description:
+        "We perform precise laparoscopic myomectomy with careful fibroid enucleation and meticulous uterine repair, ensuring optimal fertility preservation with minimally invasive precision.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Laparoscopic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing laparoscopic myomectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Minimal Scarring",
+      description:
+        "Laparoscopic approach offers significantly faster recovery, less post-operative pain, shorter hospital stay, and minimal scarring compared to open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination",
+    "Ultrasound (pelvic) for fibroid assessment",
+    "MRI pelvis (for complex fibroid mapping)",
+    "Complete blood count (CBC) to check for anaemia",
+    "Hysteroscopy (if indicated for intracavitary fibroids)",
+    "Endometrial biopsy (if indicated)",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3-4 small keyhole incisions are made in the abdomen",
+    "Carbon dioxide gas is used to inflate the abdomen for better visualization",
+    "A laparoscope (camera) and specialized instruments are inserted",
+    "A careful incision is made in the uterine muscle over each fibroid",
+    "Fibroids are dissected and removed using morcellation if needed",
+    "The uterine incisions are meticulously repaired in layers to ensure strength",
+    "The incisions are closed with dissolvable sutures",
+    "Procedure typically completed within 1.5-3 hours depending on fibroid size and number",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Discuss pregnancy timing with your surgeon for future fertility",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+    "Don't plan pregnancy before discussing optimal timing with your surgeon",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a fibroid affecting my fertility. The laparoscopic myomectomy removed it with minimal scarring and faster recovery. I'm now planning my pregnancy. Grateful to Doctor247.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant less pain and quicker recovery. The surgeon was highly skilled and preserved my fertility perfectly. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured proper healing. Excellent care from the team.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic myomectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic myomectomy causes significantly less post-operative pain than open surgery due to smaller incisions.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic myomectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1 week, and full recovery typically takes 2-3 weeks.",
+    },
+    {
+      q: "Is laparoscopic myomectomy covered by insurance?",
+      a: "Yes, laparoscopic myomectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can I conceive after laparoscopic myomectomy?",
+      a: "Yes, fertility is significantly improved after myomectomy for suitable candidates. Most surgeons recommend waiting 3-6 months after surgery before attempting pregnancy to allow the uterus to heal completely.",
+    },
+    {
+      q: "What is the advantage of laparoscopic over open myomectomy?",
+      a: "Laparoscopic myomectomy offers several advantages: smaller incisions, less post-operative pain, faster recovery, shorter hospital stay, minimal scarring, and earlier return to normal activities.",
+    },
+  ],
+  metaTitle: "Laparoscopic Myomectomy in Bangalore | Fibroid Removal with Fertility Preservation — Doctor247",
+  metaDescription:
+    "Best laparoscopic myomectomy in Bangalore starting at ₹67,000. Advanced uterine fibroid removal with fertility preservation, faster recovery, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "laparoscopic myomectomy in bangalore, myomectomy cost bangalore, uterine fibroid removal, fertility-preserving fibroid surgery, best gynaecologist bangalore, laparoscopic fibroid surgery",
+},
+
+"open-ovarian-cystectomy": {
+  slug: "open-ovarian-cystectomy",
+  name: "Ovarian Cystectomy - Open",
+  shortName: "Open Ovarian Cystectomy",
+  price: "₹37,500",
+  heroDescription:
+    "Safe, effective open ovarian cystectomy for removal of ovarian cysts with ovarian preservation, expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,000+", label: "Ovarian Cystectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is an Ovarian Cystectomy?",
+  aboutParagraphs: [
+    "An ovarian cystectomy is a surgical procedure that removes ovarian cysts while preserving the healthy ovarian tissue. Ovarian cysts are fluid-filled sacs that develop on or within the ovary, which can cause pain, pressure, and in some cases, affect fertility.",
+    "Open ovarian cystectomy (also known as abdominal ovarian cystectomy) involves making an incision in the lower abdomen to access and remove the cyst while preserving the ovary. This approach is particularly suitable for women with large cysts, complex cysts, or those requiring complete removal of the cyst. Doctor247 connects you with experienced gynaecological surgeons for safe, effective open ovarian cystectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Open Ovarian Cystectomy?",
+      items: [
+        "Large ovarian cysts (larger than 8-10 cm)",
+        "Complex ovarian cysts with septations or solid components",
+        "Dermoid cysts or endometriomas requiring complete removal",
+        "Cysts causing significant pain, pressure, or torsion",
+      ],
+    },
+    {
+      label: "Ovarian Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and pelvic examinations",
+        "Monitor and report symptoms of pelvic pain or bloating",
+        "Ultrasound monitoring for known ovarian cysts",
+        "Know your family history of ovarian conditions",
+      ],
+    },
+    {
+      label: "Complications of Untreated Ovarian Cysts",
+      items: [
+        "Progressive growth causing pain and pressure symptoms",
+        "Ovarian torsion (twisting of the ovary) — a surgical emergency",
+        "Rupture of the cyst causing acute pain and internal bleeding",
+        "Potential malignancy in complex or solid cysts",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Ovarian Cystectomy — precise cyst removal with ovarian preservation",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Precise Cyst Removal with Ovarian Preservation",
+      description:
+        "We perform meticulous cystectomy, carefully removing the cyst while preserving maximum healthy ovarian tissue for optimal fertility and hormonal function.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing ovarian cystectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Cyst Removal",
+      description:
+        "Open approach allows access to large, complex, or deep-seated cysts that may not be suitable for laparoscopic techniques.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination",
+    "Ultrasound (pelvic) for cyst assessment",
+    "MRI pelvis (for complex cyst evaluation)",
+    "CA-125 blood test (if malignancy is suspected)",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The ovary is carefully dissected and the cyst is identified",
+    "A precise incision is made in the ovary to remove the cyst",
+    "The cyst is carefully separated from healthy ovarian tissue",
+    "The ovarian tissue is repaired with fine sutures",
+    "The abdominal incision is closed with sutures or staples",
+    "Procedure typically completed within 1-2 hours depending on cyst size and complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check and histopathology results",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your histopathology review appointment",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a large ovarian cyst that was causing severe pain. The open cystectomy removed it completely and preserved my ovary. Excellent surgical care.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was highly skilled and removed my complex cyst safely. The 90-day follow-ups gave me complete peace of mind. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The recovery was well managed and I'm back to normal activities. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is ovarian cystectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after open ovarian cystectomy?",
+      a: "Most patients are discharged within 2-3 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 4-6 weeks.",
+    },
+    {
+      q: "Is ovarian cystectomy covered by insurance?",
+      a: "Yes, ovarian cystectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Will I be able to conceive after ovarian cystectomy?",
+      a: "Yes, ovarian cystectomy preserves the ovary and fertility. Most women can conceive normally after surgery. Your surgeon may recommend waiting a few months before attempting pregnancy.",
+    },
+    {
+      q: "What is the difference between cystectomy and oophorectomy?",
+      a: "Cystectomy removes only the cyst while preserving the ovary and its function. Oophorectomy removes the entire ovary. Cystectomy is preferred for women who wish to preserve fertility and hormonal function.",
+    },
+  ],
+  metaTitle: "Ovarian Cystectomy in Bangalore | Open Cyst Removal with Ovarian Preservation — Doctor247",
+  metaDescription:
+    "Best open ovarian cystectomy in Bangalore starting at ₹37,500. Expert ovarian cyst removal with fertility preservation, cashless insurance, experienced gynaecological surgeons.",
+  metaKeywords:
+    "ovarian cystectomy in bangalore, ovarian cyst removal cost, open ovarian cyst surgery, ovarian cyst treatment, best gynaecologist bangalore, cystectomy surgery",
+},
+
+"laparoscopic-ovarian-cystectomy": {
+  slug: "laparoscopic-ovarian-cystectomy",
+  name: "Ovarian Cystectomy - Laparoscopic",
+  shortName: "Laparoscopic Ovarian Cystectomy",
+  price: "₹50,000",
+  heroDescription:
+    "Advanced laparoscopic ovarian cystectomy for removal of ovarian cysts with ovarian preservation, tiny incisions, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "4,000+", label: "Laparoscopic Ovarian Cystectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Laparoscopic Ovarian Cystectomy?",
+  aboutParagraphs: [
+    "A laparoscopic ovarian cystectomy is a minimally invasive surgical procedure that removes ovarian cysts while preserving the healthy ovarian tissue. Ovarian cysts are fluid-filled sacs that develop on or within the ovary, which can cause pain, pressure, and in some cases, affect fertility.",
+    "This advanced technique uses small incisions, a camera, and specialized instruments to remove cysts with precision, offering faster recovery, less pain, and minimal scarring compared to open surgery. Doctor247 connects you with experienced gynaecological surgeons for safe, effective laparoscopic ovarian cystectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Laparoscopic Ovarian Cystectomy?",
+      items: [
+        "Persistent ovarian cysts causing pain or discomfort",
+        "Cysts larger than 5 cm that do not resolve spontaneously",
+        "Complex cysts with septations or solid components",
+        "Dermoid cysts or endometriomas requiring removal",
+        "Preference for minimally invasive approach with faster recovery",
+      ],
+    },
+    {
+      label: "Ovarian Health & Prevention",
+      items: [
+        "Regular gynaecological check-ups and pelvic examinations",
+        "Monitor and report symptoms of pelvic pain or bloating",
+        "Ultrasound monitoring for known ovarian cysts",
+        "Know your family history of ovarian conditions",
+      ],
+    },
+    {
+      label: "Complications of Untreated Ovarian Cysts",
+      items: [
+        "Progressive growth causing pain and pressure symptoms",
+        "Ovarian torsion (twisting of the ovary) — a surgical emergency",
+        "Rupture of the cyst causing acute pain and internal bleeding",
+        "Potential malignancy in complex or solid cysts",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Laparoscopic Technique — precise cyst removal with faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in advanced laparoscopic gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Precise Laparoscopic Cyst Removal",
+      description:
+        "We perform meticulous laparoscopic cystectomy with careful cyst enucleation and ovarian repair, ensuring optimal ovarian preservation with minimally invasive precision.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Laparoscopic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing laparoscopic ovarian cystectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Faster Recovery & Minimal Scarring",
+      description:
+        "Laparoscopic approach offers significantly faster recovery, less post-operative pain, shorter hospital stay, and minimal scarring compared to open surgery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination",
+    "Ultrasound (pelvic) for cyst assessment",
+    "MRI pelvis (for complex cyst evaluation)",
+    "CA-125 blood test (if malignancy is suspected)",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "3-4 small keyhole incisions are made in the abdomen",
+    "Carbon dioxide gas is used to inflate the abdomen for better visualization",
+    "A laparoscope (camera) and specialized instruments are inserted",
+    "The ovary is carefully dissected and the cyst is identified",
+    "A precise incision is made in the ovary to remove the cyst",
+    "The cyst is carefully separated from healthy ovarian tissue",
+    "The ovarian tissue is repaired with fine sutures",
+    "The cyst is removed through the incision using a retrieval bag",
+    "The incisions are closed with dissolvable sutures",
+    "Procedure typically completed within 45-90 minutes depending on cyst size and complexity",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check and histopathology results",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 2-3 weeks",
+    "Don't engage in sexual intercourse for at least 2-3 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your histopathology review appointment",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a large ovarian cyst causing pain. The laparoscopic cystectomy removed it with minimal scarring and faster recovery. Excellent care from Doctor247.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The laparoscopic approach meant less pain and quicker recovery. The surgeon preserved my ovary perfectly. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups gave me complete peace of mind. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is laparoscopic ovarian cystectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Laparoscopic ovarian cystectomy causes significantly less post-operative pain than open surgery due to smaller incisions.",
+    },
+    {
+      q: "How long does recovery take after laparoscopic ovarian cystectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 3-5 days, and full recovery typically takes 2-3 weeks.",
+    },
+    {
+      q: "Is laparoscopic ovarian cystectomy covered by insurance?",
+      a: "Yes, laparoscopic ovarian cystectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Will I be able to conceive after laparoscopic ovarian cystectomy?",
+      a: "Yes, ovarian cystectomy preserves the ovary and fertility. Most women can conceive normally after surgery. Your surgeon may recommend waiting 2-3 months before attempting pregnancy.",
+    },
+    {
+      q: "What is the advantage of laparoscopic over open ovarian cystectomy?",
+      a: "Laparoscopic approach offers several advantages: smaller incisions, less post-operative pain, faster recovery, shorter hospital stay, minimal scarring, and earlier return to normal activities.",
+    },
+  ],
+  metaTitle: "Laparoscopic Ovarian Cystectomy in Bangalore | Ovarian Cyst Removal — Doctor247",
+  metaDescription:
+    "Best laparoscopic ovarian cystectomy in Bangalore starting at ₹50,000. Advanced ovarian cyst removal with fertility preservation, faster recovery, cashless insurance, expert surgeons.",
+  metaKeywords:
+    "laparoscopic ovarian cystectomy in bangalore, ovarian cyst removal cost, ovarian cyst surgery, fertility-preserving cyst removal, best gynaecologist bangalore, laparoscopic cystectomy",
+},
+
+"normal-delivery": {
+  slug: "normal-delivery",
+  name: "Normal Delivery with Well Baby Care (Single/Twins)",
+  shortName: "Normal Delivery",
+  price: "₹30,000",
+  heroDescription:
+    "Safe, natural normal delivery with comprehensive well baby care for single or twin pregnancies. Expert obstetric care, pain management, cashless insurance, no-cost EMI, and free follow-ups. Get quality maternity care by verified obstetricians in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "8,000+", label: "Deliveries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Normal Delivery?",
+  aboutParagraphs: [
+    "Normal delivery (also known as vaginal delivery) is the natural process of childbirth where the baby is delivered through the birth canal. It is the most common and preferred mode of delivery for uncomplicated pregnancies, offering benefits such as faster recovery, lower risk of complications, and early bonding with the baby.",
+    "This package includes comprehensive care for both mother and baby during labour, delivery, and the immediate postpartum period. It also includes well baby care, which covers essential newborn assessments, vaccinations, and guidance on feeding and care. Doctor247 connects you with experienced obstetricians for safe, quality normal delivery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Normal Delivery?",
+      items: [
+        "Uncomplicated, low-risk pregnancy",
+        "Baby in cephalic (head-down) position",
+        "No contraindications to vaginal delivery",
+        "Mother's preference for natural childbirth",
+      ],
+    },
+    {
+      label: "Pregnancy & Prenatal Care",
+      items: [
+        "Regular antenatal check-ups for monitoring",
+        "Balanced nutrition and folic acid supplementation",
+        "Adequate hydration and moderate exercise",
+        "Attend childbirth education classes",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Inadequate prenatal care leading to undetected complications",
+        "Increased risk of maternal and neonatal morbidity",
+        "Premature labour without medical support",
+        "Undiagnosed fetal distress or malpresentation",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Obstetric Care — experienced obstetricians for safe delivery",
+        "Comprehensive Well Baby Care — newborn assessments and vaccinations",
+        "Free Follow-ups — post-delivery consultations included for 90 days",
+        "No-Cost EMI — split your delivery cost into easy monthly instalments with zero interest",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Obstetric Care",
+      description:
+        "Our experienced obstetricians provide comprehensive care throughout labour and delivery, ensuring a safe and positive childbirth experience.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Pain Management Options",
+      description:
+        "We offer various pain relief options including epidural analgesia, nitrous oxide, and natural pain management techniques for a comfortable delivery.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Well Baby Care",
+      description:
+        "Includes essential newborn assessments, APGAR scoring, Vitamin K injection, BCG and Hepatitis B vaccination, hearing screening, and feeding guidance.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations for both mother and baby.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Complete antenatal profile assessment",
+    "Ultrasound for fetal well-being and position",
+    "CTG (cardiotocography) for fetal monitoring",
+    "Blood tests including CBC, blood grouping, and Rh factor",
+    "Group B Streptococcus screening (if indicated)",
+    "Fitness assessment for normal delivery",
+  ],
+  procedureSteps: [
+    "Admission to the labour ward in early labour",
+    "Monitoring of maternal vitals and fetal heart rate",
+    "Progressive cervical dilation and descent of the baby",
+    "Pain management as per maternal choice",
+    "Active pushing phase and delivery of the baby",
+    "Immediate newborn assessment (APGAR scoring)",
+    "Delivery of placenta (third stage of labour)",
+    "Perineal repair (if episiotomy or tear)",
+    "Initiation of breastfeeding and mother-baby bonding",
+    "Procedure typically completed within 6-18 hours depending on labour progression",
+  ],
+  postOpDo: [
+    "Initiate breastfeeding within the first hour",
+    "Maintain good personal hygiene and perineal care",
+    "Take prescribed iron and calcium supplements",
+    "Attend your follow-up visit within 1 week for newborn assessment",
+    "Monitor for signs of postpartum complications",
+  ],
+  postOpDont: [
+    "Don't ignore heavy bleeding, severe pain, or fever — call us immediately",
+    "Don't lift heavy weights for 6 weeks",
+    "Don't miss newborn vaccination appointments",
+    "Don't delay seeking help for breastfeeding difficulties",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a wonderful normal delivery experience at Doctor247. The obstetrician was supportive and the well baby care was excellent. The team made me feel safe and comfortable throughout.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I delivered my twins normally with Doctor247. The team was exceptional in managing the twin delivery and the babies received excellent care. Highly recommend.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups for both me and my baby gave me complete peace of mind. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is normal delivery painful?",
+      a: "Some discomfort is expected during labour, but we offer various pain management options including epidural, nitrous oxide, and natural techniques to ensure a comfortable delivery experience.",
+    },
+    {
+      q: "How long is the hospital stay after normal delivery?",
+      a: "Most patients are discharged within 24-48 hours after an uncomplicated normal delivery. Twin deliveries may require a slightly longer stay for observation.",
+    },
+    {
+      q: "Is normal delivery covered by insurance?",
+      a: "Yes, normal delivery is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is included in well baby care?",
+      a: "Well baby care includes essential newborn assessments (APGAR scoring), Vitamin K injection, BCG and Hepatitis B vaccination, hearing screening, birth weight monitoring, and guidance on feeding, cord care, and overall newborn care.",
+    },
+    {
+      q: "What is the difference between single and twin delivery care?",
+      a: "Twin delivery requires additional monitoring during labour due to the higher risk of complications. The care package includes extra staffing, continuous fetal monitoring for both babies, and preparedness for emergency interventions if needed.",
+    },
+  ],
+  metaTitle: "Normal Delivery in Bangalore | Maternity Care with Well Baby Care — Doctor247",
+  metaDescription:
+    "Best normal delivery in Bangalore starting at ₹30,000. Expert obstetric care for single or twin pregnancies, comprehensive well baby care, cashless insurance.",
+  metaKeywords:
+    "normal delivery in bangalore, normal delivery cost, maternity care, well baby care, twin delivery, best gynaecologist bangalore, childbirth care",
+},
+
+"lscs-delivery": {
+  slug: "lscs-delivery",
+  name: "LSCS with Well Baby Care (Single/Twins)",
+  shortName: "LSCS Delivery",
+  price: "₹40,000",
+  heroDescription:
+    "Safe, planned or emergency LSCS (Lower Segment Cesarean Section) with comprehensive well baby care for single or twin pregnancies. Expert obstetric care, cashless insurance, no-cost EMI, and free follow-ups. Get quality maternity care by verified obstetricians in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "10,000+", label: "LSCS Deliveries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is LSCS (Lower Segment Cesarean Section)?",
+  aboutParagraphs: [
+    "LSCS (Lower Segment Cesarean Section) is a surgical procedure in which the baby is delivered through an incision made in the mother's lower abdomen and uterus. It may be planned (elective) or performed as an emergency procedure when vaginal delivery poses risks to the mother or baby.",
+    "This package includes comprehensive care for both mother and baby during the C-section, the immediate postpartum period, and well baby care covering essential newborn assessments, vaccinations, and guidance on feeding and care. Doctor247 connects you with experienced obstetricians for safe, quality LSCS delivery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose LSCS?",
+      items: [
+        "Breech presentation or other malpresentations",
+        "Previous C-section delivery",
+        "Fetal distress requiring immediate delivery",
+        "Multiple pregnancies with complications",
+        "Placenta previa or other placental abnormalities",
+        "Obstructed labour or cephalopelvic disproportion",
+      ],
+    },
+    {
+      label: "Pregnancy & Prenatal Care",
+      items: [
+        "Regular antenatal check-ups for monitoring",
+        "Balanced nutrition and folic acid supplementation",
+        "Adequate hydration and moderate exercise",
+        "Preparation for C-section including pre-operative assessment",
+      ],
+    },
+    {
+      label: "Complications if Untreated",
+      items: [
+        "Fetal distress leading to neonatal complications",
+        "Maternal complications from prolonged labour",
+        "Uterine rupture in cases of previous C-section",
+        "Increased maternal and neonatal morbidity",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Obstetric Care — experienced obstetricians for safe C-section delivery",
+        "Comprehensive Well Baby Care — newborn assessments and vaccinations",
+        "Free Follow-ups — post-delivery consultations included for 90 days",
+        "No-Cost EMI — split your delivery cost into easy monthly instalments with zero interest",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Obstetric & Surgical Care",
+      description:
+        "Our experienced obstetricians perform LSCS with precision, ensuring the safety of both mother and baby during the procedure.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Comprehensive Well Baby Care",
+      description:
+        "Includes essential newborn assessments, APGAR scoring, Vitamin K injection, BCG and Hepatitis B vaccination, hearing screening, and feeding guidance.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Planned & Emergency C-Section Expertise",
+      description:
+        "Our team is skilled in both elective and emergency LSCS, ensuring prompt and safe delivery in any situation.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations for both mother and baby.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Complete antenatal profile assessment",
+    "Ultrasound for fetal well-being, position, and placental assessment",
+    "CTG (cardiotocography) for fetal monitoring",
+    "Blood tests including CBC, blood grouping, Rh factor, and cross-matching",
+    "ECG and fitness assessment for anaesthesia",
+    "Group B Streptococcus screening (if indicated)",
+  ],
+  procedureSteps: [
+    "Pre-operative assessment and preparation",
+    "Spinal/epidural or general anaesthesia depending on the case",
+    "A low transverse incision is made in the lower abdomen and uterus",
+    "The baby is carefully delivered through the incision",
+    "Immediate newborn assessment (APGAR scoring) and cord clamping",
+    "The placenta is delivered and the uterus is closed in layers",
+    "The abdominal incision is closed with sutures or staples",
+    "Initiation of breastfeeding and mother-baby bonding in recovery",
+    "Procedure typically completed within 45-60 minutes",
+  ],
+  postOpDo: [
+    "Initiate breastfeeding as soon as possible after recovery",
+    "Walk short distances from day 1 to aid circulation",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Keep the surgical site clean and dry",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift anything heavier than your baby for 6 weeks",
+    "Don't drive or operate machinery until cleared by your doctor",
+    "Don't ignore fever, increased pain, or wound redness — call us immediately",
+    "Don't miss newborn vaccination appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“My LSCS was performed with great care and precision. The team was supportive and the well baby care was excellent. I felt safe and well-cared for throughout.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I delivered twins via LSCS at Doctor247. The team managed the surgery and the babies' care exceptionally well. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups for both me and my baby gave me complete peace of mind. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is LSCS delivery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long is the hospital stay after LSCS?",
+      a: "Most patients are discharged within 2-3 days after an uncomplicated LSCS. Twin deliveries may require a slightly longer stay for observation.",
+    },
+    {
+      q: "Is LSCS covered by insurance?",
+      a: "Yes, LSCS is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is included in well baby care?",
+      a: "Well baby care includes essential newborn assessments (APGAR scoring), Vitamin K injection, BCG and Hepatitis B vaccination, hearing screening, birth weight monitoring, and guidance on feeding, cord care, and overall newborn care.",
+    },
+    {
+      q: "What is the difference between planned and emergency LSCS?",
+      a: "Planned (elective) LSCS is scheduled in advance for specific indications like breech presentation or previous C-section. Emergency LSCS is performed urgently when complications arise during labour, such as fetal distress or obstructed labour.",
+    },
+  ],
+  metaTitle: "LSCS Delivery in Bangalore | C-Section with Well Baby Care — Doctor247",
+  metaDescription:
+    "Best LSCS delivery in Bangalore starting at ₹40,000. Expert Lower Segment Cesarean Section for single or twin pregnancies, comprehensive well baby care, cashless insurance.",
+  metaKeywords:
+    "LSCS in bangalore, C-section delivery cost, cesarean section, maternity care, well baby care, twin delivery, best gynaecologist bangalore",
+},
+
+"acl-pcl-mcl-reconstruction": {
+  slug: "acl-pcl-mcl-reconstruction",
+  name: "ACL / PCL / MCL Reconstruction - Excluding Cost of Implant",
+  shortName: "Knee Ligament Reconstruction",
+  price: "₹70,000",
+  heroDescription:
+    "Advanced arthroscopic ACL, PCL, and MCL reconstruction for knee ligament injuries with expert orthopaedic care, faster recovery, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art knee ligament surgery by verified orthopaedic surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "3,500+", label: "Ligament Reconstructions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Knee Ligament Reconstruction?",
+  aboutParagraphs: [
+    "ACL (Anterior Cruciate Ligament), PCL (Posterior Cruciate Ligament), and MCL (Medial Collateral Ligament) are major ligaments in the knee that provide stability. Injuries to these ligaments are common in sports, accidents, or falls, causing instability, pain, and difficulty with daily activities.",
+    "Arthroscopic ligament reconstruction is a minimally invasive surgical procedure that rebuilds the torn ligament using a graft (tendon from the patient or a donor). The surgery is performed through small incisions using a camera and specialized instruments. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective knee ligament reconstruction in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Ligament Reconstruction?",
+      items: [
+        "Complete ACL/PCL/MCL tear confirmed by MRI",
+        "Knee instability affecting daily activities or sports",
+        "Recurrent giving way or buckling of the knee",
+        "Inability to return to sports after conservative treatment",
+        "Associated meniscal injuries requiring repair",
+      ],
+    },
+    {
+      label: "Preventing Knee Ligament Injuries",
+      items: [
+        "Strength training for hamstrings and quadriceps",
+        "Plyometric and balance training",
+        "Proper warm-up before sports activities",
+        "Use of appropriate protective gear",
+        "Avoid sudden changes in direction without proper conditioning",
+      ],
+    },
+    {
+      label: "Complications of Untreated Ligament Injuries",
+      items: [
+        "Progressive knee instability",
+        "Secondary meniscal injuries",
+        "Early onset osteoarthritis",
+        "Reduced athletic performance and quality of life",
+        "Chronic pain and disability",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Arthroscopic Reconstruction — precise ligament reconstruction with faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in sports medicine and knee surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Arthroscopic Technique",
+      description:
+        "We perform ligament reconstruction using advanced arthroscopic techniques, ensuring minimal tissue damage, less post-operative pain, and faster recovery.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience in performing ACL, PCL, and MCL reconstructions with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Tailored Graft Selection",
+      description:
+        "We offer graft options including autografts (hamstring, patellar tendon, quadriceps) and allografts, selected based on your specific needs and activity level.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination (Lachman, Anterior drawer, PCL drawer, Valgus/Varus stress tests)",
+    "X-ray of the knee",
+    "MRI of the knee for ligament and meniscal assessment",
+    "CT scan (if needed for bone tunnel planning)",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "Spinal or general anaesthesia for a pain-free procedure",
+    "2-4 small keyhole incisions are made in the knee",
+    "An arthroscope (camera) and specialized instruments are inserted",
+    "The torn ligament is identified and debrided",
+    "Bone tunnels are drilled in the femur and tibia",
+    "The graft (autograft or allograft) is passed through the tunnels",
+    "The graft is fixed with interference screws, endobuttons, or other fixation devices",
+    "The incisions are closed with sutures",
+    "Procedure typically completed within 1.5-2.5 hours depending on the ligament",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Follow the physiotherapy protocol as advised",
+    "Use crutches as instructed (non-weight bearing for ACL, limited weight bearing for PCL)",
+    "Apply ice packs to reduce swelling",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't put full weight on the operated leg until cleared",
+    "Don't engage in pivoting or twisting sports for at least 9-12 months",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your physiotherapy sessions",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I tore my ACL playing football and was worried about surgery. The reconstruction was done arthroscopically and I'm back to playing sports. Great care from Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“Excellent surgical care for my PCL reconstruction. The surgeon was highly skilled and the physiotherapy protocol was well-structured. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is ligament reconstruction surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after ligament reconstruction?",
+      a: "The rehabilitation phase typically takes 6-9 months. Return to sports may take 9-12 months. Physiotherapy is crucial for regaining strength and stability.",
+    },
+    {
+      q: "Is ligament reconstruction covered by insurance?",
+      a: "Yes, ACL/PCL/MCL reconstruction is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What graft options are available?",
+      a: "Options include autografts (hamstring, patellar tendon, quadriceps) and allografts (donor tissue). Your surgeon will recommend the best option based on your age, activity level, and specific ligament injury.",
+    },
+    {
+      q: "What is the difference between ACL, PCL, and MCL reconstruction?",
+      a: "ACL reconstruction uses standard arthroscopic technique with bone tunnels in femur and tibia. PCL reconstruction is more technically demanding with additional tunnels. MCL reconstruction is usually performed open, often with other ligament procedures. Your surgeon will tailor the approach to your specific injury.",
+    },
+  ],
+  metaTitle: "ACL/PCL/MCL Reconstruction in Bangalore | Knee Ligament Surgery — Doctor247",
+  metaDescription:
+    "Best ACL, PCL, and MCL reconstruction in Bangalore starting at ₹70,000. Advanced arthroscopic knee ligament surgery, cashless insurance, expert orthopaedic surgeons.",
+  metaKeywords:
+    "ACL reconstruction in bangalore, PCL reconstruction, MCL reconstruction, knee ligament surgery cost, best orthopaedic surgeon bangalore, sports injury treatment",
+},
+
+"menisectomy": {
+  slug: "menisectomy",
+  name: "Menisectomy (Arthroscopic)",
+  shortName: "Menisectomy",
+  price: "₹60,000",
+  heroDescription:
+    "Advanced arthroscopic menisectomy for torn meniscus with expert orthopaedic care, faster recovery, minimal scarring, cashless insurance, no-cost EMI, and free follow-ups. Get state-of-the-art knee surgery by verified orthopaedic surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "4,500+", label: "Menisectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Menisectomy?",
+  aboutParagraphs: [
+    "The meniscus is a C-shaped piece of cartilage in the knee that acts as a shock absorber between the thigh bone (femur) and shin bone (tibia). A meniscal tear can occur from sports injuries, twisting movements, or age-related degeneration, causing pain, swelling, and locking of the knee.",
+    "Arthroscopic menisectomy is a minimally invasive surgical procedure that removes the torn portion of the meniscus while preserving healthy tissue. The surgery is performed through small incisions using a camera and specialized instruments. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective menisectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Menisectomy?",
+      items: [
+        "Torn meniscus causing knee pain and swelling",
+        "Knee locking or catching sensation",
+        "Limited range of motion in the knee",
+        "Failed conservative treatment (medication and physiotherapy)",
+        "Meniscal tears that cannot be repaired",
+      ],
+    },
+    {
+      label: "Preventing Meniscal Injuries",
+      items: [
+        "Strengthen quadriceps and hamstring muscles",
+        "Proper warm-up before sports activities",
+        "Use proper technique when changing direction",
+        "Wear appropriate footwear for sports",
+        "Maintain a healthy body weight",
+      ],
+    },
+    {
+      label: "Complications of Untreated Meniscal Tears",
+      items: [
+        "Progressive knee pain and swelling",
+        "Chronic knee instability",
+        "Early onset osteoarthritis",
+        "Reduced quality of life and mobility",
+        "Inability to participate in sports or physical activities",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Arthroscopic Technique — precise menisectomy with faster recovery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in knee surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Arthroscopic Menisectomy",
+      description:
+        "We perform precise partial menisectomy using advanced arthroscopic techniques, preserving maximum healthy meniscal tissue for better long-term outcomes.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing menisectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Minimally Invasive with Faster Recovery",
+      description:
+        "Arthroscopic menisectomy uses 2-3 small incisions, resulting in less post-operative pain, quicker recovery, and minimal scarring.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination (McMurray's test, Apley's test)",
+    "X-ray of the knee (to rule out fractures or arthritis)",
+    "MRI of the knee for detailed meniscal assessment",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "Spinal or general anaesthesia for a pain-free procedure",
+    "2-3 small keyhole incisions are made in the knee",
+    "An arthroscope (camera) and specialized instruments are inserted",
+    "The knee is filled with sterile saline for better visualization",
+    "The torn portion of the meniscus is identified",
+    "The damaged meniscal tissue is carefully trimmed and removed",
+    "The remaining healthy meniscus is contoured for smooth edges",
+    "The incisions are closed with sutures or steri-strips",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the leg elevated when resting",
+    "Follow physiotherapy protocol as advised",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't put full weight on the operated knee until cleared",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your physiotherapy sessions",
+    "Don't return to sports without your surgeon's clearance",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a torn meniscus from playing badminton. The arthroscopic menisectomy was quick and recovery was smooth. I'm back to playing sports now.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was highly skilled and removed the torn portion of my meniscus with precision. The 90-day follow-ups ensured my complete recovery.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The physiotherapy protocol was excellent. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is menisectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after menisectomy?",
+      a: "Most patients return to light daily activities within 1-2 weeks. Sports and heavy activities may take 4-6 weeks. Physiotherapy is crucial for full recovery.",
+    },
+    {
+      q: "Is menisectomy covered by insurance?",
+      a: "Yes, menisectomy is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between meniscectomy and meniscus repair?",
+      a: "Menisectomy removes the torn portion of the meniscus, while meniscus repair involves suturing the torn edges together. Repair is preferred for tears in the vascular zone (outer part) in younger patients. Menisectomy is preferred for tears that cannot be repaired.",
+    },
+    {
+      q: "Can a meniscus grow back after meniscectomy?",
+      a: "The meniscus does not grow back after meniscectomy. However, preserving as much healthy tissue as possible helps maintain knee stability and reduces the risk of long-term complications like arthritis.",
+    },
+  ],
+  metaTitle: "Arthroscopic Menisectomy in Bangalore | Torn Meniscus Surgery — Doctor247",
+  metaDescription:
+    "Best menisectomy in Bangalore starting at ₹60,000. Expert arthroscopic meniscus surgery, faster recovery, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "menisectomy in bangalore, meniscus surgery cost, arthroscopic menisectomy, torn meniscus treatment, best orthopaedic surgeon bangalore, knee surgery",
+},
+
+"carpal-tunnel-release": {
+  slug: "carpal-tunnel-release",
+  name: "Carpal Tunnel Release (Unilateral)",
+  shortName: "Carpal Tunnel Release",
+  price: "₹40,000",
+  heroDescription:
+    "Safe, effective carpal tunnel release surgery for unilateral carpal tunnel syndrome with expert hand surgery care, faster recovery, cashless insurance, no-cost EMI, and free follow-ups. Get relief from hand numbness and pain by verified orthopaedic surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,000+", label: "Carpal Tunnel Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Carpal Tunnel Syndrome?",
+  aboutParagraphs: [
+    "Carpal tunnel syndrome is a condition caused by compression of the median nerve as it passes through the carpal tunnel in the wrist. It results in numbness, tingling, and weakness in the hand and fingers, particularly the thumb, index, and middle fingers. It is commonly associated with repetitive hand movements, pregnancy, diabetes, and other medical conditions.",
+    "Carpal tunnel release is a surgical procedure that divides the transverse carpal ligament to relieve pressure on the median nerve. This can be performed through a small open incision or endoscopically. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective carpal tunnel release in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Carpal Tunnel Release?",
+      items: [
+        "Persistent numbness and tingling in the hand and fingers",
+        "Weakness in grip strength or dropping objects",
+        "Symptoms not responding to conservative treatment (splinting, steroid injections)",
+        "Progressive muscle wasting in the thumb (thenar atrophy)",
+        "Night-time symptoms disturbing sleep",
+      ],
+    },
+    {
+      label: "Preventing Carpal Tunnel Syndrome",
+      items: [
+        "Take frequent breaks from repetitive hand activities",
+        "Use ergonomic equipment and proper wrist positioning",
+        "Perform hand and wrist stretching exercises",
+        "Manage underlying conditions like diabetes and arthritis",
+        "Maintain a healthy body weight",
+      ],
+    },
+    {
+      label: "Complications of Untreated Carpal Tunnel Syndrome",
+      items: [
+        "Progressive nerve damage and muscle wasting",
+        "Permanent loss of hand strength and sensation",
+        "Reduced quality of life and hand function",
+        "Inability to perform daily activities and work tasks",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Carpal Tunnel Release — precise surgery for lasting relief",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in hand surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Carpal Tunnel Release",
+      description:
+        "We perform precise carpal tunnel release using open or endoscopic techniques, ensuring complete release of the median nerve with minimal complications.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Hand Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing carpal tunnel release surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Minimally Invasive Options",
+      description:
+        "We offer both open and endoscopic carpal tunnel release techniques, with the endoscopic approach allowing smaller incisions, faster recovery, and less scarring.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination (Tinel's sign, Phalen's test)",
+    "Nerve conduction studies (NCS) to assess nerve compression",
+    "Electromyography (EMG) to evaluate muscle involvement",
+    "X-ray of the wrist (to rule out other causes)",
+    "Blood tests to assess for underlying conditions",
+  ],
+  procedureSteps: [
+    "Local or regional anaesthesia for a pain-free procedure",
+    "A small incision is made in the palm or wrist area",
+    "The transverse carpal ligament is identified",
+    "The ligament is divided to release pressure on the median nerve",
+    "Open technique uses a 2-3 cm incision; endoscopic uses 1-2 small incisions",
+    "The wound is closed with fine sutures",
+    "A light dressing is applied",
+    "Procedure typically completed within 15-30 minutes",
+  ],
+  postOpDo: [
+    "Keep the dressing clean and dry for 24-48 hours",
+    "Elevate the hand to reduce swelling",
+    "Take prescribed pain relief on schedule",
+    "Start gentle finger exercises as advised",
+    "Attend your follow-up visit within 7-10 days for stitch removal",
+  ],
+  postOpDont: [
+    "Don't use the operated hand for heavy lifting for 2-3 weeks",
+    "Don't drive until cleared by your surgeon",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had carpal tunnel syndrome causing numbness and pain in my hand. The surgery gave me immediate relief. Recovery was quick and I'm back to normal activities.”",
+      name: "S. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The endoscopic carpal tunnel release was quick and painless. The small incision healed beautifully. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgeon was very experienced and the 90-day follow-ups were thorough.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is carpal tunnel release painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative discomfort is mild and managed with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after carpal tunnel release?",
+      a: "Most patients return to light activities within 1-2 weeks and full activities within 4-6 weeks. Endoscopic approach may offer faster recovery.",
+    },
+    {
+      q: "Is carpal tunnel release covered by insurance?",
+      a: "Yes, carpal tunnel release is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between open and endoscopic carpal tunnel release?",
+      a: "Open carpal tunnel release uses a 2-3 cm incision in the palm. Endoscopic carpal tunnel release uses 1-2 small incisions and a camera. Endoscopic approach offers smaller scars and potentially faster recovery.",
+    },
+    {
+      q: "Will carpal tunnel syndrome come back after surgery?",
+      a: "Recurrence is rare after carpal tunnel release (less than 3%). If symptoms persist, they may be due to other conditions like cervical radiculopathy or peripheral neuropathy. Your surgeon will investigate if needed.",
+    },
+  ],
+  metaTitle: "Carpal Tunnel Release Surgery in Bangalore | Hand Surgery — Doctor247",
+  metaDescription:
+    "Best carpal tunnel release in Bangalore starting at ₹40,000. Expert hand surgery for carpal tunnel syndrome, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "carpal tunnel release in bangalore, carpal tunnel surgery cost, hand surgery, carpal tunnel syndrome treatment, best orthopaedic surgeon bangalore",
+},
+
+"closed-reduction-dislocation-minor": {
+  slug: "closed-reduction-dislocation-minor",
+  name: "Closed Reduction Dislocation - Minor",
+  shortName: "Closed Reduction",
+  price: "₹30,000",
+  heroDescription:
+    "Safe, effective closed reduction for minor joint dislocations with expert orthopaedic care, immediate pain relief, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic emergency care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "2,500+", label: "Closed Reductions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Joint Dislocation?",
+  aboutParagraphs: [
+    "A joint dislocation occurs when the bones in a joint are forced out of their normal position, causing pain, swelling, deformity, and loss of function. Common sites for minor dislocations include the fingers, toes, elbow, and shoulder. Closed reduction is a non-surgical procedure that restores the bones to their normal alignment without making an incision.",
+    "Closed reduction is performed under anaesthesia or sedation, and the joint is carefully manipulated back into position. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective closed reduction in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Closed Reduction?",
+      items: [
+        "Acute joint dislocation without fracture (or with minor non-displaced fracture)",
+        "Dislocation of fingers, toes, elbow, or shoulder",
+        "Joint deformity with loss of function",
+        "Severe pain and swelling at the joint",
+      ],
+    },
+    {
+      label: "Preventing Joint Dislocations",
+      items: [
+        "Avoid high-risk activities without proper training",
+        "Use protective gear during sports",
+        "Strengthen muscles around joints",
+        "Maintain joint flexibility through stretching",
+        "Avoid falls by keeping your environment clear of hazards",
+      ],
+    },
+    {
+      label: "Complications of Untreated Dislocations",
+      items: [
+        "Persistent joint deformity",
+        "Chronic pain and instability",
+        "Nerve damage from prolonged compression",
+        "Reduced range of motion and function",
+        "Risk of avascular necrosis (especially hip)",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Closed Reduction — precise joint reduction for immediate relief",
+        "Free Follow-ups — post-reduction consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in orthopaedic emergencies",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Closed Reduction",
+      description:
+        "We perform closed reduction with precision and care, ensuring the joint is restored to its normal position with minimal trauma and immediate pain relief.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing closed reductions with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Non-Surgical Approach",
+      description:
+        "Closed reduction is performed without making any incisions, offering the benefits of no scars, minimal risk, and faster recovery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the dislocated joint",
+    "X-ray of the affected joint (pre and post-reduction)",
+    "CT scan (if needed for complex cases)",
+    "Neurovascular assessment of the affected limb",
+  ],
+  procedureSteps: [
+    "Initial assessment and X-ray confirmation of dislocation",
+    "Analgesia or sedation for pain relief during the procedure",
+    "Gentle manipulation of the joint to restore normal alignment",
+    "Post-reduction X-ray to confirm successful reduction",
+    "Application of splint or sling for immobilization",
+    "Procedure typically completed within 15-30 minutes",
+  ],
+  postOpDo: [
+    "Keep the joint immobilized as advised",
+    "Apply ice packs to reduce swelling",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Attend your follow-up visit within 7-10 days for assessment",
+    "Follow the gradual mobilization plan as advised",
+  ],
+  postOpDont: [
+    "Don't bear weight or use the joint until cleared",
+    "Don't remove the splint/sling without doctor's advice",
+    "Don't ignore numbness, tingling, or color change in the limb — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I dislocated my finger playing basketball. The closed reduction was quick and painless. I was back to normal within a few weeks. Great care.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My son dislocated his elbow and the closed reduction was performed with great care. The team was supportive and explained everything clearly.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is closed reduction painful?",
+      a: "The procedure is performed under analgesia or sedation, so you'll have minimal to no pain during the reduction. Some discomfort may be experienced after the procedure, which is managed with pain medication.",
+    },
+    {
+      q: "How long does recovery take after closed reduction?",
+      a: "Recovery time depends on the joint involved. Minor joint dislocations typically require 2-4 weeks of immobilization followed by gradual mobilization. Full recovery may take 4-6 weeks.",
+    },
+    {
+      q: "Is closed reduction covered by insurance?",
+      a: "Yes, closed reduction of dislocations is covered by most health insurance plans in India as an emergency procedure. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between closed and open reduction?",
+      a: "Closed reduction is performed without making any incisions, using manual manipulation to restore the joint. Open reduction requires surgery with an incision and is used when closed reduction fails or when there is an associated fracture requiring surgical fixation.",
+    },
+    {
+      q: "What happens if closed reduction fails?",
+      a: "If closed reduction is unsuccessful, open reduction may be required. This involves surgery with an incision to manually reposition the bones and possibly fix them with screws or plates.",
+    },
+  ],
+  metaTitle: "Closed Reduction of Dislocations in Bangalore | Orthopaedic Emergency Care — Doctor247",
+  metaDescription:
+    "Best closed reduction for dislocations in Bangalore starting at ₹30,000. Expert non-surgical joint reduction, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "closed reduction in bangalore, dislocation treatment cost, joint reduction, orthopaedic emergency, best orthopaedic surgeon bangalore, finger dislocation treatment",
+},
+
+"closed-reduction-dislocation-major": {
+  slug: "closed-reduction-dislocation-major",
+  name: "Closed Reduction Dislocation - Major",
+  shortName: "Closed Reduction Major",
+  price: "₹55,000",
+  heroDescription:
+    "Safe, effective closed reduction for major joint dislocations with expert orthopaedic care, immediate pain relief, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic emergency care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "1,800+", label: "Major Closed Reductions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Major Joint Dislocation?",
+  aboutParagraphs: [
+    "A major joint dislocation occurs when the bones in a weight-bearing or large joint are forced out of their normal position, causing severe pain, swelling, deformity, and loss of function. Common sites for major dislocations include the hip, knee, and shoulder (especially recurrent or complex dislocations). These injuries often result from high-energy trauma such as motor vehicle accidents, falls from height, or severe sports injuries.",
+    "Closed reduction is a non-surgical procedure that restores the bones to their normal alignment without making an incision. This is performed under anaesthesia or sedation, and the joint is carefully manipulated back into position. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective closed reduction for major dislocations in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Closed Reduction for Major Dislocation?",
+      items: [
+        "Major joint dislocation (hip, knee, shoulder, ankle) without associated fracture",
+        "Acute dislocation with significant pain and deformity",
+        "Dislocation requiring urgent reduction to prevent complications",
+        "Recurrent dislocations requiring closed reduction",
+      ],
+    },
+    {
+      label: "Preventing Joint Dislocations",
+      items: [
+        "Avoid high-risk activities without proper training",
+        "Use protective gear during sports",
+        "Strengthen muscles around major joints",
+        "Maintain joint flexibility through stretching",
+        "Avoid falls by keeping your environment clear of hazards",
+      ],
+    },
+    {
+      label: "Complications of Untreated Major Dislocations",
+      items: [
+        "Persistent joint deformity and instability",
+        "Nerve and vascular damage from prolonged compression",
+        "Avascular necrosis (especially hip dislocation)",
+        "Chronic pain and arthritis",
+        "Permanent loss of joint function",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Closed Reduction — precise reduction for major joint dislocations",
+        "Free Follow-ups — post-reduction consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in orthopaedic emergencies",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Closed Reduction",
+      description:
+        "We perform closed reduction with precision and care for major joints, ensuring the joint is restored to its normal position with minimal trauma and immediate pain relief.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing major joint closed reductions with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Non-Surgical Approach",
+      description:
+        "Closed reduction is performed without making any incisions, offering the benefits of no scars, minimal risk, and faster recovery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the dislocated joint",
+    "X-ray of the affected joint (pre and post-reduction)",
+    "CT scan (for complex cases or to rule out associated fractures)",
+    "Neurovascular assessment of the affected limb",
+    "ECG and fitness assessment (if under general anaesthesia)",
+  ],
+  procedureSteps: [
+    "Initial assessment and X-ray confirmation of dislocation",
+    "IV access and monitoring for sedation/anaesthesia",
+    "Analgesia or general anaesthesia for pain relief",
+    "Gentle manipulation of the joint under anaesthesia",
+    "Post-reduction X-ray to confirm successful reduction",
+    "Application of splint, cast, or traction for immobilization",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Keep the joint immobilized as advised",
+    "Apply ice packs to reduce swelling",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Attend your follow-up visit within 7-10 days for assessment",
+    "Follow the gradual mobilization plan as advised",
+  ],
+  postOpDont: [
+    "Don't bear weight or use the joint until cleared",
+    "Don't remove the splint/cast without doctor's advice",
+    "Don't ignore numbness, tingling, or color change in the limb — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a hip dislocation from a car accident. The closed reduction was performed under anaesthesia and I felt immediate relief. The recovery was well managed.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My shoulder kept dislocating and the closed reduction was performed with great expertise. The team was very supportive throughout.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is closed reduction for major dislocations painful?",
+      a: "The procedure is performed under anaesthesia or deep sedation, so you'll have minimal to no pain during the reduction. Some discomfort may be experienced after the procedure, which is managed with pain medication.",
+    },
+    {
+      q: "How long does recovery take after major dislocation reduction?",
+      a: "Recovery time depends on the joint involved. Major joint dislocations typically require 4-8 weeks of immobilization followed by gradual mobilization. Full recovery may take 2-4 months.",
+    },
+    {
+      q: "Is closed reduction for major dislocations covered by insurance?",
+      a: "Yes, closed reduction of major joint dislocations is covered by most health insurance plans in India as an emergency procedure. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between minor and major joint dislocation?",
+      a: "Minor dislocations typically involve smaller joints like fingers, toes, or elbow, with lower energy trauma and quicker recovery. Major dislocations involve larger weight-bearing joints like hip, knee, or shoulder, require more complex reduction, longer immobilization, and have higher risk of complications.",
+    },
+    {
+      q: "What is the difference between closed and open reduction for major dislocations?",
+      a: "Closed reduction is performed without making any incisions, using manual manipulation under anaesthesia. Open reduction requires surgery with an incision and is used when closed reduction fails, when there is an associated fracture requiring surgical fixation, or when there is a soft tissue interposition blocking reduction.",
+    },
+  ],
+  metaTitle: "Closed Reduction of Major Dislocations in Bangalore | Orthopaedic Emergency Care — Doctor247",
+  metaDescription:
+    "Best closed reduction for major joint dislocations in Bangalore starting at ₹55,000. Expert non-surgical reduction, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "major joint dislocation reduction, closed reduction hip, closed reduction shoulder, dislocation treatment cost, best orthopaedic surgeon bangalore, emergency orthopaedic care",
+},
+
+"implant-removal-minor": {
+  slug: "implant-removal-minor",
+  name: "Implant Removal - Minor (Except K-Wire)",
+  shortName: "Implant Removal Minor",
+  price: "₹30,000",
+  heroDescription:
+    "Safe, effective minor implant removal surgery for orthopaedic implants including plates, screws, and nails (except K-wires). Expert surgical care, faster recovery, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,500+", label: "Implant Removals Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Implant Removal?",
+  aboutParagraphs: [
+    "Implant removal is a surgical procedure performed to remove orthopaedic hardware such as plates, screws, and nails that were previously inserted to stabilize fractures or correct deformities. These implants may be removed for various reasons including implant-related pain, infection, implant failure, or after the bone has completely healed.",
+    "Minor implant removal typically involves removing small implants from bones such as the forearm, wrist, ankle, or clavicle. The procedure is performed under anaesthesia through a small incision over the implant site. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective minor implant removal in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Implant Removal?",
+      items: [
+        "Implant-related pain or discomfort",
+        "Infection around the implant site",
+        "Implant failure or loosening",
+        "After complete bone healing (elective removal)",
+        "Patient request for implant removal",
+      ],
+    },
+    {
+      label: "Common Implants Removed",
+      items: [
+        "Small plates (forearm, wrist, ankle, clavicle)",
+        "Screws (cortical and cancellous)",
+        "Intramedullary nails (small diameter)",
+        "Tension band wires (except K-wires)",
+        "Small external fixator pins",
+      ],
+    },
+    {
+      label: "Complications if Implant Not Removed When Indicated",
+      items: [
+        "Persistent implant-related pain",
+        "Risk of infection or implant loosening",
+        "Implant failure or breakage",
+        "Stress shielding and bone weakening",
+        "Difficulty with future imaging (MRI/CT)",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Implant Removal — precise removal with minimal tissue damage",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in implant removal",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Precise Implant Removal",
+      description:
+        "We perform meticulous removal of implants using the appropriate instruments, ensuring complete removal with minimal damage to surrounding tissues.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing implant removals with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Minimally Invasive & Faster Recovery",
+      description:
+        "We use small incisions and careful surgical technique, resulting in less tissue trauma, minimal scarring, and faster recovery.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the implant site",
+    "X-ray of the implant to assess condition and bone healing",
+    "CT scan (if needed for complex cases)",
+    "Blood tests including inflammatory markers (if infection is suspected)",
+    "ECG and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "Local, regional, or general anaesthesia depending on the case",
+    "A small incision is made over the implant site",
+    "The implant is identified and exposed",
+    "Screws are removed using appropriate screwdrivers",
+    "The plate or nail is carefully removed",
+    "The wound is thoroughly irrigated and closed with sutures",
+    "A sterile dressing is applied",
+    "Procedure typically completed within 30-60 minutes",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Attend your follow-up visit within 7-10 days for stitch removal",
+    "Follow the rehabilitation plan as advised",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 2-3 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't get the wound wet until it is healed",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a plate in my wrist that was causing pain. The removal surgery was quick and recovery was smooth. I'm so happy to have the implant out.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon removed my ankle screws with great precision. The incisions were small and healed beautifully. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is implant removal painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative discomfort is mild to moderate and managed with prescribed pain medication.",
+    },
+    {
+      q: "How long does recovery take after implant removal?",
+      a: "Most patients return to light activities within 1-2 weeks. Full recovery typically takes 3-4 weeks. Since the bone has already healed, recovery is generally faster than the initial implant surgery.",
+    },
+    {
+      q: "Is implant removal covered by insurance?",
+      a: "Yes, implant removal is covered by most health insurance plans in India when medically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "When should implants be removed?",
+      a: "Implants are typically removed 12-18 months after the initial surgery, once the bone has completely healed. However, removal may be indicated earlier in cases of infection, implant failure, or persistent pain.",
+    },
+    {
+      q: "What is the difference between minor and major implant removal?",
+      a: "Minor implant removal involves small implants like plates and screws from areas like the forearm, wrist, ankle, or clavicle. Major implant removal involves larger implants like hip/knee prosthesis, extensive plates, or implants requiring significant soft tissue dissection.",
+    },
+  ],
+  metaTitle: "Minor Implant Removal Surgery in Bangalore | Orthopaedic Hardware Removal — Doctor247",
+  metaDescription:
+    "Best minor implant removal in Bangalore starting at ₹30,000. Expert removal of plates, screws, and nails, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "implant removal in bangalore, orthopaedic hardware removal, plate removal surgery, screw removal cost, best orthopaedic surgeon bangalore, implant removal surgery",
+},
+"implant-removal-major": {
+  slug: "implant-removal-major",
+  name: "Implant Removal - Major",
+  shortName: "Implant Removal Major",
+  price: "₹60,000",
+  heroDescription:
+    "Safe, comprehensive major implant removal surgery for orthopaedic hardware including hip/knee prosthesis, large plates, and intramedullary nails. Expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "1,200+", label: "Major Implant Removals Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Major Implant Removal?",
+  aboutParagraphs: [
+    "Major implant removal is a surgical procedure performed to remove large orthopaedic hardware such as hip/knee prostheses, extensive plates, and intramedullary nails that were previously inserted to stabilize fractures, correct deformities, or replace joints. These implants may be removed for various reasons including implant-related pain, infection, implant failure, or after the bone has completely healed.",
+    "Major implant removal is a more complex procedure than minor removal, often requiring larger incisions, more extensive dissection, and longer recovery time. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective major implant removal in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Major Implant Removal?",
+      items: [
+        "Implant-related pain or discomfort",
+        "Infection around the implant site (osteomyelitis)",
+        "Implant failure, loosening, or breakage",
+        "After complete bone healing (elective removal of large plates/nails)",
+        "Revision surgery (removal of previous prosthesis)",
+        "Patient request for implant removal",
+      ],
+    },
+    {
+      label: "Common Major Implants Removed",
+      items: [
+        "Hip prosthesis (total hip replacement)",
+        "Knee prosthesis (total knee replacement)",
+        "Large plates (femur, tibia, humerus)",
+        "Intramedullary nails (femur, tibia, humerus)",
+        "Dynamic hip screws (DHS) and other large implants",
+      ],
+    },
+    {
+      label: "Complications if Implant Not Removed When Indicated",
+      items: [
+        "Persistent implant-related pain",
+        "Risk of infection or implant loosening",
+        "Implant failure or breakage requiring emergency surgery",
+        "Stress shielding and bone weakening",
+        "Difficulty with future imaging (MRI/CT)",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Major Implant Removal — comprehensive removal with precision",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in complex implant removal",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Implant Removal",
+      description:
+        "We perform meticulous removal of major implants using specialized instruments and techniques, ensuring complete removal with minimal damage to surrounding tissues.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing major implant removals with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Specialized Equipment & Techniques",
+      description:
+        "We use specialized extraction instruments and techniques for different implant types, ensuring safe and efficient removal with minimal complications.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the implant site",
+    "X-ray of the implant to assess condition and bone healing",
+    "CT scan (for complex implant assessment)",
+    "Blood tests including inflammatory markers (if infection is suspected)",
+    "ECG, chest X-ray, and fitness assessment before surgery",
+    "Pre-operative planning with templating",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia depending on the case",
+    "An incision is made over the implant site",
+    "The implant is identified and exposed through careful dissection",
+    "Screws are removed using appropriate extraction instruments",
+    "The plate, nail, or prosthesis is carefully extracted",
+    "Special techniques may be needed for cement removal (if cemented implant)",
+    "The wound is thoroughly irrigated with antibiotic solution",
+    "A drain may be placed if needed",
+    "The wound is closed with sutures or staples",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Use walking aids as advised (crutches, walker)",
+    "Start mobilisation as per physiotherapy protocol",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon",
+    "Don't lift heavy weights for 6-8 weeks",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't get the wound wet until it is healed",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a large plate in my femur that needed removal. The surgery was complex but the surgeon handled it with great expertise. Recovery was well managed.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My hip replacement needed revision surgery. The implant removal was performed with precision and the team was very supportive throughout.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is major implant removal painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after major implant removal?",
+      a: "Most patients are discharged within 2-4 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 6-8 weeks. Recovery time depends on the site and size of the implant removed.",
+    },
+    {
+      q: "Is major implant removal covered by insurance?",
+      a: "Yes, major implant removal is covered by most health insurance plans in India when medically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between minor and major implant removal?",
+      a: "Minor implant removal involves small implants like plates and screws from areas like the forearm, wrist, or ankle. Major implant removal involves larger implants like hip/knee prosthesis, large plates, or intramedullary nails from larger bones like the femur, tibia, or hip joint.",
+    },
+    {
+      q: "What are the risks of major implant removal?",
+      a: "Risks include bleeding, infection, nerve injury, fracture during removal, incomplete removal, and prolonged recovery. Your surgeon will discuss these risks with you in detail before the procedure.",
+    },
+  ],
+  metaTitle: "Major Implant Removal Surgery in Bangalore | Orthopaedic Hardware Removal — Doctor247",
+  metaDescription:
+    "Best major implant removal in Bangalore starting at ₹60,000. Expert removal of hip/knee prostheses, large plates, and nails, cashless insurance, experienced surgeons.",
+  metaKeywords:
+    "major implant removal bangalore, hip prosthesis removal, knee implant removal, orthopaedic hardware removal, best orthopaedic surgeon bangalore, revision surgery",
+},
+
+"k-wire-removal": {
+  slug: "k-wire-removal",
+  name: "K Wire Removal",
+  shortName: "K Wire Removal",
+  price: "₹25,000",
+  heroDescription:
+    "Safe, simple K wire removal procedure for orthopaedic patients with expert care, minimal discomfort, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "4,000+", label: "K Wire Removals Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are K Wires?",
+  aboutParagraphs: [
+    "K wires (Kirschner wires) are thin, sterile, stainless steel wires used in orthopaedic surgery to stabilize fractures or hold bones in place while they heal. They are commonly used in procedures involving the hand, wrist, foot, ankle, and other small bones. K wires are typically removed once the bone has healed, usually 4-8 weeks after the initial surgery.",
+    "K wire removal is a simple, quick procedure performed in the clinic or operating room under local anaesthesia. The wire is gently pulled out from the skin and bone. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective K wire removal in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose K Wire Removal?",
+      items: [
+        "Complete bone healing confirmed by X-ray",
+        "At the scheduled time for removal (usually 4-8 weeks after insertion)",
+        "K wire causing irritation or infection at the entry site",
+        "Patient request for removal after bone healing",
+      ],
+    },
+    {
+      label: "K Wire Care During Treatment",
+      items: [
+        "Keep the K wire entry site clean and dry",
+        "Watch for signs of infection (redness, swelling, discharge)",
+        "Protect the wire from accidental pulling or snagging",
+        "Attend all follow-up appointments for X-ray monitoring",
+      ],
+    },
+    {
+      label: "Complications of Delayed K Wire Removal",
+      items: [
+        "Infection tracking along the wire tract",
+        "Irritation and pain at the entry site",
+        "Wire migration or breakage",
+        "Delayed bone healing if wire remains too long",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert K Wire Removal — simple, quick, and painless procedure",
+        "Free Follow-ups — post-removal consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in K wire removal",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Quick & Simple Removal",
+      description:
+        "K wire removal is a fast and straightforward procedure, typically taking only 5-10 minutes with minimal discomfort and quick recovery.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Minimal Discomfort",
+      description:
+        "The procedure is performed under local anaesthesia, ensuring you feel minimal to no pain during the removal. Post-procedure discomfort is minimal.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "No Hospital Stay",
+      description:
+        "K wire removal is performed as an outpatient procedure — you can go home immediately after the removal with no hospital stay required.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the K wire site",
+    "X-ray to confirm complete bone healing",
+    "Check for signs of infection at the entry site",
+  ],
+  procedureSteps: [
+    "Local anaesthesia is administered at the K wire site",
+    "The skin entry site is cleaned with antiseptic solution",
+    "The K wire is gently pulled out using special forceps or pliers",
+    "The skin puncture site is cleaned and a small dressing is applied",
+    "A post-removal X-ray may be taken if required",
+    "Procedure typically completed within 5-10 minutes",
+  ],
+  postOpDo: [
+    "Keep the skin puncture site clean and dry for 24-48 hours",
+    "Take prescribed pain relief if needed (usually minimal)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow the rehabilitation plan as advised",
+  ],
+  postOpDont: [
+    "Don't get the puncture site wet for 24 hours",
+    "Don't ignore redness, swelling, or discharge — call us immediately",
+    "Don't skip your follow-up appointments",
+    "Don't return to heavy activities without clearance",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a K wire in my finger after a fracture. The removal took only a few minutes and I felt almost no pain. Quick and easy process.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My child had a K wire in his wrist. The removal was quick and the team made him feel comfortable. Great care from Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The procedure was quick and I was back home in no time. Highly recommend.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is K wire removal painful?",
+      a: "The procedure is performed under local anaesthesia, so you won't feel significant pain during removal. Some patients experience a brief sensation of pressure or pulling. Post-procedure discomfort is minimal.",
+    },
+    {
+      q: "How long does K wire removal take?",
+      a: "The removal procedure typically takes 5-10 minutes. You can go home immediately after the procedure.",
+    },
+    {
+      q: "Is K wire removal covered by insurance?",
+      a: "Yes, K wire removal is covered by most health insurance plans in India when medically indicated. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "When should K wires be removed?",
+      a: "K wires are typically removed 4-8 weeks after insertion, once X-ray confirms complete bone healing. The exact timing depends on the fracture type, patient age, and healing progress.",
+    },
+    {
+      q: "What happens after K wire removal?",
+      a: "After removal, the puncture site heals within a few days. Your surgeon may recommend physiotherapy to regain strength and mobility. You can gradually return to normal activities.",
+    },
+  ],
+  metaTitle: "K Wire Removal in Bangalore | Orthopaedic Procedure — Doctor247",
+  metaDescription:
+    "Best K wire removal in Bangalore starting at ₹25,000. Quick, simple orthopaedic wire removal, cashless insurance, experienced surgeons.",
+  metaKeywords:
+    "K wire removal in bangalore, Kirschner wire removal, orthopaedic wire removal, k wire removal cost, best orthopaedic surgeon bangalore",
+},
+
+"open-reduction-dislocation-minor": {
+  slug: "open-reduction-dislocation-minor",
+  name: "Open Reduction - Dislocation - Minor",
+  shortName: "Open Reduction Minor",
+  price: "₹40,000",
+  heroDescription:
+    "Safe, effective open reduction for minor joint dislocations with expert orthopaedic surgical care, immediate joint restoration, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic surgical care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "1,500+", label: "Open Reductions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Open Reduction for Dislocation?",
+  aboutParagraphs: [
+    "Open reduction is a surgical procedure performed to restore a dislocated joint to its normal position through an incision. This is necessary when closed reduction (non-surgical manipulation) fails, when there is an associated fracture requiring fixation, or when soft tissue is trapped in the joint blocking reduction.",
+    "The procedure involves making an incision over the dislocated joint, removing any tissue blocking the reduction, and manually repositioning the bones. It may also involve repair of damaged ligaments or fixation of associated fractures. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective open reduction for minor dislocations in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Open Reduction for Dislocation?",
+      items: [
+        "Failed closed reduction",
+        "Associated fracture requiring surgical fixation",
+        "Soft tissue interposition blocking reduction",
+        "Recurrent dislocations requiring ligament repair",
+        "Delayed presentation with muscle spasm",
+      ],
+    },
+    {
+      label: "Preventing Joint Dislocations",
+      items: [
+        "Avoid high-risk activities without proper training",
+        "Use protective gear during sports",
+        "Strengthen muscles around joints",
+        "Maintain joint flexibility through stretching",
+        "Avoid falls by keeping your environment clear of hazards",
+      ],
+    },
+    {
+      label: "Complications of Untreated Dislocations",
+      items: [
+        "Persistent joint deformity",
+        "Chronic pain and instability",
+        "Nerve damage from prolonged compression",
+        "Reduced range of motion and function",
+        "Early onset arthritis",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Open Reduction — precise surgical restoration of joint",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in orthopaedic surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Open Reduction",
+      description:
+        "We perform precise open reduction with careful tissue handling, ensuring the joint is restored to its normal position with minimal complications.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing open reductions with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Surgical Care",
+      description:
+        "When needed, we perform associated ligament repair, fracture fixation, and removal of interposed tissue to ensure complete joint restoration.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the dislocated joint",
+    "X-ray of the affected joint (pre and post-reduction)",
+    "CT scan (if needed for associated fractures)",
+    "MRI (if ligament damage is suspected)",
+    "Neurovascular assessment of the affected limb",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "A small incision is made over the dislocated joint",
+    "The joint is carefully explored and tissue blocking reduction is removed",
+    "The bones are gently manipulated back into normal position",
+    "Associated fractures are fixed with plates, screws, or wires if needed",
+    "Damaged ligaments may be repaired",
+    "The wound is thoroughly irrigated and closed with sutures",
+    "A splint, cast, or brace is applied for immobilization",
+    "Procedure typically completed within 45-90 minutes depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the joint immobilized as advised",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow the rehabilitation plan as advised",
+  ],
+  postOpDont: [
+    "Don't bear weight or use the joint until cleared",
+    "Don't remove the splint/cast without doctor's advice",
+    "Don't ignore numbness, tingling, or color change in the limb — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“My finger dislocation couldn't be reduced closed, so I needed open reduction. The surgery was successful and my finger is back to normal. Great care.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My son had an elbow dislocation that required open reduction. The surgeon was highly skilled and the recovery was well managed.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is open reduction for dislocation painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after open reduction?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 4-6 weeks. Immobilization is usually required for 2-4 weeks.",
+    },
+    {
+      q: "Is open reduction covered by insurance?",
+      a: "Yes, open reduction for dislocations is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between closed and open reduction?",
+      a: "Closed reduction is performed without making any incisions, using manual manipulation under anaesthesia. Open reduction requires surgery with an incision and is used when closed reduction fails, when there is an associated fracture requiring fixation, or when soft tissue is trapped in the joint.",
+    },
+    {
+      q: "What are the risks of open reduction?",
+      a: "Risks include bleeding, infection, nerve injury, damage to surrounding tissues, stiffness, and recurrence of dislocation. Your surgeon will discuss these risks with you in detail before the procedure.",
+    },
+  ],
+  metaTitle: "Open Reduction of Dislocations in Bangalore | Orthopaedic Surgery — Doctor247",
+  metaDescription:
+    "Best open reduction for dislocations in Bangalore starting at ₹40,000. Expert surgical joint reduction, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "open reduction in bangalore, dislocation surgery cost, surgical joint reduction, orthopaedic surgery, best orthopaedic surgeon bangalore, finger dislocation surgery",
+},
+
+"open-reduction-dislocation-major": {
+  slug: "open-reduction-dislocation-major",
+  name: "Open Reduction - Dislocation - Major",
+  shortName: "Open Reduction Major",
+  price: "₹60,000",
+  heroDescription:
+    "Safe, comprehensive open reduction for major joint dislocations with expert orthopaedic surgical care, immediate joint restoration, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic surgical care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "1,000+", label: "Major Open Reductions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Open Reduction for Major Joint Dislocation?",
+  aboutParagraphs: [
+    "Open reduction is a surgical procedure performed to restore a dislocated major joint (such as the hip, knee, or shoulder) to its normal position through an incision. This is necessary when closed reduction (non-surgical manipulation) fails, when there is an associated fracture requiring fixation, or when soft tissue is trapped in the joint blocking reduction.",
+    "Major joint dislocations typically result from high-energy trauma such as motor vehicle accidents, falls from height, or severe sports injuries. The procedure involves making a larger incision over the dislocated joint, removing any tissue blocking reduction, and manually repositioning the bones. It may also involve repair of damaged ligaments, fixation of associated fractures, and addressing any neurovascular injuries. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective open reduction for major dislocations in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Open Reduction for Major Dislocation?",
+      items: [
+        "Failed closed reduction",
+        "Associated fracture requiring surgical fixation",
+        "Soft tissue interposition blocking reduction",
+        "Recurrent dislocations requiring ligament repair",
+        "Delayed presentation with muscle spasm",
+        "Associated neurovascular injury",
+      ],
+    },
+    {
+      label: "Preventing Major Joint Dislocations",
+      items: [
+        "Avoid high-risk activities without proper training",
+        "Use protective gear during sports",
+        "Strengthen muscles around major joints",
+        "Maintain joint flexibility through stretching",
+        "Avoid falls by keeping your environment clear of hazards",
+      ],
+    },
+    {
+      label: "Complications of Untreated Major Dislocations",
+      items: [
+        "Persistent joint deformity",
+        "Chronic pain and instability",
+        "Nerve and vascular damage",
+        "Reduced range of motion and function",
+        "Avascular necrosis (especially hip)",
+        "Early onset arthritis",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Open Reduction — comprehensive surgical restoration of major joints",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in complex orthopaedic surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Comprehensive Surgical Restoration",
+      description:
+        "We perform precise open reduction of major joints with careful tissue handling, ensuring the joint is restored to its normal position with minimal complications.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing major open reductions with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Surgical Care",
+      description:
+        "We perform associated fracture fixation, ligament repair, removal of interposed tissue, and address any neurovascular injuries to ensure complete joint restoration.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the dislocated joint",
+    "X-ray of the affected joint (pre and post-reduction)",
+    "CT scan (for associated fractures and assessment)",
+    "MRI (if ligament damage is suspected)",
+    "Neurovascular assessment of the affected limb",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray for anaesthesia clearance",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "An adequate incision is made over the dislocated joint",
+    "The joint is carefully explored and tissue blocking reduction is removed",
+    "The bones are gently manipulated back into normal position",
+    "Associated fractures are fixed with plates, screws, or nails if needed",
+    "Damaged ligaments may be repaired",
+    "The wound is thoroughly irrigated with antibiotic solution",
+    "A drain may be placed if needed",
+    "The wound is closed with sutures or staples",
+    "A splint, cast, or brace is applied for immobilization",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the joint immobilized as advised",
+    "Use walking aids as advised (crutches, walker)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Follow the rehabilitation plan as advised",
+  ],
+  postOpDont: [
+    "Don't bear weight or use the joint until cleared",
+    "Don't remove the splint/cast without doctor's advice",
+    "Don't ignore numbness, tingling, or color change in the limb — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a hip dislocation from a car accident that couldn't be reduced closed. The open reduction surgery was successful and I'm now walking again. Excellent care.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My shoulder dislocation required open reduction with ligament repair. The surgeon was highly skilled and the recovery was well managed.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is open reduction for major dislocation painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after major open reduction?",
+      a: "Most patients are discharged within 3-5 days. Light activities can be resumed in 3-4 weeks, and full recovery typically takes 8-12 weeks. Immobilization is usually required for 4-6 weeks.",
+    },
+    {
+      q: "Is open reduction for major dislocation covered by insurance?",
+      a: "Yes, open reduction for major joint dislocations is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between minor and major open reduction?",
+      a: "Minor open reduction involves smaller joints like fingers, toes, or elbow with shorter recovery. Major open reduction involves larger weight-bearing joints like hip, knee, or shoulder with longer recovery, higher complexity, and more extensive surgery.",
+    },
+    {
+      q: "What are the risks of major open reduction?",
+      a: "Risks include bleeding, infection, nerve injury, damage to surrounding tissues, avascular necrosis (especially hip), stiffness, and recurrence of dislocation. Your surgeon will discuss these risks with you in detail before the procedure.",
+    },
+  ],
+  metaTitle: "Open Reduction of Major Dislocations in Bangalore | Orthopaedic Surgery — Doctor247",
+  metaDescription:
+    "Best open reduction for major joint dislocations in Bangalore starting at ₹60,000. Expert surgical joint restoration, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "major joint open reduction bangalore, hip dislocation surgery, knee dislocation surgery, shoulder dislocation surgery, orthopaedic trauma surgery, best orthopaedic surgeon bangalore",
+},
+
+"orif-k-wire": {
+  slug: "orif-k-wire",
+  name: "ORIF of Fracture - K Wire (Including Cost of Implant)",
+  shortName: "ORIF with K Wire",
+  price: "₹50,000",
+  heroDescription:
+    "Safe, effective Open Reduction and Internal Fixation (ORIF) of fractures using K wires with expert orthopaedic surgical care, implant cost included, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic trauma care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,500+", label: "ORIF K Wire Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is ORIF with K Wire Fixation?",
+  aboutParagraphs: [
+    "ORIF (Open Reduction and Internal Fixation) is a surgical procedure used to treat fractures. The bone fragments are repositioned (reduced) into their normal alignment and held in place (fixed) with K wires (Kirschner wires). K wires are thin, sterile, stainless steel wires that are inserted across the fracture to stabilize it while the bone heals.",
+    "ORIF with K wire fixation is commonly used for fractures in the hand, wrist, foot, ankle, and other small bones. The K wires provide stable fixation without the need for large implants, and they are typically removed once the bone has healed. This package includes the cost of the K wire implants. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective ORIF with K wire fixation in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose ORIF with K Wire?",
+      items: [
+        "Displaced fractures requiring surgical fixation",
+        "Fractures of small bones (hand, foot, wrist, ankle)",
+        "Articular fractures requiring precise reduction",
+        "Fractures not suitable for casting or closed reduction",
+        "Open fractures requiring surgical cleaning and fixation",
+      ],
+    },
+    {
+      label: "Preventing Fractures",
+      items: [
+        "Maintain bone health with calcium and Vitamin D",
+        "Weight-bearing exercises for bone strength",
+        "Use protective gear during sports",
+        "Avoid falls by keeping your environment clear of hazards",
+        "Treat underlying conditions like osteoporosis",
+      ],
+    },
+    {
+      label: "Complications if Fractures are Not Treated",
+      items: [
+        "Malunion (healing in wrong position)",
+        "Non-union (failure to heal)",
+        "Chronic pain and disability",
+        "Loss of function and range of motion",
+        "Early onset arthritis (for articular fractures)",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert ORIF with K Wire — precise surgical fixation for optimal healing",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in fracture surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert ORIF with K Wire Fixation",
+      description:
+        "We perform precise open reduction and internal fixation using K wires, ensuring anatomical alignment of the fracture for optimal healing and function.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing ORIF procedures with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Implant Cost Included",
+      description:
+        "The cost of K wire implants is included in the package, with no hidden charges for surgical hardware.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the fracture site",
+    "X-ray of the affected bone (AP and lateral views)",
+    "CT scan (for intra-articular or complex fractures)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray (if indicated)",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "An incision is made over the fracture site",
+    "The fracture is carefully exposed and the bone fragments are reduced (realigned)",
+    "K wires are inserted across the fracture to hold the fragments in position",
+    "The wire ends are either left outside the skin or cut and buried under the skin",
+    "The wound is thoroughly irrigated and closed with sutures",
+    "A plaster cast or splint is applied for immobilization",
+    "Procedure typically completed within 45-90 minutes depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the limb elevated to reduce swelling",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess bone healing",
+  ],
+  postOpDont: [
+    "Don't bear weight or use the limb until cleared",
+    "Don't remove the cast/splint without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up appointments for X-ray monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I fractured my wrist and needed K wire fixation. The surgery was successful and my wrist is healing well. The implant cost was included, which was a relief.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My finger fracture required ORIF with K wires. The surgeon was highly skilled and the recovery was smooth. Great care from Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is ORIF with K wire fixation painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after ORIF with K wires?",
+      a: "Most patients are discharged within 1-2 days. Bone healing typically takes 6-8 weeks. Light activities can be resumed in 2-3 weeks, and full recovery takes 8-12 weeks. K wires are usually removed after 4-8 weeks.",
+    },
+    {
+      q: "Is ORIF with K wire fixation covered by insurance?",
+      a: "Yes, ORIF with K wire fixation is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Why use K wires instead of plates and screws?",
+      a: "K wires are less invasive, require smaller incisions, and are ideal for fractures of small bones. They are removed once the bone heals, avoiding the need for a second surgery for implant removal in some cases.",
+    },
+    {
+      q: "Is K wire removal painful?",
+      a: "K wire removal is typically performed in the clinic under local anaesthesia and is not painful. It is a quick procedure taking only a few minutes.",
+    },
+  ],
+  metaTitle: "ORIF with K Wire in Bangalore | Fracture Surgery Including Implant Cost — Doctor247",
+  metaDescription:
+    "Best ORIF with K wire in Bangalore starting at ₹50,000. Expert fracture surgery with implant cost included, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "ORIF k wire bangalore, fracture surgery with k wire, k wire fixation cost, orthopaedic trauma surgery, best orthopaedic surgeon bangalore, hand fracture surgery",
+},
+
+"orif-plating": {
+  slug: "orif-plating",
+  name: "ORIF of Fracture - Plating (Excluding Cost of Implant)",
+  shortName: "ORIF with Plating",
+  price: "₹70,000",
+  heroDescription:
+    "Advanced Open Reduction and Internal Fixation (ORIF) of fractures using locking compression plates with expert orthopaedic surgical care, faster recovery, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic trauma care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "4,000+", label: "ORIF Plating Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is ORIF with Plating?",
+  aboutParagraphs: [
+    "ORIF (Open Reduction and Internal Fixation) is a surgical procedure used to treat fractures. The bone fragments are repositioned (reduced) into their normal alignment and held in place (fixed) with a plate and screws. Plating provides stable, rigid fixation that allows early mobilization and promotes optimal bone healing.",
+    "ORIF with plating is commonly used for fractures of the forearm, wrist, ankle, clavicle, and other long bones. Modern locking compression plates (LCP) provide excellent stability even in osteoporotic bone. This procedure is ideal for fractures that require precise anatomical reduction and stable fixation. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective ORIF with plating in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose ORIF with Plating?",
+      items: [
+        "Displaced fractures requiring surgical fixation",
+        "Intra-articular fractures requiring precise reduction",
+        "Fractures of long bones (forearm, humerus, tibia, femur)",
+        "Fractures not suitable for casting or closed reduction",
+        "Open fractures requiring surgical cleaning and fixation",
+        "Fractures requiring early mobilization",
+      ],
+    },
+    {
+      label: "Preventing Fractures",
+      items: [
+        "Maintain bone health with calcium and Vitamin D",
+        "Weight-bearing exercises for bone strength",
+        "Use protective gear during sports",
+        "Avoid falls by keeping your environment clear of hazards",
+        "Treat underlying conditions like osteoporosis",
+      ],
+    },
+    {
+      label: "Complications if Fractures are Not Treated",
+      items: [
+        "Malunion (healing in wrong position)",
+        "Non-union (failure to heal)",
+        "Chronic pain and disability",
+        "Loss of function and range of motion",
+        "Early onset arthritis (for articular fractures)",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert ORIF with Plating — precise surgical fixation for optimal healing",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in fracture surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Plating Techniques",
+      description:
+        "We use modern locking compression plates (LCP) and anatomical contoured plates that provide stable fixation even in osteoporotic bone, allowing early mobilization.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing ORIF procedures with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Early Mobilization",
+      description:
+        "The stable fixation provided by plates allows early mobilization, reducing the risk of joint stiffness and muscle atrophy.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the fracture site",
+    "X-ray of the affected bone (AP and lateral views)",
+    "CT scan (for intra-articular or complex fractures)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray (if indicated)",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "An incision is made over the fracture site",
+    "The fracture is carefully exposed and the bone fragments are reduced (realigned)",
+    "A plate of appropriate size is contoured to the bone surface",
+    "Screws are inserted through the plate to hold the fracture fragments in position",
+    "Locking screws provide angular stability in the plate",
+    "The wound is thoroughly irrigated and closed with sutures",
+    "A drain may be placed if needed",
+    "A plaster cast or splint may be applied for additional support",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the limb elevated to reduce swelling",
+    "Start gentle mobilization as advised by your surgeon",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess bone healing",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon",
+    "Don't remove the cast/splint without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up appointments for X-ray monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I fractured my forearm and had plating surgery. The fixation is solid and I'm able to move my arm much earlier than I expected. Great care from Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My ankle fracture required plating and the surgery was a success. The plate allowed me to start walking earlier. The 90-day follow-ups were thorough.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgeon was highly skilled and the recovery was well managed. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is ORIF with plating painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after ORIF with plating?",
+      a: "Most patients are discharged within 2-3 days. Bone healing typically takes 6-12 weeks. Light activities can be resumed in 3-4 weeks, and full recovery takes 12-16 weeks depending on the fracture type and location.",
+    },
+    {
+      q: "Is ORIF with plating covered by insurance?",
+      a: "Yes, ORIF with plating is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Do plates need to be removed after healing?",
+      a: "Plates are usually left in place unless they cause symptoms such as pain, prominence, or irritation. If removal is needed, it is typically performed 12-18 months after the initial surgery.",
+    },
+    {
+      q: "What is the difference between locking and non-locking plates?",
+      a: "Locking plates have screws that lock into the plate, providing angular stability. This makes them ideal for osteoporotic bone and comminuted fractures. Non-locking plates rely on compression between the plate and bone. Your surgeon will choose the best option for your specific fracture.",
+    },
+  ],
+  metaTitle: "ORIF with Plating in Bangalore | Fracture Surgery — Doctor247",
+  metaDescription:
+    "Best ORIF with plating in Bangalore starting at ₹70,000. Expert fracture surgery using locking compression plates, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "ORIF plating bangalore, fracture plating surgery, ORIF with plate, locking compression plate surgery, best orthopaedic surgeon bangalore, trauma surgery",
+},
+
+"fracture-acetabulum": {
+  slug: "fracture-acetabulum",
+  name: "Fracture of Acetabulum - ORIF (Excluding Cost of Implant)",
+  shortName: "Acetabular Fracture",
+  price: "₹70,000",
+  heroDescription:
+    "Expert Open Reduction and Internal Fixation (ORIF) for acetabular fractures with precision surgical care, hip joint restoration, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic trauma care by verified orthopaedic surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "800+", label: "Acetabular Fracture Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is an Acetabular Fracture?",
+  aboutParagraphs: [
+    "An acetabular fracture is a break in the acetabulum, the socket portion of the hip joint that forms the cup-shaped cavity where the femoral head (ball of the thigh bone) sits. These fractures typically result from high-energy trauma such as motor vehicle accidents, falls from height, or severe sports injuries.",
+    "Acetabular fractures are complex injuries that require surgical treatment to restore the joint surface and prevent long-term complications like arthritis and hip instability. ORIF (Open Reduction and Internal Fixation) is the standard surgical treatment, involving realignment of the bone fragments and fixation with plates and screws. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective acetabular fracture surgery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Acetabular Fracture Surgery?",
+      items: [
+        "Displaced acetabular fractures requiring surgical fixation",
+        "Fractures involving the weight-bearing dome of the acetabulum",
+        "Fractures with associated hip joint instability",
+        "Open fractures requiring surgical debridement and fixation",
+        "Fractures with associated neurovascular injury",
+      ],
+    },
+    {
+      label: "Preventing Acetabular Fractures",
+      items: [
+        "Wear seatbelts during travel to prevent severe injuries",
+        "Use protective gear during sports and high-risk activities",
+        "Avoid falls by keeping your environment clear of hazards",
+        "Maintain bone health with calcium and Vitamin D",
+        "Treat underlying conditions like osteoporosis",
+      ],
+    },
+    {
+      label: "Complications of Untreated Acetabular Fractures",
+      items: [
+        "Chronic hip pain and disability",
+        "Post-traumatic arthritis",
+        "Avascular necrosis of the femoral head",
+        "Hip instability and dislocation",
+        "Shortened limb and altered gait",
+        "Reduced quality of life and mobility",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Acetabular Fracture Surgery — precision ORIF for complex hip fractures",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in pelvic and acetabular trauma",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Acetabular Fracture Fixation",
+      description:
+        "We perform precise ORIF for acetabular fractures using advanced surgical approaches and specialized implants, ensuring anatomical reduction and stable fixation.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Pelvic & Acetabular Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing complex pelvic and acetabular fracture surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Advanced Surgical Approaches",
+      description:
+        "We use specialized approaches including the Kocher-Langenbeck, ilioinguinal, and modified Stoppa approaches, tailored to the fracture pattern for optimal exposure and fixation.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the hip and pelvis",
+    "X-ray of the pelvis (AP and Judet views)",
+    "CT scan with 3D reconstruction for detailed fracture assessment",
+    "Trauma series X-rays (if associated injuries)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray for anaesthesia clearance",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "Positioning on a traction table for optimal fracture reduction",
+    "An appropriate surgical approach is made based on fracture type and location",
+    "The fracture is carefully exposed and bone fragments are reduced (realigned)",
+    "Reduction is confirmed under image intensifier (fluoroscopy)",
+    "Plates and screws are applied to fix the fracture fragments",
+    "The wound is thoroughly irrigated with antibiotic solution",
+    "A drain is placed if needed",
+    "The wound is closed with sutures or staples",
+    "Procedure typically completed within 2-4 hours depending on fracture complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Use a walker or crutches as advised (non-weight bearing)",
+    "Start gentle range of motion exercises as per physiotherapy protocol",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess bone healing",
+  ],
+  postOpDont: [
+    "Don't bear weight on the operated leg until cleared by your surgeon (usually 8-12 weeks)",
+    "Don't remove the dressing without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up appointments for X-ray monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a complex acetabular fracture from a car accident. The surgery was long but the surgeon did an excellent job. I'm walking again now with minimal pain. Grateful to Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The acetabular fracture surgery was performed with great precision. The team was very supportive throughout my recovery. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is acetabular fracture surgery painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after acetabular fracture surgery?",
+      a: "Most patients are discharged within 3-5 days. Non-weight bearing is required for 8-12 weeks. Partial weight bearing starts at 8-12 weeks, and full weight bearing at 12-16 weeks. Full recovery takes 4-6 months.",
+    },
+    {
+      q: "Is acetabular fracture surgery covered by insurance?",
+      a: "Yes, acetabular fracture surgery is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What are the risks of acetabular fracture surgery?",
+      a: "Risks include bleeding, infection, nerve injury (sciatic/femoral nerves), avascular necrosis of the femoral head, post-traumatic arthritis, and implant failure. Your surgeon will discuss these risks with you in detail before the procedure.",
+    },
+    {
+      q: "What is the long-term prognosis after acetabular fracture surgery?",
+      a: "With appropriate surgical treatment, most patients achieve good functional outcomes. However, post-traumatic arthritis may develop over time, and some patients may eventually require hip replacement.",
+    },
+  ],
+  metaTitle: "Acetabular Fracture Surgery in Bangalore | ORIF Hip Socket Fracture — Doctor247",
+  metaDescription:
+    "Best acetabular fracture surgery in Bangalore starting at ₹70,000. Expert ORIF for hip socket fractures, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "acetabular fracture surgery bangalore, hip socket fracture treatment, ORIF acetabulum, pelvic fracture surgery, best orthopaedic surgeon bangalore, trauma surgery",
+},
+
+"orif-ankle-talus-calcaneum": {
+  slug: "orif-ankle-talus-calcaneum",
+  name: "ORIF - Ankle / Talus / Calcaneum (Excluding Cost of Implant)",
+  shortName: "ORIF Ankle/Foot",
+  price: "₹70,000",
+  heroDescription:
+    "Expert Open Reduction and Internal Fixation (ORIF) for ankle, talus, and calcaneum fractures with precision surgical care, anatomical restoration, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic trauma care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "3,500+", label: "Ankle/Foot ORIFs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Ankle, Talus, and Calcaneum Fractures?",
+  aboutParagraphs: [
+    "Ankle fractures involve breaks in the tibia and fibula around the ankle joint. Talus fractures are breaks in the bone that connects the foot to the leg, forming the ankle joint. Calcaneum fractures are breaks in the heel bone (calcaneus). These fractures typically result from falls, twisting injuries, sports injuries, or high-energy trauma like motor vehicle accidents.",
+    "ORIF (Open Reduction and Internal Fixation) is the standard surgical treatment for displaced fractures of these bones. The procedure involves realigning the bone fragments and fixing them with plates, screws, or other implants. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective ORIF for ankle, talus, and calcaneum fractures in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose ORIF for Ankle/Talus/Calcaneum?",
+      items: [
+        "Displaced ankle fractures (unstable, bimalleolar, trimalleolar)",
+        "Displaced talus fractures (neck, body, or head)",
+        "Displaced calcaneum fractures (joint depression, tongue-type)",
+        "Intra-articular fractures requiring anatomical reduction",
+        "Open fractures requiring surgical debridement and fixation",
+      ],
+    },
+    {
+      label: "Preventing Ankle/Foot Fractures",
+      items: [
+        "Wear appropriate footwear with proper ankle support",
+        "Use protective gear during sports and high-risk activities",
+        "Strengthen ankle muscles through exercises",
+        "Maintain bone health with calcium and Vitamin D",
+        "Avoid falls by keeping your environment clear of hazards",
+      ],
+    },
+    {
+      label: "Complications if Left Untreated",
+      items: [
+        "Malunion leading to ankle arthritis and chronic pain",
+        "Non-union (failure to heal)",
+        "Avascular necrosis of the talus",
+        "Chronic instability and difficulty walking",
+        "Reduced quality of life and mobility",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert ORIF for Ankle/Foot Fractures — precision surgical fixation for optimal outcomes",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in foot and ankle surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Ankle & Foot Fracture Fixation",
+      description:
+        "We perform precise ORIF using advanced implants and techniques, ensuring anatomical restoration of the joint surface and stable fixation.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing ankle and foot fracture surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Specialized Implants & Techniques",
+      description:
+        "We use anatomical plates, locking plates, and specialized implants for talus and calcaneum fixation, tailored to each specific fracture type.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the ankle and foot",
+    "X-ray of the ankle/foot (AP, lateral, and mortise views)",
+    "CT scan (for complex talus and calcaneum fractures)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray (if indicated)",
+    "Neurovascular assessment of the foot",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "An incision is made over the fracture site",
+    "The fracture is carefully exposed and bone fragments are reduced (realigned)",
+    "Reduction is confirmed under image intensifier (fluoroscopy)",
+    "Plates, screws, or other implants are applied to fix the fracture",
+    "For talus fractures: careful fixation to preserve blood supply",
+    "For calcaneum fractures: reconstruction of the heel joint surface",
+    "The wound is thoroughly irrigated and closed with sutures",
+    "A drain may be placed if needed",
+    "A plaster cast or splint is applied for immobilization",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the limb elevated to reduce swelling",
+    "Use crutches or a walker as advised (non-weight bearing)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess bone healing",
+  ],
+  postOpDont: [
+    "Don't bear weight on the operated foot until cleared (usually 6-12 weeks)",
+    "Don't remove the cast/splint without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up appointments for X-ray monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had a complex ankle fracture from a fall. The ORIF surgery was successful and my ankle is healing well. The surgeon was excellent and the care was great.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My calcaneum fracture required surgery and the team did a fantastic job. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The surgeon was highly skilled and I'm back to walking again. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is ORIF for ankle/foot fractures painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after ankle/foot ORIF?",
+      a: "Most patients are discharged within 2-3 days. Non-weight bearing is required for 6-12 weeks. Partial weight bearing starts at 6-12 weeks, and full weight bearing at 12-16 weeks. Full recovery takes 4-6 months.",
+    },
+    {
+      q: "Is ORIF for ankle/foot fractures covered by insurance?",
+      a: "Yes, ORIF for ankle, talus, and calcaneum fractures is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between treating these three fractures?",
+      a: "Ankle fractures involve the joint surfaces of the tibia and fibula. Talus fractures are more complex with a risk of avascular necrosis and require careful dissection to preserve blood supply. Calcaneum fractures involve the heel bone and require reconstruction of the subtalar joint. Each requires a specific surgical approach and implants.",
+    },
+    {
+      q: "What implants are used for these fractures?",
+      a: "Ankle fractures typically use plates and screws. Talus fractures use small screws (headless or cannulated). Calcaneum fractures use specialized calcaneal plates with screws. Your surgeon will choose the best implant for your specific fracture.",
+    },
+  ],
+  metaTitle: "ORIF for Ankle/Talus/Calcaneum Fractures in Bangalore — Doctor247",
+  metaDescription:
+    "Best ORIF for ankle, talus, and calcaneum fractures in Bangalore starting at ₹70,000. Expert foot and ankle fracture surgery, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "ankle fracture surgery bangalore, talus fracture ORIF, calcaneum fracture surgery, foot fracture treatment, best orthopaedic surgeon bangalore, ankle ORIF cost",
+},
 
 };
 
