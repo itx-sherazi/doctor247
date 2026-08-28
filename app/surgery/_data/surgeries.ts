@@ -11067,6 +11067,1229 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     "ankle fracture surgery bangalore, talus fracture ORIF, calcaneum fracture surgery, foot fracture treatment, best orthopaedic surgeon bangalore, ankle ORIF cost",
 },
 
+"microdiscectomy": {
+  slug: "microdiscectomy",
+  name: "Microdiscectomy (Minimally Invasive)",
+  shortName: "Microdiscectomy",
+  price: "₹130,000",
+  heroDescription:
+    "Advanced minimally invasive microdiscectomy for herniated discs with precision surgical care, faster recovery, minimal tissue damage, cashless insurance, no-cost EMI, and free follow-ups. Get expert spine surgery by verified neurosurgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "1,800+", label: "Microdiscectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is a Microdiscectomy?",
+  aboutParagraphs: [
+    "A microdiscectomy is a minimally invasive surgical procedure performed to remove the herniated portion of a disc that is pressing on a nerve root or the spinal cord. Using a surgical microscope or endoscope, the surgeon makes a small incision (usually 1-2 inches) and removes the disc material through a small opening, preserving the surrounding bone and muscle.",
+    "This advanced technique offers significant advantages over traditional open surgery, including less tissue damage, reduced post-operative pain, shorter hospital stay, and faster recovery. Microdiscectomy is the gold standard for treating lumbar herniated discs with radiculopathy (sciatica). Doctor247 connects you with experienced neurosurgeons for safe, effective microdiscectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Microdiscectomy?",
+      items: [
+        "Herniated disc causing severe leg pain (sciatica) not responding to conservative treatment",
+        "Numbness, tingling, or weakness in the leg or foot",
+        "Herniated disc confirmed by MRI",
+        "Progressive neurological deficit",
+        "Loss of bladder or bowel control (emergency - cauda equina syndrome)",
+      ],
+    },
+    {
+      label: "Preventing Disc Herniation",
+      items: [
+        "Maintain good posture while sitting and standing",
+        "Regular exercise and core strengthening",
+        "Use proper lifting techniques",
+        "Maintain a healthy body weight",
+        "Avoid prolonged sitting",
+        "Quit smoking (smoking accelerates disc degeneration)",
+      ],
+    },
+    {
+      label: "Complications of Untreated Disc Herniation",
+      items: [
+        "Progressive nerve compression leading to permanent damage",
+        "Chronic pain and disability",
+        "Muscle weakness and atrophy",
+        "Loss of sensation and motor function",
+        "Loss of bladder or bowel control",
+        "Reduced quality of life and mobility",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Microdiscectomy — precision minimally invasive disc surgery",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Neurosurgeons — every surgeon is credential-checked with extensive experience in minimally invasive spine surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Advanced Microdiscectomy",
+      description:
+        "We perform precise microdiscectomy using a surgical microscope or endoscope, removing only the herniated disc material with minimal trauma to surrounding tissues.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Minimally Invasive - Less Pain",
+      description:
+        "The procedure uses a tiny incision, significantly reducing muscle dissection, post-operative pain, and recovery time compared to traditional open surgery.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Experienced Neurosurgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing microdiscectomies with consistently high success rates (85-95%).",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical and neurological examination",
+    "X-ray of the lumbar spine",
+    "MRI of the spine (to identify disc herniation)",
+    "CT scan (if MRI is not possible)",
+    "EMG/NCV studies (for nerve compression assessment)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray for anaesthesia clearance",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "Positioning (prone for lumbar microdiscectomy)",
+    "A small incision (1-2 inches) is made over the affected level",
+    "The microscope/endoscope is inserted for magnification",
+    "The paraspinal muscles are gently retracted",
+    "A small opening is made in the lamina (laminotomy)",
+    "The herniated disc material is carefully removed",
+    "The nerve root is decompressed and visualized",
+    "The wound is thoroughly irrigated",
+    "The wound is closed with fine sutures",
+    "Procedure typically completed within 45-90 minutes",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and medications on schedule",
+    "Walk short distances from day 1 to aid recovery",
+    "Start gentle physiotherapy as advised",
+    "Use a lumbar support belt (if advised)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 4-6 weeks",
+    "Don't bend forward excessively or twist the spine",
+    "Don't drive or operate machinery until cleared",
+    "Don't ignore fever, increased pain, or wound redness — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had debilitating sciatica from a herniated disc. The microdiscectomy gave me instant relief. The small incision and quick recovery were amazing. Great care from Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The minimally invasive approach meant less pain and faster recovery than I expected. The surgeon was highly skilled and the 90-day follow-ups were thorough.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The procedure was a success and I'm back to normal activities. Highly recommend Doctor247.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is microdiscectomy painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is significantly less than open surgery due to the minimally invasive approach, and it's managed with prescribed medication.",
+    },
+    {
+      q: "How long does recovery take after microdiscectomy?",
+      a: "Most patients are discharged within 1-2 days. Light activities can be resumed in 1-2 weeks, and full recovery typically takes 3-4 weeks. Return to heavy work or sports may take 2-3 months.",
+    },
+    {
+      q: "Is microdiscectomy covered by insurance?",
+      a: "Yes, microdiscectomy is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between microdiscectomy and open discectomy?",
+      a: "Microdiscectomy uses a surgical microscope and a smaller incision (1-2 inches), causing less muscle dissection and tissue damage. Open discectomy uses a larger incision and more extensive muscle retraction, resulting in longer recovery and more post-operative pain.",
+    },
+    {
+      q: "What is the success rate of microdiscectomy?",
+      a: "Microdiscectomy has a success rate of 85-95% in relieving leg pain (sciatica). The success rate depends on the patient's condition, overall health, and the surgeon's expertise.",
+    },
+  ],
+  metaTitle: "Microdiscectomy in Bangalore | Minimally Invasive Spine Surgery — Doctor247",
+  metaDescription:
+    "Best microdiscectomy in Bangalore starting at ₹130,000. Advanced minimally invasive spine surgery for herniated discs, cashless insurance, experienced neurosurgeons.",
+  metaKeywords:
+    "microdiscectomy in bangalore, minimally invasive spine surgery, herniated disc surgery, microdiscectomy cost, best neurosurgeon bangalore, sciatica treatment",
+},
+
+"open-myomectomy": {
+  slug: "open-myomectomy",
+  name: "Open - Myomectomy",
+  shortName: "Open Myomectomy",
+  price: "₹110,000",
+  heroDescription:
+    "Safe, effective open myomectomy for uterine fibroid removal with fertility preservation, expert surgical care, cashless insurance, no-cost EMI, and free follow-ups. Get advanced gynaecological surgery by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,500+", label: "Myomectomies Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is an Open Myomectomy?",
+  aboutParagraphs: [
+    "An open myomectomy (also known as abdominal myomectomy) is a surgical procedure that removes uterine fibroids (leiomyomas) while preserving the uterus, making it the preferred treatment option for women who wish to retain their fertility. Fibroids are non-cancerous growths that can cause heavy bleeding, pain, pressure symptoms, and fertility issues.",
+    "This procedure involves making an incision in the lower abdomen to access and remove fibroids from the uterine wall. It is particularly suitable for women with large, multiple, or deep fibroids that may not be suitable for minimally invasive approaches. Doctor247 connects you with experienced gynaecological surgeons for safe, effective open myomectomy in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Open Myomectomy?",
+      items: [
+        "Large uterine fibroids causing heavy menstrual bleeding",
+        "Fibroids causing pelvic pain, pressure, or urinary symptoms",
+        "Fibroids affecting fertility or causing recurrent miscarriages",
+        "Multiple or deep fibroids not suitable for laparoscopic approach",
+        "Patient preference for open surgery",
+      ],
+    },
+    {
+      label: "Uterine Fibroid Prevention & Management",
+      items: [
+        "Maintain a healthy body weight",
+        "Regular gynaecological check-ups for early detection",
+        "Monitor symptoms like heavy bleeding or pelvic pain",
+        "Consider hormonal management options when appropriate",
+      ],
+    },
+    {
+      label: "Complications of Untreated Fibroids",
+      items: [
+        "Progressive symptoms including heavy bleeding and anaemia",
+        "Chronic pelvic pain and pressure symptoms",
+        "Fertility issues and pregnancy complications",
+        "Degeneration or torsion of fibroids causing acute pain",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Myomectomy — precise fibroid removal with uterine preservation",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Surgeons — every surgeon is credential-checked with extensive experience in fertility-preserving gynaecological surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Fertility-Preserving Surgery",
+      description:
+        "Our meticulous myomectomy technique removes fibroids while carefully preserving the uterine lining and structure, maximizing future fertility potential.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Gynaecological Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing myomectomies with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Fibroid Removal",
+      description:
+        "Open approach allows access to large, multiple, or deep-seated fibroids that may not be suitable for minimally invasive techniques.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Pelvic examination",
+    "Ultrasound (pelvic) for fibroid assessment",
+    "MRI pelvis (for complex fibroid mapping)",
+    "Complete blood count (CBC) to check for anaemia",
+    "Hysteroscopy (if indicated for intracavitary fibroids)",
+    "Endometrial biopsy (if indicated)",
+    "Blood tests and fitness assessment before surgery",
+  ],
+  procedureSteps: [
+    "General or spinal anaesthesia for a pain-free procedure",
+    "A low transverse (bikini-line) or vertical incision is made in the lower abdomen",
+    "The uterus is visualized and fibroids are identified",
+    "A careful incision is made in the uterine muscle over each fibroid",
+    "Fibroids are dissected and removed, preserving healthy uterine tissue",
+    "The uterine incisions are meticulously repaired in layers to ensure strength",
+    "The abdominal incision is closed with sutures or staples",
+    "Procedure typically completed within 1.5-3 hours depending on fibroid size and number",
+  ],
+  postOpDo: [
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Walk short distances from day 1 to aid circulation and prevent blood clots",
+    "Eat light, easily digestible foods and progress gradually",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Discuss pregnancy timing with your surgeon for future fertility",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 6-8 weeks",
+    "Don't engage in sexual intercourse for at least 4-6 weeks",
+    "Don't ignore fever, increased pain, heavy bleeding, or wound redness — call us immediately",
+    "Don't plan pregnancy before discussing optimal timing with your surgeon",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had multiple large fibroids causing heavy bleeding. The open myomectomy removed all of them and preserved my uterus for future fertility. The surgeon was excellent.”",
+      name: "S. Reddy",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My fibroids were too large for laparoscopic surgery. The open myomectomy was performed with great precision and I'm grateful for the fertility-preserving approach.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured proper healing. Highly recommend Doctor247 for myomectomy.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is open myomectomy painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases significantly within the first week.",
+    },
+    {
+      q: "How long does recovery take after open myomectomy?",
+      a: "Most patients are discharged within 2-4 days. Light activities can be resumed in 2-3 weeks, and full recovery typically takes 6-8 weeks.",
+    },
+    {
+      q: "Is open myomectomy covered by insurance?",
+      a: "Yes, open myomectomy is covered by most health insurance plans in India for medically indicated conditions. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "Can I conceive after open myomectomy?",
+      a: "Yes, fertility is significantly improved after myomectomy for suitable candidates. Most surgeons recommend waiting 3-6 months after surgery before attempting pregnancy to allow the uterus to heal completely.",
+    },
+    {
+      q: "What is the difference between open myomectomy and laparoscopic myomectomy?",
+      a: "Open myomectomy uses a larger abdominal incision and is suitable for larger, multiple, or deep fibroids. Laparoscopic myomectomy uses small incisions and is suitable for smaller, fewer, or superficial fibroids with faster recovery.",
+    },
+  ],
+  metaTitle: "Open Myomectomy in Bangalore | Uterine Fibroid Removal — Doctor247",
+  metaDescription:
+    "Best open myomectomy in Bangalore starting at ₹110,000. Expert uterine fibroid removal with fertility preservation, cashless insurance, experienced gynaecological surgeons.",
+  metaKeywords:
+    "open myomectomy in bangalore, myomectomy cost bangalore, uterine fibroid removal, fertility-preserving fibroid surgery, best gynaecologist bangalore, myomectomy surgery",
+},
+
+"spinal-fusion": {
+  slug: "spinal-fusion",
+  name: "Spinal Fusion (Cervical / Lumbar / Thoracic) - Including Navigation (Excluding Cost of Implant)",
+  shortName: "Spinal Fusion",
+  price: "₹110,000",
+  heroDescription:
+    "Advanced spinal fusion surgery for cervical, lumbar, and thoracic spine conditions with state-of-the-art navigation technology for precision, expert neurosurgical care, cashless insurance, no-cost EMI, and free follow-ups. Get world-class spine surgery by verified neurosurgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "1,500+", label: "Spinal Fusions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Spinal Fusion?",
+  aboutParagraphs: [
+    "Spinal fusion is a surgical procedure that permanently connects two or more vertebrae in the spine to eliminate motion between them, reducing pain and stabilizing the spine. It is performed for various conditions including degenerative disc disease, spinal stenosis, spondylolisthesis, scoliosis, and fractures.",
+    "The procedure involves using bone graft (autograft or allograft) and implants (rods, screws, plates, and cages) to fuse the vertebrae. Advanced intraoperative navigation technology ensures precise placement of implants, reducing complications and improving outcomes. Doctor247 connects you with experienced neurosurgeons for safe, effective spinal fusion in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Spinal Fusion?",
+      items: [
+        "Degenerative disc disease with severe pain",
+        "Spinal stenosis causing nerve compression",
+        "Spondylolisthesis (slipped vertebra)",
+        "Scoliosis or spinal deformity",
+        "Spinal fractures requiring stabilization",
+        "Failed previous spine surgery",
+        "Tumors or infections of the spine",
+      ],
+    },
+    {
+      label: "Preventing Spinal Conditions",
+      items: [
+        "Maintain good posture while sitting and standing",
+        "Regular exercise and core strengthening",
+        "Use proper lifting techniques",
+        "Maintain a healthy body weight",
+        "Avoid prolonged sitting or standing",
+        "Quit smoking (smoking accelerates disc degeneration and fusion failure)",
+      ],
+    },
+    {
+      label: "Complications if Left Untreated",
+      items: [
+        "Progressive nerve compression leading to permanent damage",
+        "Chronic pain and disability",
+        "Loss of sensation and motor function",
+        "Muscle weakness and atrophy",
+        "Reduced quality of life and mobility",
+        "Progressive spinal deformity",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Advanced Navigation Technology — precise implant placement for optimal fusion",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Neurosurgeons — every surgeon is credential-checked with extensive experience in complex spine surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "State-of-the-Art Navigation Technology",
+      description:
+        "We use advanced intraoperative navigation technology (O-arm, Stealth, or similar) for precise implant placement, reducing complications and improving fusion outcomes.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Expert Neurosurgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing spinal fusion procedures with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Comprehensive Fusion Options",
+      description:
+        "We offer all types of spinal fusion including cervical, lumbar, and thoracic approaches, as well as ALIF, PLIF, TLIF, and XLIF techniques.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical and neurological examination",
+    "X-ray of the spine (standing, flexion-extension views)",
+    "MRI of the spine (for soft tissue assessment)",
+    "CT scan with 3D reconstruction (for detailed bone assessment)",
+    "EMG/NCV studies (for nerve compression assessment)",
+    "DEXA scan (bone density for fusion assessment)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray for anaesthesia clearance",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "Positioning based on the approach (prone, lateral, or supine)",
+    "Navigation reference frame is attached for intraoperative guidance",
+    "An incision is made over the affected spinal levels",
+    "The spine is exposed and decompression is performed",
+    "Disc material is removed and the disc space is prepared",
+    "Cage or bone graft is placed in the disc space",
+    "Screws and rods are placed using navigation guidance",
+    "The implant position is confirmed with fluoroscopy",
+    "The wound is thoroughly irrigated",
+    "A drain may be placed",
+    "The wound is closed with sutures or staples",
+    "Procedure typically completed within 2-6 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and medications on schedule",
+    "Walk short distances from day 1 to aid recovery",
+    "Use a brace as advised",
+    "Start gentle physiotherapy as advised",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess fusion",
+  ],
+  postOpDont: [
+    "Don't lift heavy weights for 3-6 months",
+    "Don't bend forward excessively or twist the spine",
+    "Don't drive or operate machinery until cleared",
+    "Don't ignore fever, increased pain, or wound redness — call us immediately",
+    "Don't skip your follow-up appointments for X-ray monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had severe lumbar stenosis and underwent a fusion. The navigation technology made the surgery more precise. I'm now pain-free and walking normally.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The cervical fusion with navigation was a success. The surgeon was highly skilled and the 90-day follow-ups were thorough. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The navigation technology gave me confidence in the surgery. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is spinal fusion painful?",
+      a: "The procedure is performed under general anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after spinal fusion?",
+      a: "Most patients are discharged within 3-7 days. Light activities can be resumed in 4-6 weeks. Bony fusion takes 3-6 months, and full recovery typically takes 6-12 months.",
+    },
+    {
+      q: "Is spinal fusion covered by insurance?",
+      a: "Yes, spinal fusion is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What are the different types of spinal fusion?",
+      a: "Types include ALIF (Anterior Lumbar Interbody Fusion), PLIF (Posterior Lumbar Interbody Fusion), TLIF (Transforaminal Lumbar Interbody Fusion), and XLIF (Extreme Lateral Interbody Fusion). Your surgeon will choose the best approach for your specific condition.",
+    },
+    {
+      q: "What implants are used in spinal fusion?",
+      a: "Implants include pedicle screws, rods, plates, and interbody cages (PEEK, titanium, or carbon fiber). The implant cost is additional and depends on the number of levels and type of implant used.",
+    },
+  ],
+  metaTitle: "Spinal Fusion Surgery in Bangalore | Navigation-Assisted Spine Surgery — Doctor247",
+  metaDescription:
+    "Best spinal fusion in Bangalore starting at ₹110,000. Advanced navigation-assisted cervical, lumbar, and thoracic fusion, cashless insurance, expert neurosurgeons.",
+  metaKeywords:
+    "spinal fusion in bangalore, cervical fusion, lumbar fusion, navigation-assisted spine surgery, spine surgeon bangalore, best neurosurgeon bangalore",
+},
+
+"closed-reduction-fracture-major-ga": {
+  slug: "closed-reduction-fracture-major-ga",
+  name: "Closed Reduction of Fracture Under GA for Major Joints",
+  shortName: "Closed Reduction Fracture",
+  price: "₹40,000",
+  heroDescription:
+    "Safe, effective closed reduction of fractures for major joints under general anaesthesia with expert orthopaedic care, immediate pain relief, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic trauma care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.7", label: "Patient Rating" },
+    { value: "2,000+", label: "Closed Reductions Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Closed Reduction of Fractures?",
+  aboutParagraphs: [
+    "Closed reduction of fractures is a non-surgical procedure that involves manipulating the bone fragments back into their normal alignment without making an incision. This is performed under general anaesthesia to ensure complete pain relief and muscle relaxation, allowing the surgeon to effectively reduce the fracture.",
+    "This procedure is commonly used for fractures of major joints including the wrist (distal radius), ankle, elbow, and shoulder that are not severely displaced or comminuted. After reduction, the fracture is immobilized with a cast or splint to allow healing. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective closed reduction of fractures in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Closed Reduction of Fracture?",
+      items: [
+        "Non-displaced or minimally displaced fractures of major joints",
+        "Fractures requiring manipulation under anaesthesia for optimal alignment",
+        "Fractures where closed reduction is the preferred treatment option",
+        "Fractures in patients with contraindications to surgery",
+        "Paediatric fractures requiring reduction",
+      ],
+    },
+    {
+      label: "Common Fractures Treated",
+      items: [
+        "Distal radius fractures (wrist)",
+        "Ankle fractures (unimalleolar, bimalleolar)",
+        "Elbow fractures",
+        "Shoulder fractures (proximal humerus)",
+        "Paediatric fractures",
+      ],
+    },
+    {
+      label: "Complications of Untreated Fractures",
+      items: [
+        "Malunion (healing in wrong position)",
+        "Non-union (failure to heal)",
+        "Chronic pain and disability",
+        "Loss of function and range of motion",
+        "Early onset arthritis",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Closed Reduction — precise manipulation for optimal fracture alignment",
+        "Free Follow-ups — post-reduction consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your procedure cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in fracture management",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Closed Reduction",
+      description:
+        "We perform precise closed reduction under general anaesthesia, ensuring optimal fracture alignment with complete pain relief and muscle relaxation.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing closed reductions with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Non-Surgical Approach",
+      description:
+        "Closed reduction avoids the need for surgery, offering the benefits of no incisions, no scars, and faster recovery without implant-related complications.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your procedure.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the fracture site",
+    "X-ray of the affected bone (AP and lateral views)",
+    "CT scan (if needed for complex fractures)",
+    "Blood tests and fitness assessment for general anaesthesia",
+    "ECG and chest X-ray for anaesthesia clearance",
+  ],
+  procedureSteps: [
+    "Pre-operative assessment and consent",
+    "General anaesthesia for pain-free reduction",
+    "The fracture site is palpated to assess the deformity",
+    "Gentle traction and manipulation are applied to realign the bone fragments",
+    "Reduction is confirmed with image intensifier (fluoroscopy)",
+    "A plaster cast or splint is applied to immobilize the fracture",
+    "Post-reduction X-ray is taken to confirm alignment",
+    "Procedure typically completed within 15-45 minutes depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the cast/splint clean and dry",
+    "Take prescribed pain relief on schedule",
+    "Apply ice packs to reduce swelling",
+    "Keep the limb elevated to reduce swelling",
+    "Attend your follow-up visit within 7-10 days for cast check",
+    "Attend scheduled X-ray follow-ups to assess bone healing",
+  ],
+  postOpDont: [
+    "Don't remove the cast/splint without doctor's advice",
+    "Don't bear weight on the affected limb until cleared",
+    "Don't ignore numbness, tingling, or color change in the limb — call us immediately",
+    "Don't skip your follow-up appointments for X-ray monitoring",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I fractured my wrist and the closed reduction under GA was quick and painless. The cast is on and healing is progressing well. Great care from Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“My ankle fracture was reduced successfully under anaesthesia. The 90-day follow-ups ensured my complete recovery. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The procedure was painless under GA and I'm healing well. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is closed reduction of fracture painful?",
+      a: "The procedure is performed under general anaesthesia, so you won't feel any pain during the reduction. Some discomfort may be experienced after the anaesthesia wears off, which is managed with pain medication.",
+    },
+    {
+      q: "How long does recovery take after closed reduction?",
+      a: "Recovery depends on the fracture type and location. Cast immobilization typically lasts 4-8 weeks. Physiotherapy may be needed after cast removal to regain full function.",
+    },
+    {
+      q: "Is closed reduction covered by insurance?",
+      a: "Yes, closed reduction of fractures is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What happens if closed reduction fails?",
+      a: "If closed reduction fails to achieve acceptable alignment, ORIF (Open Reduction and Internal Fixation) surgery may be required. Your surgeon will discuss this possibility with you before the procedure.",
+    },
+    {
+      q: "What is the difference between closed reduction under GA and under sedation?",
+      a: "General anaesthesia provides complete pain relief and muscle relaxation, allowing the surgeon to perform the reduction more effectively. Sedation keeps you relaxed but not fully asleep, with variable pain relief.",
+    },
+  ],
+  metaTitle: "Closed Reduction of Fractures in Bangalore | Fracture Treatment Under GA — Doctor247",
+  metaDescription:
+    "Best closed reduction of fractures in Bangalore starting at ₹40,000. Expert fracture reduction under general anaesthesia for major joints, cashless insurance.",
+  metaKeywords:
+    "closed reduction fracture bangalore, fracture treatment under GA, wrist fracture reduction, ankle fracture reduction, best orthopaedic surgeon bangalore",
+},
+
+"bipolar-hemiarthroplasty-dhs": {
+  slug: "bipolar-hemiarthroplasty-dhs",
+  name: "Bipolar Hemiarthroplasty / Dynamic Hip Screw (DHS) - Excluding Cost of Implant",
+  shortName: "Bipolar Hemiarthroplasty / DHS",
+  price: "₹110,000",
+  heroDescription:
+    "Expert Bipolar Hemiarthroplasty and Dynamic Hip Screw (DHS) fixation for hip fractures with precision surgical care, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic trauma care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.8", label: "Patient Rating" },
+    { value: "2,500+", label: "Hip Surgeries Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What are Bipolar Hemiarthroplasty and Dynamic Hip Screw (DHS)?",
+  aboutParagraphs: [
+    "Bipolar hemiarthroplasty and Dynamic Hip Screw (DHS) are two surgical procedures used to treat fractures of the hip, specifically neck of femur (NOF) fractures and intertrochanteric fractures. Bipolar hemiarthroplasty involves replacing the femoral head with a bipolar prosthesis, while DHS involves fixing the fracture with a screw and plate construct.",
+    "Bipolar hemiarthroplasty is typically preferred for displaced intracapsular NOF fractures in elderly patients. DHS is preferred for intertrochanteric fractures where the femoral head is preserved. Both procedures aim to restore mobility, relieve pain, and allow early weight bearing. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective hip fracture surgery in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Bipolar Hemiarthroplasty?",
+      items: [
+        "Displaced intracapsular NOF fractures in elderly patients",
+        "Fractures with high risk of avascular necrosis",
+        "Patients with osteoporosis",
+        "Patients who require early mobilization",
+      ],
+    },
+    {
+      label: "When to choose Dynamic Hip Screw (DHS)?",
+      items: [
+        "Intertrochanteric fractures (stable patterns)",
+        "Fractures where the femoral head is preserved",
+        "Younger patients with good bone quality",
+        "Fractures not involving the femoral neck",
+      ],
+    },
+    {
+      label: "Preventing Hip Fractures",
+      items: [
+        "Maintain bone health with calcium and Vitamin D",
+        "Regular weight-bearing exercises",
+        "Use walking aids if unsteady",
+        "Keep your environment free of fall hazards",
+        "Treat underlying conditions like osteoporosis",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Bipolar Hemiarthroplasty & DHS — precision surgical care for hip fractures",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in hip fracture surgery",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Hip Fracture Surgery",
+      description:
+        "We perform precise bipolar hemiarthroplasty and DHS fixation using advanced techniques, ensuring optimal outcomes and rapid recovery.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Orthopaedic Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing hip fracture surgeries with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Early Mobilization & Rapid Recovery",
+      description:
+        "Both procedures allow early weight bearing and mobilization, reducing the risk of complications associated with prolonged immobility.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination of the hip",
+    "X-ray of the pelvis and hip (AP and lateral views)",
+    "CT scan (for complex fractures)",
+    "Blood tests including CBC, renal function, and clotting profile",
+    "ECG and chest X-ray for anaesthesia clearance",
+    "Echocardiogram (if indicated in elderly patients)",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "Positioning on a fracture table for optimal reduction",
+    "Bipolar Hemiarthroplasty: An incision is made over the hip joint, the fractured head is removed and replaced with a bipolar prosthesis",
+    "DHS: An incision is made over the lateral thigh, a guidewire is placed, and the DHS screw and plate are fixed",
+    "The wound is thoroughly irrigated and closed with sutures or staples",
+    "A drain may be placed if needed",
+    "Procedure typically completed within 1.5-3 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and antibiotics on schedule",
+    "Start early mobilization with physiotherapy from day 1",
+    "Use walking aids as advised (walker, crutches)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess healing",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon",
+    "Don't remove the dressing without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your follow-up appointments",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“My elderly mother had a hip fracture and underwent bipolar hemiarthroplasty. The surgery was a success and she's walking again with support. The team was wonderful.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“I had an intertrochanteric fracture and DHS fixation was performed. The recovery was smooth and I'm back to normal activities. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The 90-day follow-ups ensured my complete recovery. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is bipolar hemiarthroplasty/DHS surgery painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week.",
+    },
+    {
+      q: "How long does recovery take after hip fracture surgery?",
+      a: "Most patients are discharged within 3-5 days. Early mobilization starts from day 1. Full recovery takes 3-6 months with physiotherapy.",
+    },
+    {
+      q: "Is bipolar hemiarthroplasty/DHS covered by insurance?",
+      a: "Yes, both procedures are covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between bipolar hemiarthroplasty and DHS?",
+      a: "Bipolar hemiarthroplasty replaces the femoral head with a prosthesis and is used for displaced NOF fractures. DHS fixes the fracture with a screw and plate and is used for intertrochanteric fractures where the femoral head is preserved.",
+    },
+    {
+      q: "What implants are used in these procedures?",
+      a: "Bipolar hemiarthroplasty uses a bipolar prosthesis (femoral stem + bipolar head). DHS uses a dynamic hip screw with a plate. The implant cost is additional and depends on the type of implant used.",
+    },
+  ],
+  metaTitle: "Bipolar Hemiarthroplasty & DHS in Bangalore | Hip Fracture Surgery — Doctor247",
+  metaDescription:
+    "Best bipolar hemiarthroplasty and DHS in Bangalore starting at ₹110,000. Expert hip fracture surgery, cashless insurance, experienced orthopaedic surgeons.",
+  metaKeywords:
+    "bipolar hemiarthroplasty bangalore, DHS fixation bangalore, hip fracture surgery, NOF fracture treatment, best orthopaedic surgeon bangalore",
+},
+
+"total-knee-replacement-unilateral": {
+  slug: "total-knee-replacement-unilateral",
+  name: "Total Knee Replacement - Unilateral (Excluding Cost of Implant)",
+  shortName: "Total Knee Replacement",
+  price: "₹160,000",
+  heroDescription:
+    "Expert Total Knee Replacement (TKR) for unilateral knee arthritis with precision surgical care, advanced techniques, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "4,000+", label: "Total Knee Replacements Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Total Knee Replacement?",
+  aboutParagraphs: [
+    "Total Knee Replacement (TKR), also known as total knee arthroplasty, is a surgical procedure in which the damaged or diseased surfaces of the knee joint are removed and replaced with artificial components (implants). It is the most effective treatment for end-stage osteoarthritis, rheumatoid arthritis, and other conditions causing severe knee pain and disability.",
+    "The procedure involves replacing the distal femur, proximal tibia, and sometimes the patella with metal and plastic components. Modern techniques, including patient-specific instrumentation and computer navigation, ensure precise alignment and optimal outcomes. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective total knee replacement in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Total Knee Replacement?",
+      items: [
+        "Severe knee pain affecting daily activities and quality of life",
+        "Joint stiffness and limited range of motion",
+        "Advanced osteoarthritis or rheumatoid arthritis",
+        "Failure of conservative treatment (medication, physiotherapy, injections)",
+        "Knee deformity (varus or valgus)",
+        "Loss of mobility and independence",
+      ],
+    },
+    {
+      label: "Preventing Knee Arthritis",
+      items: [
+        "Maintain a healthy body weight to reduce joint stress",
+        "Regular low-impact exercises (swimming, cycling)",
+        "Strengthen muscles around the knee",
+        "Avoid high-impact activities that strain the knee",
+        "Manage underlying conditions like diabetes and gout",
+      ],
+    },
+    {
+      label: "Complications if Left Untreated",
+      items: [
+        "Progressive pain and disability",
+        "Loss of mobility and independence",
+        "Muscle weakness and atrophy",
+        "Compensatory pain in the hips, back, or other knee",
+        "Increased risk of falls due to instability",
+        "Reduced quality of life",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Total Knee Replacement — precision surgery for optimal outcomes",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in joint replacement",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Knee Replacement Surgery",
+      description:
+        "We perform precise total knee replacement using advanced implants and techniques, ensuring optimal alignment, stability, and longevity of the implant.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Joint Replacement Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing total knee replacements with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Rapid Mobilization & Recovery",
+      description:
+        "We follow a structured physiotherapy protocol that allows early mobilization, reducing recovery time and improving functional outcomes.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination and gait assessment",
+    "X-ray of the knee (standing AP, lateral, and skyline views)",
+    "MRI (if needed for soft tissue assessment)",
+    "CT scan with 3D reconstruction (for complex cases)",
+    "Blood tests and fitness assessment before surgery",
+    "ECG and chest X-ray for anaesthesia clearance",
+    "DEXA scan (if osteoporosis is suspected)",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "A midline incision is made over the knee",
+    "The knee is exposed and the damaged cartilage and bone are removed",
+    "The distal femur is shaped to receive the femoral component",
+    "The proximal tibia is shaped to receive the tibial component",
+    "The patella may be resurfaced",
+    "The components are fixed with or without cement",
+    "The joint is tested for stability and range of motion",
+    "The wound is thoroughly irrigated and closed with sutures",
+    "A drain may be placed",
+    "Procedure typically completed within 2-3 hours",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and medications on schedule",
+    "Start early mobilization with physiotherapy from day 1",
+    "Use walking aids as advised (walker, crutches)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess implant position",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon (usually 6-8 weeks)",
+    "Don't remove the dressing without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your physiotherapy sessions",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had severe knee arthritis and couldn't walk without pain. The total knee replacement was life-changing. I'm now walking without pain and enjoying life again.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was highly skilled and the 90-day follow-ups were thorough. The recovery was well managed and I'm back to normal activities. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The TKR gave me back my mobility and independence. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is total knee replacement painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week. Modern pain management protocols ensure a comfortable recovery.",
+    },
+    {
+      q: "How long does recovery take after total knee replacement?",
+      a: "Most patients are discharged within 3-5 days. Physiotherapy starts from day 1. Full recovery takes 3-6 months with structured physiotherapy and rehabilitation.",
+    },
+    {
+      q: "Is total knee replacement covered by insurance?",
+      a: "Yes, total knee replacement is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "How long do knee implants last?",
+      a: "Modern knee implants typically last 15-20 years or more, depending on the patient's activity level, weight, and adherence to post-surgery care guidelines.",
+    },
+    {
+      q: "What implants are used in total knee replacement?",
+      a: "Implants include femoral, tibial, and patellar components made of metal (cobalt-chromium, titanium) and highly cross-linked polyethylene. The implant cost is additional and depends on the type of implant used.",
+    },
+  ],
+  metaTitle: "Total Knee Replacement in Bangalore | Unilateral TKR Surgery — Doctor247",
+  metaDescription:
+    "Best total knee replacement in Bangalore starting at ₹160,000. Expert unilateral TKR surgery, cashless insurance, experienced joint replacement surgeons.",
+  metaKeywords:
+    "total knee replacement in bangalore, TKR cost bangalore, knee replacement surgery, unilateral knee replacement, best orthopaedic surgeon bangalore",
+},
+
+"total-knee-replacement-bilateral": {
+  slug: "total-knee-replacement-bilateral",
+  name: "Total Knee Replacement - Bilateral (Excluding Cost of Implant)",
+  shortName: "Bilateral TKR",
+  price: "₹180,000",
+  heroDescription:
+    "Expert bilateral total knee replacement for both knees with precision surgical care, advanced techniques, single anaesthesia, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "2,000+", label: "Bilateral TKRs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Bilateral Total Knee Replacement?",
+  aboutParagraphs: [
+    "Bilateral Total Knee Replacement (TKR) is a surgical procedure in which both knees are replaced with artificial components (implants) during the same surgical session. It is the most effective treatment for patients with end-stage osteoarthritis affecting both knees, offering the convenience of a single surgery, hospitalization, and recovery period.",
+    "The procedure involves replacing both the distal femur, proximal tibia, and sometimes the patella on both sides with metal and plastic components. Performing both knees simultaneously offers advantages including a single anaesthesia, reduced total hospital stay, and synchronized rehabilitation. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective bilateral total knee replacement in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Bilateral Knee Replacement?",
+      items: [
+        "Severe arthritis affecting both knees with disabling pain",
+        "Significant impact on daily activities and quality of life",
+        "Failure of conservative treatment for both knees",
+        "Age and health status suitable for single-stage bilateral surgery",
+        "Patient preference for single surgery over two separate procedures",
+      ],
+    },
+    {
+      label: "Preventing Knee Arthritis",
+      items: [
+        "Maintain a healthy body weight to reduce joint stress",
+        "Regular low-impact exercises (swimming, cycling)",
+        "Strengthen muscles around the knees",
+        "Avoid high-impact activities that strain the knees",
+        "Manage underlying conditions like diabetes and gout",
+      ],
+    },
+    {
+      label: "Complications if Left Untreated",
+      items: [
+        "Progressive pain and disability in both knees",
+        "Loss of mobility and independence",
+        "Muscle weakness and atrophy",
+        "Compensatory pain in the hips and back",
+        "Increased risk of falls due to instability",
+        "Reduced quality of life",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Bilateral TKR — precision surgery for both knees in one procedure",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in joint replacement",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Single Procedure for Both Knees",
+      description:
+        "We perform bilateral TKR in a single surgical session, saving you the time, cost, and recovery of two separate surgeries. One anaesthesia, one hospitalization, one recovery period.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Joint Replacement Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing bilateral TKRs with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Synchronized Rehabilitation",
+      description:
+        "Both knees recover together, allowing balanced rehabilitation and earlier return to functional mobility.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination and gait assessment of both knees",
+    "X-ray of both knees (standing AP, lateral, and skyline views)",
+    "MRI (if needed for soft tissue assessment)",
+    "Blood tests including CBC, renal function, and clotting profile",
+    "ECG and chest X-ray for anaesthesia clearance",
+    "Echocardiogram (if indicated)",
+    "DEXA scan (if osteoporosis is suspected)",
+  ],
+  procedureSteps: [
+    "General or regional anaesthesia for a pain-free procedure",
+    "Midline incisions are made over both knees",
+    "Each knee is exposed and the damaged cartilage and bone are removed",
+    "The distal femur and proximal tibia are shaped to receive the components on both sides",
+    "The patellae may be resurfaced if indicated",
+    "The components are fixed with or without cement",
+    "Both joints are tested for stability and range of motion",
+    "The wounds are thoroughly irrigated and closed with sutures",
+    "Drains may be placed",
+    "Procedure typically completed within 3-5 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep both surgical sites clean and dry for 24-48 hours",
+    "Take prescribed pain relief and medications on schedule",
+    "Start early mobilization with physiotherapy from day 1",
+    "Use walking aids as advised (walker, crutches)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess implant position",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon (usually 6-8 weeks)",
+    "Don't remove the dressings without doctor's advice",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your physiotherapy sessions",
+  ],
+  testimonials: [
+    {
+      quote:
+      "“I had severe arthritis in both knees and couldn't walk without pain. The bilateral TKR was the best decision. One surgery, one recovery, and I'm now walking pain-free. Life-changing!”,
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“Having both knees done at once saved me time and recovery. The surgeon was highly skilled and the 90-day follow-ups were thorough. Highly recommend Doctor247.”,
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The bilateral TKR gave me back my mobility and independence. Great experience.”,
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is bilateral knee replacement painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week. Bilateral TKR requires careful pain management.",
+    },
+    {
+      q: "How long does recovery take after bilateral knee replacement?",
+      a: "Most patients are discharged within 5-7 days. Physiotherapy starts from day 1. Full recovery takes 4-6 months with structured physiotherapy and rehabilitation.",
+    },
+    {
+      q: "Is bilateral knee replacement covered by insurance?",
+      a: "Yes, bilateral total knee replacement is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the advantage of bilateral over two separate TKR surgeries?",
+      a: "Bilateral TKR offers several advantages: a single anaesthesia, one hospital stay, synchronized recovery, reduced total cost, and less time away from work compared to two separate surgeries.",
+    },
+    {
+      q: "What implants are used in bilateral knee replacement?",
+      a: "Implants include femoral, tibial, and patellar components on both sides. The implant cost is additional and depends on the type of implant used (standard, high-flex, or custom).",
+    },
+  ],
+  metaTitle: "Bilateral Knee Replacement in Bangalore | Total Knee Replacement Surgery — Doctor247",
+  metaDescription:
+    "Best bilateral knee replacement in Bangalore starting at ₹180,000. Expert TKR for both knees, cashless insurance, experienced joint replacement surgeons.",
+  metaKeywords:
+    "bilateral knee replacement in bangalore, TKR cost bangalore, both knees replacement, total knee replacement surgery, best orthopaedic surgeon bangalore",
+},
+
+
+
 };
 
 export const SURGERY_SLUGS = Object.keys(SURGERIES);
