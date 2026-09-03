@@ -12119,28 +12119,28 @@ export const SURGERIES: Record<string, SurgeryContent> = {
   shortName: "Bilateral TKR",
   price: "₹180,000",
   heroDescription:
-    "Expert bilateral total knee replacement for both knees with precision surgical care, advanced techniques, single anaesthesia, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+    "Expert bilateral Total Knee Replacement (TKR) for both knees with precision surgical care, advanced techniques, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
   heroImage: "/surgery-harnia.png",
   stats: [
     { value: "4.9", label: "Patient Rating" },
-    { value: "2,000+", label: "Bilateral TKRs Done" },
+    { value: "1,200+", label: "Bilateral TKRs Done" },
     { value: "25+", label: "Partner Hospitals" },
     { value: "15+", label: "Insurance Partners" },
   ],
   aboutTitle: "What is Bilateral Total Knee Replacement?",
   aboutParagraphs: [
-    "Bilateral Total Knee Replacement (TKR) is a surgical procedure in which both knees are replaced with artificial components (implants) during the same surgical session. It is the most effective treatment for patients with end-stage osteoarthritis affecting both knees, offering the convenience of a single surgery, hospitalization, and recovery period.",
-    "The procedure involves replacing both the distal femur, proximal tibia, and sometimes the patella on both sides with metal and plastic components. Performing both knees simultaneously offers advantages including a single anaesthesia, reduced total hospital stay, and synchronized rehabilitation. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective bilateral total knee replacement in Bangalore.",
+    "Bilateral Total Knee Replacement (TKR) is a surgical procedure in which both knees are replaced with artificial implants in a single operation or staged procedures. It is performed for patients with end-stage arthritis affecting both knees, causing severe pain, stiffness, and disability.",
+    "The procedure involves replacing the damaged surfaces of both knee joints with metal and plastic components. Staged bilateral TKR (performing one knee at a time with a gap of 3-6 months) is often preferred to reduce complications and allow better recovery. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective bilateral total knee replacement in Bangalore.",
   ],
   overviewTabs: [
     {
-      label: "When to choose Bilateral Knee Replacement?",
+      label: "When to choose Bilateral Total Knee Replacement?",
       items: [
-        "Severe arthritis affecting both knees with disabling pain",
-        "Significant impact on daily activities and quality of life",
-        "Failure of conservative treatment for both knees",
-        "Age and health status suitable for single-stage bilateral surgery",
-        "Patient preference for single surgery over two separate procedures",
+        "Severe arthritis affecting both knees with significant pain and disability",
+        "Bilateral knee deformity (varus or valgus)",
+        "Failure of conservative treatment in both knees",
+        "Patient's desire for single anaesthesia and hospitalization",
+        "Adequate physical and mental fitness for the procedure",
       ],
     },
     {
@@ -12167,33 +12167,33 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     {
       label: "Why Doctor247?",
       items: [
-        "Expert Bilateral TKR — precision surgery for both knees in one procedure",
+        "Expert Bilateral TKR — precision surgery for both knees",
         "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
         "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
-        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in joint replacement",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in bilateral joint replacement",
       ],
     },
   ],
   whyChooseNumbered: [
     {
       number: "01",
-      title: "Single Procedure for Both Knees",
+      title: "Expert Bilateral Knee Replacement",
       description:
-        "We perform bilateral TKR in a single surgical session, saving you the time, cost, and recovery of two separate surgeries. One anaesthesia, one hospitalization, one recovery period.",
+        "We perform precise bilateral TKR using advanced implants and techniques, ensuring optimal alignment, stability, and longevity of both implants.",
       bg: BG_CYCLE[0],
     },
     {
       number: "02",
       title: "Experienced Joint Replacement Surgeons",
       description:
-        "Every Doctor247 surgeon has a minimum of 8 years of experience performing bilateral TKRs with consistently high success rates.",
+        "Every Doctor247 surgeon has a minimum of 10 years of experience performing bilateral total knee replacements with consistently high success rates.",
       bg: BG_CYCLE[1],
     },
     {
       number: "03",
-      title: "Synchronized Rehabilitation",
+      title: "Single Anaesthesia & Hospitalization",
       description:
-        "Both knees recover together, allowing balanced rehabilitation and earlier return to functional mobility.",
+        "Bilateral TKR allows both knees to be replaced in a single operation, reducing the total anaesthesia exposure, hospital stay, and recovery time compared to two separate procedures.",
       bg: BG_CYCLE[2],
     },
     {
@@ -12205,28 +12205,29 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     },
   ],
   diagnosticTests: [
-    "Physical examination and gait assessment of both knees",
+    "Physical examination and gait assessment",
     "X-ray of both knees (standing AP, lateral, and skyline views)",
     "MRI (if needed for soft tissue assessment)",
+    "CT scan with 3D reconstruction (for complex cases)",
     "Blood tests including CBC, renal function, and clotting profile",
-    "ECG and chest X-ray for anaesthesia clearance",
-    "Echocardiogram (if indicated)",
+    "ECG, echocardiogram, and chest X-ray for anaesthesia clearance",
     "DEXA scan (if osteoporosis is suspected)",
+    "Cardiology and pulmonology assessment for bilateral surgery",
   ],
   procedureSteps: [
     "General or regional anaesthesia for a pain-free procedure",
     "Midline incisions are made over both knees",
-    "Each knee is exposed and the damaged cartilage and bone are removed",
-    "The distal femur and proximal tibia are shaped to receive the components on both sides",
-    "The patellae may be resurfaced if indicated",
-    "The components are fixed with or without cement",
+    "Both knees are exposed and damaged cartilage and bone are removed",
+    "The distal femur and proximal tibia are shaped on both knees",
+    "The patella may be resurfaced on both knees",
+    "Components are fixed with or without cement on both knees",
     "Both joints are tested for stability and range of motion",
     "The wounds are thoroughly irrigated and closed with sutures",
     "Drains may be placed",
     "Procedure typically completed within 3-5 hours depending on complexity",
   ],
   postOpDo: [
-    "Keep both surgical sites clean and dry for 24-48 hours",
+    "Keep the surgical sites clean and dry for 24-48 hours",
     "Take prescribed pain relief and medications on schedule",
     "Start early mobilization with physiotherapy from day 1",
     "Use walking aids as advised (walker, crutches)",
@@ -12242,50 +12243,409 @@ export const SURGERIES: Record<string, SurgeryContent> = {
   testimonials: [
     {
       quote:
-      "“I had severe arthritis in both knees and couldn't walk without pain. The bilateral TKR was the best decision. One surgery, one recovery, and I'm now walking pain-free. Life-changing!”,
+        "“I had severe arthritis in both knees and couldn't walk. The bilateral TKR gave me back my mobility. One surgery, both knees fixed. Grateful to Doctor247.”",
       name: "R. Sharma",
       role: "Jayanagar, Bangalore",
     },
     {
       quote:
-        "“Having both knees done at once saved me time and recovery. The surgeon was highly skilled and the 90-day follow-ups were thorough. Highly recommend Doctor247.”,
+        "“The surgeon was exceptional and the 90-day follow-ups were thorough. The recovery was well managed and I'm back to walking normally. Highly recommend Doctor247.”",
       name: "M. Kumar",
       role: "Koramangala, Bangalore",
     },
     {
       quote:
-        "“Transparent pricing and smooth insurance claim. The bilateral TKR gave me back my mobility and independence. Great experience.”,
+        "“Transparent pricing and smooth insurance claim. Bilateral TKR was the best decision I made. Great experience.”",
       name: "P. Menon",
       role: "Whitefield, Bangalore",
     },
   ],
   faqs: [
     {
-      q: "Is bilateral knee replacement painful?",
-      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and typically decreases within the first week. Bilateral TKR requires careful pain management.",
+      q: "Is bilateral total knee replacement painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and modern pain management protocols ensure a comfortable recovery.",
     },
     {
-      q: "How long does recovery take after bilateral knee replacement?",
+      q: "How long does recovery take after bilateral total knee replacement?",
       a: "Most patients are discharged within 5-7 days. Physiotherapy starts from day 1. Full recovery takes 4-6 months with structured physiotherapy and rehabilitation.",
     },
     {
-      q: "Is bilateral knee replacement covered by insurance?",
+      q: "Is bilateral total knee replacement covered by insurance?",
       a: "Yes, bilateral total knee replacement is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
     },
     {
-      q: "What is the advantage of bilateral over two separate TKR surgeries?",
-      a: "Bilateral TKR offers several advantages: a single anaesthesia, one hospital stay, synchronized recovery, reduced total cost, and less time away from work compared to two separate surgeries.",
+      q: "What is the difference between unilateral and bilateral TKR?",
+      a: "Unilateral TKR replaces only one knee, while bilateral TKR replaces both knees in a single operation. Bilateral TKR requires a longer surgery and hospital stay but reduces total recovery time compared to two separate surgeries.",
     },
     {
-      q: "What implants are used in bilateral knee replacement?",
-      a: "Implants include femoral, tibial, and patellar components on both sides. The implant cost is additional and depends on the type of implant used (standard, high-flex, or custom).",
+      q: "What implants are used in bilateral total knee replacement?",
+      a: "Implants include femoral, tibial, and patellar components for both knees, made of metal (cobalt-chromium, titanium) and highly cross-linked polyethylene. The implant cost is additional and depends on the type of implant used.",
     },
   ],
-  metaTitle: "Bilateral Knee Replacement in Bangalore | Total Knee Replacement Surgery — Doctor247",
+  metaTitle: "Bilateral Total Knee Replacement in Bangalore | Both Knee Replacement — Doctor247",
   metaDescription:
-    "Best bilateral knee replacement in Bangalore starting at ₹180,000. Expert TKR for both knees, cashless insurance, experienced joint replacement surgeons.",
+    "Best bilateral total knee replacement in Bangalore starting at ₹180,000. Expert TKR surgery for both knees, cashless insurance, experienced joint replacement surgeons.",
   metaKeywords:
-    "bilateral knee replacement in bangalore, TKR cost bangalore, both knees replacement, total knee replacement surgery, best orthopaedic surgeon bangalore",
+    "bilateral total knee replacement in bangalore, both knee replacement surgery, TKR cost bangalore, bilateral knee replacement, best orthopaedic surgeon bangalore",
+},
+
+"total-hip-replacement-unilateral": {
+  slug: "total-hip-replacement-unilateral",
+  name: "Total Hip Replacement - Unilateral (Excluding Cost of Implant)",
+  shortName: "Total Hip Replacement",
+  price: "₹130,000",
+  heroDescription:
+    "Expert Total Hip Replacement (THR) for unilateral hip arthritis and fractures with precision surgical care, advanced techniques, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "2,500+", label: "Total Hip Replacements Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Total Hip Replacement?",
+  aboutParagraphs: [
+    "Total Hip Replacement (THR), also known as total hip arthroplasty, is a surgical procedure in which the damaged or diseased hip joint is replaced with artificial components (implants). It is the most effective treatment for end-stage osteoarthritis, rheumatoid arthritis, avascular necrosis, and severe hip fractures.",
+    "The procedure involves replacing the femoral head (ball) and the acetabulum (socket) with metal, ceramic, and plastic components. Modern techniques, including computer navigation and minimally invasive approaches, ensure precise alignment and optimal outcomes. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective total hip replacement in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Total Hip Replacement?",
+      items: [
+        "Severe hip pain affecting daily activities and quality of life",
+        "Joint stiffness and limited range of motion",
+        "Advanced osteoarthritis, rheumatoid arthritis, or avascular necrosis",
+        "Failure of conservative treatment (medication, physiotherapy, injections)",
+        "Severe hip fractures (NOF fractures) in elderly patients",
+        "Loss of mobility and independence",
+      ],
+    },
+    {
+      label: "Preventing Hip Arthritis",
+      items: [
+        "Maintain a healthy body weight to reduce joint stress",
+        "Regular low-impact exercises (swimming, cycling)",
+        "Strengthen muscles around the hip",
+        "Avoid high-impact activities that strain the hip",
+        "Manage underlying conditions like diabetes and gout",
+        "Treat avascular necrosis early",
+      ],
+    },
+    {
+      label: "Complications if Left Untreated",
+      items: [
+        "Progressive pain and disability",
+        "Loss of mobility and independence",
+        "Muscle weakness and atrophy",
+        "Compensatory pain in the knees and back",
+        "Increased risk of falls due to instability",
+        "Reduced quality of life",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Total Hip Replacement — precision surgery for optimal outcomes",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in joint replacement",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Hip Replacement Surgery",
+      description:
+        "We perform precise total hip replacement using advanced implants and techniques, ensuring optimal alignment, stability, and longevity of the implant.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Joint Replacement Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 8 years of experience performing total hip replacements with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Rapid Mobilization & Recovery",
+      description:
+        "We follow a structured physiotherapy protocol that allows early mobilization, reducing recovery time and improving functional outcomes.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination and gait assessment",
+    "X-ray of the pelvis and hip (AP and lateral views)",
+    "MRI (if needed for avascular necrosis assessment)",
+    "CT scan with 3D reconstruction (for complex cases)",
+    "Blood tests including CBC, renal function, and clotting profile",
+    "ECG and chest X-ray for anaesthesia clearance",
+    "Echocardiogram (if indicated in elderly patients)",
+    "DEXA scan (if osteoporosis is suspected)",
+  ],
+  procedureSteps: [
+    "Regional or general anaesthesia for a pain-free procedure",
+    "An incision is made over the hip (posterior, anterior, or lateral approach)",
+    "The hip joint is exposed and the damaged femoral head is removed",
+    "The acetabulum is prepared and the acetabular component is placed",
+    "The femoral canal is prepared and the femoral stem is inserted",
+    "The femoral head component is attached to the stem",
+    "The joint is reduced and tested for stability and range of motion",
+    "The wound is thoroughly irrigated and closed with sutures or staples",
+    "A drain may be placed",
+    "Procedure typically completed within 2-3 hours",
+  ],
+  postOpDo: [
+    "Keep the surgical site clean and dry for 24-48 hours",
+    "Take prescribed pain relief and medications on schedule",
+    "Start early mobilization with physiotherapy from day 1",
+    "Use walking aids as advised (walker, crutches)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess implant position",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon (usually 4-6 weeks)",
+    "Don't remove the dressing without doctor's advice",
+    "Don't cross your legs or bend forward excessively (hip precautions)",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your physiotherapy sessions",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had severe hip arthritis and couldn't walk without pain. The total hip replacement was life-changing. I'm now walking without pain and enjoying life again.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was highly skilled and the 90-day follow-ups were thorough. The recovery was well managed and I'm back to normal activities. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. The THR gave me back my mobility and independence. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is total hip replacement painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and modern pain management protocols ensure a comfortable recovery.",
+    },
+    {
+      q: "How long does recovery take after total hip replacement?",
+      a: "Most patients are discharged within 3-5 days. Physiotherapy starts from day 1. Full recovery takes 3-6 months with structured physiotherapy and rehabilitation.",
+    },
+    {
+      q: "Is total hip replacement covered by insurance?",
+      a: "Yes, total hip replacement is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "How long do hip implants last?",
+      a: "Modern hip implants typically last 20-25 years or more, depending on the patient's activity level, weight, and adherence to post-surgery care guidelines.",
+    },
+    {
+      q: "What implants are used in total hip replacement?",
+      a: "Implants include femoral stem (metal), femoral head (metal or ceramic), and acetabular component (metal with polyethylene liner). The implant cost is additional and depends on the type of implant used.",
+    },
+  ],
+  metaTitle: "Total Hip Replacement in Bangalore | Unilateral THR Surgery — Doctor247",
+  metaDescription:
+    "Best total hip replacement in Bangalore starting at ₹130,000. Expert unilateral THR surgery, cashless insurance, experienced joint replacement surgeons.",
+  metaKeywords:
+    "total hip replacement in bangalore, THR cost bangalore, hip replacement surgery, unilateral hip replacement, best orthopaedic surgeon bangalore",
+},
+
+"total-hip-replacement-bilateral": {
+  slug: "total-hip-replacement-bilateral",
+  name: "Total Hip Replacement - Bilateral (Excluding Cost of Implant)",
+  shortName: "Bilateral THR",
+  price: "₹180,000",
+  heroDescription:
+    "Expert bilateral Total Hip Replacement (THR) for both hips with precision surgical care, advanced techniques, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
+  heroImage: "/surgery-harnia.png",
+  stats: [
+    { value: "4.9", label: "Patient Rating" },
+    { value: "800+", label: "Bilateral THRs Done" },
+    { value: "25+", label: "Partner Hospitals" },
+    { value: "15+", label: "Insurance Partners" },
+  ],
+  aboutTitle: "What is Bilateral Total Hip Replacement?",
+  aboutParagraphs: [
+    "Bilateral Total Hip Replacement (THR) is a surgical procedure in which both hips are replaced with artificial implants in a single operation or staged procedures. It is performed for patients with end-stage arthritis, avascular necrosis, or severe hip disease affecting both hips, causing significant pain and disability.",
+    "The procedure involves replacing the femoral head (ball) and the acetabulum (socket) on both sides with metal, ceramic, and plastic components. Staged bilateral THR (performing one hip at a time with a gap of 3-6 months) is often preferred to reduce complications and allow better recovery. Doctor247 connects you with experienced orthopaedic surgeons for safe, effective bilateral total hip replacement in Bangalore.",
+  ],
+  overviewTabs: [
+    {
+      label: "When to choose Bilateral Total Hip Replacement?",
+      items: [
+        "Severe arthritis affecting both hips with significant pain and disability",
+        "Bilateral avascular necrosis of the femoral head",
+        "Failure of conservative treatment in both hips",
+        "Patient's desire for single anaesthesia and hospitalization",
+        "Adequate physical and mental fitness for the procedure",
+      ],
+    },
+    {
+      label: "Preventing Hip Arthritis",
+      items: [
+        "Maintain a healthy body weight to reduce joint stress",
+        "Regular low-impact exercises (swimming, cycling)",
+        "Strengthen muscles around the hips",
+        "Avoid high-impact activities that strain the hips",
+        "Manage underlying conditions like diabetes and gout",
+        "Treat avascular necrosis early",
+      ],
+    },
+    {
+      label: "Complications if Left Untreated",
+      items: [
+        "Progressive pain and disability in both hips",
+        "Loss of mobility and independence",
+        "Muscle weakness and atrophy",
+        "Compensatory pain in the knees and back",
+        "Increased risk of falls due to instability",
+        "Reduced quality of life",
+      ],
+    },
+    {
+      label: "Why Doctor247?",
+      items: [
+        "Expert Bilateral THR — precision surgery for both hips",
+        "Free Follow-ups — post-surgery consultations included for 90 days at no extra cost",
+        "No-Cost EMI — split your surgery cost into easy monthly instalments with zero interest",
+        "Verified Orthopaedic Surgeons — every surgeon is credential-checked with extensive experience in bilateral joint replacement",
+      ],
+    },
+  ],
+  whyChooseNumbered: [
+    {
+      number: "01",
+      title: "Expert Bilateral Hip Replacement",
+      description:
+        "We perform precise bilateral THR using advanced implants and techniques, ensuring optimal alignment, stability, and longevity of both implants.",
+      bg: BG_CYCLE[0],
+    },
+    {
+      number: "02",
+      title: "Experienced Joint Replacement Surgeons",
+      description:
+        "Every Doctor247 surgeon has a minimum of 10 years of experience performing bilateral total hip replacements with consistently high success rates.",
+      bg: BG_CYCLE[1],
+    },
+    {
+      number: "03",
+      title: "Single Anaesthesia & Hospitalization",
+      description:
+        "Bilateral THR allows both hips to be replaced in a single operation, reducing the total anaesthesia exposure, hospital stay, and recovery time compared to two separate procedures.",
+      bg: BG_CYCLE[2],
+    },
+    {
+      number: "04",
+      title: "Cashless Insurance & Free Follow-ups",
+      description:
+        "We handle your insurance paperwork end-to-end and include 90 days of free follow-up consultations after your surgery.",
+      bg: BG_CYCLE[3],
+    },
+  ],
+  diagnosticTests: [
+    "Physical examination and gait assessment",
+    "X-ray of both hips and pelvis (AP and lateral views)",
+    "MRI (if needed for avascular necrosis assessment)",
+    "CT scan with 3D reconstruction (for complex cases)",
+    "Blood tests including CBC, renal function, and clotting profile",
+    "ECG, echocardiogram, and chest X-ray for anaesthesia clearance",
+    "DEXA scan (if osteoporosis is suspected)",
+    "Cardiology and pulmonology assessment for bilateral surgery",
+  ],
+  procedureSteps: [
+    "General anaesthesia for a pain-free procedure",
+    "Positioning on the operating table (lateral position, usually one side at a time)",
+    "Incision is made over the first hip (posterior, anterior, or lateral approach)",
+    "The hip joint is exposed and the damaged femoral head is removed",
+    "The acetabulum is prepared and the acetabular component is placed",
+    "The femoral canal is prepared and the femoral stem is inserted",
+    "The femoral head component is attached to the stem",
+    "The joint is reduced and tested for stability",
+    "The same procedure is repeated on the second hip",
+    "Both wounds are thoroughly irrigated and closed with sutures or staples",
+    "Drains may be placed",
+    "Procedure typically completed within 4-6 hours depending on complexity",
+  ],
+  postOpDo: [
+    "Keep both surgical sites clean and dry for 24-48 hours",
+    "Take prescribed pain relief and medications on schedule",
+    "Start early mobilization with physiotherapy from day 1",
+    "Use walking aids as advised (walker, crutches)",
+    "Attend your follow-up visit within 7-10 days for wound check",
+    "Attend scheduled X-ray follow-ups to assess implant position",
+  ],
+  postOpDont: [
+    "Don't bear full weight until cleared by your surgeon (usually 4-6 weeks)",
+    "Don't remove the dressings without doctor's advice",
+    "Don't cross your legs or bend forward excessively (hip precautions for both sides)",
+    "Don't ignore fever, increased pain, or unusual swelling — call us immediately",
+    "Don't skip your physiotherapy sessions",
+  ],
+  testimonials: [
+    {
+      quote:
+        "“I had severe arthritis and avascular necrosis in both hips. The bilateral THR gave me back my mobility. One surgery, both hips fixed. Grateful to Doctor247.”",
+      name: "R. Sharma",
+      role: "Jayanagar, Bangalore",
+    },
+    {
+      quote:
+        "“The surgeon was exceptional and the 90-day follow-ups were thorough. The recovery was well managed and I'm back to walking normally. Highly recommend Doctor247.”",
+      name: "M. Kumar",
+      role: "Koramangala, Bangalore",
+    },
+    {
+      quote:
+        "“Transparent pricing and smooth insurance claim. Bilateral THR was the best decision I made. Great experience.”",
+      name: "P. Menon",
+      role: "Whitefield, Bangalore",
+    },
+  ],
+  faqs: [
+    {
+      q: "Is bilateral total hip replacement painful?",
+      a: "The procedure is performed under anaesthesia so you won't feel pain during surgery. Post-operative pain is managed with prescribed medication and modern pain management protocols ensure a comfortable recovery.",
+    },
+    {
+      q: "How long does recovery take after bilateral total hip replacement?",
+      a: "Most patients are discharged within 5-7 days. Physiotherapy starts from day 1. Full recovery takes 4-6 months with structured physiotherapy and rehabilitation.",
+    },
+    {
+      q: "Is bilateral total hip replacement covered by insurance?",
+      a: "Yes, bilateral total hip replacement is covered by most health insurance plans in India. Our team assists with cashless claims across 15+ insurance partners.",
+    },
+    {
+      q: "What is the difference between unilateral and bilateral THR?",
+      a: "Unilateral THR replaces only one hip, while bilateral THR replaces both hips in a single operation. Bilateral THR requires a longer surgery and hospital stay but reduces total recovery time compared to two separate surgeries.",
+    },
+    {
+      q: "What implants are used in bilateral total hip replacement?",
+      a: "Implants include femoral stems, femoral heads (metal or ceramic), and acetabular components (metal with polyethylene liners) for both hips. The implant cost is additional and depends on the type of implant used.",
+    },
+  ],
+  metaTitle: "Bilateral Total Hip Replacement in Bangalore | Both Hip Replacement — Doctor247",
+  metaDescription:
+    "Best bilateral total hip replacement in Bangalore starting at ₹180,000. Expert THR surgery for both hips, cashless insurance, experienced joint replacement surgeons.",
+  metaKeywords:
+    "bilateral total hip replacement in bangalore, both hip replacement surgery, THR cost bangalore, bilateral hip replacement, best orthopaedic surgeon bangalore",
 },
 
 
