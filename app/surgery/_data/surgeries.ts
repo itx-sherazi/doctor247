@@ -511,7 +511,7 @@ export const SURGERIES: Record<string, SurgeryContent> = {
     price: "₹90,000",
     heroDescription:
       "Advanced PCNL and laser kidney stone removal with minimal scarring, quick recovery, cashless insurance, and free follow-ups. Get relief from kidney stone pain with expert urologists in Bangalore.",
-    heroImage: "/surgery-harnia.png",
+    heroImage: "/surgery-kidney.png",
     stats: [
       { value: "4.7", label: "Patient Rating" },
       { value: "5,000+", label: "Kidney Stone Surgeries Done" },
