@@ -1310,7 +1310,7 @@ export const SURGERIES: Record<string, SurgeryContent> = {
   price: "₹60,000",
   heroDescription:
     "Safe, effective open gallbladder removal surgery for adults and children with expert surgical care, cashless insurance, and free follow-ups. Get relief from gallstones with experienced surgeons in Bangalore at affordable prices.",
-  heroImage: "/surgery-harnia.png",
+  heroImage: "/gallbladder_surgery.png",
   stats: [
     { value: "4.7", label: "Patient Rating" },
     { value: "4,500+", label: "Open Cholecystectomies Done" },
@@ -11943,7 +11943,7 @@ export const SURGERIES: Record<string, SurgeryContent> = {
   price: "₹160,000",
   heroDescription:
     "Expert Total Knee Replacement (TKR) for unilateral knee arthritis with precision surgical care, advanced techniques, rapid mobilization, cashless insurance, no-cost EMI, and free follow-ups. Get quality orthopaedic care by verified surgeons in Bangalore at affordable prices.",
-  heroImage: "/surgery-harnia.png",
+  heroImage: "/knee_replacement_surgery.png",
   stats: [
     { value: "4.9", label: "Patient Rating" },
     { value: "4,000+", label: "Total Knee Replacements Done" },
