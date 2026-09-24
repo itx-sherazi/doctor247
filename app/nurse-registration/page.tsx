@@ -49,6 +49,7 @@ export default function NurseRegistrationPage() {
           otpVerified: Boolean(application.mobileNumber) || prev.otpVerified,
           profilePhoto: application.profilePhoto ?? prev.profilePhoto,
           documents: application.documents ?? prev.documents,
+          isStudent: application.isStudent ?? prev.isStudent ?? false,
         }));
       })
       .finally(() => setLoadingProfile(false));
@@ -98,7 +99,9 @@ export default function NurseRegistrationPage() {
       const result = await res.json();
       setApplicationId(result.application.applicationId);
     } catch {
-      setSubmitError("Something went wrong while submitting. Please check your connection and try again.");
+      setSubmitError(
+        "Something went wrong while submitting. Please check your connection and try again."
+      );
     } finally {
       setSubmitting(false);
     }

@@ -3,7 +3,15 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ClipboardList, Loader2, Search, Trash2 } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ClipboardList,
+  GraduationCap,
+  Loader2,
+  Search,
+  Trash2,
+} from "lucide-react";
 import { AdminTabs } from "../_components/AdminTabs";
 
 type ApplicationStatus = "pending" | "approved" | "rejected" | "needs-more-information";
@@ -15,6 +23,7 @@ interface ApplicationSummary {
   qualification?: string;
   pinCode?: string;
   area?: string;
+  isStudent?: boolean;
   stage: string;
   status: ApplicationStatus;
   createdAt: string;
@@ -34,6 +43,20 @@ const STATUS_LABELS: Record<ApplicationStatus, string> = {
   "needs-more-information": "Needs More Info",
 };
 
+function StudentBadge({ className = "" }: { className?: string }) {
+  return (
+    <span
+      className={
+        "inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand-700 " +
+        className
+      }
+    >
+      <GraduationCap size={11} />
+      Student
+    </span>
+  );
+}
+
 export default function AdminNurseReviewPage() {
   const [apps, setApps] = useState<ApplicationSummary[]>([]);
   const [total, setTotal] = useState(0);
@@ -45,6 +68,7 @@ export default function AdminNurseReviewPage() {
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<ApplicationStatus | "all">("all");
+  const [studentFilter, setStudentFilter] = useState<"all" | "students" | "non-students">("all");
 
   useEffect(() => {
     const t = setTimeout(() => setDebouncedSearch(search.trim()), 350);
@@ -53,12 +77,12 @@ export default function AdminNurseReviewPage() {
 
   useEffect(() => {
     setPage(1);
-  }, [debouncedSearch, statusFilter]);
+  }, [debouncedSearch, statusFilter, studentFilter]);
 
   useEffect(() => {
     loadApplications();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page, debouncedSearch, statusFilter]);
+  }, [page, debouncedSearch, statusFilter, studentFilter]);
 
   function loadApplications() {
     setLoading(true);
@@ -66,6 +90,7 @@ export default function AdminNurseReviewPage() {
     const params = new URLSearchParams({ page: String(page) });
     if (debouncedSearch) params.set("search", debouncedSearch);
     if (statusFilter !== "all") params.set("status", statusFilter);
+    if (studentFilter !== "all") params.set("student", studentFilter);
 
     fetch(`/api/nurse-applications?${params.toString()}`)
       .then((res) => res.json())
@@ -105,7 +130,14 @@ export default function AdminNurseReviewPage() {
     <div className="min-h-screen bg-neutral-50">
       <header className="border-b border-neutral-100 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-3.5 flex items-center gap-3">
-          <Image src="/logo-nav.png" alt="Doctor247" width={140} height={40} className="h-9 w-auto object-contain" priority />
+          <Image
+            src="/logo-nav.png"
+            alt="Doctor247"
+            width={140}
+            height={40}
+            className="h-9 w-auto object-contain"
+            priority
+          />
           <div className="border-l border-neutral-200 pl-3">
             <p className="text-sm font-semibold text-neutral-800 leading-none">Admin</p>
             <p className="text-xs text-neutral-400 mt-0.5">Nurse Credentialing Review</p>
@@ -117,12 +149,17 @@ export default function AdminNurseReviewPage() {
         <AdminTabs active="nurses" />
         <h1 className="text-lg font-semibold text-neutral-800 mb-1">Nurse Applications</h1>
         <p className="text-sm text-neutral-400 mb-4">
-          {total === 0 ? "0 applications" : `Showing ${rangeStart}-${rangeEnd} of ${total} application(s)`}
+          {total === 0
+            ? "0 applications"
+            : `Showing ${rangeStart}-${rangeEnd} of ${total} application(s)`}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-2.5 mb-6">
           <div className="relative flex-1">
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-300" />
+            <Search
+              size={16}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-300"
+            />
             <input
               type="text"
               value={search}
@@ -142,6 +179,17 @@ export default function AdminNurseReviewPage() {
             <option value="rejected">Rejected</option>
             <option value="needs-more-information">Needs More Info</option>
           </select>
+          <select
+            value={studentFilter}
+            onChange={(e) =>
+              setStudentFilter(e.target.value as "all" | "students" | "non-students")
+            }
+            className="rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-sm text-neutral-700 focus:outline-none focus:border-brand-400"
+          >
+            <option value="all">All Applicants</option>
+            <option value="students">Students Only</option>
+            <option value="non-students">Registered Nurses Only</option>
+          </select>
         </div>
 
         {loading ? (
@@ -155,7 +203,7 @@ export default function AdminNurseReviewPage() {
         ) : apps.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-center text-sm text-neutral-400 flex flex-col items-center gap-2">
             <ClipboardList size={24} className="text-neutral-300" />
-            {total === 0 && !debouncedSearch && statusFilter === "all"
+            {total === 0 && !debouncedSearch && statusFilter === "all" && studentFilter === "all"
               ? "No applications yet. Submit one via the nurse registration flow."
               : "No applications match your search/filter."}
           </div>
@@ -164,15 +212,30 @@ export default function AdminNurseReviewPage() {
             {/* Mobile: card list */}
             <div className="space-y-3 sm:hidden">
               {apps.map((app) => (
-                <div key={app.applicationId} className="w-full rounded-xl border border-neutral-100 bg-white p-4 shadow-sm">
+                <div
+                  key={app.applicationId}
+                  className="w-full rounded-xl border border-neutral-100 bg-white p-4 shadow-sm"
+                >
                   <Link href={`/admin/nurse-review/${app.applicationId}`} className="block">
                     <div className="flex items-center justify-between gap-2">
-                      <p className="font-medium text-neutral-800 truncate">{app.fullName || ""}</p>
-                      <span className={"shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium " + STATUS_STYLES[app.status]}>
+                      <div className="min-w-0 flex items-center gap-2">
+                        <p className="font-medium text-neutral-800 truncate">
+                          {app.fullName || ""}
+                        </p>
+                        {app.isStudent && <StudentBadge />}
+                      </div>
+                      <span
+                        className={
+                          "shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium " +
+                          STATUS_STYLES[app.status]
+                        }
+                      >
                         {STATUS_LABELS[app.status]}
                       </span>
                     </div>
-                    <p className="text-xs text-neutral-400 mt-0.5">{app.applicationId} · {app.mobileNumber}</p>
+                    <p className="text-xs text-neutral-400 mt-0.5">
+                      {app.applicationId} · {app.mobileNumber}
+                    </p>
                     <p className="text-xs text-neutral-500 mt-1 capitalize">
                       {app.qualification || ""} · {app.stage.replace(/-/g, " ")}
                       {app.pinCode ? ` · PIN ${app.pinCode}` : ""}
@@ -213,18 +276,31 @@ export default function AdminNurseReviewPage() {
                   </thead>
                   <tbody>
                     {apps.map((app) => (
-                      <tr key={app.applicationId} className="border-b border-neutral-50 last:border-0 hover:bg-neutral-50/60">
+                      <tr
+                        key={app.applicationId}
+                        className="border-b border-neutral-50 last:border-0 hover:bg-neutral-50/60"
+                      >
                         <td className="px-5 py-3">
-                          <p className="font-medium text-neutral-800">{app.fullName || ""}</p>
+                          <div className="flex items-center gap-2">
+                            <p className="font-medium text-neutral-800">{app.fullName || ""}</p>
+                            {app.isStudent && <StudentBadge />}
+                          </div>
                           <p className="text-xs text-neutral-400">{app.applicationId}</p>
                         </td>
                         <td className="px-5 py-3 text-neutral-600">{app.mobileNumber}</td>
                         <td className="px-5 py-3 text-neutral-600">{app.qualification || ""}</td>
                         <td className="px-5 py-3 text-neutral-600">{app.pinCode || ""}</td>
                         <td className="px-5 py-3 text-neutral-600">{app.area || ""}</td>
-                        <td className="px-5 py-3 text-neutral-600 capitalize">{app.stage.replace(/-/g, " ")}</td>
+                        <td className="px-5 py-3 text-neutral-600 capitalize">
+                          {app.stage.replace(/-/g, " ")}
+                        </td>
                         <td className="px-5 py-3">
-                          <span className={"rounded-full px-2.5 py-1 text-xs font-medium " + STATUS_STYLES[app.status]}>
+                          <span
+                            className={
+                              "rounded-full px-2.5 py-1 text-xs font-medium " +
+                              STATUS_STYLES[app.status]
+                            }
+                          >
                             {STATUS_LABELS[app.status]}
                           </span>
                         </td>

@@ -49,7 +49,11 @@ export function TextArea(
 }
 
 export function Select(
-  props: React.SelectHTMLAttributes<HTMLSelectElement> & { label?: string; required?: boolean; children: ReactNode }
+  props: React.SelectHTMLAttributes<HTMLSelectElement> & {
+    label?: string;
+    required?: boolean;
+    children: ReactNode;
+  }
 ) {
   const { label, required, className, children, ...rest } = props;
   return (
@@ -81,20 +85,92 @@ export function Checkbox({
 }) {
   return (
     <label className="flex items-start gap-2.5 cursor-pointer group">
-      <input type="checkbox" checked={checked} onChange={(e) => onChange(e.target.checked)} className="sr-only peer" />
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={(e) => onChange(e.target.checked)}
+        className="sr-only peer"
+      />
       <span
         className={
           "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition " +
-          (checked ? "border-brand-600 bg-brand-600" : "border-neutral-300 bg-white group-hover:border-brand-300")
+          (checked
+            ? "border-brand-600 bg-brand-600"
+            : "border-neutral-300 bg-white group-hover:border-brand-300")
         }
       >
         {checked && <Check size={13} strokeWidth={3} className="text-white" />}
       </span>
       <span className="text-sm text-neutral-700 leading-snug">
         {label}
-        {description && <span className="block text-xs text-neutral-400 mt-0.5">{description}</span>}
+        {description && (
+          <span className="block text-xs text-neutral-400 mt-0.5">{description}</span>
+        )}
       </span>
     </label>
+  );
+}
+
+/**
+ * Card-style checkbox — matches the visual language of RadioCard but with
+ * a checkmark instead of a radio dot. Use for prominent optional toggles
+ * (e.g. "I am a Student Nurse").
+ */
+export function CheckboxCard({
+  label,
+  description,
+  checked,
+  onChange,
+  icon,
+}: {
+  label: string;
+  description?: string;
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  icon?: ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      role="checkbox"
+      aria-checked={checked}
+      onClick={() => onChange(!checked)}
+      className={
+        "flex w-full items-start gap-3 rounded-xl border px-4 py-3 text-left transition " +
+        (checked
+          ? "border-brand-500 bg-brand-50 ring-1 ring-brand-200"
+          : "border-neutral-200 bg-white hover:border-brand-200")
+      }
+    >
+      {icon && (
+        <span
+          className={"mt-0.5 shrink-0 " + (checked ? "text-brand-600" : "text-neutral-400")}
+        >
+          {icon}
+        </span>
+      )}
+      <span
+        className={
+          "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-md border transition " +
+          (checked ? "border-brand-600 bg-brand-600" : "border-neutral-300 bg-white")
+        }
+      >
+        {checked && <Check size={13} strokeWidth={3} className="text-white" />}
+      </span>
+      <span className="min-w-0">
+        <span
+          className={
+            "block text-sm font-medium " +
+            (checked ? "text-brand-700" : "text-neutral-800")
+          }
+        >
+          {label}
+        </span>
+        {description && (
+          <span className="block text-xs text-neutral-400 mt-0.5">{description}</span>
+        )}
+      </span>
+    </button>
   );
 }
 
@@ -149,7 +225,11 @@ export function RadioCard({
       }
     >
       {icon && (
-        <span className={"mt-0.5 shrink-0 " + (selected ? "text-brand-600" : "text-neutral-400")}>{icon}</span>
+        <span
+          className={"mt-0.5 shrink-0 " + (selected ? "text-brand-600" : "text-neutral-400")}
+        >
+          {icon}
+        </span>
       )}
       <span
         className={
@@ -161,9 +241,49 @@ export function RadioCard({
       </span>
       <span>
         <span className="block text-sm font-medium text-neutral-800">{label}</span>
-        {description && <span className="block text-xs text-neutral-400 mt-0.5">{description}</span>}
+        {description && (
+          <span className="block text-xs text-neutral-400 mt-0.5">{description}</span>
+        )}
       </span>
     </button>
+  );
+}
+
+/**
+ * Small inline pill used for tags like "Student".
+ * variant controls the colour scheme; defaults to brand.
+ */
+export function Badge({
+  children,
+  variant = "brand",
+  icon,
+  className = "",
+}: {
+  children: ReactNode;
+  variant?: "brand" | "neutral" | "success" | "warning" | "danger" | "accent";
+  icon?: ReactNode;
+  className?: string;
+}) {
+  const VARIANTS: Record<typeof variant, string> = {
+    brand: "bg-brand-50 text-brand-700",
+    neutral: "bg-neutral-100 text-neutral-600",
+    success: "bg-success-50 text-success-600",
+    warning: "bg-warning-50 text-warning-600",
+    danger: "bg-danger-50 text-danger-600",
+    accent: "bg-accent-100 text-accent-600",
+  };
+  return (
+    <span
+      className={
+        "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-semibold " +
+        VARIANTS[variant] +
+        " " +
+        className
+      }
+    >
+      {icon}
+      {children}
+    </span>
   );
 }
 
@@ -231,7 +351,11 @@ export function FileDrop({
           ) : (
             <Upload size={16} className="shrink-0 text-neutral-400" />
           )}
-          <span className={"truncate " + (fileName ? "text-neutral-700 font-medium" : "text-neutral-400")}>
+          <span
+            className={
+              "truncate " + (fileName ? "text-neutral-700 font-medium" : "text-neutral-400")
+            }
+          >
             {fileName ?? "Click to upload or drag file here"}
           </span>
         </span>
@@ -292,7 +416,8 @@ export function PincodeCombobox({
       ? options
       : options.filter(
           (o) =>
-            o.pinCode.includes(query.trim()) || o.area.toLowerCase().includes(query.trim().toLowerCase())
+            o.pinCode.includes(query.trim()) ||
+            o.area.toLowerCase().includes(query.trim().toLowerCase())
         );
 
   const displayValue = pinCode && area ? `${pinCode} - ${area}` : pinCode;
@@ -324,7 +449,9 @@ export function PincodeCombobox({
       {open && (
         <div className="absolute z-20 mt-1 max-h-64 w-full overflow-y-auto rounded-lg border border-neutral-200 bg-white shadow-lg">
           {filtered.length === 0 ? (
-            <p className="px-3.5 py-3 text-sm text-neutral-400">No matching PIN code or area found.</p>
+            <p className="px-3.5 py-3 text-sm text-neutral-400">
+              No matching PIN code or area found.
+            </p>
           ) : (
             filtered.map((item) => (
               <button

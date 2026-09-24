@@ -232,6 +232,7 @@ export interface NurseRegistrationData {
 
   // Step 3
   qualification: string;
+  isStudent?: boolean;
   registrationNumber: string;
   stateNursingCouncil: string;
   registrationExpiryDate: string;
@@ -306,6 +307,7 @@ export const initialNurseRegistrationData: NurseRegistrationData = {
   emergencyContactNumber: "",
 
   qualification: "",
+  isStudent: false,
   registrationNumber: "",
   stateNursingCouncil: "",
   registrationExpiryDate: "",
