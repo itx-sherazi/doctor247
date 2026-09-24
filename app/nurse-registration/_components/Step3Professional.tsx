@@ -107,7 +107,7 @@ export function Step3Professional({
           <TextInput
             label={
               isStudent
-                ? "Student Registration Number (auto-generated)"
+                ? "Registration Number (auto-generated)"
                 : "Nursing Council Registration Number"
             }
             required
