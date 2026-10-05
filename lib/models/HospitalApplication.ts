@@ -8,7 +8,7 @@ const FileSubSchema = new Schema(
 const HospitalApplicationSchema = new Schema(
   {
     applicationId: { type: String, required: true, unique: true },
-    userId: { type: Schema.Types.ObjectId, ref: "User", required: true, unique: true },
+    userId: { type: Schema.Types.ObjectId, ref: "User", required: false, sparse: true },
 
     // Step 1: Hospital Info
     hospitalName: String,
