@@ -8,14 +8,14 @@ const ImageSubSchema = new Schema(
 const NurseApplicationSchema = new Schema(
   {
     applicationId: { type: String, required: true, unique: true },
-    userId: { type: Schema.Types.ObjectId, ref: "User", required: true, unique: true },
+    userId: { type: Schema.Types.ObjectId, ref: "User", required: false, sparse: true },
 
-    // Step 1
     mobileNumber: String,
     email: String,
 
     // Step 2
     fullName: String,
+    isStudent: { type: Boolean, default: false },
     gender: String,
     dob: String,
     profilePhoto: ImageSubSchema,

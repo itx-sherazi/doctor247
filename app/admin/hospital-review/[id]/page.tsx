@@ -8,12 +8,18 @@ import {
   Award,
   Building2,
   ClipboardCheck,
+  Edit,
   FileStack,
   Loader2,
+  Mail,
+  MapPin,
+  Phone,
   Stethoscope,
   Trash2,
+  User,
 } from "lucide-react";
 import { SectionCard, Select, TextArea } from "@/app/nurse-registration/_components/FormControls";
+import { EditHospitalModal } from "../../_components/EditHospitalModal";
 
 type ApplicationStatus = "pending" | "approved" | "rejected" | "needs-more-information";
 type CredentialingStage = "submitted" | "document-verification" | "site-visit" | "agreement-signing" | "activated";
@@ -79,7 +85,7 @@ function InfoRow({ label, value }: { label: string; value?: string }) {
   return (
     <div>
       <p className="text-xs text-neutral-400">{label}</p>
-      <p className="text-sm font-medium text-neutral-800 break-words">{value || ""}</p>
+      <p className="text-sm font-medium text-neutral-800 break-words">{value || "—"}</p>
     </div>
   );
 }
@@ -92,6 +98,7 @@ export default function HospitalApplicationDetailPage({ params }: { params: Prom
   const [saving, setSaving] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [deleteError, setDeleteError] = useState("");
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
   useEffect(() => {
     fetch(`/api/hospital-applications/${id}`)
@@ -100,7 +107,7 @@ export default function HospitalApplicationDetailPage({ params }: { params: Prom
       .finally(() => setLoading(false));
   }, [id]);
 
-  async function persist(patch: Partial<Pick<Application, "stage" | "status" | "reviewerNotes">>) {
+  async function persist(patch: Partial<Application>) {
     if (!application) return;
     setApplication({ ...application, ...patch });
     setSaving(true);
@@ -137,139 +144,234 @@ export default function HospitalApplicationDetailPage({ params }: { params: Prom
   if (loading) {
     return (
       <div className="min-h-screen bg-neutral-50 flex items-center justify-center gap-2 text-sm text-neutral-400">
-        <Loader2 size={18} className="animate-spin" /> Loading application…
+        <Loader2 size={18} className="animate-spin text-brand-600" /> Loading hospital application…
       </div>
     );
   }
 
   if (!application) {
     return (
-      <div className="min-h-screen bg-neutral-50 flex items-center justify-center text-sm text-neutral-400">
-        Application not found.
+      <div className="min-h-screen bg-neutral-50 flex flex-col items-center justify-center text-sm text-neutral-400 gap-3">
+        <p>Application not found.</p>
+        <Link
+          href="/admin/hospital-review"
+          className="rounded-lg bg-brand-600 px-4 py-2 text-xs font-semibold text-white"
+        >
+          Back to hospital list
+        </Link>
       </div>
     );
   }
 
   const currentIdx = CREDENTIALING_STAGES.findIndex((s) => s.key === application.stage);
+  const displayName =
+    application.hospitalName ||
+    application.contactName ||
+    (application.contactEmail ? application.contactEmail.split("@")[0] : "") ||
+    "Hospital Partner";
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      <header className="border-b border-neutral-100 bg-white">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-4 flex items-center justify-between">
-          <Link href="/admin/hospital-review" className="flex items-center gap-1.5 text-sm font-medium text-neutral-500 hover:text-neutral-700">
-            <ArrowLeft size={16} /> <span className="hidden sm:inline">Back to applications</span>
+    <div className="min-h-screen bg-neutral-50 pb-16">
+      <header className="border-b border-neutral-100 bg-white sticky top-0 z-20 shadow-xs">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-3.5 flex items-center justify-between">
+          <Link
+            href="/admin/hospital-review"
+            className="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-neutral-600 hover:text-neutral-900 transition"
+          >
+            <ArrowLeft size={16} /> <span>Back to hospitals</span>
           </Link>
-          <p className="text-xs text-neutral-400">{application.applicationId} {saving && "· Saving…"}</p>
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-mono text-neutral-400">
+              {application.applicationId} {saving && "· Saving…"}
+            </span>
+            <button
+              onClick={() => setIsEditModalOpen(true)}
+              className="flex items-center gap-1.5 rounded-lg bg-brand-600 px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-brand-700 transition"
+            >
+              <Edit size={13} /> Edit Hospital
+            </button>
+          </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-5xl px-4 sm:px-6 py-6 sm:py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-5">
+          {/* Hospital Basic Info */}
           <SectionCard
             icon={<Building2 size={18} />}
-            title={application.hospitalName || "Hospital"}
-            subtitle={`Submitted ${new Date(application.createdAt).toLocaleString()}`}
+            title={displayName}
+            subtitle={`Submitted on ${new Date(application.createdAt).toLocaleDateString()}`}
           >
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              <InfoRow label="Registration No." value={application.registrationNumber} />
-              <InfoRow label="Hospital Type" value={application.hospitalType} />
-              <InfoRow label="Ownership" value={application.ownershipType} />
-              <InfoRow label="City" value={application.city} />
-              <InfoRow label="State" value={application.state} />
-              <InfoRow label="PIN Code" value={application.pinCode} />
-              <InfoRow label="Address" value={application.address} />
-              <InfoRow label="Contact Person" value={application.contactName} />
-              <InfoRow label="Designation" value={application.contactDesignation} />
-              <InfoRow label="Contact Email" value={application.contactEmail} />
-              <InfoRow label="Contact Phone" value={application.contactPhone} />
+            <div className="space-y-4">
+              <div className="flex items-center gap-4 flex-wrap text-xs text-neutral-500 pb-2 border-b border-neutral-100">
+                {application.contactPhone && (
+                  <span className="flex items-center gap-1 text-neutral-700 font-medium">
+                    <Phone size={12} className="text-neutral-400" /> {application.contactPhone}
+                  </span>
+                )}
+                {application.contactEmail && (
+                  <span className="flex items-center gap-1 text-neutral-700">
+                    <Mail size={12} className="text-neutral-400" /> {application.contactEmail}
+                  </span>
+                )}
+                {(application.city || application.state) && (
+                  <span className="flex items-center gap-1 text-neutral-700">
+                    <MapPin size={12} className="text-neutral-400" />{" "}
+                    {application.city ? `${application.city}, ` : ""}
+                    {application.state || "Karnataka"}
+                  </span>
+                )}
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <InfoRow label="Hospital Type" value={application.hospitalType} />
+                <InfoRow label="Ownership" value={application.ownershipType} />
+                <InfoRow label="Registration No." value={application.registrationNumber} />
+                <InfoRow label="City" value={application.city} />
+                <InfoRow label="State" value={application.state} />
+                <InfoRow label="PIN Code" value={application.pinCode} />
+                <div className="sm:col-span-3">
+                  <InfoRow label="Full Address" value={application.address} />
+                </div>
+              </div>
             </div>
           </SectionCard>
 
-          <SectionCard icon={<Stethoscope size={18} />} title="Infrastructure & Services">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+          {/* Contact Person */}
+          <SectionCard icon={<User size={18} />} title="Contact Person">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <InfoRow label="Contact Name" value={application.contactName} />
+              <InfoRow label="Designation" value={application.contactDesignation} />
+              <InfoRow label="Phone" value={application.contactPhone} />
+              <InfoRow label="Email" value={application.contactEmail} />
+            </div>
+          </SectionCard>
+
+          {/* Infrastructure & Capacity */}
+          <SectionCard icon={<Building2 size={18} />} title="Infrastructure & Capacity">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <InfoRow label="Total Beds" value={application.totalBeds} />
               <InfoRow label="ICU Beds" value={application.icuBeds} />
               <InfoRow label="Operation Theatres" value={application.operationTheatres} />
-              <InfoRow label="Emergency Services" value={application.emergencyServices} />
-              <InfoRow label="Ambulance" value={application.ambulanceServices} />
-              <InfoRow label="Consultants" value={application.consultantCount} />
+              <InfoRow label="Ventilators" value={application.emergencyServices} />
             </div>
-            <div className="space-y-3">
-              <div>
-                <p className="text-xs text-neutral-400 mb-1.5">Infrastructure</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {(application.infrastructure ?? []).map((i) => (
-                    <span key={i} className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600">
-                      {i}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <p className="text-xs text-neutral-400 mb-1.5">Specialities</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {(application.specialities ?? []).map((s) => (
-                    <span key={s} className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <p className="text-xs text-neutral-400 mb-1.5">Accreditations</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {(application.accreditations ?? []).map((a) => (
-                    <span key={a} className="rounded-full bg-accent-100 px-2.5 py-1 text-xs font-medium text-accent-600">
-                      {a}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </SectionCard>
 
-          <SectionCard title="Pricing & Insurance">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
-              <InfoRow label="Partnership Model" value={application.partnershipModel} />
-              <InfoRow label="Surgery Cost Min" value={application.surgeryCostMin} />
-              <InfoRow label="Surgery Cost Max" value={application.surgeryCostMax} />
-            </div>
-            <p className="text-xs text-neutral-400 mb-1.5">Insurance Empanelment</p>
-            <div className="flex flex-wrap gap-1.5">
-              {(application.insuranceEmpanelment ?? []).map((i) => (
-                <span key={i} className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600">
-                  {i}
-                </span>
-              ))}
-            </div>
-          </SectionCard>
-
-          <SectionCard icon={<FileStack size={18} />} title="Documents">
-            {application.documents && application.documents.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {application.documents.map((doc, i) => (
-                  <a
-                    key={doc.publicId ?? i}
-                    href={doc.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-lg border border-neutral-100 px-3 py-2 text-xs font-medium text-neutral-600 hover:border-brand-300 truncate"
-                  >
-                    {doc.originalName}
-                  </a>
-                ))}
+            {application.infrastructure && application.infrastructure.length > 0 && (
+              <div className="mt-4 pt-3 border-t border-neutral-100">
+                <p className="text-xs text-neutral-400 mb-2">Available Infrastructure</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {application.infrastructure.map((inf) => (
+                    <span
+                      key={inf}
+                      className="rounded-lg bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-700"
+                    >
+                      {inf}
+                    </span>
+                  ))}
+                </div>
               </div>
-            ) : (
-              <p className="text-sm text-neutral-400">No documents uploaded.</p>
             )}
-            {application.additionalNotes && (
-              <p className="mt-3 text-sm text-neutral-600">{application.additionalNotes}</p>
+          </SectionCard>
+
+          {/* Specialities & Surgeries */}
+          <SectionCard icon={<Stethoscope size={18} />} title="Services, Specialities & Surgeries">
+            <div className="space-y-4">
+              {application.specialities && application.specialities.length > 0 && (
+                <div>
+                  <p className="text-xs text-neutral-400 mb-2 font-medium">Specialities</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {application.specialities.map((spec) => (
+                      <span
+                        key={spec}
+                        className="rounded-lg bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-700 border border-brand-100"
+                      >
+                        {spec}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <InfoRow label="Consultant Count" value={application.consultantCount} />
+                <InfoRow label="Partnership Model" value={application.partnershipModel} />
+                <InfoRow
+                  label="Surgery Cost Range"
+                  value={
+                    application.surgeryCostMin || application.surgeryCostMax
+                      ? `₹${application.surgeryCostMin || "0"} - ₹${application.surgeryCostMax || "0"}`
+                      : undefined
+                  }
+                />
+              </div>
+            </div>
+          </SectionCard>
+
+          {/* Documents */}
+          <SectionCard icon={<FileStack size={18} />} title="Uploaded Documents">
+            {(!application.documents || application.documents.length === 0) ? (
+              <p className="text-xs text-neutral-400 italic">No documents uploaded yet.</p>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {application.documents.map((doc, idx) => {
+                  const isImg = doc.url && (/\.(jpg|jpeg|png|webp|gif|svg|avif)($|\?)/i.test(doc.url) || doc.url.includes("/image/upload/"));
+                  return (
+                    <a
+                      key={idx}
+                      href={doc.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block overflow-hidden rounded-xl border border-neutral-200 bg-white hover:border-brand-500 transition shadow-2xs"
+                    >
+                      <div className="h-28 w-full bg-neutral-100 flex items-center justify-center overflow-hidden">
+                        {isImg ? (
+                          <img
+                            src={doc.url}
+                            alt={doc.originalName || "Document"}
+                            className="h-full w-full object-cover group-hover:scale-105 transition-transform"
+                          />
+                        ) : (
+                          <div className="flex flex-col items-center justify-center gap-1 text-brand-700 bg-brand-50 w-full h-full">
+                            <span className="text-sm font-bold bg-white px-2.5 py-1 rounded shadow-2xs border border-brand-200">PDF</span>
+                            <span className="text-[11px] text-neutral-500 font-medium">Document</span>
+                          </div>
+                        )}
+                      </div>
+                      <div className="p-2 border-t border-neutral-100">
+                        <p className="text-xs font-semibold text-neutral-800 truncate">
+                          {doc.originalName || `Document ${idx + 1}`}
+                        </p>
+                        <p className="text-[10px] text-brand-600 mt-0.5 font-medium">
+                          {isImg ? "Click to view image ↗" : "Click to view PDF ↗"}
+                        </p>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
             )}
           </SectionCard>
         </div>
 
+        {/* Sidebar */}
         <div className="space-y-5">
-          <SectionCard icon={<ClipboardCheck size={18} />} title="Credentialing Pipeline">
+          {/* Quick Edit Action */}
+          <div className="rounded-2xl border border-brand-200 bg-brand-50/50 p-4 shadow-2xs">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-xs font-semibold text-brand-900">Need to update info?</p>
+                <p className="text-[11px] text-brand-700">Edit hospital partnership details</p>
+              </div>
+              <button
+                onClick={() => setIsEditModalOpen(true)}
+                className="flex items-center gap-1.5 rounded-lg bg-brand-600 px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-brand-700 transition"
+              >
+                <Edit size={13} /> Edit Hospital
+              </button>
+            </div>
+          </div>
+
+          <SectionCard icon={<ClipboardCheck size={18} />} title="Partnership Pipeline">
             <div className="space-y-1">
               {CREDENTIALING_STAGES.map((s, i) => {
                 const done = i < currentIdx;
@@ -279,29 +381,42 @@ export default function HospitalApplicationDetailPage({ params }: { params: Prom
                     key={s.key}
                     onClick={() => persist({ stage: s.key })}
                     className={
-                      "flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-left transition " +
-                      (active ? "bg-brand-50" : "hover:bg-neutral-50")
+                      "flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-left transition " +
+                      (active
+                        ? "bg-brand-50 border border-brand-200 shadow-2xs"
+                        : "hover:bg-neutral-50")
                     }
                   >
                     <span
                       className={
-                        "flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-semibold " +
-                        (done ? "bg-brand-500 text-white" : active ? "bg-brand-600 text-white" : "bg-neutral-100 text-neutral-400")
+                        "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold " +
+                        (done
+                          ? "bg-brand-500 text-white"
+                          : active
+                          ? "bg-brand-600 text-white"
+                          : "bg-neutral-100 text-neutral-400")
                       }
                     >
                       {done ? "✓" : i + 1}
                     </span>
-                    <span className={"text-sm " + (active ? "font-semibold text-brand-700" : "text-neutral-600")}>{s.label}</span>
+                    <span
+                      className={
+                        "text-xs font-medium " +
+                        (active ? "font-bold text-brand-800" : "text-neutral-600")
+                      }
+                    >
+                      {s.label}
+                    </span>
                   </button>
                 );
               })}
             </div>
           </SectionCard>
 
-          <SectionCard icon={<Award size={18} />} title="Decision">
-            <div className="space-y-3">
+          <SectionCard icon={<Award size={18} />} title="Decision & Status">
+            <div className="space-y-3.5">
               <Select
-                label="Status"
+                label="Application Status"
                 value={application.status}
                 onChange={(e) => persist({ status: e.target.value as ApplicationStatus })}
               >
@@ -312,31 +427,47 @@ export default function HospitalApplicationDetailPage({ params }: { params: Prom
                 ))}
               </Select>
               <TextArea
-                label="Reviewer Notes"
+                label="Reviewer Notes & Terms"
                 rows={4}
                 value={application.reviewerNotes ?? ""}
                 onChange={(e) => setApplication({ ...application, reviewerNotes: e.target.value })}
                 onBlur={(e) => persist({ reviewerNotes: e.target.value })}
+                placeholder="Hospital visit inspection remarks, agreed terms..."
               />
             </div>
           </SectionCard>
 
           <SectionCard icon={<Trash2 size={18} />} title="Danger Zone">
             <p className="text-xs text-neutral-400 mb-3">
-              Permanently delete this application and all uploaded documents (Cloudinary). This cannot be undone.
+              Permanently delete this hospital application and all associated documents.
             </p>
-            {deleteError && <p className="text-xs font-medium text-danger-600 mb-2">{deleteError}</p>}
+            {deleteError && (
+              <p className="text-xs font-medium text-danger-600 mb-2">{deleteError}</p>
+            )}
             <button
               onClick={handleDelete}
               disabled={deleting}
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-danger-50 px-4 py-2.5 text-sm font-semibold text-danger-600 transition hover:bg-danger-100 disabled:opacity-60"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-danger-50 px-4 py-2.5 text-xs font-semibold text-danger-600 transition hover:bg-danger-100 disabled:opacity-60"
             >
-              {deleting ? <Loader2 size={16} className="animate-spin" /> : <Trash2 size={16} />}
-              {deleting ? "Deleting…" : "Delete Application"}
+              {deleting ? <Loader2 size={15} className="animate-spin" /> : <Trash2 size={15} />}
+              {deleting ? "Deleting…" : "Delete Hospital Application"}
             </button>
           </SectionCard>
         </div>
       </main>
+
+      {/* Edit Modal */}
+      {isEditModalOpen && (
+        <EditHospitalModal
+          hospital={application}
+          isOpen={isEditModalOpen}
+          onClose={() => setIsEditModalOpen(false)}
+          onSuccess={(updated) => {
+            setApplication((prev) => (prev ? ({ ...prev, ...updated } as Application) : (updated as unknown as Application)));
+            setIsEditModalOpen(false);
+          }}
+        />
+      )}
     </div>
   );
 }

@@ -1,13 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectToDatabase } from "@/lib/mongodb";
-import { uploadToCloudinary } from "@/lib/cloudinary";
+import { deleteFromCloudinary, uploadToCloudinary } from "@/lib/cloudinary";
 import { HospitalApplication } from "@/lib/models/HospitalApplication";
 import { User } from "@/lib/models/User";
 import { getAuthUser } from "@/lib/auth";
 
-// If a user's application was previously deleted (e.g. by an admin) but their login
-// account still exists, create a fresh blank application so they aren't permanently
-// locked out of viewing/completing their profile.
 async function findOrCreateApplication(userId: string) {
   const existing = await HospitalApplication.findOne({ userId });
   if (existing) return existing;
@@ -40,11 +37,32 @@ export async function PATCH(request: NextRequest) {
 
   try {
     await connectToDatabase();
-
     const existing = await findOrCreateApplication(auth.userId);
 
-    const formData = await request.formData();
-    const payload = JSON.parse(String(formData.get("payload") ?? "{}"));
+    const contentType = request.headers.get("content-type") || "";
+    let payload: Record<string, unknown> = {};
+    const uploadedDocs: { url: string; publicId: string; originalName: string }[] = [];
+
+    if (contentType.includes("multipart/form-data")) {
+      const formData = await request.formData();
+      const rawPayload = formData.get("payload");
+      if (rawPayload) {
+        payload = JSON.parse(String(rawPayload));
+      }
+
+      const files = formData.getAll("documents");
+      for (const file of files) {
+        if (file instanceof File && file.size > 0) {
+          const uploaded = await uploadToCloudinary(
+            file,
+            `hospital-applications/${existing.applicationId}/documents`
+          );
+          uploadedDocs.push({ ...uploaded, originalName: file.name });
+        }
+      }
+    } else {
+      payload = await request.json();
+    }
 
     delete payload.userId;
     delete payload.applicationId;
@@ -52,16 +70,8 @@ export async function PATCH(request: NextRequest) {
     delete payload.status;
     delete payload.reviewerNotes;
 
-    const documentFiles = formData.getAll("documents");
-    const uploadedDocuments: { url: string; publicId: string; originalName: string }[] = [];
-    for (const file of documentFiles) {
-      if (file instanceof File && file.size > 0) {
-        const uploaded = await uploadToCloudinary(file, `hospital-applications/${existing.applicationId}/documents`);
-        uploadedDocuments.push({ ...uploaded, originalName: file.name });
-      }
-    }
-    if (uploadedDocuments.length > 0) {
-      payload.documents = [...(existing.documents ?? []), ...uploadedDocuments];
+    if (uploadedDocs.length > 0) {
+      payload.documents = [...(existing.documents ?? []), ...uploadedDocs];
     }
 
     const updated = await HospitalApplication.findOneAndUpdate(
@@ -74,5 +84,37 @@ export async function PATCH(request: NextRequest) {
   } catch (error) {
     console.error("Failed to update hospital profile", error);
     return NextResponse.json({ error: "Failed to update profile" }, { status: 500 });
+  }
+}
+
+export async function DELETE(request: NextRequest) {
+  const auth = getAuthUser(request);
+  if (!auth || auth.role !== "hospital") {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  try {
+    await connectToDatabase();
+    const existing = await HospitalApplication.findOne({ userId: auth.userId });
+    if (!existing) {
+      return NextResponse.json({ error: "Application not found" }, { status: 404 });
+    }
+
+    const { searchParams } = new URL(request.url);
+    const publicId = searchParams.get("publicId");
+
+    if (publicId) {
+      await deleteFromCloudinary([publicId]);
+      existing.documents = (existing.documents ?? []).filter(
+        (d: { publicId?: string }) => d.publicId !== publicId
+      );
+      await existing.save();
+      return NextResponse.json({ success: true, application: existing });
+    }
+
+    return NextResponse.json({ error: "No document specified" }, { status: 400 });
+  } catch (error) {
+    console.error("Failed to delete hospital document", error);
+    return NextResponse.json({ error: "Failed to delete document" }, { status: 500 });
   }
 }
