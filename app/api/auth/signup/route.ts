@@ -4,6 +4,7 @@ import { connectToDatabase } from "@/lib/mongodb";
 import { User } from "@/lib/models/User";
 import { NurseApplication } from "@/lib/models/NurseApplication";
 import { HospitalApplication } from "@/lib/models/HospitalApplication";
+import { PhysioApplication } from "@/lib/models/PhysioApplication";
 import { signAuthToken } from "@/lib/jwt";
 
 export async function POST(request: NextRequest) {
@@ -14,7 +15,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email, password, and role are required" }, { status: 400 });
     }
 
-    if (role !== "nurse" && role !== "hospital") {
+    if (role !== "nurse" && role !== "hospital" && role !== "physiotherapist") {
       return NextResponse.json({ error: "Invalid role" }, { status: 400 });
     }
 
@@ -34,10 +35,13 @@ export async function POST(request: NextRequest) {
     const user = await User.create({ email: normalizedEmail, passwordHash, role });
 
     const applicationId =
-      (role === "nurse" ? "NUR-" : "HOS-") + Date.now().toString(36).toUpperCase();
+      (role === "nurse" ? "NUR-" : role === "physiotherapist" ? "PHY-" : "HOS-") +
+      Date.now().toString(36).toUpperCase();
 
     if (role === "nurse") {
       await NurseApplication.create({ applicationId, userId: user._id, email: normalizedEmail });
+    } else if (role === "physiotherapist") {
+      await PhysioApplication.create({ applicationId, userId: user._id, email: normalizedEmail });
     } else {
       await HospitalApplication.create({ applicationId, userId: user._id, contactEmail: normalizedEmail });
     }

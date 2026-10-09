@@ -1,8 +1,8 @@
 import { Baby, CircleCheck, HeartPulse, Stethoscope } from "lucide-react";
 
 const PRICE_CARDS = [
-  { icon: Baby, title: "Normal Delivery", price: "22,500", badge: "Most Popular", badgeStyle: "bg-amber-100 text-amber-700", highlighted: true },
-  { icon: HeartPulse, title: "C-Section", price: "42,500", badge: "Best Value", badgeStyle: "bg-hgreen text-white", highlighted: false },
+  { icon: Baby, title: "Normal Delivery", price: "25,000", badge: "Most Popular", badgeStyle: "bg-amber-100 text-amber-700", highlighted: true },
+  { icon: HeartPulse, title: "C-Section", price: "45,000", badge: "Best Value", badgeStyle: "bg-hgreen text-white", highlighted: false },
   { icon: Stethoscope, title: "Surgeries", price: "40,000", badge: "Save 30%", badgeStyle: "bg-amber-100 text-amber-700", highlighted: false },
 ];
 

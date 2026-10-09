@@ -4,7 +4,7 @@ import { Suspense, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Eye, EyeOff, Heart, Loader2, Lock, Mail, ShieldCheck, Stethoscope } from "lucide-react";
+import { Eye, EyeOff, Heart, Loader2, Lock, Mail, ShieldCheck } from "lucide-react";
 
 function LoginForm() {
   const router = useRouter();
@@ -30,7 +30,12 @@ function LoginForm() {
       if (!res.ok) throw new Error(data.error || "Login failed");
 
       const next = searchParams.get("next");
-      const fallback = data.role === "nurse" ? "/nurse-profile" : "/hospital-profile";
+      const fallback =
+        data.role === "nurse"
+          ? "/nurse-profile"
+          : data.role === "physiotherapist"
+          ? "/physio-profile"
+          : "/hospital-profile";
       router.push(next || fallback);
       router.refresh();
     } catch (err) {
@@ -46,8 +51,9 @@ function LoginForm() {
       <div className="hidden lg:block relative bg-gradient-to-br from-hblue to-hgreen overflow-hidden">
         <Image
           src="/nurse-hero.png"
-          alt="Doctor247 nurse caring for a patient at home"
+          alt="Doctor247 healthcare professional caring for a patient at home"
           fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover opacity-90 mix-blend-luminosity"
           priority
         />
@@ -60,7 +66,7 @@ function LoginForm() {
             Healthcare at your doorstep, powered by trusted professionals.
           </h2>
           <p className="text-white/85 text-[1rem] mb-6">
-            Log in to manage your nurse or hospital profile with Doctor247.
+            Log in to manage your nurse, physiotherapist, or hospital profile with Doctor247.
           </p>
           <div className="flex gap-6">
             <div className="flex items-center gap-2">
@@ -77,13 +83,19 @@ function LoginForm() {
 
       <div className="px-5 py-10 sm:py-14 lg:flex lg:items-center lg:justify-center lg:px-4 lg:py-16">
         <form onSubmit={handleSubmit} className="w-full max-w-[400px] mx-auto">
-          
-          <h1 className="text-[1.6rem] font-extrabold text-htext mb-1 tracking-tight">Welcome back</h1>
-          <p className="text-[0.9rem] text-htext-muted mb-8">Log in to access your nurse or hospital profile.</p>
+          <h1 className="text-[1.6rem] font-extrabold text-htext mb-1 tracking-tight">
+            Welcome back
+          </h1>
+          <p className="text-[0.9rem] text-htext-muted mb-8">
+            Log in to access your professional profile.
+          </p>
 
           <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Email</label>
           <div className="relative mb-4">
-            <Mail size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+            <Mail
+              size={17}
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted"
+            />
             <input
               type="email"
               required
@@ -95,9 +107,14 @@ function LoginForm() {
             />
           </div>
 
-          <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Password</label>
+          <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">
+            Password
+          </label>
           <div className="relative mb-6">
-            <Lock size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+            <Lock
+              size={17}
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted"
+            />
             <input
               type={showPassword ? "text" : "password"}
               required

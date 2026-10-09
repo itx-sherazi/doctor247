@@ -1,0 +1,363 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Activity,
+  ChevronLeft,
+  ChevronRight,
+  ClipboardList,
+  GraduationCap,
+  Loader2,
+  Search,
+  Trash2,
+} from "lucide-react";
+import { AdminTabs } from "../_components/AdminTabs";
+
+type ApplicationStatus = "pending" | "approved" | "rejected" | "needs-more-information";
+
+interface ApplicationSummary {
+  applicationId: string;
+  fullName?: string;
+  mobileNumber?: string;
+  qualification?: string;
+  pinCode?: string;
+  area?: string;
+  isStudent?: boolean;
+  stage: string;
+  status: ApplicationStatus;
+  createdAt: string;
+}
+
+const STATUS_STYLES: Record<ApplicationStatus, string> = {
+  pending: "bg-warning-50 text-warning-600",
+  approved: "bg-success-50 text-success-600",
+  rejected: "bg-danger-50 text-danger-600",
+  "needs-more-information": "bg-accent-100 text-accent-600",
+};
+
+const STATUS_LABELS: Record<ApplicationStatus, string> = {
+  pending: "Pending",
+  approved: "Approved",
+  rejected: "Rejected",
+  "needs-more-information": "Needs More Info",
+};
+
+export default function AdminPhysioReviewPage() {
+  const [apps, setApps] = useState<ApplicationSummary[]>([]);
+  const [total, setTotal] = useState(0);
+  const [pageSize, setPageSize] = useState(20);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
+  const [statusFilter, setStatusFilter] = useState<ApplicationStatus | "all">("all");
+  const [studentFilter, setStudentFilter] = useState<"all" | "students" | "non-students">("all");
+
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedSearch(search.trim()), 350);
+    return () => clearTimeout(t);
+  }, [search]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [debouncedSearch, statusFilter, studentFilter]);
+
+  useEffect(() => {
+    loadApplications();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page, debouncedSearch, statusFilter, studentFilter]);
+
+  function loadApplications() {
+    setLoading(true);
+    setError("");
+    const params = new URLSearchParams({ page: String(page) });
+    if (debouncedSearch) params.set("search", debouncedSearch);
+    if (statusFilter !== "all") params.set("status", statusFilter);
+    if (studentFilter !== "all") params.set("student", studentFilter);
+
+    fetch(`/api/physio-applications?${params.toString()}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setApps(data.applications ?? []);
+        setTotal(data.total ?? 0);
+        setPageSize(data.pageSize ?? 20);
+      })
+      .catch(() => setError("Failed to load applications"))
+      .finally(() => setLoading(false));
+  }
+
+  async function handleDelete(applicationId: string, fullName?: string) {
+    const confirmed = window.confirm(
+      `Delete application for ${
+        fullName || applicationId
+      }? This will also remove all uploaded images from Cloudinary. This cannot be undone.`
+    );
+    if (!confirmed) return;
+
+    setDeletingId(applicationId);
+    try {
+      const res = await fetch(`/api/physio-applications/${applicationId}`, {
+        method: "DELETE",
+      });
+      if (!res.ok) throw new Error("Failed to delete");
+      setApps((prev) => prev.filter((a) => a.applicationId !== applicationId));
+      setTotal((prev) => Math.max(0, prev - 1));
+    } catch {
+      setError("Failed to delete application. Please try again.");
+    } finally {
+      setDeletingId(null);
+    }
+  }
+
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+  const rangeStart = total === 0 ? 0 : (page - 1) * pageSize + 1;
+  const rangeEnd = Math.min(page * pageSize, total);
+
+  return (
+    <div className="min-h-screen bg-neutral-50">
+      <header className="border-b border-neutral-100 bg-white">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-3.5 flex items-center gap-3">
+          <Image
+            src="/logo-nav.png"
+            alt="Doctor247"
+            width={140}
+            height={40}
+            className="h-9 w-auto object-contain"
+            priority
+          />
+          <div className="border-l border-neutral-200 pl-3">
+            <p className="text-sm font-semibold text-neutral-800 leading-none">Admin</p>
+            <p className="text-xs text-neutral-400 mt-0.5">
+              Physiotherapist Credentialing Review
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-5xl px-4 sm:px-6 py-6 sm:py-8">
+        <AdminTabs active="physios" />
+        <h1 className="text-lg font-semibold text-neutral-800 mb-1">
+          Physiotherapist Applications
+        </h1>
+        <p className="text-sm text-neutral-400 mb-4">
+          {total === 0
+            ? "0 applications"
+            : `Showing ${rangeStart}-${rangeEnd} of ${total} application(s)`}
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-2.5 mb-6">
+          <div className="relative flex-1">
+            <Search
+              size={16}
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-300"
+            />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search by name, mobile, pincode, area, or application ID"
+              className="w-full rounded-lg border border-neutral-200 bg-white pl-9 pr-3 py-2.5 text-sm text-neutral-700 placeholder:text-neutral-400 focus:outline-none focus:border-brand-400"
+            />
+          </div>
+          <select
+            value={statusFilter}
+            onChange={(e) => setStatusFilter(e.target.value as ApplicationStatus | "all")}
+            className="rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-sm text-neutral-700 focus:outline-none focus:border-brand-400"
+          >
+            <option value="all">All Statuses</option>
+            <option value="pending">Pending</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+            <option value="needs-more-information">Needs More Info</option>
+          </select>
+          <select
+            value={studentFilter}
+            onChange={(e) =>
+              setStudentFilter(e.target.value as "all" | "students" | "non-students")
+            }
+            className="rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-sm text-neutral-700 focus:outline-none focus:border-brand-400"
+          >
+            <option value="all">All Applicants</option>
+            <option value="students">Students Only</option>
+            <option value="non-students">Registered Physios Only</option>
+          </select>
+        </div>
+
+        {loading ? (
+          <div className="flex items-center justify-center gap-2 rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-sm text-neutral-400">
+            <Loader2 size={18} className="animate-spin" /> Loading applications…
+          </div>
+        ) : error ? (
+          <div className="rounded-2xl border border-dashed border-danger-200 bg-white p-10 text-center text-sm text-danger-500">
+            {error}
+          </div>
+        ) : apps.length === 0 ? (
+          <div className="rounded-2xl border border-dashed border-neutral-200 bg-white p-10 text-center text-sm text-neutral-400 flex flex-col items-center gap-2">
+            <ClipboardList size={24} className="text-neutral-300" />
+            {total === 0 && !debouncedSearch && statusFilter === "all" && studentFilter === "all"
+              ? "No applications yet. Submit one via the physiotherapist registration flow."
+              : "No applications match your search/filter."}
+          </div>
+        ) : (
+          <>
+            <div className="space-y-3 sm:hidden">
+              {apps.map((app) => (
+                <div
+                  key={app.applicationId}
+                  className="w-full rounded-xl border border-neutral-100 bg-white p-4 shadow-sm"
+                >
+                  <Link href={`/admin/physio-review/${app.applicationId}`} className="block">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="min-w-0 flex items-center gap-2">
+                        <p className="font-medium text-neutral-800 truncate">
+                          {app.fullName || ""}
+                        </p>
+                        {app.isStudent && (
+                          <span className="inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand-700">
+                            <GraduationCap size={11} /> Student
+                          </span>
+                        )}
+                      </div>
+                      <span
+                        className={
+                          "shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium " +
+                          STATUS_STYLES[app.status]
+                        }
+                      >
+                        {STATUS_LABELS[app.status]}
+                      </span>
+                    </div>
+                    <p className="text-xs text-neutral-400 mt-0.5">
+                      {app.applicationId} · {app.mobileNumber}
+                    </p>
+                    <p className="text-xs text-neutral-500 mt-1 capitalize">
+                      {app.qualification || ""} · {app.stage.replace(/-/g, " ")}
+                      {app.pinCode ? ` · PIN ${app.pinCode}` : ""}
+                      {app.area ? ` (${app.area})` : ""}
+                    </p>
+                  </Link>
+                  <button
+                    onClick={() => handleDelete(app.applicationId, app.fullName)}
+                    disabled={deletingId === app.applicationId}
+                    className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-lg bg-danger-50 px-3 py-1.5 text-xs font-semibold text-danger-600 hover:bg-danger-100 disabled:opacity-60"
+                  >
+                    {deletingId === app.applicationId ? (
+                      <Loader2 size={13} className="animate-spin" />
+                    ) : (
+                      <Trash2 size={13} />
+                    )}
+                    Delete
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            <div className="hidden sm:block overflow-hidden rounded-2xl border border-neutral-100 bg-white shadow-sm">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-neutral-100 text-left text-xs uppercase tracking-wide text-neutral-400">
+                      <th className="px-5 py-3 font-medium">Applicant</th>
+                      <th className="px-5 py-3 font-medium">Mobile</th>
+                      <th className="px-5 py-3 font-medium">Qualification</th>
+                      <th className="px-5 py-3 font-medium">Pincode</th>
+                      <th className="px-5 py-3 font-medium">Area</th>
+                      <th className="px-5 py-3 font-medium">Stage</th>
+                      <th className="px-5 py-3 font-medium">Status</th>
+                      <th className="px-5 py-3 font-medium" />
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {apps.map((app) => (
+                      <tr
+                        key={app.applicationId}
+                        className="border-b border-neutral-50 last:border-0 hover:bg-neutral-50/60"
+                      >
+                        <td className="px-5 py-3">
+                          <div className="flex items-center gap-2">
+                            <p className="font-medium text-neutral-800">{app.fullName || ""}</p>
+                            {app.isStudent && (
+                              <span className="inline-flex items-center gap-1 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] font-semibold text-brand-700">
+                                <GraduationCap size={11} /> Student
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-xs text-neutral-400">{app.applicationId}</p>
+                        </td>
+                        <td className="px-5 py-3 text-neutral-600">{app.mobileNumber}</td>
+                        <td className="px-5 py-3 text-neutral-600">{app.qualification || ""}</td>
+                        <td className="px-5 py-3 text-neutral-600">{app.pinCode || ""}</td>
+                        <td className="px-5 py-3 text-neutral-600">{app.area || ""}</td>
+                        <td className="px-5 py-3 text-neutral-600 capitalize">
+                          {app.stage.replace(/-/g, " ")}
+                        </td>
+                        <td className="px-5 py-3">
+                          <span
+                            className={
+                              "rounded-full px-2.5 py-1 text-xs font-medium " +
+                              STATUS_STYLES[app.status]
+                            }
+                          >
+                            {STATUS_LABELS[app.status]}
+                          </span>
+                        </td>
+                        <td className="px-5 py-3 text-right">
+                          <div className="flex items-center justify-end gap-2">
+                            <Link
+                              href={`/admin/physio-review/${app.applicationId}`}
+                              className="rounded-lg bg-brand-50 px-3 py-1.5 text-xs font-semibold text-brand-700 hover:bg-brand-100"
+                            >
+                              Review
+                            </Link>
+                            <button
+                              onClick={() => handleDelete(app.applicationId, app.fullName)}
+                              disabled={deletingId === app.applicationId}
+                              className="flex items-center gap-1 rounded-lg bg-danger-50 px-3 py-1.5 text-xs font-semibold text-danger-600 hover:bg-danger-100 disabled:opacity-60"
+                            >
+                              {deletingId === app.applicationId ? (
+                                <Loader2 size={13} className="animate-spin" />
+                              ) : (
+                                <Trash2 size={13} />
+                              )}
+                              Delete
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {totalPages > 1 && (
+              <div className="flex items-center justify-between mt-5">
+                <button
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={page <= 1}
+                  className="flex items-center gap-1 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-50 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  <ChevronLeft size={15} /> Prev
+                </button>
+                <p className="text-sm text-neutral-500">
+                  Page {page} of {totalPages}
+                </p>
+                <button
+                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={page >= totalPages}
+                  className="flex items-center gap-1 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm font-medium text-neutral-600 hover:bg-neutral-50 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Next <ChevronRight size={15} />
+                </button>
+              </div>
+            )}
+          </>
+        )}
+      </main>
+    </div>
+  );
+}

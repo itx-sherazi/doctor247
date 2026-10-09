@@ -4,7 +4,7 @@ const UserSchema = new Schema(
   {
     email: { type: String, required: true, unique: true, lowercase: true, trim: true },
     passwordHash: { type: String, required: true },
-    role: { type: String, enum: ["nurse", "hospital"], required: true },
+    role: { type: String, enum: ["nurse","physiotherapist", "hospital"], required: true },
   },
   { timestamps: true }
 );

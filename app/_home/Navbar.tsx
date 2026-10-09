@@ -8,7 +8,7 @@ import { ChevronDown, LogOut, Menu, User, UserPlus, X } from "lucide-react";
 import { BookNowModal } from "./BookNowModal";
 import { SURGERY_LIST } from "../surgery/_data/surgeries";
 
-type AuthUser = { role: "nurse" | "hospital" } | null;
+type AuthUser = { role: "nurse" | "hospital" | "physiotherapist" } | null;
 
 const NAV_LINKS_BEFORE = [{ label: "Home", href: "/" }];
 const NAV_LINKS_AFTER = [

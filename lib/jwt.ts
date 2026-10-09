@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 
 export interface AuthTokenPayload {
   userId: string;
-  role: "nurse" | "hospital";
+  role: "nurse" | "hospital" | "physiotherapist";
 }
 
 function getSecret(): string {

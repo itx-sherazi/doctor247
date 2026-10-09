@@ -4,9 +4,20 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Building2, Eye, EyeOff, Heart, Loader2, Lock, Mail, ShieldCheck, Stethoscope } from "lucide-react";
+import {
+  Activity,
+  Building2,
+  Eye,
+  EyeOff,
+  Heart,
+  Loader2,
+  Lock,
+  Mail,
+  ShieldCheck,
+  Stethoscope,
+} from "lucide-react";
 
-type Role = "nurse" | "hospital";
+type Role = "nurse" | "physiotherapist" | "hospital";
 
 export default function SignupPage() {
   const router = useRouter();
@@ -24,7 +35,7 @@ export default function SignupPage() {
     setError("");
 
     if (!role) {
-      setError("Please choose whether you're registering as a Nurse or a Hospital.");
+      setError("Please choose whether you're registering as a Nurse, Physiotherapist, or Hospital.");
       return;
     }
     if (password.length < 8) {
@@ -46,7 +57,13 @@ export default function SignupPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Signup failed");
 
-      router.push(role === "nurse" ? "/nurse-registration" : "/hospital-registration");
+      router.push(
+        role === "nurse"
+          ? "/nurse-registration"
+          : role === "physiotherapist"
+          ? "/physio-registration"
+          : "/hospital-registration"
+      );
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Signup failed");
@@ -61,8 +78,9 @@ export default function SignupPage() {
       <div className="hidden lg:block relative bg-gradient-to-br from-hblue to-hgreen overflow-hidden">
         <Image
           src="/nurse-hero.png"
-          alt="Doctor247 nurse caring for a patient at home"
+          alt="Doctor247 healthcare professional caring for a patient at home"
           fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover opacity-90 mix-blend-luminosity"
           priority
         />
@@ -72,10 +90,11 @@ export default function SignupPage() {
             <Heart size={13} className="text-hgreen" /> Trusted Healthcare
           </span>
           <h2 className="text-[2rem] xl:text-[2.4rem] font-black leading-[1.1] mb-3 tracking-tight">
-            Join Bangalore's most trusted home healthcare network.
+            Join Bangalore&apos;s most trusted home healthcare network.
           </h2>
           <p className="text-white/85 text-[1rem] mb-6">
-            Register as a nurse or partner hospital and start growing with Doctor247.
+            Register as a nurse, physiotherapist, or partner hospital and start growing with
+            Doctor247.
           </p>
           <div className="flex gap-6">
             <div className="flex items-center gap-2">
@@ -92,38 +111,81 @@ export default function SignupPage() {
 
       {/* Right: form */}
       <div className="px-5 py-10 sm:py-14 lg:flex lg:items-center lg:justify-center lg:px-4 lg:py-16">
-        <div className="w-full max-w-[420px] mx-auto">
-          <h1 className="text-[1.6rem] font-extrabold text-htext mb-1 tracking-tight">Join Doctor247</h1>
-          <p className="text-[0.9rem] text-htext-muted mb-6">Register as a nurse or partner hospital.</p>
+        <div className="w-full max-w-[440px] mx-auto">
+          <h1 className="text-[1.6rem] font-extrabold text-htext mb-1 tracking-tight">
+            Join Doctor247
+          </h1>
+          <p className="text-[0.9rem] text-htext-muted mb-6">
+            Register as a nurse, physiotherapist, or partner hospital.
+          </p>
 
-          <div className="grid grid-cols-2 gap-3 mb-7">
+          <div className="grid grid-cols-3 gap-2.5 mb-7">
             <button
               type="button"
               onClick={() => setRole("nurse")}
               className={
-                "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
+                "flex flex-col items-center gap-2 rounded-xl border-2 px-3 py-4 transition-all " +
                 (role === "nurse"
                   ? "border-red-600 bg-red-50"
                   : "border-hgrey-border bg-white hover:border-red-300")
               }
             >
-              <Stethoscope size={26} className={role === "nurse" ? "text-red-600" : "text-htext-muted"} />
-              <span className={"text-[0.9rem] font-semibold " + (role === "nurse" ? "text-red-600" : "text-htext")}>
+              <Stethoscope
+                size={24}
+                className={role === "nurse" ? "text-red-600" : "text-htext-muted"}
+              />
+              <span
+                className={
+                  "text-[0.85rem] font-semibold " +
+                  (role === "nurse" ? "text-red-600" : "text-htext")
+                }
+              >
                 Nurse
+              </span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setRole("physiotherapist")}
+              className={
+                "flex flex-col items-center gap-2 rounded-xl border-2 px-3 py-4 transition-all " +
+                (role === "physiotherapist"
+                  ? "border-red-600 bg-red-50"
+                  : "border-hgrey-border bg-white hover:border-red-300")
+              }
+            >
+              <Activity
+                size={24}
+                className={role === "physiotherapist" ? "text-red-600" : "text-htext-muted"}
+              />
+              <span
+                className={
+                  "text-[0.85rem] font-semibold " +
+                  (role === "physiotherapist" ? "text-red-600" : "text-htext")
+                }
+              >
+                Physio
               </span>
             </button>
             <button
               type="button"
               onClick={() => setRole("hospital")}
               className={
-                "flex flex-col items-center gap-2 rounded-xl border-2 px-4 py-5 transition-all " +
+                "flex flex-col items-center gap-2 rounded-xl border-2 px-3 py-4 transition-all " +
                 (role === "hospital"
                   ? "border-red-600 bg-red-50"
                   : "border-hgrey-border bg-white hover:border-red-300")
               }
             >
-              <Building2 size={26} className={role === "hospital" ? "text-red-600" : "text-htext-muted"} />
-              <span className={"text-[0.9rem] font-semibold " + (role === "hospital" ? "text-red-600" : "text-htext")}>
+              <Building2
+                size={24}
+                className={role === "hospital" ? "text-red-600" : "text-htext-muted"}
+              />
+              <span
+                className={
+                  "text-[0.85rem] font-semibold " +
+                  (role === "hospital" ? "text-red-600" : "text-htext")
+                }
+              >
                 Hospital
               </span>
             </button>
@@ -133,7 +195,10 @@ export default function SignupPage() {
             <div>
               <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Email</label>
               <div className="relative">
-                <Mail size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+                <Mail
+                  size={17}
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted"
+                />
                 <input
                   type="email"
                   required
@@ -146,9 +211,14 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Password</label>
+              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">
+                Password
+              </label>
               <div className="relative">
-                <Lock size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+                <Lock
+                  size={17}
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted"
+                />
                 <input
                   type={showPassword ? "text" : "password"}
                   required
@@ -170,9 +240,14 @@ export default function SignupPage() {
             </div>
 
             <div>
-              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">Confirm Password</label>
+              <label className="block text-[0.85rem] font-semibold text-htext mb-1.5">
+                Confirm Password
+              </label>
               <div className="relative">
-                <Lock size={17} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted" />
+                <Lock
+                  size={17}
+                  className="absolute left-3.5 top-1/2 -translate-y-1/2 text-htext-muted"
+                />
                 <input
                   type={showConfirmPassword ? "text" : "password"}
                   required
