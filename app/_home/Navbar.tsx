@@ -12,8 +12,10 @@ type AuthUser = { role: "nurse" | "hospital" | "physiotherapist" } | null;
 
 const NAV_LINKS_BEFORE = [{ label: "Home", href: "/" }];
 const NAV_LINKS_AFTER = [
-  { label: "Home Doctor", href: "#" },
+  { label: "Home Doctor", href: "/doctor-services" },
   { label: "Home Nursing", href: "/nurse-services" },
+  // { label: "Physiotherapy", href: "/physio-services" },
+  // { label: "Lab Tests", href: "/lab-tests" },
   // { label: "Specialities", href: "#" },
   // { label: "Insurance", href: "#" },
 ];
