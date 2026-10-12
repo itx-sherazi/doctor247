@@ -5,10 +5,10 @@ import { Bone, HandHeart, Headset, Hospital, HouseHeart, Phone } from "lucide-re
 import { FaWhatsapp } from "react-icons/fa";
 
 const OPTIONS = [
-  { icon: HouseHeart, label: "Doctor Visit", href: "#", className: "text-htext" },
-  { icon: HandHeart, label: "Home Nursing", href: "#", className: "text-htext" },
-  { icon: Hospital, label: "Surgery", href: "#", className: "text-htext" },
-  { icon: Bone, label: "Physiotherapy", href: "#", className: "text-htext" },
+  { icon: HouseHeart, label: "Doctor Visit", href: "/doctor-services", className: "text-htext" },
+  { icon: HandHeart, label: "Home Nursing", href: "/nurse-services", className: "text-htext" },
+  { icon: Hospital, label: "Surgery", href: "/surgery", className: "text-htext" },
+  { icon: Bone, label: "Physiotherapy", href: "/physio-services", className: "text-htext" },
 ];
 
 export function FloatingWidget() {

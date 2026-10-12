@@ -1,4 +1,5 @@
 import { Bone, HandHeart, Hospital, HouseHeart } from "lucide-react";
+import Link from "next/link";
 import { SectionTitle } from "./SectionTitle";
 
 const SERVICES = [
@@ -9,6 +10,7 @@ const SERVICES = [
     priceTag: "Starting ₹799",
     priceTagClass: "bg-hgreen-light text-hgreen-dark",
     desc: "Verified doctors visit your home in 60 minutes",
+    href: "/doctor-services",
   },
   {
     icon: HandHeart,
@@ -17,6 +19,7 @@ const SERVICES = [
     priceTag: "Starting ₹999",
     priceTagClass: "bg-hgreen-light text-hgreen-dark",
     desc: "Trained nurses for post-surgery & elderly care",
+    href: "/nurse-services",
   },
   {
     icon: Hospital,
@@ -25,6 +28,7 @@ const SERVICES = [
     priceTag: "Save upto 30%",
     priceTagClass: "bg-amber-100 text-amber-700",
     desc: "Transparent pricing, top surgeons, cashless insurance",
+    href: "/surgery",
   },
   {
     icon: Bone,
@@ -33,6 +37,7 @@ const SERVICES = [
     priceTag: "Starting ₹499",
     priceTagClass: "bg-hgreen-light text-hgreen-dark",
     desc: "Recovery & rehabilitation at home",
+    href: "/physio-services",
   },
 ];
 
@@ -43,7 +48,8 @@ export function Services() {
         <SectionTitle
           subtitle={
             <>
-              Trusted healthcare delivered to your home – including <strong>home nursing services near me</strong> and{" "}
+              Trusted healthcare delivered to your home – including{" "}
+              <strong>home nursing services near me</strong> and{" "}
               <strong>home visit doctors in Bangalore</strong>
             </>
           }
@@ -52,20 +58,26 @@ export function Services() {
         </SectionTitle>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {SERVICES.map((service) => (
-            <div
+            <Link
               key={service.title}
+              href={service.href}
               className="bg-white rounded-2xl border border-hgrey-border p-5 sm:p-7 pt-7 text-center transition-all [box-shadow:0_8px_24px_rgba(15,76,129,0.08)] hover:-translate-y-1.5 hover:border-hblue hover:[box-shadow:0_12px_40px_rgba(15,76,129,0.14)]"
             >
               <service.icon size={40} className={service.color + " mx-auto mb-2"} />
               <h4 className="text-[1rem] sm:text-[1.15rem] font-bold mb-0.5">{service.title}</h4>
-              <span className={"inline-block font-bold text-[0.75rem] sm:text-[0.8rem] px-4 py-0.5 rounded-full mb-2 " + service.priceTagClass}>
+              <span
+                className={
+                  "inline-block font-bold text-[0.75rem] sm:text-[0.8rem] px-4 py-0.5 rounded-full mb-2 " +
+                  service.priceTagClass
+                }
+              >
                 {service.priceTag}
               </span>
               <p className="text-[0.8rem] sm:text-[0.85rem] text-htext-muted mb-3">{service.desc}</p>
-              <a href="#" className="inline-flex items-center gap-1.5 font-semibold text-[0.8rem] sm:text-[0.85rem] text-hgreen hover:text-hblue transition-colors">
+              <span className="inline-flex items-center gap-1.5 font-semibold text-[0.8rem] sm:text-[0.85rem] text-hgreen hover:text-hblue transition-colors">
                 Learn More →
-              </a>
-            </div>
+              </span>
+            </Link>
           ))}
         </div>
       </div>
