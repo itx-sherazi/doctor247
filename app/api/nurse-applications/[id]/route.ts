@@ -1,25 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectToDatabase } from "@/lib/mongodb";
-<<<<<<< HEAD
-import { deleteApplicationFolder, deleteFromCloudinary } from "@/lib/cloudinary";
-import { PhysioApplication } from "@/lib/models/PhysioApplication";
-=======
 import { deleteApplicationFolder, deleteFromCloudinary, uploadToCloudinary } from "@/lib/cloudinary";
 import { NurseApplication } from "@/lib/models/NurseApplication";
 import { DOCUMENT_TYPES } from "@/app/nurse-registration/_lib/types";
->>>>>>> 52acfb234c25521fc89f2df8fe2c654352734b85
 
 export async function GET(_request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   try {
     await connectToDatabase();
-    const application = await PhysioApplication.findOne({ applicationId: id }).lean();
+    const application = await NurseApplication.findOne({ applicationId: id }).lean();
     if (!application) {
       return NextResponse.json({ error: "Application not found" }, { status: 404 });
     }
     return NextResponse.json({ application });
   } catch (error) {
-    console.error("Failed to fetch physio application", error);
+    console.error("Failed to fetch nurse application", error);
     return NextResponse.json({ error: "Failed to fetch application" }, { status: 500 });
   }
 }
@@ -111,7 +106,7 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
       patch.documents = currentDocs;
     }
 
-    const application = await PhysioApplication.findOneAndUpdate(
+    const application = await NurseApplication.findOneAndUpdate(
       { applicationId: id },
       { $set: patch },
       { new: true }
@@ -119,7 +114,7 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
 
     return NextResponse.json({ application });
   } catch (error) {
-    console.error("Failed to update physio application", error);
+    console.error("Failed to update nurse application", error);
     return NextResponse.json({ error: "Failed to update application" }, { status: 500 });
   }
 }
@@ -129,11 +124,7 @@ export async function DELETE(request: NextRequest, { params }: { params: Promise
   try {
     await connectToDatabase();
 
-<<<<<<< HEAD
-    const application = await PhysioApplication.findOne({ applicationId: id }).lean();
-=======
     const application = await NurseApplication.findOne({ applicationId: id });
->>>>>>> 52acfb234c25521fc89f2df8fe2c654352734b85
     if (!application) {
       return NextResponse.json({ error: "Application not found" }, { status: 404 });
     }
@@ -191,11 +182,11 @@ export async function DELETE(request: NextRequest, { params }: { params: Promise
 
     await deleteFromCloudinary(publicIds);
     await deleteApplicationFolder(id);
-    await PhysioApplication.deleteOne({ applicationId: id });
+    await NurseApplication.deleteOne({ applicationId: id });
 
     return NextResponse.json({ ok: true });
   } catch (error) {
-    console.error("Failed to delete physio application", error);
+    console.error("Failed to delete nurse application", error);
     return NextResponse.json({ error: "Failed to delete application" }, { status: 500 });
   }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StickyFooter } from "../_home/StickyFooter";
 import { FloatingWidget } from "../_home/FloatingWidget";
 import { PhysioHero } from "./_components/PhysioHero";
@@ -33,3 +34,13 @@ export default function PhysioServicesPage() {
     </div>
   );
 }
+=======
+export default function PhysioServicesPage() {
+  return (
+    <div className="min-h-screen py-16 px-4 max-w-7xl mx-auto">
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">Physiotherapy Services</h1>
+      <p className="text-gray-600">Coming soon.</p>
+    </div>
+  );
+}
+>>>>>>> afb7fc6e6971552c5e1b555282b30f2156d7d6f3
