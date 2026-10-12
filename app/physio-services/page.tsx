@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { StickyFooter } from "../_home/StickyFooter";
 import { FloatingWidget } from "../_home/FloatingWidget";
 import { PhysioHero } from "./_components/PhysioHero";
@@ -34,7 +33,6 @@ export default function PhysioServicesPage() {
     </div>
   );
 }
-=======
 export default function PhysioServicesPage() {
   return (
     <div className="min-h-screen py-16 px-4 max-w-7xl mx-auto">
@@ -43,4 +41,3 @@ export default function PhysioServicesPage() {
     </div>
   );
 }
->>>>>>> afb7fc6e6971552c5e1b555282b30f2156d7d6f3
